@@ -143,6 +143,15 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
     public IObservableProperty<bool> ResinListItemId220007Allowed { get => field ??= CreateProperty(SettingKeys.LaunchResinListItemId220007Allowed, true); }
 
     [field: MaybeNull]
+    public IObservableProperty<bool> DisplayPaimon { get => field ??= CreateProperty(SettingKeys.LaunchDisplayPaimon, false); }
+
+    [field: MaybeNull]
+    public IObservableProperty<bool> DebugMode { get => field ??= CreateProperty(SettingKeys.LaunchDebugMode, false); }
+
+    [field: MaybeNull]
+    public IObservableProperty<bool> HidePlayerInfo { get => field ??= CreateProperty(SettingKeys.LaunchHidePlayerInfo, false); }
+
+    [field: MaybeNull]
     public IObservableProperty<ImmutableArray<AspectRatio>> AspectRatios { get => field ??= CreatePropertyForStructUsingJson(SettingKeys.LaunchAspectRatios, ImmutableArray<AspectRatio>.Empty); }
 
     public AspectRatio? SelectedAspectRatio

@@ -125,6 +125,9 @@ internal static class SettingKeys
     public const string LaunchResinListItemId107009Allowed               = "Snap::Hutao::Game::Island::Reward::107009";
     public const string LaunchResinListItemId107012Allowed               = "Snap::Hutao::Game::Island::Reward::107012";
     public const string LaunchResinListItemId220007Allowed               = "Snap::Hutao::Game::Island::Reward::220007";
+    public const string LaunchDisplayPaimon                              = "Snap::Hutao::Game::Island::DisplayPaimon";
+    public const string LaunchDebugMode                                  = "Snap::Hutao::Game::Island::DebugMode";
+    public const string LaunchHidePlayerInfo                             = "Snap::Hutao::Game::Island::HidePlayerInfo";
     public const string LaunchRedirectCombineEntry                       = "Snap::Hutao::Game::Island::Synthesis::Redirect";
     public const string LaunchUsingOverlay                               = "Snap::Hutao::Game::Overlay";
     public const string LaunchOverlaySelectedCatalogId                   = "Snap::Hutao::Game::Overlay::CatalogId";

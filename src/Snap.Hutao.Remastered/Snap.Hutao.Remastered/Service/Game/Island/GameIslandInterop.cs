@@ -104,6 +104,7 @@ internal sealed class GameIslandInterop : IGameIslandInterop
         IslandEnvironment* pIslandEnvironment = (IslandEnvironment*)handle;
 
         pIslandEnvironment->IsOversea = isOversea;
+        pIslandEnvironment->ProvideOffsets = Win32.Foundation.BOOL.FALSE;
 
         if (LocalSetting.Get(SettingKeys.LaunchForceUsingTouchScreen, false))
         {
@@ -120,6 +121,7 @@ internal sealed class GameIslandInterop : IGameIslandInterop
     private static unsafe IslandEnvironmentView UpdateIslandEnvironment(nint handle, LaunchOptions options)
     {
         IslandEnvironment* pIslandEnvironment = (IslandEnvironment*)handle;
+        pIslandEnvironment->ProvideOffsets = Win32.Foundation.BOOL.FALSE;
 
         pIslandEnvironment->EnableSetFieldOfView = options.IsSetFieldOfViewEnabled.Value;
         pIslandEnvironment->FieldOfView = options.TargetFov.Value;
@@ -137,6 +139,9 @@ internal sealed class GameIslandInterop : IGameIslandInterop
         pIslandEnvironment->ResinListItemId107009Allowed = options.ResinListItemId107009Allowed.Value;
         pIslandEnvironment->ResinListItemId107012Allowed = options.ResinListItemId107012Allowed.Value;
         pIslandEnvironment->ResinListItemId220007Allowed = options.ResinListItemId220007Allowed.Value;
+        pIslandEnvironment->DisplayPaimon = options.DisplayPaimon.Value;
+        pIslandEnvironment->DebugMode = options.DebugMode.Value;
+        pIslandEnvironment->HidePlayerInfo = options.HidePlayerInfo.Value;
 
         return pIslandEnvironment->View;
     }
