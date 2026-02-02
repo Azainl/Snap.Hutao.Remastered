@@ -13,19 +13,6 @@ body:
        **Please use one sentence to briefly describe your issue as title above**
        **Please follow the instruction below to fill the form, so we can locate the issue quickly**
   
-  - type: textarea
-    id: network-diagnosis-report
-    attributes:
-      label: Submit Your Network Diagnosis Report
-      description: | 
-        STOP HERE!
-        **Please run our network diagnosis tool before filling this form**
-        **The diagnosis tool will generate a report and add it into a password-protected archive. Drag the `.zip` archive to the box below so it can be uploaded.**
-        - Use the following link to download the Network Diagnosis Tool:
-          - [GitHub](https://github.com/Masterain98/network-diagnosis-tool/releases/latest/download/SH-Network-Diagnosis.exe)
-    validations:
-      required: true
-  
   - type: input
     id: user-geo-location
     attributes:

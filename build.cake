@@ -25,27 +25,78 @@ static ProcessArgumentBuilder AppendIf(this ProcessArgumentBuilder builder, stri
 
 string solution
 {
-    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao", "Snap.Hutao.sln");
+    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao.Remastered", "Snap.Hutao.Remastered.sln");
 }
 string project
 {
-    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao", "Snap.Hutao", "Snap.Hutao.csproj");
+    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao.Remastered", "Snap.Hutao.Remastered", "Snap.Hutao.Remastered.csproj");
 }
 string binPath
 {
-    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao", "Snap.Hutao", "bin", "x64", "Release", "net10.0-windows10.0.26100.0", "win-x64");
+    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao.Remastered", "Snap.Hutao.Remastered", "bin", "x64", "Release", "net10.0-windows10.0.26100.0", "win-x64");
 }
 string manifest
 {
-    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao", "Snap.Hutao", "Package.appxmanifest");
+    get => System.IO.Path.Combine(repoDir, "src", "Snap.Hutao.Remastered", "Snap.Hutao.Remastered", "Package.appxmanifest");
 }
 
-repoDir = System.Environment.CurrentDirectory;
-outputPath = System.IO.Path.Combine(repoDir, "src", "output");
+if (GitHubActions.IsRunningOnGitHubActions)
+{
+    repoDir = GitHubActions.Environment.Workflow.Workspace.FullPath;
+    outputPath = System.IO.Path.Combine(repoDir, "src", "output");
 
-version = System.DateTime.Now.ToString("yyyy.M.d.") + ((int)((System.DateTime.Now - System.DateTime.Today).TotalSeconds / 86400 * 65535)).ToString();
+    if (GitHubActions.Environment.PullRequest.IsPullRequest)
+    {
+        version = System.DateTime.Now.ToString("yyyy.M.d.0");
 
-Information($"Version: {version}");
+        Information("Is Pull Request. Skip version.");
+    }
+    else
+    {
+        if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Alpha")
+        {
+             version = System.DateTime.Now.ToString("yyyy.M.d.") + ((int)((System.DateTime.Now - System.DateTime.Today).TotalSeconds / 86400 * 65535)).ToString();
+
+        }
+        else if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Canary")
+        {
+            version = System.DateTime.Now.ToString("yyyy.M.d.") + ((int)((System.DateTime.Now - System.DateTime.Today).TotalSeconds / 86400 * 65535)).ToString();
+        }
+        else
+        {
+            throw new Exception("Unsupported workflow.");
+        }
+
+        var certificateBase64 = HasEnvironmentVariable("CERTIFICATE") ? EnvironmentVariable("CERTIFICATE") : throw new Exception("Cannot find CERTIFICATE");
+        pw = HasEnvironmentVariable("PW") ? EnvironmentVariable("PW") : throw new Exception("Cannot find PW");
+        pfxPath = System.IO.Path.Combine(repoDir, "temp.pfx");
+        System.IO.File.WriteAllBytes(pfxPath, System.Convert.FromBase64String(certificateBase64));
+
+        Information($"Version: {version}");
+    }
+
+    GitHubActions.Commands.SetOutputParameter("version", version);
+}
+else if (AppVeyor.IsRunningOnAppVeyor)
+{
+    repoDir = AppVeyor.Environment.Build.Folder;
+    outputPath = System.IO.Path.Combine(repoDir, "src", "output");
+
+    version = XmlPeek(manifest, "appx:Package/appx:Identity/@Version", new XmlPeekSettings
+    {
+        Namespaces = new Dictionary<string, string> { { "appx", "http://schemas.microsoft.com/appx/manifest/foundation/windows10" } }
+    })[..^2];
+    Information($"Version: {version}");
+}
+else // Local
+{
+    repoDir = System.Environment.CurrentDirectory;
+    outputPath = System.IO.Path.Combine(repoDir, "src", "output");
+
+    version = System.DateTime.Now.ToString("yyyy.M.d.") + ((int)((System.DateTime.Now - System.DateTime.Today).TotalSeconds / 86400 * 65535)).ToString();
+
+    Information($"Version: {version}");
+}
 
 // Windows SDK
 var registry = new WindowsRegistry();
@@ -60,6 +111,7 @@ Task("Build")
     .IsDependentOn("Copy files")
     .IsDependentOn("Remove unused files")
     .IsDependentOn("Build MSIX")
+    .IsDependentOn("Sign");
 
 Task("NuGet Restore")
     .Does(() =>
@@ -73,6 +125,64 @@ Task("NuGet Restore")
         Interactive = false,
         ConfigFile = nugetConfig
     });
+});
+
+Task("Generate AppxManifest")
+    .Does(() =>
+{
+    Information("Generating AppxManifest...");
+
+    var content = System.IO.File.ReadAllText(manifest);
+
+    if (GitHubActions.IsRunningOnGitHubActions)
+    {
+        Information("Using CI configuraion");
+        if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Alpha")
+        {
+            Information("Using Alpha configuration");
+            content = content
+                .Replace("Snap Hutao Remastered", "Snap Hutao Remastered Alpha")
+                .Replace("胡桃重制版", "胡桃重制版 Alpha")
+                .Replace("SnapHutaoRemasteringProject", "SnapHutaoRemasteringProject CI");
+            content = System.Text.RegularExpressions.Regex.Replace(content, "  Name=\"([^\"]*)\"", "  Name=\"7f0db578-026f-4e0b-a75b-d5d06bb0a74c\"");
+        }
+        else if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Canary")
+        {
+            Information("Using Canary configuration");
+            content = content
+                .Replace("Snap Hutao Remastered", "Snap Hutao Remastered Canary")
+                .Replace("胡桃重制版", "胡桃重制版 Canary")
+                .Replace("SnapHutaoRemasteringProject", "SnapHutaoRemasteringProject CI");
+            content = System.Text.RegularExpressions.Regex.Replace(content, "  Name=\"([^\"]*)\"", "  Name=\"52127695-c6a7-406e-916a-693b905e8ba7\"");
+        }
+        else
+        {
+            throw new Exception("Unsupported workflow.");
+        }
+
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"E=admin@dgp-studio.cn, CN=SnapHutaoRemasteringProject CI, OU=CI, O=DGP-Studio, L=San Jose, S=CA, C=US\"");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Version=\"([0-9\\.]+)\"", $"  Version=\"{version}\"");
+    }
+    else if (AppVeyor.IsRunningOnAppVeyor)
+    {
+        Information("Using Release configuration");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"CN=SignPath Foundation, O=SignPath Foundation, L=Lewes, S=Delaware, C=US\"");
+    }
+    else
+    {
+        Information("Using Local configuration.");
+        content = content
+            .Replace("Snap Hutao Remastered", "Snap Hutao Remastered Local")
+            .Replace("胡桃重制版", "胡桃重制版 Local")
+            .Replace("SnapHutaoRemasteringProject", "SnapHutaoRemasteringProject CI");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Name=\"([^\"]*)\"", "  Name=\"E8B6E2B3-D2A0-4435-A81D-2A16AAF405C7\"");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"E=admin@dgp-studio.cn, CN=SnapHutaoRemasteringProject CI, OU=CI, O=DGP-Studio, L=San Jose, S=CA, C=US\"");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Version=\"([0-9\\.]+)\"", $"  Version=\"{version}\"");
+    }
+
+    System.IO.File.WriteAllText(manifest, content);
+
+    Information("Generated.");
 });
 
 Task("Build binary package")
@@ -94,6 +204,8 @@ Task("Build binary package")
                                             .Append("/p:AppxPackageSigningEnabled=false")
                                             .Append("/p:AppxBundle=Never")
                                             .Append("/p:AppxPackageOutput=" + outputPath)
+                                            .AppendIf("/p:AlphaConstants=IS_ALPHA_BUILD", GitHubActions.IsRunningOnGitHubActions && GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Alpha")
+                                            .AppendIf("/p:CanaryConstants=IS_CANARY_BUILD", GitHubActions.IsRunningOnGitHubActions && GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Canary")
     };
 
     DotNetBuild(project, settings);
@@ -138,7 +250,18 @@ Task("Build MSIX")
     var arguments = "arguments";
     if (GitHubActions.IsRunningOnGitHubActions)
     {
-        arguments = "pack /d " + binPath + " /p " + System.IO.Path.Combine(outputPath, $"Snap.Hutao.Remastered{version}.msix");
+        if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Alpha")
+        {
+            arguments = "pack /d " + binPath + " /p " + System.IO.Path.Combine(outputPath, $"Snap.Hutao.Remastered.Alpha-{version}.msix");
+        }
+        else if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Canary")
+        {
+            arguments = "pack /d " + binPath + " /p " + System.IO.Path.Combine(outputPath, $"Snap.Hutao.Remastered.Canary-{version}.msix");
+        }
+        else
+        {
+            throw new Exception("Unsupported workflow.");
+        }
     }
     else if (AppVeyor.IsRunningOnAppVeyor)
     {
@@ -161,6 +284,58 @@ Task("Build MSIX")
     if (p != 0)
     {
         throw new InvalidOperationException("Build MSIX failed with exit code " + p);
+    }
+});
+
+Task("Sign")
+    .IsDependentOn("Build MSIX")
+    .Does(() =>
+{
+    if (AppVeyor.IsRunningOnAppVeyor)
+    {
+        Information("Move to SignPath. Skip signing.");
+        return;
+    }
+    else if (GitHubActions.IsRunningOnGitHubActions)
+    {
+        if (GitHubActions.Environment.PullRequest.IsPullRequest)
+        {
+            Information("Is Pull Request. Skip signing.");
+            return;
+        }
+
+        var signPath = System.IO.Path.Combine(winsdkBinPath, "signtool.exe");
+        var arguments = "arguments";
+
+        if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Alpha")
+        {
+            arguments = $"sign /debug /v /a /fd SHA256 /f {pfxPath} /p {pw} {System.IO.Path.Combine(outputPath, $"Snap.Hutao.Remastered.Alpha-{version}.msix")}";
+        }
+        else if (GitHubActions.Environment.Workflow.Workflow == "Snap Hutao Remastered Canary")
+        {
+            arguments = $"sign /debug /v /a /fd SHA256 /f {pfxPath} /p {pw} {System.IO.Path.Combine(outputPath, $"Snap.Hutao.Remastered.Canary-{version}.msix")}";
+        }
+        else
+        {
+            throw new Exception("Unsupported workflow.");
+        }
+
+        var p = StartProcess(
+            signPath,
+            new ProcessSettings
+            {
+                Arguments = arguments
+            }
+        );
+        if (p != 0)
+        {
+            throw new InvalidOperationException("Sign failed with exit code " + p);
+        }
+    }
+    else
+    {
+        Information("Local configuration. Skip signing.");
+        return;
     }
 });
 

@@ -1,9 +1,8 @@
-name: Snap Hutao Canary
+name: Snap Hutao Remastered Canary
 on:
   workflow_dispatch:
   push:
     branches-ignore:
-      - l10n_develop
       - main
       - release
       - dependabot/**
@@ -32,10 +31,10 @@ jobs:
           $continue = $true
 
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin '+refs/heads/*:refs/remotes/origin/*'
           git checkout origin/develop
-          $response = curl -s https://api.github.com/repos/DGP-Studio/Snap.Hutao/pulls?state=open
+          $response = curl -s https://api.github.com/repos/SnapHutaoRemasteringProject/Snap.Hutao.Remastered/pulls?state=open
           $refs = $response | ConvertFrom-Json | Where-Object { $_.draft -eq $false } | ForEach-Object { $_.head.ref }
           if ($refs.Count -eq 0 -or ($refs.Count -eq 1 -and $refs -eq "l10n_develop")) {
               echo "No PRs to merge"
@@ -62,7 +61,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.nuget/packages
-          key: ${{ runner.os }}-nuget-${{ hashFiles('**/Snap.Hutao.csproj') }}
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/Snap.Hutao.Remastered.csproj') }}
           restore-keys: |
             ${{ runner.os }}-nuget-
 
@@ -79,8 +78,8 @@ jobs:
         if: ${{ success() && steps.merge.outputs.continue == 'true' }}
         uses: actions/upload-artifact@v5
         with:
-          name: Snap.Hutao.Canary-${{ steps.cake.outputs.version }}
-          path: ${{ github.workspace }}/src/output/Snap.Hutao.Canary-${{ steps.cake.outputs.version }}.msix
+          name: Snap.Hutao.Remastered.Canary-${{ steps.cake.outputs.version }}
+          path: ${{ github.workspace }}/src/output/Snap.Hutao.Remastered.Canary-${{ steps.cake.outputs.version }}.msix
 
       - name: Add summary
         if: ${{ success() && steps.merge.outputs.continue == 'true' }}
@@ -91,7 +90,7 @@ jobs:
           > 该版本是由 CI 程序自动打包生成的 `Canary` 测试版本，包含新功能原型及问题修复
 
           > [!IMPORTANT]
-          > 请先安装 **[DGP_Studio_CA.crt](https://github.com/DGP-Automation/Hutao-Auto-Release/releases/download/certificate-ca/DGP_Studio_CA.crt)** 到 **受信任的根证书颁发机构** 以安装测试版安装包
+          > 请先安装 **[SnapHutaoRemasteringProject CA.cer](https://github.com/SnapHutaoRemasteringProject/Snap.Hutao.Remastered/raw/refs/heads/main/SnapHutaoRemasteringProject%20CA.cer)** 到 **受信任的根证书颁发机构** 以安装测试版安装包
           "
 
           echo $summary >> $Env:GITHUB_STEP_SUMMARY
