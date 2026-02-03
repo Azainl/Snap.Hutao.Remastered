@@ -11,8 +11,8 @@
   IgnorableNamespaces="com uap desktop desktop6 rescap mp">
 
   <Identity
-    Name="SnapHutaoRemasteringProject.SnapHutaoRemastered"
-    Publisher="CN=35C8E923-85DF-49A7-9172-B39DC6312C52"
+    Name="E8B6E2B3-D2A0-4435-A81D-2A16AAF405C8"
+    Publisher="CN=SnapHutaoRemasteringProject"
     Version="1.17.1.0" />
 
   <Properties>
