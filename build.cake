@@ -160,7 +160,7 @@ Task("Generate AppxManifest")
             throw new Exception("Unsupported workflow.");
         }
 
-        content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"CN=SnapHutaoRemasteringProject CI\"");
+        content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"CN=SnapHutaoRemasteringProject\"");
         content = System.Text.RegularExpressions.Regex.Replace(content, "  Version=\"([0-9\\.]+)\"", $"  Version=\"{version}\"");
     }
     else if (AppVeyor.IsRunningOnAppVeyor)
@@ -173,8 +173,8 @@ Task("Generate AppxManifest")
         Information("Using Local configuration.");
         content = content
             .Replace("Snap Hutao Remastered", "Snap Hutao Remastered Local")
-            .Replace("胡桃重制版", "胡桃重制版 Local")
-            .Replace("SnapHutaoRemasteringProject", "SnapHutaoRemasteringProject CI");
+            .Replace("胡桃重制版", "胡桃重制版 Local");
+            //.Replace("SnapHutaoRemasteringProject", "SnapHutaoRemasteringProject CI");
         content = System.Text.RegularExpressions.Regex.Replace(content, "  Name=\"([^\"]*)\"", "  Name=\"E8B6E2B3-D2A0-4435-A81D-2A16AAF405C8\"");
         content = System.Text.RegularExpressions.Regex.Replace(content, "  Publisher=\"([^\"]*)\"", "  Publisher=\"CN=SnapHutaoRemasteringProject\"");
         content = System.Text.RegularExpressions.Regex.Replace(content, "  Version=\"([0-9\\.]+)\"", $"  Version=\"{version}\"");
