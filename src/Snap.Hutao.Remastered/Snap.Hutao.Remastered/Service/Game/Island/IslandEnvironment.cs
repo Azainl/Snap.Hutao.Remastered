@@ -112,8 +112,6 @@ internal struct HookFunctionOffsets
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint GetGlobalActor;
     [JsonConverter(typeof(HexStringToNintConverter))]
-    public uint ResumePaimonInProfilePageAll;
-    [JsonConverter(typeof(HexStringToNintConverter))]
     public uint AvatarPaimonAppear;
 }
 
