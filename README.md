@@ -74,13 +74,14 @@ You can download the latest version installer from GitHub Releases page to insta
 
 ## 资源
 
-**服务器状态页面：** http://homa.snaphutaorp.org/status/hts
+**官网：**  
+https//snap.hutaorp.org/  
 
 **元数据仓库：**  
 https//github.com/SnapHutaoRemasteringProject/Snap.Metadata  
 
 **API：**  
-https//api.snaphutaorp.org/  
+https//api.snap.hutaorp.org/  
 
 ---
 
