@@ -15,7 +15,7 @@ internal sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWeb
 {
     private const string ProxySettingPath = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections";
 
-    private static readonly Uri ProxyTestDestination = "https://snaphutaorp.org".ToUri();
+    private static readonly Uri ProxyTestDestination = "https://snap.hutaorp.org".ToUri();
 
     // ReSharper disable once PrivateFieldCanBeConvertedToLocalVariable
     private readonly HutaoNativeRegistryNotification native;

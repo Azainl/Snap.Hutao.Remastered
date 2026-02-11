@@ -24,10 +24,10 @@ internal sealed class UpdateLogContentProvider : IWebView2ContentProvider
         languageCode = serviceProvider.GetRequiredService<CultureOptions>().LanguageCode;
 
         ArgumentNullException.ThrowIfNull(CoreWebView2);
-        CoreWebView2.AddWebResourceRequestedFilter("https://snaphutaorp.org/statements/latest.html", CoreWebView2WebResourceContext.Document);
+        CoreWebView2.AddWebResourceRequestedFilter("https://snap.hutaorp.org/statements/latest.html", CoreWebView2WebResourceContext.Document);
         CoreWebView2.NewWindowRequested += OnNewWindowRequested;
         CoreWebView2.WebResourceRequested += OnWebResourceRequested;
-        CoreWebView2.Navigate("https://snaphutaorp.org/statements/latest.html");
+        CoreWebView2.Navigate("https://snap.hutaorp.org/statements/latest.html");
         return ValueTask.CompletedTask;
     }
 

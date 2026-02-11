@@ -238,7 +238,7 @@
                             <TextBlock>
                                 <TextBlock.Inlines>
                                     <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIHaveReadText}"/>
-                                    <Hyperlink NavigateUri="https://snaphutaorp.org/statements/tos.html">
+                                    <Hyperlink NavigateUri="https://snap.hutaorp.org/statements/tos.html">
                                         <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementTermOfService}"/>
                                     </Hyperlink>
                                 </TextBlock.Inlines>
@@ -248,7 +248,7 @@
                             <TextBlock>
                                 <TextBlock.Inlines>
                                     <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIHaveReadText}"/>
-                                    <Hyperlink NavigateUri="https://snaphutaorp.org/statements/privacy-notice.html">
+                                    <Hyperlink NavigateUri="https://snap.hutaorp.org/statements/privacy-notice.html">
                                         <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementPrivacyPolicy}"/>
                                     </Hyperlink>
                                 </TextBlock.Inlines>
@@ -258,7 +258,7 @@
                             <TextBlock>
                                 <TextBlock.Inlines>
                                     <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIHaveReadText}"/>
-                                    <Hyperlink NavigateUri="https://snaphutaorp.org/statements/bug-report.html">
+                                    <Hyperlink NavigateUri="https://snap.hutaorp.org/statements/bug-report.html">
                                         <Run Text="{shuxm:ResourceString Name=ViewGuideStepAgreementIssueReport}"/>
                                     </Hyperlink>
                                 </TextBlock.Inlines>

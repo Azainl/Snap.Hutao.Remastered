@@ -117,14 +117,14 @@
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/dashboard.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/dashboard.html"
                                             Header="{shuxm:ResourceString Name=ViewAnnouncementHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Announcement.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/game-launcher.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/game-launcher.html"
                                             Header="{shuxm:ResourceString Name=ViewLaunchGameHeader}"
                                             IsClickEnabled="True">
                                             <cwcont:SettingsCard.HeaderIcon>
@@ -139,77 +139,77 @@
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/wish-export.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/wish-export.html"
                                             Header="{shuxm:ResourceString Name=ViewGachaLogHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/GachaLog.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/achievements.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/achievements.html"
                                             Header="{shuxm:ResourceString Name=ViewAchievementHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Achievement.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/real-time-notes.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/real-time-notes.html"
                                             Header="{shuxm:ResourceString Name=ViewDailyNoteHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/DailyNote.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/character-data.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/character-data.html"
                                             Header="{shuxm:ResourceString Name=ViewAvatarPropertyHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/AvatarProperty.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/hutao-API.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/hutao-API.html"
                                             Header="{shuxm:ResourceString Name=ViewSpiralAbyssHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/SpiralAbyss.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/zh/features/imaginarium-theater.html"
+                                            CommandParameter="https://snap.hutaorp.org/zh/features/imaginarium-theater.html"
                                             Header="{shuxm:ResourceString Name=ViewRoleCombatHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/RoleCombat.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/develop-plan.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/develop-plan.html"
                                             Header="{shuxm:ResourceString Name=ViewCultivationHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/Cultivation.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/character-wiki.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/character-wiki.html"
                                             Header="{shuxm:ResourceString Name=ViewWikiAvatarHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiAvatar.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/weapon-wiki.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/weapon-wiki.html"
                                             Header="{shuxm:ResourceString Name=ViewWikiWeaponHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiWeapon.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/monster-wiki.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/monster-wiki.html"
                                             Header="{shuxm:ResourceString Name=ViewWikiMonsterHeader}"
                                             HeaderIcon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Navigation/WikiMonster.png}"
                                             IsClickEnabled="True"/>
                                         <cwcont:SettingsCard
                                             Padding="{ThemeResource SettingsExpanderItemHasIconPadding}"
                                             Command="{Binding NavigateToUriCommand}"
-                                            CommandParameter="https://snaphutaorp.org/features/hutao-settings.html"
+                                            CommandParameter="https://snap.hutaorp.org/features/hutao-settings.html"
                                             Header="{shuxm:ResourceString Name=ViewSettingHeader}"
                                             HeaderIcon="{shuxm:FontIcon Glyph=&#xE713;}"
                                             IsClickEnabled="True"/>
