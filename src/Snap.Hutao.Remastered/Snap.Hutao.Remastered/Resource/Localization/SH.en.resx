@@ -3980,10 +3980,34 @@ Space Available: {2}</value>
   <data name="ViewCardSignInAutoSignInDescription" xml:space="preserve">
     <value>Enable automatic sign-in at application start</value>
   </data>
+  <data name="ViewPageLaunchGameIslandDisplayPaimonHeader" xml:space="preserve">
+    <value>Display Paimon in Game</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandDisplayPaimonDescription" xml:space="preserve">
+    <value>Display Paimon</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandDebugModeHeader" xml:space="preserve">
+    <value>Debug Mode</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandDebugModeDescription" xml:space="preserve">
+    <value>Enable Debug Mode</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHidePlayerInfoHeader" xml:space="preserve">
+    <value>Hide Player Information</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHidePlayerInfoDescription" xml:space="preserve">
+    <value>Hide Player Information</value>
+  </data>
   <data name="ControlAutoSuggestTokenBoxRemoveMenuItem" xml:space="preserve">
     <value>Delete</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Special Interface Fix</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHideGrassHeader" xml:space="preserve">
+    <value>Hide Grass</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHideGrassDescription" xml:space="preserve">
+    <value>Hide Grass in Game</value>
   </data>
 </root>

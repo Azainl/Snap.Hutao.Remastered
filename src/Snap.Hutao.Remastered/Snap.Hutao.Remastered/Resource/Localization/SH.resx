@@ -4023,6 +4023,12 @@
   <data name="ViewPageLaunchGameIslandDisplayPaimonDescription" xml:space="preserve">
     <value>在游戏中显示派蒙</value>
   </data>
+  <data name="ViewPageLaunchGameIslandHideGrassHeader" xml:space="preserve">
+    <value>隐藏草地</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHideGrassDescription" xml:space="preserve">
+    <value>在游戏中隐藏草地</value>
+  </data>
   <data name="ViewPageLaunchGameIslandDebugModeHeader" xml:space="preserve">
     <value>调试模式</value>
   </data>

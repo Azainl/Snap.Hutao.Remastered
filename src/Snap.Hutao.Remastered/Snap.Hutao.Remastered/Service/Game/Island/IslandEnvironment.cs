@@ -35,11 +35,13 @@ internal struct IslandEnvironment
     public BOOL DisplayPaimon;
     public BOOL DebugMode;
     public BOOL HidePlayerInfo;
+    public BOOL HideGrass;
     public HookFunctionOffsets Offsets;
 }
 
 internal struct HookFunctionOffsets
 {
+#pragma warning disable CS0649
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint SetUid;
     [JsonConverter(typeof(HexStringToNintConverter))]
@@ -113,6 +115,9 @@ internal struct HookFunctionOffsets
     public uint GetGlobalActor;
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint AvatarPaimonAppear;
+    [JsonConverter(typeof(HexStringToNintConverter))]
+    public uint GetName;
+#pragma warning restore CS0649
 }
 
 public class HexStringToNintConverter : JsonConverter<nint>

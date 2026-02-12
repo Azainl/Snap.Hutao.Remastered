@@ -855,11 +855,18 @@
                                         IsOn="{Binding LaunchOptions.DebugMode.Value, Mode=TwoWay}"
                                         ToolTipService.ToolTip="{shuxm:ResourceString Name=ViewPageLaunchGameIslandDebugModeDescription}"/>
 
+                                    <ToggleSwitch
+                                        Grid.Row="4"
+                                        Grid.Column="2"
+                                        Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandHideGrassHeader}"
+                                        IsOn="{Binding LaunchOptions.HideGrass.Value, Mode=TwoWay}"
+                                        ToolTipService.ToolTip="{shuxm:ResourceString Name=ViewPageLaunchGameIslandHideGrassDescription}"/>
+
                                     <!-- Hidden items should be at the end -->
                                     <ToggleSwitch
                                         Visibility="Collapsed"
-                                        Grid.Row="4"
-                                        Grid.Column="2"
+                                        Grid.Row="5"
+                                        Grid.Column="0"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandHidePlayerInfoHeader}"
                                         IsOn="{Binding LaunchOptions.HidePlayerInfo.Value, Mode=TwoWay}"
                                         ToolTipService.ToolTip="{shuxm:ResourceString Name=ViewPageLaunchGameIslandHidePlayerInfoDescription}"/>
@@ -867,32 +874,32 @@
                                     <ToggleSwitch
                                         Visibility="Collapsed"
                                         Grid.Row="5"
-                                        Grid.Column="0"
+                                        Grid.Column="1"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandResinListItemAllowOriginalResinHeader}"
                                         IsOn="{Binding LaunchOptions.ResinListItemId000106Allowed.Value, Mode=TwoWay}"/>
                                     <ToggleSwitch
                                         Visibility="Collapsed"
                                         Grid.Row="5"
-                                        Grid.Column="1"
+                                        Grid.Column="2"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandResinListItemAllowPrimogemHeader}"
                                         IsOn="{Binding LaunchOptions.ResinListItemId000201Allowed.Value, Mode=TwoWay}"/>
                                     <ToggleSwitch
                                         Visibility="Collapsed"
-                                        Grid.Row="5"
-                                        Grid.Column="2"
+                                        Grid.Row="6"
+                                        Grid.Column="0"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandResinListItemAllowFragileResinHeader}"
                                         IsOn="{Binding LaunchOptions.ResinListItemId107009Allowed.Value, Mode=TwoWay}"/>
 
                                     <ToggleSwitch
                                         Visibility="Collapsed"
                                         Grid.Row="6"
-                                        Grid.Column="0"
+                                        Grid.Column="1"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandResinListItemAllowTransientResinHeader}"
                                         IsOn="{Binding LaunchOptions.ResinListItemId107012Allowed.Value, Mode=TwoWay}"/>
                                     <ToggleSwitch
                                         Visibility="Collapsed"
                                         Grid.Row="6"
-                                        Grid.Column="1"
+                                        Grid.Column="2"
                                         Header="{shuxm:ResourceString Name=ViewPageLaunchGameIslandResinListItemAllowCondensedResinHeader}"
                                         IsOn="{Binding LaunchOptions.ResinListItemId220007Allowed.Value, Mode=TwoWay}"/>
                                 </Grid>

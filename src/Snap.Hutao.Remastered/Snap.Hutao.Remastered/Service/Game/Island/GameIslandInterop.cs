@@ -140,6 +140,7 @@ internal sealed class GameIslandInterop : IGameIslandInterop
         pIslandEnvironment->ResinListItemId107012Allowed = options.ResinListItemId107012Allowed.Value;
         pIslandEnvironment->ResinListItemId220007Allowed = options.ResinListItemId220007Allowed.Value;
         pIslandEnvironment->DisplayPaimon = options.DisplayPaimon.Value;
+        pIslandEnvironment->HideGrass = options.HideGrass.Value;
         pIslandEnvironment->DebugMode = options.DebugMode.Value;
         pIslandEnvironment->HidePlayerInfo = options.HidePlayerInfo.Value;
 

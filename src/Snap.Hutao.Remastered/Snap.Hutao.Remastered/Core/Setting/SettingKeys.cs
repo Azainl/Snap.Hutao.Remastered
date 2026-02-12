@@ -128,6 +128,7 @@ internal static class SettingKeys
     public const string LaunchDisplayPaimon                              = "Snap::Hutao::Game::Island::DisplayPaimon";
     public const string LaunchDebugMode                                  = "Snap::Hutao::Game::Island::DebugMode";
     public const string LaunchHidePlayerInfo                             = "Snap::Hutao::Game::Island::HidePlayerInfo";
+    public const string LaunchHideGrass                               = "Snap::Hutao::Game::Island::HideGrass";
     public const string LaunchRedirectCombineEntry                       = "Snap::Hutao::Game::Island::Synthesis::Redirect";
     public const string LaunchUsingOverlay                               = "Snap::Hutao::Game::Overlay";
     public const string LaunchOverlaySelectedCatalogId                   = "Snap::Hutao::Game::Overlay::CatalogId";

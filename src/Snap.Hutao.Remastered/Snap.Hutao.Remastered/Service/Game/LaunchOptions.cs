@@ -152,6 +152,9 @@ internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePat
     public IObservableProperty<bool> HidePlayerInfo { get => field ??= CreateProperty(SettingKeys.LaunchHidePlayerInfo, false); }
 
     [field: MaybeNull]
+    public IObservableProperty<bool> HideGrass { get => field ??= CreateProperty(SettingKeys.LaunchHideGrass, false); }
+
+    [field: MaybeNull]
     public IObservableProperty<ImmutableArray<AspectRatio>> AspectRatios { get => field ??= CreatePropertyForStructUsingJson(SettingKeys.LaunchAspectRatios, ImmutableArray<AspectRatio>.Empty); }
 
     public AspectRatio? SelectedAspectRatio
