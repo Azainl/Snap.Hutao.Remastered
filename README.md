@@ -79,10 +79,10 @@ https://snaphutaorp.org/
 https://snap.hutaorp.org/  
 
 **元数据仓库：**  
-https//github.com/SnapHutaoRemasteringProject/Snap.Metadata  
+https://github.com/SnapHutaoRemasteringProject/Snap.Metadata  
 
 **API：**  
-https//api.snap.hutaorp.org/  
+https://api.snaphutaorp.org/  
 
 ---
 
