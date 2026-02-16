@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class NotifyDisable
+public sealed class NotifyDisable
 {
     [JsonPropertyName("reply")]
     public bool Reply { get; set; }

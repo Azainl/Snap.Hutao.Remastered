@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class WishCountdownBundle
+public sealed class WishCountdownBundle
 {
     public required ImmutableArray<Countdown> OrangeAvatars { get; init; }
 

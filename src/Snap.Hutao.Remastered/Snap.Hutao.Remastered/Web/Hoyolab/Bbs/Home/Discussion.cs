@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class Discussion
+public sealed class Discussion
 {
     [JsonPropertyName("icon")]
     public required string Icon { get; init; }

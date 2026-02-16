@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal sealed partial class Cookie
+public sealed partial class Cookie
 {
     private readonly SortedDictionary<string, string> inner;
 

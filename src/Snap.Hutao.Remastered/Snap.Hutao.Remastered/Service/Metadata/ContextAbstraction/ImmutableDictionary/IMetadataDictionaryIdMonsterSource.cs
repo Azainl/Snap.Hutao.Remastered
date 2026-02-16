@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdMonsterSource
+public interface IMetadataDictionaryIdMonsterSource
 {
     ImmutableDictionary<MonsterDescribeId, Monster> IdMonsterMap { get; set; }
 }

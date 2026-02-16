@@ -7,7 +7,7 @@ using Windows.System;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionStarwardPlayTimeStatisticsHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionStarwardPlayTimeStatisticsHandler : AbstractLaunchExecutionHandler
 {
     public override async ValueTask ExecuteAsync(LaunchExecutionContext context)
     {

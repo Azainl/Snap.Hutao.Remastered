@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Primitive.Converter;
 
-internal sealed unsafe class IdentityConverter<TWrapper> : JsonConverter<TWrapper>
+public sealed unsafe class IdentityConverter<TWrapper> : JsonConverter<TWrapper>
     where TWrapper : unmanaged
 {
     public override TWrapper Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

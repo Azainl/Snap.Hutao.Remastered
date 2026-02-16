@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class PredownloadStatus
+public sealed class PredownloadStatus
 {
     public PredownloadStatus(string tag, bool finished, int totalBlocks)
     {

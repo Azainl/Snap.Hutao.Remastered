@@ -12,7 +12,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
 [Service(ServiceLifetime.Singleton, typeof(IHoyoPlayService))]
-internal sealed partial class HoyoPlayService : IHoyoPlayService
+public sealed partial class HoyoPlayService : IHoyoPlayService
 {
     private readonly IServiceProvider serviceProvider;
 

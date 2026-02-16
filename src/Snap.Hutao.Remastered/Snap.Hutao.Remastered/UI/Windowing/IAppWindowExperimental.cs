@@ -14,7 +14,7 @@ namespace Microsoft.UI.Windowing;
 [Guid("04DB96C7-DEB6-5BE4-BFDC-1BC0361C8A12")]
 [WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowExperimental))]
 [global::Windows.Foundation.Metadata.ContractVersion(typeof(WindowsAppSDKContract), 65543u)]
-internal interface IAppWindowExperimental
+public interface IAppWindowExperimental
 {
     AppWindowPlacementDetails GetCurrentPlacement();
 

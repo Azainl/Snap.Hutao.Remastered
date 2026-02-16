@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal static class AvatarIds
+public static class AvatarIds
 {
     // 此处的变量名称以 UI_AvatarIcon 为准
     public static readonly AvatarId Ayaka = 10000002;

@@ -9,7 +9,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.ViewModel.Guide;
 
-internal static class StaticResourceHttpHeaderBuilderExtension
+public static class StaticResourceHttpHeaderBuilderExtension
 {
     extension<TBuilder>(TBuilder builder)
         where TBuilder : class, IHttpHeadersBuilder<HttpHeaders>

@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal sealed partial class CultivateEntryView : Item, IPropertyValuesProvider
+public sealed partial class CultivateEntryView : Item, IPropertyValuesProvider
 {
     private CultivateEntryView(CultivateEntry entry, Item item, ImmutableArray<CultivateItemView> items)
     {
@@ -110,9 +110,9 @@ internal sealed partial class CultivateEntryView : Item, IPropertyValuesProvider
 
     public string Description { get; }
 
-    internal Guid EntryId { get; }
+    public Guid EntryId { get; }
 
-    internal CultivateType Type { get; }
+    public CultivateType Type { get; }
 
     public static CultivateEntryView Create(CultivateEntry entry, Item item, ImmutableArray<CultivateItemView> items)
     {

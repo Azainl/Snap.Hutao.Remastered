@@ -6,7 +6,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpRequestOptionsBuilder : IBuilder
+public interface IHttpRequestOptionsBuilder : IBuilder
 {
     HttpRequestOptions Options { get; }
 }

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal class Skill
+public class Skill
 {
     public required SkillId Id { get; init; }
 

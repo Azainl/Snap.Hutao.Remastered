@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeChallenge
+public sealed class HardChallengeChallenge
 {
     /// <summary>
     /// 怪物名称

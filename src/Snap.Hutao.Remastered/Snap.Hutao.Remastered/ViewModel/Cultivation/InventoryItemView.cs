@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Item;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal sealed partial class InventoryItemView : ObservableObject, IEntityAccessWithMetadata<Model.Entity.InventoryItem, Material>
+public sealed partial class InventoryItemView : ObservableObject, IEntityAccessWithMetadata<Model.Entity.InventoryItem, Material>
 {
     public InventoryItemView(Model.Entity.InventoryItem entity, Material inner, ICommand saveCommand)
     {

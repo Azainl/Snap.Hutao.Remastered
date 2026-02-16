@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class ValueResultExtension
+public static class ValueResultExtension
 {
     extension<TValue>(in ValueResult<bool, TValue> valueResult)
     {

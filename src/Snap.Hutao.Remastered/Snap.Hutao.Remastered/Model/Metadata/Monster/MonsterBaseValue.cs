@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Monster;
 
-internal sealed class MonsterBaseValue : BaseValue
+public sealed class MonsterBaseValue : BaseValue
 {
     public required float FireSubHurt { get; init; }
 

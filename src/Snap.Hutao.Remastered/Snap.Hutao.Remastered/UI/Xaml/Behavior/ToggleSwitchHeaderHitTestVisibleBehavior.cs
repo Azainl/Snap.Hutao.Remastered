@@ -7,7 +7,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed class ToggleSwitchHeaderHitTestVisibleBehavior : BehaviorBase<ToggleSwitch>
+public sealed class ToggleSwitchHeaderHitTestVisibleBehavior : BehaviorBase<ToggleSwitch>
 {
     protected override void OnAssociatedObjectLoaded()
     {

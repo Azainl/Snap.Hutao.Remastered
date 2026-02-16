@@ -43,7 +43,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 [TemplatePart(Name = UnfocusedState, Type = typeof(VisualState))]
 [TemplatePart(Name = MaxReachedState, Type = typeof(VisualState))]
 [TemplatePart(Name = MaxUnreachedState, Type = typeof(VisualState))]
-internal sealed partial class AutoSuggestTokenBox : ListViewBase
+public sealed partial class AutoSuggestTokenBox : ListViewBase
 {
     public const string NormalState = "Normal";
     public const string PointerOverState = "PointerOver";

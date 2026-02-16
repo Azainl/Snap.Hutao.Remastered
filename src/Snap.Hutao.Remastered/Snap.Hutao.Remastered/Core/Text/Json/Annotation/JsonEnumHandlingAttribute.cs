@@ -7,7 +7,7 @@ using System.Text.Json.Serialization.Metadata;
 namespace Snap.Hutao.Remastered.Core.Text.Json.Annotation;
 
 [AttributeUsage(AttributeTargets.Property)]
-internal sealed class JsonEnumHandlingAttribute : Attribute
+public sealed class JsonEnumHandlingAttribute : Attribute
 {
     private static readonly Type UnsafeEnumConverterType = typeof(UnsafeEnumConverter<>);
 
@@ -26,7 +26,7 @@ internal sealed class JsonEnumHandlingAttribute : Attribute
         this.writeAs = writeAs;
     }
 
-    internal JsonConverter CreateConverter(JsonPropertyInfo info)
+    public JsonConverter CreateConverter(JsonPropertyInfo info)
     {
         Type converterType = UnsafeEnumConverterType.MakeGenericType(info.PropertyType);
         JsonConverter? converter = Activator.CreateInstance(converterType, readAs, writeAs) as JsonConverter;

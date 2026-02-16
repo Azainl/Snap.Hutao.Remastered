@@ -47,7 +47,7 @@ public sealed partial class App : Application
     /// <summary>
     /// Shortcut to get the <see cref="AppOptions"/> instance.
     /// </summary>
-    internal partial AppOptions Options { get; }
+    public partial AppOptions Options { get; }
 
     partial void PostConstruct(IServiceProvider serviceProvider)
     {

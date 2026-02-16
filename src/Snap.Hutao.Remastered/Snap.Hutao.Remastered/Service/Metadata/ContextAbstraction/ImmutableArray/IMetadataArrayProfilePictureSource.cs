@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayProfilePictureSource
+public interface IMetadataArrayProfilePictureSource
 {
     ImmutableArray<ProfilePicture> ProfilePictures { get; set; }
 }

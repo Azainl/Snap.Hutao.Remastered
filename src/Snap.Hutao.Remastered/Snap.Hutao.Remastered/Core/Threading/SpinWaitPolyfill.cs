@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class SpinWaitPolyfill
+public static class SpinWaitPolyfill
 {
     public static unsafe void SpinWhile(delegate*<bool> condition)
     {

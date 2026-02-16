@@ -10,7 +10,7 @@ using System.Data.Common;
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection;
 
-internal static partial class ServiceCollectionExtension
+public static partial class ServiceCollectionExtension
 {
     [EditorBrowsable(EditorBrowsableState.Never)]
     public static partial IServiceCollection AddServices(this IServiceCollection services);

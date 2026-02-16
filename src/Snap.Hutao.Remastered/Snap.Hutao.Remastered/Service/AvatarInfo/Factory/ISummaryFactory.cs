@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory;
 
-internal interface ISummaryFactory
+public interface ISummaryFactory
 {
     ValueTask<Summary> CreateAsync(SummaryFactoryMetadataContext context, IEnumerable<Model.Entity.AvatarInfo> avatarInfos, CancellationToken token);
 }

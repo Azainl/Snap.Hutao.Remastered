@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpContentBuilderExtension
+public static class HttpContentBuilderExtension
 {
     extension<T>(T builder)
         where T : class, IHttpContentBuilder

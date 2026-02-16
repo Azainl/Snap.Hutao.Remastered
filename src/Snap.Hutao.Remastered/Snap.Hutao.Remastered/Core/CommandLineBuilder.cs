@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal sealed class CommandLineBuilder
+public sealed class CommandLineBuilder
 {
     private const char WhiteSpace = ' ';
 

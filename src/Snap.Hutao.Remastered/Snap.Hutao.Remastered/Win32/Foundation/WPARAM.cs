@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Win32.Foundation;
 
 // ReSharper disable InconsistentNaming
-internal readonly struct WPARAM
+public readonly struct WPARAM
 {
     public readonly nuint Value;
 

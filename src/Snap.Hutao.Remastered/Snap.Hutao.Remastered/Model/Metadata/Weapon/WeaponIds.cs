@@ -6,7 +6,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
-internal static class WeaponIds
+public static class WeaponIds
 {
     public static readonly FrozenSet<uint> BlueStandardWeaponIds =
     [

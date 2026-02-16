@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View;
 
-internal sealed partial class MainView : UserControl, IDataContextInitialized
+public sealed partial class MainView : UserControl, IDataContextInitialized
 {
     public MainView()
     {

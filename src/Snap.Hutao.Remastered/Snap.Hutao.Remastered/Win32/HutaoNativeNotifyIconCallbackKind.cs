@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal enum HutaoNativeNotifyIconCallbackKind
+public enum HutaoNativeNotifyIconCallbackKind
 {
     TaskbarCreated = 0,
     ContextMenu = 1,

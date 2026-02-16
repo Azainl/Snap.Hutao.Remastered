@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Core.Abstraction;
 
-internal interface IBuilder;
+public interface IBuilder;

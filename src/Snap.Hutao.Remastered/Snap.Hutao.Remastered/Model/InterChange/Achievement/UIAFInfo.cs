@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core;
 namespace Snap.Hutao.Remastered.Model.InterChange.Achievement;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIAFInfo
+public sealed class UIAFInfo
 {
     [JsonPropertyName("export_app")]
     public string? ExportApp { get; init; }

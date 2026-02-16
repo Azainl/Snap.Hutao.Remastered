@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class AchievementViewModelSlim : Abstraction.ViewModelSlim<AchievementPage>
+public sealed partial class AchievementViewModelSlim : Abstraction.ViewModelSlim<AchievementPage>
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial AchievementViewModelSlim(IServiceProvider serviceProvider);

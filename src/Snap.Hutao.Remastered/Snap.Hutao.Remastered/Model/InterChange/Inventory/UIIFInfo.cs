@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core;
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIIFInfo
+public sealed class UIIFInfo
 {
     [JsonPropertyName("export_timestamp")]
     public long? ExportTimestamp { get; init; }

@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Service.Abstraction;
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameAccountRepository))]
-internal sealed partial class GameAccountRepository : IGameAccountRepository
+public sealed partial class GameAccountRepository : IGameAccountRepository
 {
     [GeneratedConstructor]
     public partial GameAccountRepository(IServiceProvider serviceProvider);

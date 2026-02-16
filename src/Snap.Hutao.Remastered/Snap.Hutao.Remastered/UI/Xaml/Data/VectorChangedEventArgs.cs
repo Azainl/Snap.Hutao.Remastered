@@ -5,7 +5,7 @@ using Windows.Foundation.Collections;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal sealed partial class VectorChangedEventArgs : IVectorChangedEventArgs
+public sealed partial class VectorChangedEventArgs : IVectorChangedEventArgs
 {
     public VectorChangedEventArgs(CollectionChange change, int index = -1)
     {

@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
-internal sealed class SimpleDateTimeConverter : JsonConverter<DateTime>
+public sealed class SimpleDateTimeConverter : JsonConverter<DateTime>
 {
     private const string Format = "yyyy-MM-dd HH:mm:ss";
 

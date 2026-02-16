@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Control;
 
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
-internal sealed class DeferContentLoader : IDeferContentLoader
+public sealed class DeferContentLoader : IDeferContentLoader
 {
     private readonly WeakReference<FrameworkElement> contentHost = new(default!);
 

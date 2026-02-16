@@ -8,7 +8,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeWindowNonRude
+public sealed unsafe class HutaoNativeWindowNonRude
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -28,12 +28,12 @@ internal sealed unsafe class HutaoNativeWindowNonRude
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeWindowNonRude)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Attach;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Detach;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Attach;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Detach;
 #pragma warning restore CS0649
     }
 }

@@ -6,7 +6,7 @@ using CommunityToolkit.WinUI;
 namespace Snap.Hutao.Remastered.Core.Threading;
 
 [SuppressMessage("", "SH003")]
-internal static class TaskContextExtension
+public static class TaskContextExtension
 {
     extension(ITaskContext taskContext)
     {

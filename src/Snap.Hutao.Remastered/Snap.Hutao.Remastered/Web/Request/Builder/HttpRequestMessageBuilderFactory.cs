@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
 [Service(ServiceLifetime.Singleton, typeof(IHttpRequestMessageBuilderFactory))]
-internal sealed partial class HttpRequestMessageBuilderFactory : IHttpRequestMessageBuilderFactory
+public sealed partial class HttpRequestMessageBuilderFactory : IHttpRequestMessageBuilderFactory
 {
     private readonly JsonHttpContentSerializer jsonHttpContentSerializer;
     private readonly IServiceProvider serviceProvider;

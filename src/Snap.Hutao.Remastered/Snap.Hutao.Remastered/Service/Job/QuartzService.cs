@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Service.Job;
 
 [Service(ServiceLifetime.Singleton, typeof(IQuartzService))]
 [SuppressMessage("", "SH003")]
-internal sealed partial class QuartzService : IQuartzService, IDisposable
+public sealed partial class QuartzService : IQuartzService, IDisposable
 {
     private readonly TaskCompletionSource startupCompleted = new();
 

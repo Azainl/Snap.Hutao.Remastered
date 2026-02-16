@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-7-asyncreaderwriterlock/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncReaderWriterLock
+public sealed class AsyncReaderWriterLock
 {
     private readonly List<string> traces = [];
     private readonly Queue<(string Trace, TaskCompletionSource<Releaser> Tcs)> waitingWriters = [];
@@ -153,13 +153,13 @@ internal sealed class AsyncReaderWriterLock
         toWake?.SetResult(new(this, trace, toWakeIsWriter));
     }
 
-    internal readonly struct Releaser : IDisposable
+    public readonly struct Releaser : IDisposable
     {
         private readonly AsyncReaderWriterLock toRelease;
         private readonly string trace;
         private readonly bool writer;
 
-        internal Releaser(AsyncReaderWriterLock toRelease, string trace, bool writer)
+        public Releaser(AsyncReaderWriterLock toRelease, string trace, bool writer)
         {
             this.toRelease = toRelease;
             this.trace = trace;

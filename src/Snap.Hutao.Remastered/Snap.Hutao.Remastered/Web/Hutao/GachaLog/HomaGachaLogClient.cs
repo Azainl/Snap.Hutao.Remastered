@@ -12,7 +12,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HomaGachaLogClient
+public sealed partial class HomaGachaLogClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

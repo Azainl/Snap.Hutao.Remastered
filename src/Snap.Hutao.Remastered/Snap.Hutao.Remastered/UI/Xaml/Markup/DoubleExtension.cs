@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Markup;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(double))]
-internal sealed partial class DoubleExtension : MarkupExtension
+public sealed partial class DoubleExtension : MarkupExtension
 {
     public string Value { get; set; } = default!;
 

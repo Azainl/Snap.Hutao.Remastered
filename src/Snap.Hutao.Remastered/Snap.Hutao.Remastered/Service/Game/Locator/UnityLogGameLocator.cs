@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
 [Service(ServiceLifetime.Transient, typeof(IGameLocator), Key = GameLocationSourceKind.UnityLog)]
-internal sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
+public sealed partial class UnityLogGameLocator : IGameLocator, IGameLocator2
 {
     private readonly ITaskContext taskContext;
 

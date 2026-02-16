@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Core;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed class RuntimeOptions
+public sealed class RuntimeOptions
 {
     [Obsolete("This property only exist for binding purpose")]
     public Version Version { get => HutaoRuntime.Version; }

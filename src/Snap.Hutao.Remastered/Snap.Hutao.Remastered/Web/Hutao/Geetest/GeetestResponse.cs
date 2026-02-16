@@ -3,9 +3,9 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Geetest;
 
-internal sealed class GeetestResponse
+public sealed class GeetestResponse
 {
-    public static GeetestResponse InternalFailure { get; } = new() { Code = Web.Response.Response.InternalFailure };
+    public static GeetestResponse publicFailure { get; } = new() { Code = Web.Response.Response.publicFailure };
 
     [JsonPropertyName("code")]
     public int Code { get; set; }

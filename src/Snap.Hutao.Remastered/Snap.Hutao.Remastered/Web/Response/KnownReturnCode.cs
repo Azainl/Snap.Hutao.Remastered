@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal enum KnownReturnCode
+public enum KnownReturnCode
 {
     /// <summary>
     /// 用户不存在

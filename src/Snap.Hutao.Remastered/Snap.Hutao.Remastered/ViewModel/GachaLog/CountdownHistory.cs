@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Metadata;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class CountdownHistory
+public sealed class CountdownHistory
 {
     public CountdownHistory(GachaEvent gachaEvent)
     {
@@ -21,5 +21,5 @@ internal sealed class CountdownHistory
 
     public Uri Banner { get; }
 
-    internal DateTimeOffset LastTime { get; }
+    public DateTimeOffset LastTime { get; }
 }

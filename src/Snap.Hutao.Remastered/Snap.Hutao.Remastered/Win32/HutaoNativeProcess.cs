@@ -8,7 +8,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeProcess
+public sealed unsafe class HutaoNativeProcess
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -78,18 +78,18 @@ internal sealed unsafe class HutaoNativeProcess
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeProcess)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Start;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> ResumeMainThread;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> WaitForExit;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Kill;
-        internal readonly delegate* unmanaged[Stdcall]<nint, uint*, HRESULT> GetId;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HANDLE*, HRESULT> GetProcessHandle;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HWND*, HRESULT> GetMainWindowHandle;
-        internal readonly delegate* unmanaged[Stdcall]<nint, BOOL*, uint*, HRESULT> GetExitCodeProcess;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Start;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> ResumeMainThread;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> WaitForExit;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Kill;
+        public readonly delegate* unmanaged[Stdcall]<nint, uint*, HRESULT> GetId;
+        public readonly delegate* unmanaged[Stdcall]<nint, HANDLE*, HRESULT> GetProcessHandle;
+        public readonly delegate* unmanaged[Stdcall]<nint, HWND*, HRESULT> GetMainWindowHandle;
+        public readonly delegate* unmanaged[Stdcall]<nint, BOOL*, uint*, HRESULT> GetExitCodeProcess;
 #pragma warning restore CS0649
     }
 }

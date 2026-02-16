@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class PhysicalDrive
+public static class PhysicalDrive
 {
     /// <summary>
     /// Safely get the SSD information of the physical driver.

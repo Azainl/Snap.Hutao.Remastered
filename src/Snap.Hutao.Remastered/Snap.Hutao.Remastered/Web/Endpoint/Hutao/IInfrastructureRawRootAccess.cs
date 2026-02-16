@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureRawRootAccess
+public interface IInfrastructureRawRootAccess
 {
     string RawRoot { get; }
 }

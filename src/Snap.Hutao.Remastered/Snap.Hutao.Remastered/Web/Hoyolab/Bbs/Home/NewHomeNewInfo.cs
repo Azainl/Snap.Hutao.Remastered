@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class NewHomeNewInfo
+public sealed class NewHomeNewInfo
 {
     [JsonPropertyName("navigator")]
     public required ImmutableArray<AppNavigator> Navigator { get; init; }

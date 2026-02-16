@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 /// <summary>
 /// 祈愿分布类型
 /// </summary>
-internal enum GachaDistributionType
+public enum GachaDistributionType
 {
     /// <summary>
     /// 角色活动

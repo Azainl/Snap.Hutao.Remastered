@@ -13,7 +13,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class BindingClient
+public sealed partial class BindingClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

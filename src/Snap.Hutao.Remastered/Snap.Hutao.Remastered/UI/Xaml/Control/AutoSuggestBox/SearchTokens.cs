@@ -13,7 +13,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal static class SearchTokens
+public static class SearchTokens
 {
     private static readonly ImmutableArray<KeyValuePair<string, SearchToken>> ElementTokens = [.. IntrinsicFrozen.ElementNameValues.Select(static nv => KeyValuePair.Create(nv.Name, new SearchToken(SearchTokenKind.ElementName, nv.Name, nv.Value, iconUri: ElementNameIconConverter.ElementNameToUri(nv.Name))))];
     private static readonly ImmutableArray<KeyValuePair<string, SearchToken>> ItemQuality45Tokens = [.. IntrinsicFrozen.ItemQualityNameValues.Where(static nv => nv.Value >= QualityType.QUALITY_PURPLE).Select(nv => KeyValuePair.Create(nv.Name, new SearchToken(SearchTokenKind.ItemQuality, nv.Name, (int)nv.Value, quality: QualityColorConverter.QualityToColor(nv.Value))))];

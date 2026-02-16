@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
-internal sealed class InternStringConverter : JsonConverter<string?>
+public sealed class InternStringConverter : JsonConverter<string?>
 {
     public override string? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {

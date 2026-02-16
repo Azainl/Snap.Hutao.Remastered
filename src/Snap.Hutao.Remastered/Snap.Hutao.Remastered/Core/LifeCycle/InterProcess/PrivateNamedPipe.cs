@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
-internal static class PrivateNamedPipe
+public static class PrivateNamedPipe
 {
     public const int PrivateVersion = 1;
     public const int FullTrustVersion = 1;

@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
 [SuppressMessage("", "SA1310")]
-internal static class CookieExtension
+public static class CookieExtension
 {
     private const string DEVICEFP = "DEVICEFP";
 

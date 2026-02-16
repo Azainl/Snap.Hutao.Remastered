@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class GachaLogPage : ScopedPage
+public sealed partial class GachaLogPage : ScopedPage
 {
     public GachaLogPage()
     {

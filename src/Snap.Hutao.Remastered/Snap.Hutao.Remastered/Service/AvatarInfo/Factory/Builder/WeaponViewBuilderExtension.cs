@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class WeaponViewBuilderExtension
+public static class WeaponViewBuilderExtension
 {
     public static TBuilder SetAffixLevelNumber<TBuilder>(this TBuilder builder, uint affixLevelNumber)
         where TBuilder : class, IWeaponViewBuilder

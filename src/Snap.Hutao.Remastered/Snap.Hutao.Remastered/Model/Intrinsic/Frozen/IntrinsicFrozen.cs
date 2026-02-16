@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic.Frozen;
 
-internal static class IntrinsicFrozen
+public static class IntrinsicFrozen
 {
     public static FrozenSet<string> AssociationTypes { get; } = NamesFromEnum<AssociationType>(e => e.GetLocalizedDescriptionOrDefault(SH.ResourceManager, CultureInfo.CurrentCulture));
 

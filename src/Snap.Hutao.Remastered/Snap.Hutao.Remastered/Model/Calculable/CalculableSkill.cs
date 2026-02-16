@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal sealed partial class CalculableSkill : ObservableObject, ICalculableSkill
+public sealed partial class CalculableSkill : ObservableObject, ICalculableSkill
 {
     // Only persists current level for non-view skills
     private readonly bool persistsCurrentLevel;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class Risk
+public sealed class Risk
 {
     [JsonPropertyName("risk_ticket")]
     public required string RiskTicket { get; set; }

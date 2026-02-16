@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class AuditInfo
+public sealed class AuditInfo
 {
     [JsonPropertyName("is_nickname_in_audit")]
     public bool IsNicknameInAudit { get; set; }

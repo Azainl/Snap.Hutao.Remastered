@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal class LoginResult
+public class LoginResult
 {
     [JsonPropertyName("token")]
     public TokenWrapper? Token { get; set; } = default!;

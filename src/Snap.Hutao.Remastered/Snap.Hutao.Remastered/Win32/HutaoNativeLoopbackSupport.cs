@@ -9,7 +9,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeLoopbackSupport
+public sealed unsafe class HutaoNativeLoopbackSupport
 {
     private readonly ObjectReference<Vftbl> objRef;
     private readonly ObjectReference<Vftbl2>? objRef2;
@@ -53,21 +53,21 @@ internal sealed unsafe class HutaoNativeLoopbackSupport
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeLoopbackSupport)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HutaoString.Vftbl**, BOOL*, HRESULT> IsEnabled;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> Enable;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HutaoString.Vftbl**, BOOL*, HRESULT> IsEnabled;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> Enable;
 #pragma warning restore CS0649
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeLoopbackSupport2)]
-    internal readonly struct Vftbl2
+    public readonly struct Vftbl2
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> IsPublicFirewallEnabled;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> IsPublicFirewallEnabled;
 #pragma warning restore CS0649
     }
 }

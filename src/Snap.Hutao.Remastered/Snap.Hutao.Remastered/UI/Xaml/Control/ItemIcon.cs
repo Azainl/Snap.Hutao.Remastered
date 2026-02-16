@@ -9,4 +9,4 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 [DependencyProperty<Uri>("Icon")]
 [DependencyProperty<double>("IconOpacity", DefaultValue = 1.0, NotNull = true)]
 [DependencyProperty<Uri>("Badge")]
-internal sealed partial class ItemIcon : Microsoft.UI.Xaml.Controls.Control;
+public sealed partial class ItemIcon : Microsoft.UI.Xaml.Controls.Control;

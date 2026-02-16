@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
-internal sealed partial class UserGameRole : ObservableObject, IPropertyValuesProvider
+public sealed partial class UserGameRole : ObservableObject, IPropertyValuesProvider
 {
     [JsonPropertyName("game_biz")]
     public string GameBiz { get; set; } = default!;

@@ -16,7 +16,7 @@ using Windows.Graphics;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class MainWindow : Microsoft.UI.Xaml.Window,
+public sealed partial class MainWindow : Microsoft.UI.Xaml.Window,
     IXamlWindowClosedHandler,
     IXamlWindowExtendContentIntoTitleBar,
     IXamlWindowHasInitSize
@@ -24,8 +24,11 @@ internal sealed partial class MainWindow : Microsoft.UI.Xaml.Window,
     private readonly LastWindowCloseBehaviorTraits closeBehaviorTraits;
     private readonly App app;
 
+    public static MainWindow Instance { get; private set; } = null!;
+
     public MainWindow(IServiceProvider serviceProvider)
     {
+        Instance = this;
         InitializeComponent();
 
         if (AppWindow.Presenter is OverlappedPresenter presenter)
@@ -49,6 +52,7 @@ internal sealed partial class MainWindow : Microsoft.UI.Xaml.Window,
     public FrameworkElement TitleBarCaptionAccess { get => MainView.TitleBar; }
 
     public ImmutableArray<FrameworkElement> TitleBarPassthrough { get => []; }
+
 
     public void OnWindowClosing(out bool cancel)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class Link
+public sealed class Link
 {
     [JsonPropertyName("thirdparty")]
     public string Thirdparty { get; set; } = default!;

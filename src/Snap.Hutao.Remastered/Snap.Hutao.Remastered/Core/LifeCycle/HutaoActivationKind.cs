@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal enum HutaoActivationKind
+public enum HutaoActivationKind
 {
     None,
     Launch,

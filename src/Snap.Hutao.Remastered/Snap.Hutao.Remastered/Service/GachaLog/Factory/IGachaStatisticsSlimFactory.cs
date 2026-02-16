@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal interface IGachaStatisticsSlimFactory
+public interface IGachaStatisticsSlimFactory
 {
     ValueTask<GachaStatisticsSlim> CreateAsync(GachaLogServiceMetadataContext context, ImmutableArray<GachaItem> items, string uid);
 }

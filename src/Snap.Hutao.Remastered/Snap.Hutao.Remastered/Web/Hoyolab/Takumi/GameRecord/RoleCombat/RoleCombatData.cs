@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatData
+public sealed class RoleCombatData
 {
     [JsonPropertyName("detail")]
     public required RoleCombatDetail Detail { get; init; }

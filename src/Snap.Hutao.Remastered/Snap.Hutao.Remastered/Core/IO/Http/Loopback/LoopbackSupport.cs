@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Win32;
 namespace Snap.Hutao.Remastered.Core.IO.Http.Loopback;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LoopbackSupport : ObservableObject
+public sealed partial class LoopbackSupport : ObservableObject
 {
     private readonly HutaoNativeLoopbackSupport native;
     private readonly string hutaoContainerStringSid;

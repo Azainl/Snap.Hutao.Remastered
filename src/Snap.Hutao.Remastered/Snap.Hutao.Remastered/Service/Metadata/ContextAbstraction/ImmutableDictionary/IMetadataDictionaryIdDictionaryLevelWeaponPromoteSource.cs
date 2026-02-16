@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdDictionaryLevelWeaponPromoteSource
+public interface IMetadataDictionaryIdDictionaryLevelWeaponPromoteSource
 {
     ImmutableDictionary<PromoteId, ImmutableDictionary<PromoteLevel, Promote>> IdDictionaryWeaponLevelPromoteMap { get; set; }
 }

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
-internal sealed class WeaponTypeValue : TypeValue<FightProperty, GrowCurveType>
+public sealed class WeaponTypeValue : TypeValue<FightProperty, GrowCurveType>
 {
     public WeaponTypeValue(FightProperty type, GrowCurveType value, float initValue)
         : base(type, value)

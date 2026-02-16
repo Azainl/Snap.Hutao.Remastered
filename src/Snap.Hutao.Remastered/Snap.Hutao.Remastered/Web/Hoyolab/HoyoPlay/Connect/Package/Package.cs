@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Package;
 
-internal sealed class Package
+public sealed class Package
 {
     [JsonPropertyName("version")]
     public string Version { get; set; } = default!;

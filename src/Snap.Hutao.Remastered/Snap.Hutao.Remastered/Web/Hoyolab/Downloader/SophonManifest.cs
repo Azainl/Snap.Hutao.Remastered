@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal sealed class SophonManifest
+public sealed class SophonManifest
 {
     [JsonPropertyName("category_id")]
     public string CategoryId { get; set; } = default!;

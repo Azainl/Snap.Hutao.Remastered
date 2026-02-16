@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal interface IHomeClient
+public interface IHomeClient
 {
     ValueTask<Response<NewHomeNewInfo>> GetNewHomeInfoAsync(int gid, CancellationToken token = default);
 }

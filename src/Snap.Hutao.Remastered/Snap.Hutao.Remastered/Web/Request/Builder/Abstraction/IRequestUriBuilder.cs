@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Abstraction;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IRequestUriBuilder : IBuilder
+public interface IRequestUriBuilder : IBuilder
 {
     Uri? RequestUri { get; set; }
 }

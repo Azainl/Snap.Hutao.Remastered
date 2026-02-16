@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal static class FightPropertyFormat
+public static class FightPropertyFormat
 {
     public static NameValue<string> ToNameValue(FightProperty property, float value)
     {

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.Yae;
 
-internal static class BinaryReaderExtension
+public static class BinaryReaderExtension
 {
     extension(BinaryReader reader)
     {

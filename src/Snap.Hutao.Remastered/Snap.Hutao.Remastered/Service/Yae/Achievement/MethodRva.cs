@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal sealed class MethodRva
+public sealed class MethodRva
 {
     [JsonPropertyName("doCmd")]
     public required uint DoCmd { get; init; }

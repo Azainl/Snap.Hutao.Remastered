@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Entity;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal interface INotifySuppressionContext
+public interface INotifySuppressionContext
 {
     DailyNoteEntry Entry { get; }
 

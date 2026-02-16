@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax;
 
 [DebuggerDisplay("[{Start}..{End}]")]
-internal readonly struct TextPosition
+public readonly struct TextPosition
 {
     public readonly int Start;
     public readonly int End;

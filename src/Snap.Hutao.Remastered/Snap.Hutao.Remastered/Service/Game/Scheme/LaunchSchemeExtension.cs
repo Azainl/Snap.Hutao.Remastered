@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Game.Scheme;
 
-internal static class LaunchSchemeExtension
+public static class LaunchSchemeExtension
 {
     extension(LaunchScheme scheme)
     {

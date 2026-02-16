@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.DataSigning;
 
-internal enum DataSignAlgorithmVersion
+public enum DataSignAlgorithmVersion
 {
     Gen1,
     Gen2,

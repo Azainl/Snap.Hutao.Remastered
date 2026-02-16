@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class ListExtension
+public static class ListExtension
 {
     extension(List<int> source)
     {

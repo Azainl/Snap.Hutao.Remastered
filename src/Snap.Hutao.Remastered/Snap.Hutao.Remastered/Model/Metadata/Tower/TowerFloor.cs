@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Tower;
 
-internal sealed class TowerFloor : IDefaultIdentity<TowerFloorId>
+public sealed class TowerFloor : IDefaultIdentity<TowerFloorId>
 {
     public required TowerFloorId Id { get; init; }
 

@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Entity;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal static class GachaArchiveOperation
+public static class GachaArchiveOperation
 {
     public static GachaArchive GetOrAdd(IGachaLogRepository repository, string uid, IAdvancedDbCollectionView<GachaArchive> archives)
     {

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class HardChallengeSchedule : IDefaultIdentity<HardChallengeScheduleId>
+public sealed class HardChallengeSchedule : IDefaultIdentity<HardChallengeScheduleId>
 {
     public required HardChallengeScheduleId Id { get; init; }
 

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
-internal abstract class DependencyValueConverter<TFrom, TTo> : DependencyObject, IValueConverter
+public abstract class DependencyValueConverter<TFrom, TTo> : DependencyObject, IValueConverter
 {
     public object? Convert(object value, Type targetType, object parameter, string language)
     {

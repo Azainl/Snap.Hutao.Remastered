@@ -8,7 +8,7 @@ using Windows.System;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionBetterGenshinImpactAutomationHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionBetterGenshinImpactAutomationHandler : AbstractLaunchExecutionHandler
 {
     public override async ValueTask ExecuteAsync(LaunchExecutionContext context)
     {

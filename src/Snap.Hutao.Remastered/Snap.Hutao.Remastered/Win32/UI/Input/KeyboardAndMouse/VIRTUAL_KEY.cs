@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.UI.Input.KeyboardAndMouse;
 
 // ReSharper disable InconsistentNaming
 [SuppressMessage("", "CA1069")]
-internal enum VIRTUAL_KEY : ushort
+public enum VIRTUAL_KEY : ushort
 {
     VK_LBUTTON = 1,
     VK_RBUTTON = 2,

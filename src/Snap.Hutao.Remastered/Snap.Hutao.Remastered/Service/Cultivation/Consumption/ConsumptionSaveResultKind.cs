@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Consumption;
 
-internal enum ConsumptionSaveResultKind
+public enum ConsumptionSaveResultKind
 {
     NoItem,
     NoProject,

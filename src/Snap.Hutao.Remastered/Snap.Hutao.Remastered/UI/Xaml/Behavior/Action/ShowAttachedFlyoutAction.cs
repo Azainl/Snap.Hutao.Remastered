@@ -7,7 +7,7 @@ using Microsoft.Xaml.Interactivity;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior.Action;
 
-internal sealed class ShowAttachedFlyoutAction : DependencyObject, IAction
+public sealed class ShowAttachedFlyoutAction : DependencyObject, IAction
 {
     public object? Execute(object? sender, object parameter)
     {

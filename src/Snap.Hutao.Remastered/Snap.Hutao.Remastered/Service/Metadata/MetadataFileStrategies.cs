@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal static class MetadataFileStrategies
+public static class MetadataFileStrategies
 {
     public static readonly MetadataFileStrategy Achievement = new("Achievement");
     public static readonly MetadataFileStrategy AchievementGoal = new("AchievementGoal");

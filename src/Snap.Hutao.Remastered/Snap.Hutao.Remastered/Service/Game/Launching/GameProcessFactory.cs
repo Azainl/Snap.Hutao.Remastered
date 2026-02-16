@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching;
 
-internal sealed class GameProcessFactory
+public sealed class GameProcessFactory
 {
     public static IProcess CreateForDefault(BeforeLaunchExecutionContext context)
     {

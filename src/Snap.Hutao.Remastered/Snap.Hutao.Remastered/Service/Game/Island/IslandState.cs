@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal enum IslandState
+public enum IslandState
 {
     None = 0,
     Error = 1,

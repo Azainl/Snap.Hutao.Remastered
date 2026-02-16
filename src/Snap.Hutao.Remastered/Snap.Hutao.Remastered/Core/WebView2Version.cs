@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal readonly struct WebView2Version
+public readonly struct WebView2Version
 {
     public readonly string RawVersion;
     public readonly string Version;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Abstraction;
 
-internal interface ITypeName
+public interface ITypeName
 {
     string TypeName { get; }
 }

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal sealed class SkillViewBuilder : ISkillViewBuilder
+public sealed class SkillViewBuilder : ISkillViewBuilder
 {
     public SkillView View { get; } = new();
 }

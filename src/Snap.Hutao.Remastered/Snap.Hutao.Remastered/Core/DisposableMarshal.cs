@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class DisposableMarshal
+public static class DisposableMarshal
 {
     public static void DisposeAndClear<T>(ref T? disposable)
         where T : class, IDisposable

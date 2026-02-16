@@ -21,7 +21,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class GamePackageViewModel : Abstraction.ViewModel
+public sealed partial class GamePackageViewModel : Abstraction.ViewModel
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IGamePackageService gamePackageService;

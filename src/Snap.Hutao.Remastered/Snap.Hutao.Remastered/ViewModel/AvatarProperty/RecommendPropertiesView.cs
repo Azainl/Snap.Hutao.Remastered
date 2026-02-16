@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class RecommendPropertiesView
+public sealed class RecommendPropertiesView
 {
     public ImmutableArray<string?> SandProperties { get; set; }
 

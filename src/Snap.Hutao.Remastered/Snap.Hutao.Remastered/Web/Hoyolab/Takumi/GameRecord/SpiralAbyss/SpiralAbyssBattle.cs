@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.SpiralAbyss;
 
-internal sealed class SpiralAbyssBattle
+public sealed class SpiralAbyssBattle
 {
     [JsonPropertyName("index")]
     public required int Index { get; init; }

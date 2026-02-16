@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection.Abstraction;
 
-internal interface IOverseaSupportFactory<out TClient>
+public interface IOverseaSupportFactory<out TClient>
 {
     TClient Create(bool isOversea);
 }

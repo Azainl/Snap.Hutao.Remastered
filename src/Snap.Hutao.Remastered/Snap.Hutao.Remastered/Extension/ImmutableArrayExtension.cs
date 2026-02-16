@@ -8,7 +8,7 @@ using RequireStaticDelegate = JetBrains.Annotations.RequireStaticDelegateAttribu
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class ImmutableArrayExtension
+public static class ImmutableArrayExtension
 {
     extension<TElement>(ImmutableArray<TElement> array)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum FurnitureDeployType
+public enum FurnitureDeployType
 {
     Interior,
     Exterior,

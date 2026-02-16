@@ -15,7 +15,7 @@ using System.Collections.ObjectModel;
 namespace Snap.Hutao.Remastered.Service.SpiralAbyss;
 
 [Service(ServiceLifetime.Scoped, typeof(ISpiralAbyssService))]
-internal sealed partial class SpiralAbyssService : ISpiralAbyssService
+public sealed partial class SpiralAbyssService : ISpiralAbyssService
 {
     private readonly ISpiralAbyssRepository spiralAbyssRepository;
     private readonly IServiceScopeFactory serviceScopeFactory;

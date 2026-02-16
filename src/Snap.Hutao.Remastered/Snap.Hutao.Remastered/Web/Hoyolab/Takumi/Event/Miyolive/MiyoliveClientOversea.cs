@@ -9,7 +9,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Miyolive;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class MiyoliveClientOversea : IMiyoliveClient
+public sealed partial class MiyoliveClientOversea : IMiyoliveClient
 {
     [GeneratedConstructor]
     public partial MiyoliveClientOversea(IServiceProvider serviceProvider, HttpClient httpClient);

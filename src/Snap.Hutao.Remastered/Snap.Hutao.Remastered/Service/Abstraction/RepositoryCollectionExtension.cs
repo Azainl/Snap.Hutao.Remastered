@@ -7,7 +7,7 @@ using System.Linq.Expressions;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal static class RepositoryCollectionExtension
+public static class RepositoryCollectionExtension
 {
     extension<TEntity>(IRepository<TEntity> repository)
         where TEntity : class

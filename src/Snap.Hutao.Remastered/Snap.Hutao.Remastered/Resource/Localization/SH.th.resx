@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>อีเมลนี้ถูกลงทะเบียนแล้ว</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>ลงทะเบียนล้มเหลว, เซิร์ฟเวอร์ผิดพลาด, โปรดติดต่อผู้พัฒนาเพื่อแก้ไขโดยเร็ว</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>รหัสผ่านผิดพลาด การยกเลิกการลงทะเบียนล้มเหลว</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>ดึงข้อมูลล้มเหลว, กำลังคำนวณข้อมูลสถิติ</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>อัปโหลดบันทึก Spiral Abyss ล้มเหลว, เซิร์ฟเวอร์ผิดพลาด, โปรดติดต่อผู้พัฒนาเพื่อแก้ไขโดยเร็ว</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>อัปโหลดบันทึก Spiral Abyss ล้มเหลว, พบข้อมูลที่ไม่ถูกต้อง</value>
@@ -3979,5 +3973,11 @@
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>การแก้ไขอินเทอร์เฟซพิเศษ</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>ลงทะเบียนล้มเหลว, เซิร์ฟเวอร์ผิดพลาด, โปรดติดต่อผู้พัฒนาเพื่อแก้ไขโดยเร็ว</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>อัปโหลดบันทึก Spiral Abyss ล้มเหลว, เซิร์ฟเวอร์ผิดพลาด, โปรดติดต่อผู้พัฒนาเพื่อแก้ไขโดยเร็ว</value>
   </data>
 </root>

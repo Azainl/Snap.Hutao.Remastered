@@ -6,7 +6,7 @@ using System.Threading.RateLimiting;
 
 namespace Snap.Hutao.Remastered.Core.Threading.RateLimiting;
 
-internal static class StreamCopyRateLimiter
+public static class StreamCopyRateLimiter
 {
     private const double ReplenishmentCountPerSecond = 20;
 

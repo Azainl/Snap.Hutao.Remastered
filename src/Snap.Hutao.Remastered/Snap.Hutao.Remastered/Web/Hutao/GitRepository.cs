@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class GitRepository
+public sealed class GitRepository
 {
     [JsonPropertyName("name")]
     public required string Name { get; set; }

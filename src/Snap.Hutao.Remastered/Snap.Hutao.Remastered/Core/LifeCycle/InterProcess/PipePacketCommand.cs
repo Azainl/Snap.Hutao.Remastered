@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
-internal enum PipePacketCommand : byte
+public enum PipePacketCommand : byte
 {
     None = 0,
     Exit = 1,

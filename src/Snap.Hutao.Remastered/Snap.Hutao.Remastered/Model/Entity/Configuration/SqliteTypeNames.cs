@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class SqliteTypeNames
+public sealed class SqliteTypeNames
 {
     public const string Integer = "INTEGER";
     public const string Real = "REAL";

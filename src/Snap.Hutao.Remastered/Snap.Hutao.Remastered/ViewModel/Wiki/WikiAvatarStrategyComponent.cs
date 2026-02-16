@@ -12,7 +12,7 @@ using Windows.System;
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class WikiAvatarStrategyComponent
+public sealed partial class WikiAvatarStrategyComponent
 {
     private readonly IAvatarStrategyService avatarStrategyService;
     private readonly CultureOptions cultureOptions;

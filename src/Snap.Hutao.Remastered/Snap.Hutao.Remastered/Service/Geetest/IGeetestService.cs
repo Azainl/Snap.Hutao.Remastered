@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hutao.Geetest;
 
 namespace Snap.Hutao.Remastered.Service.Geetest;
 
-internal interface IGeetestService
+public interface IGeetestService
 {
     ValueTask<GeetestData?> TryVerifyGtChallengeAsync(string gt, string challenge, bool isOversea, CancellationToken token = default);
 

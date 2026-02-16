@@ -8,7 +8,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeLogicalDrive
+public sealed unsafe class HutaoNativeLogicalDrive
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -29,11 +29,11 @@ internal sealed unsafe class HutaoNativeLogicalDrive
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeLogicalDrive)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, long*, HRESULT> GetDiskFreeSpace;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, long*, HRESULT> GetDiskFreeSpace;
 #pragma warning restore CS0649
     }
 }

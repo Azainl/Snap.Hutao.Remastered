@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdTowerFloorSource
+public interface IMetadataDictionaryIdTowerFloorSource
 {
     ImmutableDictionary<TowerFloorId, TowerFloor> IdTowerFloorMap { get; set; }
 }

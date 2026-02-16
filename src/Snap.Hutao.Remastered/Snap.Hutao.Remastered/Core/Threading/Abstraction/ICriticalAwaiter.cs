@@ -5,6 +5,6 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Threading.Abstraction;
 
-internal interface ICriticalAwaiter : IAwaiter, ICriticalNotifyCompletion;
+public interface ICriticalAwaiter : IAwaiter, ICriticalNotifyCompletion;
 
-internal interface ICriticalAwaiter<out TResult> : IAwaiter<TResult>, ICriticalNotifyCompletion;
+public interface ICriticalAwaiter<out TResult> : IAwaiter<TResult>, ICriticalNotifyCompletion;

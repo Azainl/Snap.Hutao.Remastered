@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Core;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(Visibility))]
-internal sealed partial class CollapsedWhenProcessElevatedExtension : MarkupExtension
+public sealed partial class CollapsedWhenProcessElevatedExtension : MarkupExtension
 {
     protected override object ProvideValue()
     {

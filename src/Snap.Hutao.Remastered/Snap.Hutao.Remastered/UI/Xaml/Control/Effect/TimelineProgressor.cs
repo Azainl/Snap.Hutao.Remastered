@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Effect;
 
-internal sealed class TimelineProgressor
+public sealed class TimelineProgressor
 {
     public TimelineProgressor(double seconds, bool autoReverse)
     {

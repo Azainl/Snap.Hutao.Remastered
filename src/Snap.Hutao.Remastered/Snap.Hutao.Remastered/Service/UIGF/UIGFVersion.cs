@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-internal enum UIGFVersion
+public enum UIGFVersion
 {
     None,
     UIGF40,

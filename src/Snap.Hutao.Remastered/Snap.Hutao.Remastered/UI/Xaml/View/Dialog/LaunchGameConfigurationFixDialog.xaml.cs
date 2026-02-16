@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<IEnumerable<LaunchScheme>>("KnownSchemes")]
 [DependencyProperty<LaunchScheme>("SelectedScheme")]
-internal sealed partial class LaunchGameConfigurationFixDialog : ContentDialog
+public sealed partial class LaunchGameConfigurationFixDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

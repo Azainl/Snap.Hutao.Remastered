@@ -10,7 +10,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 namespace Snap.Hutao.Remastered.Service.User;
 
 // For performance reason, extension method should avoid using LINQ
-internal static class UserServiceExtension
+public static class UserServiceExtension
 {
     extension(IUserService userService)
     {

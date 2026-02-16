@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class Combine
+public sealed class Combine
 {
     public required CombineId Id { get; init; }
 

@@ -15,7 +15,7 @@ using EntityAchievementArchive = Snap.Hutao.Remastered.Model.Entity.AchievementA
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AchievementImporter
+public sealed partial class AchievementImporter
 {
     private readonly AchievementImporterScopeContext scopeContext;
 

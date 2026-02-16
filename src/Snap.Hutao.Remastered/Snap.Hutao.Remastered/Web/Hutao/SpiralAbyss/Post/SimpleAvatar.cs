@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Post;
 
-internal sealed class SimpleAvatar
+public sealed class SimpleAvatar
 {
     public SimpleAvatar(DetailedCharacter character)
     {

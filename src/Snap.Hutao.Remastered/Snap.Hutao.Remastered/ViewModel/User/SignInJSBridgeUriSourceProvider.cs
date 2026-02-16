@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Bridge;
 
 namespace Snap.Hutao.Remastered.ViewModel.User;
 
-internal sealed class SignInJSBridgeUriSourceProvider : DependencyObject, IJSBridgeUriSourceProvider
+public sealed class SignInJSBridgeUriSourceProvider : DependencyObject, IJSBridgeUriSourceProvider
 {
     public MiHoYoJSBridge CreateJSBridge(IServiceProvider serviceProvider, CoreWebView2 coreWebView2, UserAndUid userAndUid)
     {

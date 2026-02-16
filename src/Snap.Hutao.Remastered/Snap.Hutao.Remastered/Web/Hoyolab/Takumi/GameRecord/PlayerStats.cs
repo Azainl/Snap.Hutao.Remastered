@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class PlayerStats
+public sealed class PlayerStats
 {
     [JsonPropertyName("active_day_number")]
     public int ActiveDayNumber { get; set; }

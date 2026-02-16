@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation.Message;
 
-internal sealed class NavigationPaneToggleMessage;
+public sealed class NavigationPaneToggleMessage;

@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Miyolive;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class MiyoliveClient : IMiyoliveClient
+public sealed partial class MiyoliveClient : IMiyoliveClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

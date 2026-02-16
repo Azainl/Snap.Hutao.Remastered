@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal interface IDefaultIdentity<out TIdentity>
+public interface IDefaultIdentity<out TIdentity>
 {
     TIdentity Id { get; }
 }

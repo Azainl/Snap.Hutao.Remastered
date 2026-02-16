@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IHutaoRoleCombatStatisticsCache
+public interface IHutaoRoleCombatStatisticsCache
 {
     int RecordTotal { get; }
 

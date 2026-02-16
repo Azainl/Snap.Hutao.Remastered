@@ -5,7 +5,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal static class SizeInt32Extension
+public static class SizeInt32Extension
 {
     extension(SizeInt32 sizeInt32)
     {

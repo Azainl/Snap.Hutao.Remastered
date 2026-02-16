@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Auth;
 
-internal sealed class ActionTicketWrapper
+public sealed class ActionTicketWrapper
 {
     [JsonPropertyName("ticket")]
     public string Ticket { get; set; } = default!;

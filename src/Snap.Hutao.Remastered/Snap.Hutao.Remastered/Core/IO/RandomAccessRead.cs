@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class RandomAccessRead
+public static class RandomAccessRead
 {
     public static bool Exactly(SafeFileHandle handle, Span<byte> buffer, long fileOffset)
     {

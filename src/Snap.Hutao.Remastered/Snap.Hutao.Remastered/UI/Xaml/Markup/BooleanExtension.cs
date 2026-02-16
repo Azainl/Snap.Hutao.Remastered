@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Markup;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(bool))]
-internal sealed partial class BooleanExtension : MarkupExtension
+public sealed partial class BooleanExtension : MarkupExtension
 {
     public string Value { get; set; } = default!;
 

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Miyolive;
 
-internal sealed class CodeListWrapper
+public sealed class CodeListWrapper
 {
     [JsonPropertyName("code_list")]
     public required ImmutableArray<CodeWrapper> CodeList { get; init; }

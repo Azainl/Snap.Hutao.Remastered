@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory;
 
 [Service(ServiceLifetime.Transient, typeof(ISummaryFactory))]
-internal sealed partial class SummaryFactory : ISummaryFactory
+public sealed partial class SummaryFactory : ISummaryFactory
 {
     private readonly ITaskContext taskContext;
 

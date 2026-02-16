@@ -13,7 +13,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HutaoInfrastructureClient
+public sealed partial class HutaoInfrastructureClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

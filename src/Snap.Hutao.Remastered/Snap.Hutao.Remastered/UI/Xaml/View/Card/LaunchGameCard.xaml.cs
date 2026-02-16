@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Abstraction;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Card;
 
-internal sealed partial class LaunchGameCard : Button
+public sealed partial class LaunchGameCard : Button
 {
     public LaunchGameCard(IServiceProvider serviceProvider)
     {

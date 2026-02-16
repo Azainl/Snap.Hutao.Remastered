@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class DictionaryExtension
+public static class DictionaryExtension
 {
     public static void DecreaseByValue<TKey, TValue>(this Dictionary<TKey, TValue> dict, TKey key, TValue value)
         where TKey : notnull

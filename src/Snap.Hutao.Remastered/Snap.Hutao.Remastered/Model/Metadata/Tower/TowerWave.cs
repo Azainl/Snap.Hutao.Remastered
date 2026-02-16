@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Tower;
 
-internal sealed class TowerWave
+public sealed class TowerWave
 {
     public required WaveType Type { get; init; }
 

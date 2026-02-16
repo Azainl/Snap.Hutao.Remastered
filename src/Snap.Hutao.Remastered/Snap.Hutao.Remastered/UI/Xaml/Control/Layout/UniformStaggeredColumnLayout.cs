@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
 [DebuggerDisplay("Count = {Count}, Height = {Height}")]
-internal sealed partial class UniformStaggeredColumnLayout : List<UniformStaggeredItem>
+public sealed partial class UniformStaggeredColumnLayout : List<UniformStaggeredItem>
 {
     public double Height { get; private set; }
 

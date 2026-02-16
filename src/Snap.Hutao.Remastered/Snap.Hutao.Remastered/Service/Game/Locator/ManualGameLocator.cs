@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Factory.Picker;
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
 [Service(ServiceLifetime.Transient, typeof(IGameLocator), Key = GameLocationSourceKind.Manual)]
-internal sealed partial class ManualGameLocator : IGameLocator
+public sealed partial class ManualGameLocator : IGameLocator
 {
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
 

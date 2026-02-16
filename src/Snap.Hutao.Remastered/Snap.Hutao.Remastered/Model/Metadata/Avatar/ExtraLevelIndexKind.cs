@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal enum ExtraLevelIndexKind
+public enum ExtraLevelIndexKind
 {
     NormalAttack = 1,
     ElementalSkill = 2,

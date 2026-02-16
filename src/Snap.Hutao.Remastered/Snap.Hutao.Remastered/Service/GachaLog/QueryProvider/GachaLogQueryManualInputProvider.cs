@@ -9,7 +9,7 @@ using System.Web;
 namespace Snap.Hutao.Remastered.Service.GachaLog.QueryProvider;
 
 [Service(ServiceLifetime.Transient, typeof(IGachaLogQueryProvider), Key = RefreshOptionKind.ManualInput)]
-internal sealed partial class GachaLogQueryManualInputProvider : IGachaLogQueryProvider
+public sealed partial class GachaLogQueryManualInputProvider : IGachaLogQueryProvider
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceProvider serviceProvider;

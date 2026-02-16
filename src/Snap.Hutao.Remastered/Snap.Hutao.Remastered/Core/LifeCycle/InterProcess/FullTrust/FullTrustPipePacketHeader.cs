@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
-internal struct FullTrustPipePacketHeader
+public struct FullTrustPipePacketHeader
 {
     public byte Version;
     public FullTrustPipePacketType Type;

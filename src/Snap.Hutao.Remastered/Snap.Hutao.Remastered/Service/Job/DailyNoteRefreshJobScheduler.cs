@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.DailyNote;
 namespace Snap.Hutao.Remastered.Service.Job;
 
 [Service(ServiceLifetime.Transient, typeof(IJobScheduler))]
-internal sealed partial class DailyNoteRefreshJobScheduler : IJobScheduler
+public sealed partial class DailyNoteRefreshJobScheduler : IJobScheduler
 {
     private readonly DailyNoteOptions dailyNoteOptions;
 

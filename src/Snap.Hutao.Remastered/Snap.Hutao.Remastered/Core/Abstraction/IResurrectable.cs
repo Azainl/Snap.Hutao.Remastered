@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Abstraction;
 
-internal interface IResurrectable
+public interface IResurrectable
 {
     void Resurrect();
 }

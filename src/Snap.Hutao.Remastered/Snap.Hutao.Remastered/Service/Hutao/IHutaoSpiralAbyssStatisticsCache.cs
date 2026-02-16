@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IHutaoSpiralAbyssStatisticsCache
+public interface IHutaoSpiralAbyssStatisticsCache
 {
     ImmutableArray<AvatarRankView> AvatarUsageRanks { get; set; }
 

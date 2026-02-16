@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class ThirdPartyToken : IVerifyProvider
+public sealed class ThirdPartyToken : IVerifyProvider
 {
     public ThirdPartyToken(string thirdPartyType, string token)
     {

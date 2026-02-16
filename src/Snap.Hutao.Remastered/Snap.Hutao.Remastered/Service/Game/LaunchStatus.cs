@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal sealed class LaunchStatus
+public sealed class LaunchStatus
 {
     public LaunchStatus(string description)
     {

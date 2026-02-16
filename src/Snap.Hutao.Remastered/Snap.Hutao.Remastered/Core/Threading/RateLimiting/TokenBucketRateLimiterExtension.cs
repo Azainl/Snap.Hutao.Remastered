@@ -6,7 +6,7 @@ using System.Threading.RateLimiting;
 
 namespace Snap.Hutao.Remastered.Core.Threading.RateLimiting;
 
-internal static class TokenBucketRateLimiterExtension
+public static class TokenBucketRateLimiterExtension
 {
     extension(TokenBucketRateLimiter rateLimiter)
     {

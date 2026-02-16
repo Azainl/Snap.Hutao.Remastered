@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announcement;
 
-internal sealed class Announcement : AnnouncementContent
+public sealed class Announcement : AnnouncementContent
 {
     #region Binding
 

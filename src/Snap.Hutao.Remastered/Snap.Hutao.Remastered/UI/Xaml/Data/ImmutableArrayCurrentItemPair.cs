@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal partial class ImmutableArrayCurrentItemPair<T> : ObservableObject
+public partial class ImmutableArrayCurrentItemPair<T> : ObservableObject
 {
     public ImmutableArrayCurrentItemPair(ImmutableArray<T> array)
     {

@@ -1,0 +1,11 @@
+{
+  "name": "Test Plugin",
+  "id": "TestPlugin",
+  "version": {
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  },
+  "author": ["SnapHutaoRemasteringProject"],
+  "description": "A test plugin for Snap Hutao Remastered"
+}

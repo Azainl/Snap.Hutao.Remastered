@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal enum ImportStrategyKind
+public enum ImportStrategyKind
 {
     AggressiveMerge = 0,
     LazyMerge = 1,

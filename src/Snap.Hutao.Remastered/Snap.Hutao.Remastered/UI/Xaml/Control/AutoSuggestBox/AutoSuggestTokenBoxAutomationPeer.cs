@@ -9,7 +9,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal sealed partial class AutoSuggestTokenBoxAutomationPeer : ListViewBaseAutomationPeer, IValueProvider
+public sealed partial class AutoSuggestTokenBoxAutomationPeer : ListViewBaseAutomationPeer, IValueProvider
 {
     public AutoSuggestTokenBoxAutomationPeer(AutoSuggestTokenBox owner)
         : base(owner)

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
-internal interface IDataContextInitialized
+public interface IDataContextInitialized
 {
     void OnDataContextInitialized(IServiceProvider serviceProvider);
 }

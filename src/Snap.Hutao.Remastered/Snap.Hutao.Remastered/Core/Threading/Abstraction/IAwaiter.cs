@@ -5,14 +5,14 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Threading.Abstraction;
 
-internal interface IAwaiter : INotifyCompletion
+public interface IAwaiter : INotifyCompletion
 {
     bool IsCompleted { get; }
 
     void GetResult();
 }
 
-internal interface IAwaiter<out TResult> : INotifyCompletion
+public interface IAwaiter<out TResult> : INotifyCompletion
 {
     bool IsCompleted { get; }
 

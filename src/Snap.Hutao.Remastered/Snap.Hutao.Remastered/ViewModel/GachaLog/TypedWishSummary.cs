@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
+public sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
@@ -68,27 +68,27 @@ internal sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
 
     public required List<SummaryItem> OrangeList { get; init; }
 
-    internal required int MaxOrangePull { get; init; }
+    public required int MaxOrangePull { get; init; }
 
-    internal required int MinOrangePull { get; init; }
+    public required int MinOrangePull { get; init; }
 
-    internal required int TotalOrangePull { get; init; }
+    public required int TotalOrangePull { get; init; }
 
-    internal required double TotalOrangePercent { get; init; }
+    public required double TotalOrangePercent { get; init; }
 
-    internal required int TotalPurplePull { get; init; }
+    public required int TotalPurplePull { get; init; }
 
-    internal required double TotalPurplePercent { get; init; }
+    public required double TotalPurplePercent { get; init; }
 
-    internal required int TotalBluePull { get; init; }
+    public required int TotalBluePull { get; init; }
 
-    internal required double TotalBluePercent { get; init; }
+    public required double TotalBluePercent { get; init; }
 
-    internal required double AverageOrangePull { get; init; }
+    public required double AverageOrangePull { get; init; }
 
-    internal required double AverageUpOrangePull { get; init; }
+    public required double AverageUpOrangePull { get; init; }
 
-    internal int PredictedPullLeftToOrange
+    public int PredictedPullLeftToOrange
     {
         get;
         set
@@ -98,7 +98,7 @@ internal sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
         }
     }
 
-    internal double ProbabilityOfPredictedPullLeftToOrange
+    public double ProbabilityOfPredictedPullLeftToOrange
     {
         get;
         set
@@ -108,7 +108,7 @@ internal sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
         }
     }
 
-    internal double ProbabilityOfNextPullIsOrange
+    public double ProbabilityOfNextPullIsOrange
     {
         get;
         set

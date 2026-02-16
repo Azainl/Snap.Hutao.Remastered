@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Card;
 [DependencyProperty<object>("ImageSource")]
 [DependencyProperty<Visibility>("DotVisibility", DefaultValue = Visibility.Collapsed, NotNull = true)]
 [DependencyProperty<double>("IconSquareLength", NotNull = true)]
-internal sealed partial class CardBlock : Microsoft.UI.Xaml.Controls.Control
+public sealed partial class CardBlock : Microsoft.UI.Xaml.Controls.Control
 {
     public CardBlock()
     {

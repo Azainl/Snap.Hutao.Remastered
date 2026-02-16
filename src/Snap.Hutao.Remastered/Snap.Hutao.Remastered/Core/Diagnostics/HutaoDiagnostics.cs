@@ -10,7 +10,7 @@ using Windows.Storage;
 namespace Snap.Hutao.Remastered.Core.Diagnostics;
 
 [Service(ServiceLifetime.Singleton, typeof(IHutaoDiagnostics))]
-internal sealed partial class HutaoDiagnostics : IHutaoDiagnostics
+public sealed partial class HutaoDiagnostics : IHutaoDiagnostics
 {
     private readonly IServiceProvider serviceProvider;
 

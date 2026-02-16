@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal static class GameScriptVersion
+public static class GameScriptVersion
 {
     public static bool Patch(string configFilePath, string scriptVersionFilePath)
     {

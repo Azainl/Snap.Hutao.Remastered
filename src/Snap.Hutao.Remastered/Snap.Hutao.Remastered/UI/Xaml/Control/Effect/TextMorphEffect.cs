@@ -34,7 +34,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Effect;
 [DependencyProperty<Color>("ColorBrush", NotNull = true, PropertyChangedCallbackName = nameof(OnPropertyChanged))]
 [DependencyProperty<int>("MorphSpeed", NotNull = true, DefaultValue = 2000, PropertyChangedCallbackName = nameof(OnPropertyChanged))]
 [TemplatePart(Name = nameof(PartCanvas), Type = typeof(CanvasControl))]
-internal partial class TextMorphEffect : Microsoft.UI.Xaml.Controls.Control
+public partial class TextMorphEffect : Microsoft.UI.Xaml.Controls.Control
 {
     private const string PartCanvas = "PART_Canvas";
 

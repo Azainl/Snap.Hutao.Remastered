@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class ReliquaryViewBuilderExtension
+public static class ReliquaryViewBuilderExtension
 {
     public static TBuilder SetComposedSubProperties<TBuilder>(this TBuilder builder, ImmutableArray<ReliquaryComposedSubProperty> composedSubProperties)
         where TBuilder : class, IReliquaryViewBuilder

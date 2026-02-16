@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 namespace Snap.Hutao.Remastered.Service.Game;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LaunchStatusOptions : ObservableObject
+public sealed partial class LaunchStatusOptions : ObservableObject
 {
     [ObservableProperty]
     public partial UserGameRole? UserGameRole { get; set; }

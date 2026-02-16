@@ -17,7 +17,7 @@ using System.Globalization;
 namespace Snap.Hutao.Remastered.Service;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class AppOptions : DbStoreOptions
+public sealed partial class AppOptions : DbStoreOptions
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial AppOptions(IServiceProvider serviceProvider);

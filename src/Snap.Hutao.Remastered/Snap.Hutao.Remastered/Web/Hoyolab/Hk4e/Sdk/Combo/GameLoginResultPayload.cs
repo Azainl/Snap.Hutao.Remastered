@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Sdk.Combo;
 
-internal sealed class GameLoginResultPayload
+public sealed class GameLoginResultPayload
 {
     [JsonPropertyName("proto")]
     public string Proto { get; set; } = default!;

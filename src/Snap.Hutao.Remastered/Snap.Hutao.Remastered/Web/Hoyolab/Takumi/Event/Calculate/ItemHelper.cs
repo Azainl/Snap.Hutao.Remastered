@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal static class ItemHelper
+public static class ItemHelper
 {
     public static ImmutableArray<Item> Merge(ImmutableArray<Item> left, ImmutableArray<Item> right)
     {

@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Response;
 
-internal static class LocalizableResponseExtension
+public static class LocalizableResponseExtension
 {
     extension(ILocalizableResponse localizableResponse)
     {

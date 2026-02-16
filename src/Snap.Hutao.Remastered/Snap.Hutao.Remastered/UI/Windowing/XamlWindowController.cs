@@ -33,7 +33,7 @@ namespace Snap.Hutao.Remastered.UI.Windowing;
 
 [SuppressMessage("", "CA1001")]
 [SuppressMessage("", "SA1204")]
-internal sealed class XamlWindowController
+public sealed class XamlWindowController
 {
     private readonly Type windowType;
     private readonly Window window;
@@ -100,7 +100,7 @@ internal sealed class XamlWindowController
 
     [Browsable(false)]
     [EditorBrowsable(EditorBrowsableState.Never)]
-    internal IServiceProvider ServiceProvider { get; }
+    public IServiceProvider ServiceProvider { get; }
 
     private IObservableProperty<BackdropType>? BackdropTypeCallback { get; }
 

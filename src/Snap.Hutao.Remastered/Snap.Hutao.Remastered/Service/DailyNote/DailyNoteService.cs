@@ -16,7 +16,7 @@ using WebDailyNote = Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNo
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
 [Service(ServiceLifetime.Singleton, typeof(IDailyNoteService))]
-internal sealed partial class DailyNoteService : IDailyNoteService, IRecipient<UserRemovedMessage>
+public sealed partial class DailyNoteService : IDailyNoteService, IRecipient<UserRemovedMessage>
 {
     private readonly DailyNoteNotificationOperation dailyNoteNotificationOperation;
     private readonly IDailyNoteRepository dailyNoteRepository;

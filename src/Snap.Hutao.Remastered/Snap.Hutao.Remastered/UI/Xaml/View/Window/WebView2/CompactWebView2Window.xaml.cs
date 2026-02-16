@@ -26,7 +26,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
 [SuppressMessage("", "CA1001")]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class CompactWebView2Window : Microsoft.UI.Xaml.Window,
+public sealed partial class CompactWebView2Window : Microsoft.UI.Xaml.Window,
     INotifyPropertyChanged,
     IXamlWindowExtendContentIntoTitleBar,
     IXamlWindowHasInitSize,

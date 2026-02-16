@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdRoleCombatScheduleSource
+public interface IMetadataDictionaryIdRoleCombatScheduleSource
 {
     ImmutableDictionary<RoleCombatScheduleId, RoleCombatSchedule> IdRoleCombatScheduleMap { get; set; }
 }

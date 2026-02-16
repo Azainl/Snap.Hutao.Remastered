@@ -26,7 +26,7 @@ namespace Snap.Hutao.Remastered.ViewModel.DailyNote;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class DailyNoteViewModel : Abstraction.ViewModel
+public sealed partial class DailyNoteViewModel : Abstraction.ViewModel
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly INavigationService navigationService;

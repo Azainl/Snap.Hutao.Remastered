@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Git;
 
-internal sealed class GitRepositoryException : AggregateException
+public sealed class GitRepositoryException : AggregateException
 {
     public GitRepositoryException(string message, IEnumerable<Exception> innerExceptions)
         : base(message, innerExceptions)

@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
 namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
-internal class AvatarView : INameIconSide<Uri>
+public class AvatarView : INameIconSide<Uri>
 {
     protected AvatarView(Avatar metaAvatar)
     {

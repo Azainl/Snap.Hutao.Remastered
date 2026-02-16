@@ -14,7 +14,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<ImageSource>("QRCodeSource")]
-internal sealed partial class UserQRCodeDialog : ContentDialog, IDisposable
+public sealed partial class UserQRCodeDialog : ContentDialog, IDisposable
 {
     private readonly HoyoPlayPassportClient hoyoPlayPassportClient;
     private readonly IContentDialogFactory contentDialogFactory;

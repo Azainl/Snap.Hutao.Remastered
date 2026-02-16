@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class PropertyNullableSelectionWrapper<T, TSource> : ObservableObject, IObservableProperty<T?>
+public sealed partial class PropertyNullableSelectionWrapper<T, TSource> : ObservableObject, IObservableProperty<T?>
     where T : class
     where TSource : notnull
 {

@@ -5,7 +5,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Snap.Hutao.Remastered.Service.BackgroundActivity;
 
-internal sealed partial class BackgroundActivity : ObservableObject
+public sealed partial class BackgroundActivity : ObservableObject
 {
     public BackgroundActivity(string title, string description)
     {

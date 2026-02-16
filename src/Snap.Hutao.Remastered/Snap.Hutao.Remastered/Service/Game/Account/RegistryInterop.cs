@@ -13,7 +13,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
-internal static class RegistryInterop
+public static class RegistryInterop
 {
     private const string ChineseKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\原神";
     private const string OverseaKeyName = @"HKEY_CURRENT_USER\Software\miHoYo\Genshin Impact";

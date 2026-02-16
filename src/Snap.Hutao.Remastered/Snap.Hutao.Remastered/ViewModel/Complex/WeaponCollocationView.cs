@@ -6,9 +6,9 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal sealed class WeaponCollocationView
+public sealed class WeaponCollocationView
 {
     public required ImmutableArray<AvatarView> Avatars { get; init; }
 
-    internal required WeaponId WeaponId { get; init; }
+    public required WeaponId WeaponId { get; init; }
 }

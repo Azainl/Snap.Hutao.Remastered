@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal interface IProperty<T>
+public interface IProperty<T>
 {
     T Value { get; set; }
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.Yae;
 
-internal enum YaeCommandKind : byte
+public enum YaeCommandKind : byte
 {
     None = 0,
     ResponseAchievement = 1,

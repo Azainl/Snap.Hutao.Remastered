@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class GamePackageIntegrityInfo
+public sealed class GamePackageIntegrityInfo
 {
     public required ImmutableArray<SophonAssetOperation> ConflictedAssets { get; init; }
 

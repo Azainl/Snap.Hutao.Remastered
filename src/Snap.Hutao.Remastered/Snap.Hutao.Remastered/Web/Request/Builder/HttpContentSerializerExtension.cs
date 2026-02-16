@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpContentSerializerExtension
+public static class HttpContentSerializerExtension
 {
     extension(IHttpContentSerializer serializer)
     {

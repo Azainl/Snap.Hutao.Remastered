@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeHotKeyBeforeSwitchCallback
+public readonly unsafe struct HutaoNativeHotKeyBeforeSwitchCallback
 {
     private readonly delegate* unmanaged[Stdcall]<BOOL> value;
 

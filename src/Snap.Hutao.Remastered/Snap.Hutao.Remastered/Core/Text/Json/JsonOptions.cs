@@ -7,7 +7,7 @@ using System.Text.Json.Serialization.Metadata;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json;
 
-internal static class JsonOptions
+public static class JsonOptions
 {
     public static readonly JsonSerializerOptions Default = new()
     {

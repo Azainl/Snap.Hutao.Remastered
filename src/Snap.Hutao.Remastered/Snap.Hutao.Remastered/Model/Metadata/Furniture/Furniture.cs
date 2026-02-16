@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Furniture;
 
-internal sealed class Furniture
+public sealed class Furniture
 {
     public required ImmutableArray<FurnitureTypeId> Types { get; init; }
 

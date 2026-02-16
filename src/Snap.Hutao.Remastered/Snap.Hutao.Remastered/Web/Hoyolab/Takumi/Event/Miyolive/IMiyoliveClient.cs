@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Miyolive;
 
-internal interface IMiyoliveClient
+public interface IMiyoliveClient
 {
     ValueTask<Response<CodeListWrapper>> RefreshCodeAsync(string actId, CancellationToken token = default);
 }

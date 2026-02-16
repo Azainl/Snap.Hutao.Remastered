@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal sealed class AvatarRankView
+public sealed class AvatarRankView
 {
     public required string Floor { get; init; }
 

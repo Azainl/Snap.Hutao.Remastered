@@ -5,4 +5,4 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal interface ISkillViewBuilder : INameIconDescriptionBuilder<SkillView>;
+public interface ISkillViewBuilder : INameIconDescriptionBuilder<SkillView>;

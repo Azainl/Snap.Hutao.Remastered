@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal interface ICurrentXamlWindowReference
+public interface ICurrentXamlWindowReference
 {
     Window? Window { get; set; }
 }

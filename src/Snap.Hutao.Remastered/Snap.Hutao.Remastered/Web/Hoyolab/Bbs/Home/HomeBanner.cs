@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class HomeBanner
+public sealed class HomeBanner
 {
     [JsonPropertyName("cover")]
     public required Uri Cover { get; init; }

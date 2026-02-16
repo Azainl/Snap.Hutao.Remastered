@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class WeaponLevelExperience
+public static class WeaponLevelExperience
 {
     private static ReadOnlySpan<int> FiveStarLevelExperienceData
     {

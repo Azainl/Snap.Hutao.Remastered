@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureMetadataEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureMetadataEndpoints : IInfrastructureRootAccess
 {
     string Metadata(string locale, string fileName)
     {

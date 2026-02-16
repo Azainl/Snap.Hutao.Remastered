@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace Snap.Hutao.Remastered.Factory.Progress;
 
-internal interface IProgressFactory
+public interface IProgressFactory
 {
     IProgress<T> CreateForMainThread<T>(Action<T> handler);
 

@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal interface ISupportNavigationTransitionInfo
+public interface ISupportNavigationTransitionInfo
 {
     NavigationTransitionInfo? TransitionInfo { get; }
 }

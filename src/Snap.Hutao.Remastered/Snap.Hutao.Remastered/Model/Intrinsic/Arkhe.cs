@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Model.Intrinsic;
 /// <summary>
 /// 始基力
 /// </summary>
-internal enum Arkhe
+public enum Arkhe
 {
     /// <summary>
     /// 无

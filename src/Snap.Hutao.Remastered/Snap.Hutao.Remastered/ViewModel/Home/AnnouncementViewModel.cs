@@ -26,7 +26,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Home;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AnnouncementViewModel : Abstraction.ViewModel
+public sealed partial class AnnouncementViewModel : Abstraction.ViewModel
 {
     private readonly IAnnouncementService announcementService;
     private readonly IServiceProvider serviceProvider;

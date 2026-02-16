@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Cultivation;
 
-internal sealed class AutomationInventoryItem
+public sealed class AutomationInventoryItem
 {
     public required uint ItemId { get; set; }
 

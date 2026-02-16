@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Text.Json.Annotation;
 
-internal enum JsonEnumHandling
+public enum JsonEnumHandling
 {
     /// <summary>
     /// 数字

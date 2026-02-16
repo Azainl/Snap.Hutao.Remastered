@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Sdk.Combo;
 
-internal sealed class UrlWrapper
+public sealed class UrlWrapper
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = default!;

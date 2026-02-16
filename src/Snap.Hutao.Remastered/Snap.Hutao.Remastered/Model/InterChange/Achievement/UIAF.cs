@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Model.InterChange.Achievement;
 
 // This class unfortunately can't use required properties because it's been rooted in XamlTypeInfo
 // ReSharper disable once InconsistentNaming
-internal sealed class UIAF
+public sealed class UIAF
 {
     public const string CurrentVersion = "v1.1";
 

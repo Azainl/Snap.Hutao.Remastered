@@ -8,9 +8,9 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal abstract class HttpContentSerializer : IHttpContentSerializer, IHttpContentDeserializer
+public abstract class HttpContentSerializer : IHttpContentSerializer, IHttpContentDeserializer
 {
-    protected internal virtual Encoding DefaultEncoding { get => Encoding.UTF8; }
+    protected virtual Encoding DefaultEncoding { get => Encoding.UTF8; }
 
     public HttpContent? Serialize(object? content, Type contentType, Encoding? encoding)
     {

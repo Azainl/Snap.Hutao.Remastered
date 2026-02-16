@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32;
 
 // ReSharper disable InconsistentNaming
 [SuppressMessage("", "SA1310")]
-internal static class ConstValues
+public static class ConstValues
 {
     public const uint WM_ERASEBKGND = 0x00000014U;
     public const uint WM_NCLBUTTONDBLCLK = 0x000000A3U;

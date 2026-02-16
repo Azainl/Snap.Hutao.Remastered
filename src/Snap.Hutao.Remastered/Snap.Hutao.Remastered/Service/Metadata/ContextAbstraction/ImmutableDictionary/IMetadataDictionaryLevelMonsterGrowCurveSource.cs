@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryLevelMonsterGrowCurveSource
+public interface IMetadataDictionaryLevelMonsterGrowCurveSource
 {
     ImmutableDictionary<Level, TypeValueCollection<GrowCurveType, float>> LevelDictionaryMonsterGrowCurveMap { get; set; }
 }

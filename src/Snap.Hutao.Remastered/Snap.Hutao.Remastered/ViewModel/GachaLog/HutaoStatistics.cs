@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class HutaoStatistics
+public sealed class HutaoStatistics
 {
     public required HutaoWishSummary AvatarEvent { get; init; }
 

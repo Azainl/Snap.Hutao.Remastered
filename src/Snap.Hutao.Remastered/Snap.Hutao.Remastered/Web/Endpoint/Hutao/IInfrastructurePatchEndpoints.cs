@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructurePatchEndpoints : IInfrastructureRootAccess
+public interface IInfrastructurePatchEndpoints : IInfrastructureRootAccess
 {
     string PatchYaeAchievement()
     {

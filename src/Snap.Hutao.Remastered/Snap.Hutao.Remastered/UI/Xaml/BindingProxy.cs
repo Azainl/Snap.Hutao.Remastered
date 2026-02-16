@@ -6,4 +6,4 @@ using Microsoft.UI.Xaml;
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
 [DependencyProperty<object>("DataContext")]
-internal sealed partial class BindingProxy : DependencyObject;
+public sealed partial class BindingProxy : DependencyObject;

@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
-internal sealed partial class EmptyObjectToVisibilityConverter : EmptyObjectToObjectConverter
+public sealed partial class EmptyObjectToVisibilityConverter : EmptyObjectToObjectConverter
 {
     public EmptyObjectToVisibilityConverter()
     {

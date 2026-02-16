@@ -9,7 +9,7 @@ using System.Globalization;
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
 // ReSharper disable PossibleMultipleEnumeration
-internal static class AvatarFilter
+public static class AvatarFilter
 {
     public static Predicate<Avatar>? Compile(SearchData? searchData)
     {
@@ -26,7 +26,7 @@ internal static class AvatarFilter
     {
         List<bool> matches = [];
 
-        // Tokens is a BCL internal Grouping<string>, enumerating will use an internal PartialArrayEnumerator<string>
+        // Tokens is a BCL public Grouping<string>, enumerating will use an public PartialArrayEnumerator<string>
         foreach ((SearchTokenKind kind, IEnumerable<string> tokens) in lookup)
         {
             switch (kind)

@@ -12,7 +12,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameInRegistryAccountService))]
-internal sealed partial class GameInRegistryAccountService : IGameInRegistryAccountService
+public sealed partial class GameInRegistryAccountService : IGameInRegistryAccountService
 {
     private readonly IGameAccountRepository gameAccountRepository;
     private readonly ITaskContext taskContext;

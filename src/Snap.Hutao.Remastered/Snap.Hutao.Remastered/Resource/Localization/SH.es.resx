@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>El correo electrónico actual ya está registrado</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Error al registrarse, error del servidor, por favor, contacta con el desarrollador para solucionarlo</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Contraseña incorrecta, fallo al cerrar sesión</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Error al obtener datos, calculando datos estadísticos</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Error al cargar el registro del Abismo Espiral, error del servidor, por favor, contacta con el desarrollador para solucionarlo</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Error al cargar el registro del Abismo Espiral, se han detectado datos no válidos</value>
@@ -3979,5 +3973,11 @@ Espacio disponible: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Corrección de interfaz especial</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Error al registrarse, error del servidor, por favor, contacta con el desarrollador para solucionarlo</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Error al cargar el registro del Abismo Espiral, error del servidor, por favor, contacta con el desarrollador para solucionarlo</value>
   </data>
 </root>

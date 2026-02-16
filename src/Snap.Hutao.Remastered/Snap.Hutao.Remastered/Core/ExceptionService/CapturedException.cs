@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.ExceptionService;
 
-internal readonly struct CapturedException
+public readonly struct CapturedException
 {
     public readonly SentryId Id;
     public readonly Exception Exception;

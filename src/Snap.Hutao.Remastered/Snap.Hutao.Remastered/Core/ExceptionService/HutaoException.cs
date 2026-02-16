@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.ExceptionService;
 
-internal sealed class HutaoException : Exception
+public sealed class HutaoException : Exception
 {
     [StackTraceHidden]
     public HutaoException(string message, Exception? innerException)

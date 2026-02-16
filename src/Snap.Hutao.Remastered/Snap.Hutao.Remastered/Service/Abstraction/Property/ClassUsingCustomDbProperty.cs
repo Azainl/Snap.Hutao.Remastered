@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Entity.Database;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal partial class ClassUsingCustomDbProperty<T> : DbProperty<T>
+public partial class ClassUsingCustomDbProperty<T> : DbProperty<T>
     where T : class
 {
     private readonly IServiceProvider serviceProvider;

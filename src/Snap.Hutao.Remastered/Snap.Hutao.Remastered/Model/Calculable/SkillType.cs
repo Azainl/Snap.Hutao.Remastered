@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal enum SkillType
+public enum SkillType
 {
     A,
     E,

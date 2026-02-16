@@ -10,7 +10,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal sealed partial class SearchData : ObservableObject
+public sealed partial class SearchData : ObservableObject
 {
     private SearchData(FrozenDictionary<string, SearchToken> availableTokens)
     {

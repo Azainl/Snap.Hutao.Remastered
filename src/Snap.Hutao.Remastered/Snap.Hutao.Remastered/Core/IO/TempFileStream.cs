@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal sealed partial class TempFileStream : Stream
+public sealed partial class TempFileStream : Stream
 {
     private readonly string path;
     private readonly FileStream stream;

@@ -11,7 +11,7 @@ using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDiction
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
 
-internal static class MetadataServiceContextExtension
+public static class MetadataServiceContextExtension
 {
     extension(IMetadataService metadataService)
     {

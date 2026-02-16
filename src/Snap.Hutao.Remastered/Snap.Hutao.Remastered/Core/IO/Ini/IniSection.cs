@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.IO.Ini;
 
-internal sealed class IniSection : IniElement, IEquatable<IniSection>
+public sealed class IniSection : IniElement, IEquatable<IniSection>
 {
     public IniSection(string name, ImmutableArray<IniElement> children)
     {
@@ -48,7 +48,7 @@ internal sealed class IniSection : IniElement, IEquatable<IniSection>
         return HashCode.Combine(Name, Children);
     }
 
-    internal sealed class Builder : IniElement
+    public sealed class Builder : IniElement
     {
         private readonly string name;
         private readonly ImmutableArray<IniElement>.Builder children = ImmutableArray.CreateBuilder<IniElement>();

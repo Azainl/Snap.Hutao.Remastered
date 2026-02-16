@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Downloader.Proto;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal sealed class PackageItemOperationForSophonChunks
+public sealed class PackageItemOperationForSophonChunks
 {
     public PackageItemOperationKind Kind { get; init; }
 

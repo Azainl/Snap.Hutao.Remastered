@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal static class StaticResourcesEndpoints
+public static class StaticResourcesEndpoints
 {
     public static string Root { get => "https://api.snaphutaorp.org"; }
 

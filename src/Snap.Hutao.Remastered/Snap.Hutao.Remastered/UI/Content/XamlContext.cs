@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Content;
 
-internal sealed class XamlContext
+public sealed class XamlContext
 {
     public required IServiceProvider ServiceProvider { get; init; }
 }

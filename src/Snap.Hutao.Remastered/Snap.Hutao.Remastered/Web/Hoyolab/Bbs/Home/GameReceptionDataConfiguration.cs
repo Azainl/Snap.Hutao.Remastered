@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class GameReceptionDataConfiguration
+public sealed class GameReceptionDataConfiguration
 {
     [JsonPropertyName("id")]
     public required int Id { get; init; }

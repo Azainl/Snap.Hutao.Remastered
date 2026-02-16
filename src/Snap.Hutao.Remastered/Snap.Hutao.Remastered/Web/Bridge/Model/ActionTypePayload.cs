@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class ActionTypePayload
+public sealed class ActionTypePayload
 {
     [JsonPropertyName("action_type")]
     public string ActionType { get; set; } = default!;

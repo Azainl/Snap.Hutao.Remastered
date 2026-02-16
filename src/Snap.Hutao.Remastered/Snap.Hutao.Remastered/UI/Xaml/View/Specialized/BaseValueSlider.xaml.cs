@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 
 [DependencyProperty<BaseValueInfo>("BaseValueInfo")]
 [DependencyProperty<bool>("IsPromoteVisible", DefaultValue = true, NotNull = true)]
-internal sealed partial class BaseValueSlider : UserControl
+public sealed partial class BaseValueSlider : UserControl
 {
     public BaseValueSlider()
     {

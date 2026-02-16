@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Abstraction;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpProtocolVersionBuilder : IBuilder
+public interface IHttpProtocolVersionBuilder : IBuilder
 {
     Version Version { get; set; }
 }

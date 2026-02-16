@@ -5,7 +5,7 @@ using CommunityToolkit.WinUI.Converters;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
-internal sealed partial class EmptyObjectToBoolConverter : EmptyObjectToObjectConverter
+public sealed partial class EmptyObjectToBoolConverter : EmptyObjectToObjectConverter
 {
     public EmptyObjectToBoolConverter()
     {

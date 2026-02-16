@@ -5,25 +5,25 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Core.Caching;
 
-internal class InternalImageCacheException : Exception, IInternalException
+public class publicImageCacheException : Exception, IpublicException
 {
-    private InternalImageCacheException(string message, Exception innerException)
+    private publicImageCacheException(string message, Exception innerException)
         : base(message, innerException)
     {
     }
 
-    private InternalImageCacheException(string message)
+    private publicImageCacheException(string message)
         : base(message)
     {
     }
 
-    public static InternalImageCacheException Throw(string message, Exception innerException)
+    public static publicImageCacheException Throw(string message, Exception innerException)
     {
-        throw new InternalImageCacheException(message, innerException);
+        throw new publicImageCacheException(message, innerException);
     }
 
-    public static InternalImageCacheException Throw(string message)
+    public static publicImageCacheException Throw(string message)
     {
-        throw new InternalImageCacheException(message);
+        throw new publicImageCacheException(message);
     }
 }

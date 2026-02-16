@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.Model;
 
-internal sealed class ElevationStatusResponse
+public sealed class ElevationStatusResponse
 {
     public ElevationStatusResponse(bool isElevated, int processId)
     {

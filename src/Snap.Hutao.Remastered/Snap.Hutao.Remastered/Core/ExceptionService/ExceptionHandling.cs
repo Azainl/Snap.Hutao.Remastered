@@ -13,7 +13,7 @@ using System.Runtime.CompilerServices;
 namespace Snap.Hutao.Remastered.Core.ExceptionService;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class ExceptionHandling
+public sealed partial class ExceptionHandling
 {
     private readonly ILogger<ExceptionHandling> logger;
 

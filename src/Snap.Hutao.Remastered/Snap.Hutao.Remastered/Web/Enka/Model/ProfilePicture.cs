@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Enka.Model;
 
-internal sealed class ProfilePicture
+public sealed class ProfilePicture
 {
     [JsonPropertyName("id")]
     public ProfilePictureId Id { get; set; }

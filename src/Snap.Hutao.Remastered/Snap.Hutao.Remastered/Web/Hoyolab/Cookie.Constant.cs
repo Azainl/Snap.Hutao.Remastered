@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab;
 /// 键部分
 /// </summary>
 [SuppressMessage("", "SA1310")]
-internal sealed partial class Cookie
+public sealed partial class Cookie
 {
     public const string LOGIN_TICKET = "login_ticket";
     public const string LOGIN_UID = "login_uid";

@@ -6,7 +6,7 @@ using System.Diagnostics.Contracts;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class ImmutableDictionaryExtension
+public static class ImmutableDictionaryExtension
 {
     extension<TKey, TSource>(IEnumerable<TSource> source)
         where TKey : notnull

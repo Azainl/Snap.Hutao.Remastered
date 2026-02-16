@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class ElementTypeIconConverter : ValueConverter<ElementType, Uri?>
+public sealed partial class ElementTypeIconConverter : ValueConverter<ElementType, Uri?>
 {
     public override Uri? Convert(ElementType from)
     {

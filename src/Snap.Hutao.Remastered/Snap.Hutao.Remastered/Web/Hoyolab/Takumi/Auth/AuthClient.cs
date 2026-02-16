@@ -13,7 +13,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Auth;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class AuthClient
+public sealed partial class AuthClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

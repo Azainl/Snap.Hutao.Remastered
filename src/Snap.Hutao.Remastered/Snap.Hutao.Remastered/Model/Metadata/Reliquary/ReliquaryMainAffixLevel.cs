@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Reliquary;
 
-internal sealed class ReliquaryMainAffixLevel
+public sealed class ReliquaryMainAffixLevel
 {
     public required QualityType Rank { get; init; }
 

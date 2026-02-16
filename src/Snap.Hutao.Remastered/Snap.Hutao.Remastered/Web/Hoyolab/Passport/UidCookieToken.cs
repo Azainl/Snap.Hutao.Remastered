@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class UidCookieToken
+public sealed class UidCookieToken
 {
     [JsonPropertyName("uid")]
     public string Uid { get; set; } = default!;

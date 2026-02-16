@@ -11,7 +11,7 @@ using Snap.Hutao.Remastered.Service.Navigation;
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal abstract partial class ViewModelSlim : ObservableObject
+public abstract partial class ViewModelSlim : ObservableObject
 {
     [GeneratedConstructor]
     public partial ViewModelSlim(IServiceProvider serviceProvider);
@@ -30,7 +30,7 @@ internal abstract partial class ViewModelSlim : ObservableObject
     }
 }
 
-internal abstract partial class ViewModelSlim<TPage> : ViewModelSlim
+public abstract partial class ViewModelSlim<TPage> : ViewModelSlim
     where TPage : Page
 {
     [GeneratedConstructor(CallBaseConstructor = true)]

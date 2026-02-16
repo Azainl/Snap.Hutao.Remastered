@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Scheme;
 
-internal static class KnownLaunchSchemes
+public static class KnownLaunchSchemes
 {
     private static readonly LaunchScheme ServerChineseChannel00SubChannel00Compat = new LaunchSchemeChinese(ChannelType.Default, SubChannelType.Default, false);
     private static readonly LaunchScheme ServerChineseChannel00SubChannel01Compat = new LaunchSchemeChinese(ChannelType.Default, SubChannelType.Official, false);

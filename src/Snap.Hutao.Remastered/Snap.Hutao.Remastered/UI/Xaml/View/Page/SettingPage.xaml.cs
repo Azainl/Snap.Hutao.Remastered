@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Setting;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class SettingPage : ScopedPage
+public sealed partial class SettingPage : ScopedPage
 {
     public SettingPage()
     {

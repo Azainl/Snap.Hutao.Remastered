@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Yae.Achievement;
 
 namespace Snap.Hutao.Remastered.Service.Feature;
 
-internal interface IFeatureService
+public interface IFeatureService
 {
     ValueTask<AchievementFieldId?> GetAchievementFieldIdAsync(string tag);
 }

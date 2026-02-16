@@ -19,7 +19,7 @@ using System.Text;
 namespace Snap.Hutao.Remastered.UI.Shell;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class NotifyIconController : IDisposable
+public sealed partial class NotifyIconController : IDisposable
 {
     private static bool constructed;
 

@@ -5,4 +5,4 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal interface IConstellationViewBuilder : INameIconDescriptionBuilder<ConstellationView>;
+public interface IConstellationViewBuilder : INameIconDescriptionBuilder<ConstellationView>;

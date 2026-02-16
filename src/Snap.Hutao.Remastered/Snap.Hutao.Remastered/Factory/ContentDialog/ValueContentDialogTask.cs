@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Factory.ContentDialog;
 
-internal readonly struct ValueContentDialogTask
+public readonly struct ValueContentDialogTask
 {
     /// <summary>
     /// This task will be completed when the associated dialog finishes queueing and starts to show.

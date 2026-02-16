@@ -6,7 +6,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.DataSigning;
 
-internal sealed class DataSignOptions
+public sealed class DataSignOptions
 {
     private DataSignOptions(SaltType type, bool includeChars, DataSignAlgorithmVersion version, string? body, string query)
     {

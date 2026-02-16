@@ -20,7 +20,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 namespace Snap.Hutao.Remastered.ViewModel.Game;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LaunchGameShared
+public sealed partial class LaunchGameShared
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly INavigationService navigationService;

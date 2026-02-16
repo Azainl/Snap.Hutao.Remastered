@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeSchedule
+public sealed class HardChallengeSchedule
 {
     [JsonPropertyName("schedule_id")]
     public required HardChallengeScheduleId ScheduleId { get; init; }

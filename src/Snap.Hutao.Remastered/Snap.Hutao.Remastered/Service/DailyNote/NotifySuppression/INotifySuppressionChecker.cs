@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal interface INotifySuppressionChecker
+public interface INotifySuppressionChecker
 {
     bool ShouldNotify(INotifySuppressionContext context);
 

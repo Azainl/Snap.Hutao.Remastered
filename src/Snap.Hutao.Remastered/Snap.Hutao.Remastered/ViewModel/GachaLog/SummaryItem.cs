@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class SummaryItem : Item
+public sealed class SummaryItem : Item
 {
     public bool IsUp { get; set; }
 
@@ -23,5 +23,5 @@ internal sealed class SummaryItem : Item
 
     public Windows.UI.Color Color { get; set; }
 
-    internal DateTimeOffset Time { get; set; }
+    public DateTimeOffset Time { get; set; }
 }

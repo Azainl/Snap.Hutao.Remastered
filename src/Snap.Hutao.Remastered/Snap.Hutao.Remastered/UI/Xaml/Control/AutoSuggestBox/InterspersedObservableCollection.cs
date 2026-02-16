@@ -9,7 +9,7 @@ using System.Collections.Specialized;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal sealed partial class InterspersedObservableCollection : IList, IEnumerable<object>, INotifyCollectionChanged
+public sealed partial class InterspersedObservableCollection : IList, IEnumerable<object>, INotifyCollectionChanged
 {
     private readonly Dictionary<int, object> interspersedObjects = [];
     private bool isInsertingOriginal;

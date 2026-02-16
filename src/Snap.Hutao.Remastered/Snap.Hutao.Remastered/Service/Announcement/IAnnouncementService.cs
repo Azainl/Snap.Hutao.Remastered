@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announcement;
 
 namespace Snap.Hutao.Remastered.Service.Announcement;
 
-internal interface IAnnouncementService
+public interface IAnnouncementService
 {
     ValueTask<AnnouncementWrapper?> GetAnnouncementWrapperAsync(string languageCode, Region region, CancellationToken token = default);
 }

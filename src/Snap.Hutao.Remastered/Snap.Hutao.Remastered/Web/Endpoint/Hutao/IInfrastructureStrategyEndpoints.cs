@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureStrategyEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureStrategyEndpoints : IInfrastructureRootAccess
 {
     string StrategyAll()
     {

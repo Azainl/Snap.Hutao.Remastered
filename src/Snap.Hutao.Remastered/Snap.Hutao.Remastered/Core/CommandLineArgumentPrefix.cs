@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal enum CommandLineArgumentPrefix
+public enum CommandLineArgumentPrefix
 {
     WhiteSpace,
     Equal,

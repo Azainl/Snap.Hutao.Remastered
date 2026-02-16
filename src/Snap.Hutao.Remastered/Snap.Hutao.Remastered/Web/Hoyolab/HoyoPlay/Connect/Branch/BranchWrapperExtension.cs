@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
-internal static class BranchWrapperExtension
+public static class BranchWrapperExtension
 {
     extension(BranchWrapper branchWrapper)
     {

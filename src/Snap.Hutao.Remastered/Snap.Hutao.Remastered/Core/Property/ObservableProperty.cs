@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class ObservableProperty<T> : ObservableObject, IObservableProperty<T>
+public sealed partial class ObservableProperty<T> : ObservableObject, IObservableProperty<T>
 {
     private bool deferring;
     private T field;

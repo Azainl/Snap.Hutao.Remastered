@@ -1,12 +1,10 @@
-using Sentry;
 using Snap.Hutao.Remastered.Core.Setting;
 using Snap.Hutao.Remastered.Service.User;
-using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Service.SignIn;
 
 [Service(ServiceLifetime.Singleton, typeof(IAutoSignInService))]
-internal sealed partial class AutoSignInService : IAutoSignInService
+public sealed partial class AutoSignInService : IAutoSignInService
 {
     private readonly IUserService userService;
     private readonly ISignInService signInService;

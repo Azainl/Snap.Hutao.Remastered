@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.SpiralAbyss;
 
-internal sealed class SpiralAbyss
+public sealed class SpiralAbyss
 {
     [JsonPropertyName("schedule_id")]
     public required uint ScheduleId { get; init; }

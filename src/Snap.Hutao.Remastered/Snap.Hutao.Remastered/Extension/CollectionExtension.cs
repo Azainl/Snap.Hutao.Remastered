@@ -6,7 +6,7 @@ using System.Diagnostics.Contracts;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class CollectionExtension
+public static class CollectionExtension
 {
     extension<T>(Collection<T> collection)
     {

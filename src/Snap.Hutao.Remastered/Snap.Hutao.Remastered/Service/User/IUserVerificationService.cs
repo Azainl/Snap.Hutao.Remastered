@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserVerificationService
+public interface IUserVerificationService
 {
     ValueTask<bool> TryVerifyAsync(IVerifyProvider provider, string? rawRisk, bool isOversea, CancellationToken token = default);
 }

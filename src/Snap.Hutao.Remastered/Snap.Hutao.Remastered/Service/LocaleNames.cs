@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Service;
 
-internal static class LocaleNames
+public static class LocaleNames
 {
     public const string CHS = "CHS";    // Chinese (Simplified)
     public const string CHT = "CHT";    // Chinese (Traditional)

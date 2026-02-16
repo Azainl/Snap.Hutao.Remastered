@@ -18,7 +18,7 @@ using Windows.Graphics.Imaging;
 namespace Snap.Hutao.Remastered.Service.BackgroundImage;
 
 [Service(ServiceLifetime.Singleton, typeof(IBackgroundImageService))]
-internal sealed partial class BackgroundImageService : IBackgroundImageService
+public sealed partial class BackgroundImageService : IBackgroundImageService
 {
     private static readonly FrozenSet<string> AllowedFormats = [".bmp", ".gif", ".ico", ".jpg", ".jpeg", ".png", ".tiff", ".webp"];
 
@@ -173,7 +173,7 @@ internal sealed partial class BackgroundImageService : IBackgroundImageService
                         ValueFile file = await scope.ServiceProvider.GetRequiredService<IImageCache>().GetFileFromCacheAsync(url).ConfigureAwait(false);
                         availableBackgroundPathSet = [file];
                     }
-                    catch (InternalImageCacheException)
+                    catch (publicImageCacheException)
                     {
                         availableBackgroundPathSet = [];
                     }

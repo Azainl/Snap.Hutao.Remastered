@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Protobuf;
 
-internal static class CodedInputStreamMarshal
+public static class CodedInputStreamMarshal
 {
     extension(CodedInputStream stream)
     {
@@ -28,7 +28,7 @@ internal static class CodedInputStreamMarshal
         }
     }
 
-    // internal byte[] ReadRawBytes(int size)
+    // public byte[] ReadRawBytes(int size)
     [UnsafeAccessor(UnsafeAccessorKind.Method)]
     private static extern byte[] ReadRawBytes(CodedInputStream stream, int size);
 }

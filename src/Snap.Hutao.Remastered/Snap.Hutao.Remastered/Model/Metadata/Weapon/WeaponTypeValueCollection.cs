@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
 [JsonConverter(typeof(Converter))]
-internal sealed class WeaponTypeValueCollection
+public sealed class WeaponTypeValueCollection
 {
     private readonly SortedDictionary<FightProperty, GrowCurveType> typeValues = [];
     private readonly SortedDictionary<FightProperty, float> typeInitValues = [];
@@ -22,11 +22,11 @@ internal sealed class WeaponTypeValueCollection
         }
     }
 
-    internal ImmutableArray<WeaponTypeValue> Array { get; }
+    public ImmutableArray<WeaponTypeValue> Array { get; }
 
-    internal IReadOnlyDictionary<FightProperty, GrowCurveType> TypeValues { get => typeValues; }
+    public IReadOnlyDictionary<FightProperty, GrowCurveType> TypeValues { get => typeValues; }
 
-    internal IReadOnlyDictionary<FightProperty, float> TypeInitValues { get => typeInitValues; }
+    public IReadOnlyDictionary<FightProperty, float> TypeInitValues { get => typeInitValues; }
 }
 
 [SuppressMessage("", "SA1402")]

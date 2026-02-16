@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal sealed class ManifestDownloadInfo
+public sealed class ManifestDownloadInfo
 {
     [JsonPropertyName("encryption")]
     public uint Encryption { get; set; }

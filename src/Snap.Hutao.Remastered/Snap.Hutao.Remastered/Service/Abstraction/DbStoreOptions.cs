@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal abstract partial class DbStoreOptions : ObservableObject
+public abstract partial class DbStoreOptions : ObservableObject
 {
     private readonly IServiceProvider serviceProvider;
 

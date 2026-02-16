@@ -10,7 +10,7 @@ namespace ABI.Microsoft.UI.Windowing;
 #pragma warning restore IDE0130
 
 [EditorBrowsable(EditorBrowsableState.Never)]
-internal struct AppWindowPlacementDetails
+public struct AppWindowPlacementDetails
 {
     public static IObjectReference? CreateMarshaler(global::Microsoft.UI.Windowing.AppWindowPlacementDetails? obj)
     {

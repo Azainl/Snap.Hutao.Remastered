@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatLinks
+public sealed class RoleCombatLinks
 {
     [JsonPropertyName("lineup_link")]
     public required string LineupLink { get; init; }

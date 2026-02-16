@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Factory.ContentDialog;
 
 // It's a view factory
 [Service(ServiceLifetime.Singleton, typeof(IContentDialogFactory))]
-internal sealed partial class ContentDialogFactory : IContentDialogFactory
+public sealed partial class ContentDialogFactory : IContentDialogFactory
 {
     private readonly ICurrentXamlWindowReference currentWindowReference;
     private readonly IContentDialogQueue contentDialogQueue;

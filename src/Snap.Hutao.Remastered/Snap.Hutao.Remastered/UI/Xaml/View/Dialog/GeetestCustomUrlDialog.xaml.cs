@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Service;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<string>("Text")]
-internal sealed partial class GeetestCustomUrlDialog : ContentDialog
+public sealed partial class GeetestCustomUrlDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

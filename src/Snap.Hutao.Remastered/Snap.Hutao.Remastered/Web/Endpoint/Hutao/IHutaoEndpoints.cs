@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHutaoEndpoints : IHomaEndpoints, IInfrastructureEndpoints;
+public interface IHutaoEndpoints : IHomaEndpoints, IInfrastructureEndpoints;

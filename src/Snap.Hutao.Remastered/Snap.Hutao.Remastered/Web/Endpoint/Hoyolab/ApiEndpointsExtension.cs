@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
-internal static class ApiEndpointsExtension
+public static class ApiEndpointsExtension
 {
     extension(IApiEndpoints apiEndpoints)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
-internal enum ApiEndpointsKind
+public enum ApiEndpointsKind
 {
     Chinese,
     Oversea,

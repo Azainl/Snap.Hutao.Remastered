@@ -11,7 +11,7 @@ using EntityAvatarInfo = Snap.Hutao.Remastered.Model.Entity.AvatarInfo;
 namespace Snap.Hutao.Remastered.Service.AvatarInfo;
 
 [Service(ServiceLifetime.Scoped, typeof(IAvatarInfoService))]
-internal sealed partial class AvatarInfoService : IAvatarInfoService
+public sealed partial class AvatarInfoService : IAvatarInfoService
 {
     private readonly AvatarInfoRepositoryOperation avatarInfoDbBulkOperation;
     private readonly IAvatarInfoRepository avatarInfoRepository;

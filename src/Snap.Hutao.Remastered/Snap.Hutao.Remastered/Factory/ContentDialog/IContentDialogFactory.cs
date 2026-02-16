@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Factory.ContentDialog;
 
-internal interface IContentDialogFactory
+public interface IContentDialogFactory
 {
     bool IsDialogShowing { get; }
 

@@ -5,7 +5,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web;
 
-internal static class HttpHeadersExtension
+public static class HttpHeadersExtension
 {
     extension(HttpHeaders headers)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class NullableExtension
+public static class NullableExtension
 {
     extension<T>(in T? nullable)
         where T : struct

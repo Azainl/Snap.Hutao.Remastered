@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal interface IJsBridgeResult;
+public interface IJsBridgeResult;

@@ -5,7 +5,7 @@ using InGameEquip = Snap.Hutao.Remastered.Service.Yae.PlayerStore.Equip;
 
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
-internal class UIIFEquip
+public class UIIFEquip
 {
     [JsonPropertyName("reliquary")]
     public UIIFReliquary? Reliquary { get; init; }

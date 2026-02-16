@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hutao.RoleCombat;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IHutaoRoleCombatService
+public interface IHutaoRoleCombatService
 {
     ValueTask<RoleCombatStatisticsItem> GetRoleCombatStatisticsItemAsync();
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class HutaoPackageInformation
+public sealed class HutaoPackageInformation
 {
     [JsonPropertyName("version")]
     public Version Version { get; set; } = default!;

@@ -10,7 +10,7 @@ using EntityArchive = Snap.Hutao.Remastered.Model.Entity.AchievementArchive;
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal interface IAchievementService
+public interface IAchievementService
 {
     ValueTask<IAdvancedDbCollectionView<EntityArchive>> GetArchiveCollectionAsync(CancellationToken token = default);
 

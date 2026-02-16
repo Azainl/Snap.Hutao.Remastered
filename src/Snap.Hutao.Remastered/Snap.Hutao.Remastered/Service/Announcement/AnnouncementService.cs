@@ -12,7 +12,7 @@ using WebAnnouncement = Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announceme
 namespace Snap.Hutao.Remastered.Service.Announcement;
 
 [Service(ServiceLifetime.Scoped, typeof(IAnnouncementService))]
-internal sealed partial class AnnouncementService : IAnnouncementService
+public sealed partial class AnnouncementService : IAnnouncementService
 {
     private readonly IServiceScopeFactory serviceScopeFactory;
     private readonly ITaskContext taskContext;

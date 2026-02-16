@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal enum OverseaThirdPartyKind
+public enum OverseaThirdPartyKind
 {
     Google,
     Apple,

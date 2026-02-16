@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class PlayerInfo
+public sealed class PlayerInfo
 {
     [JsonPropertyName("role")]
     public BasicRoleInfo Role { get; set; } = default!;

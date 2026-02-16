@@ -11,7 +11,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 namespace Snap.Hutao.Remastered.Service.Game;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameService))]
-internal sealed partial class GameService : IGameService
+public sealed partial class GameService : IGameService
 {
     private readonly IGameInRegistryAccountService gameInRegistryAccountService;
     private readonly IGameChannelOptionsService gameChannelOptionsService;

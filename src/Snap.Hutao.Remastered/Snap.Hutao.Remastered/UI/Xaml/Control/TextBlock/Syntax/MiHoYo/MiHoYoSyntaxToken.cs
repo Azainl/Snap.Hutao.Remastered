@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal readonly ref struct MiHoYoSyntaxToken
+public readonly ref struct MiHoYoSyntaxToken
 {
     public readonly MiHoYoSyntaxTokenKind Kind;
     public readonly TextPosition Position;

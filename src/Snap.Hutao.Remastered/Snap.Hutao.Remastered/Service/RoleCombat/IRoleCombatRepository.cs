@@ -7,7 +7,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Service.RoleCombat;
 
-internal interface IRoleCombatRepository : IRepository<RoleCombatEntry>
+public interface IRoleCombatRepository : IRepository<RoleCombatEntry>
 {
     void AddRoleCombatEntry(RoleCombatEntry entry);
 

@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.Foundation;
 
 // ReSharper disable InconsistentNaming
 [SuppressMessage("", "SA1310")]
-internal readonly partial struct HRESULT
+public readonly partial struct HRESULT
 {
     public const int E_ASYNC_OPERATION_NOT_STARTED = unchecked((int)0x80000019);
     public const int E_FAIL = unchecked((int)0x80004005);
@@ -34,7 +34,7 @@ internal readonly partial struct HRESULT
 
 #if DEBUG
 [global::System.Diagnostics.DebuggerDisplay("{DebuggerDisplay}")]
-internal readonly partial struct HRESULT
+public readonly partial struct HRESULT
 {
     private string DebuggerDisplay { get => ToString(); }
 }

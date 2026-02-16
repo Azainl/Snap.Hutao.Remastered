@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.AssetOperation;
 
 [SuppressMessage("", "SA1202")]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class GameAssetOperationHDD : GameAssetOperation
+public sealed partial class GameAssetOperationHDD : GameAssetOperation
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial GameAssetOperationHDD(IServiceProvider serviceProvider);

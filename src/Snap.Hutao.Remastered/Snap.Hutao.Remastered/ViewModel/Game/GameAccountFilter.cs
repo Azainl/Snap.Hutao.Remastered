@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Entity.Primitive;
 
 namespace Snap.Hutao.Remastered.ViewModel.Game;
 
-internal sealed class GameAccountFilter
+public sealed class GameAccountFilter
 {
     private readonly SchemeType? type;
 

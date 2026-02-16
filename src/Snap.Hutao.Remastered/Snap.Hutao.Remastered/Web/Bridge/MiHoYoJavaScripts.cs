@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal static class MiHoYoJavaScripts
+public static class MiHoYoJavaScripts
 {
     /* lang=javascript */
     public const string InitializeJsInterfaceScript = """

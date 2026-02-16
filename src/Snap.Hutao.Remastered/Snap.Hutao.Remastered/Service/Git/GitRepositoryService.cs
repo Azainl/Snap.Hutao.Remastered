@@ -17,7 +17,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Git;
 
 [Service(ServiceLifetime.Singleton, typeof(IGitRepositoryService))]
-internal sealed partial class GitRepositoryService : IGitRepositoryService
+public sealed partial class GitRepositoryService : IGitRepositoryService
 {
     private readonly AsyncKeyedLock<string> repoLock = new();
     private readonly BackgroundActivityOptions backgroundActivityOptions;

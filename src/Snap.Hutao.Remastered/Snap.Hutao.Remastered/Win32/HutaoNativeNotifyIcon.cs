@@ -9,7 +9,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeNotifyIcon
+public sealed unsafe class HutaoNativeNotifyIcon
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -50,14 +50,14 @@ internal sealed unsafe class HutaoNativeNotifyIcon
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeNotifyIcon)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HutaoNativeNotifyIconCallback, GCHandle<NotifyIconController>, PCWSTR, HRESULT> Create;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> Recreate;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Destroy;
-        internal readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> IsPromoted;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HutaoNativeNotifyIconCallback, GCHandle<NotifyIconController>, PCWSTR, HRESULT> Create;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> Recreate;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Destroy;
+        public readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> IsPromoted;
 #pragma warning restore CS0649
     }
 }

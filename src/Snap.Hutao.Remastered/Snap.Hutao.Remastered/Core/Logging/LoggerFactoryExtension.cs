@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Logging;
 
-internal static class LoggerFactoryExtension
+public static class LoggerFactoryExtension
 {
     extension(ILoggingBuilder builder)
     {

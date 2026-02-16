@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal interface IGachaLogWishCountdownService
+public interface IGachaLogWishCountdownService
 {
     ValueTask<WishCountdownBundle> GetWishCountdownBundleAsync(GachaLogWishCountdownServiceMetadataContext context);
 }

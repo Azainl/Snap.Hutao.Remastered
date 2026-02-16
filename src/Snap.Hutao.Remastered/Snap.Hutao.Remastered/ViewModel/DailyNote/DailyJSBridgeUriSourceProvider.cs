@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab;
 
 namespace Snap.Hutao.Remastered.ViewModel.DailyNote;
 
-internal sealed class DailyJSBridgeUriSourceProvider : IJSBridgeUriSourceProvider
+public sealed class DailyJSBridgeUriSourceProvider : IJSBridgeUriSourceProvider
 {
     public MiHoYoJSBridge CreateJSBridge(IServiceProvider serviceProvider, CoreWebView2 coreWebView2, UserAndUid userAndUid)
     {

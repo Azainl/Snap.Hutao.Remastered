@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.UI.WindowsAndMessaging;
 
 // ReSharper disable InconsistentNaming
 [SuppressMessage("", "SA1307")]
-internal struct KBDLLHOOKSTRUCT
+public struct KBDLLHOOKSTRUCT
 {
 #pragma warning disable CS0649
     public uint vkCode;

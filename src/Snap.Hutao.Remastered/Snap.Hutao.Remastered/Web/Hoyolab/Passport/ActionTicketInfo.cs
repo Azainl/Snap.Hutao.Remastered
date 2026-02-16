@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class ActionTicketInfo
+public sealed class ActionTicketInfo
 {
     [JsonPropertyName("action_ticket")]
     public required string ActionTicket { get; set; }

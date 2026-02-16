@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal interface ITokenStringContainer
+public interface ITokenStringContainer
 {
     string? Text { get; set; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
-internal interface IGameLocator
+public interface IGameLocator
 {
     ValueTask<ValueResult<bool, string>> LocateSingleGamePathAsync();
 }

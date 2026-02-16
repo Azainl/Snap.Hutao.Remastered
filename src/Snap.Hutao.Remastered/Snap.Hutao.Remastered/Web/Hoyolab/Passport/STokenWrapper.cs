@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 /// <summary>
 /// SToken 包装器
 /// </summary>
-internal sealed class STokenWrapper
+public sealed class STokenWrapper
 {
     /// <summary>
     /// 构造一个新的SToken 包装器

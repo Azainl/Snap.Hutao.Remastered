@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
-internal enum PipePacketContentType : byte
+public enum PipePacketContentType : byte
 {
     None = 0,
     Json = 1,

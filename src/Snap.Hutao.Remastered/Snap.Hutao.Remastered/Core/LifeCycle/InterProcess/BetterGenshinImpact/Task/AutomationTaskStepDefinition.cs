@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Task;
 
-internal sealed class AutomationTaskStepDefinition
+public sealed class AutomationTaskStepDefinition
 {
     public required string Description { get; set; }
 }

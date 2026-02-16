@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal static class CurrentXamlWindowReferenceExtension
+public static class CurrentXamlWindowReferenceExtension
 {
     extension(ICurrentXamlWindowReference reference)
     {

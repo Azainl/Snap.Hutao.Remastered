@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal interface ICalculableSource<out TResult>
+public interface ICalculableSource<out TResult>
     where TResult : ICalculable
 {
     public TResult ToCalculable();

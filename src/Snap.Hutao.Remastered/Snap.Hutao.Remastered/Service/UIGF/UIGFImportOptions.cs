@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-internal sealed class UIGFImportOptions
+public sealed class UIGFImportOptions
 {
     public required Model.InterChange.GachaLog.UIGF UIGF { get; set; }
 

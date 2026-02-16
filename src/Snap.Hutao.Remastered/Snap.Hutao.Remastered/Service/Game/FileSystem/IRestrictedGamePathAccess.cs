@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal interface IRestrictedGamePathAccess
+public interface IRestrictedGamePathAccess
 {
     IObservableProperty<GamePathEntry?> GamePathEntry { get; }
 

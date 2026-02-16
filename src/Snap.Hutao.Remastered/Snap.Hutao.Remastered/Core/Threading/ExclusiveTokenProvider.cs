@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal sealed partial class ExclusiveTokenProvider : IDisposable
+public sealed partial class ExclusiveTokenProvider : IDisposable
 {
     private readonly Lock syncRoot = new();
     private volatile CancellationTokenSource? cts = new();

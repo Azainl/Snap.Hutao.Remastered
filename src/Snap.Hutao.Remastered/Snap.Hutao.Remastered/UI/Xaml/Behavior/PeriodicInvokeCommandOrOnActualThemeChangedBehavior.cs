@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 [DependencyProperty<TimeSpan>("Period", NotNull = true)]
 [DependencyProperty<ICommand>("Command")]
 [DependencyProperty<object>("CommandParameter")]
-internal sealed partial class PeriodicInvokeCommandOrOnActualThemeChangedBehavior : BehaviorBase<FrameworkElement>
+public sealed partial class PeriodicInvokeCommandOrOnActualThemeChangedBehavior : BehaviorBase<FrameworkElement>
 {
     private CancellationTokenSource actualThemeChangedCts = new();
     private CancellationTokenSource periodicTimerStopCts = new();

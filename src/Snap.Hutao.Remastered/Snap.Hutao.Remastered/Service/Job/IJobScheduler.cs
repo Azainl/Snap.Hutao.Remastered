@@ -5,7 +5,7 @@ using Quartz;
 
 namespace Snap.Hutao.Remastered.Service.Job;
 
-internal interface IJobScheduler
+public interface IJobScheduler
 {
     ValueTask ScheduleAsync(IScheduler scheduler);
 }

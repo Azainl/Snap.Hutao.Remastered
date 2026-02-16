@@ -24,7 +24,7 @@ namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
+public sealed partial class SpiralAbyssViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly ISpiralAbyssService spiralAbyssService;

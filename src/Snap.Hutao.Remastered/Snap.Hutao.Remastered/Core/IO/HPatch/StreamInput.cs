@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal unsafe struct StreamInput : IDisposable
+public unsafe struct StreamInput : IDisposable
 {
 #pragma warning disable CS0169
 #pragma warning disable CA1823

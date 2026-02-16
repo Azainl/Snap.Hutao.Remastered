@@ -6,7 +6,7 @@ using Windows.Foundation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
-internal sealed class WrapItem
+public sealed class WrapItem
 {
     public WrapItem(int index)
     {

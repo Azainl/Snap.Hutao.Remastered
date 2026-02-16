@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class TimestampToLocalTimeStringConverter : ValueConverter<long, string>
+public sealed partial class TimestampToLocalTimeStringConverter : ValueConverter<long, string>
 {
     public override string Convert(long from)
     {

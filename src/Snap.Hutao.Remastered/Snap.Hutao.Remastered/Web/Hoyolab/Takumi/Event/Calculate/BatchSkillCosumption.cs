@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class BatchSkillCosumption
+public sealed class BatchSkillCosumption
 {
     [JsonPropertyName("consume_list")]
     public List<Item> ConsumeList { get; set; } = default!;

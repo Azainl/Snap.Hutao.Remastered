@@ -6,7 +6,7 @@ using System.Collections.Concurrent;
 namespace Snap.Hutao.Remastered.Service.Game;
 
 [JsonConverter(typeof(AspectRatioConverter))]
-internal sealed class AspectRatio : IEquatable<AspectRatio>
+public sealed class AspectRatio : IEquatable<AspectRatio>
 {
     public AspectRatio(double width, double height)
     {
@@ -50,7 +50,7 @@ internal sealed class AspectRatio : IEquatable<AspectRatio>
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class AspectRatioConverter : JsonConverter<AspectRatio>
+public sealed class AspectRatioConverter : JsonConverter<AspectRatio>
 {
     public const string WidthPropertyName = "width";
     public const string HeightPropertyName = "height";

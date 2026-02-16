@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeDataEntry
+public sealed class HardChallengeDataEntry
 {
     [JsonPropertyName("best")]
     public HardChallengeBest? Best { get; init; }

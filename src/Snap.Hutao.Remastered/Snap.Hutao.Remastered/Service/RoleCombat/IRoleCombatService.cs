@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.RoleCombat;
 
-internal interface IRoleCombatService
+public interface IRoleCombatService
 {
     ValueTask<ObservableCollection<RoleCombatView>> GetRoleCombatViewCollectionAsync(RoleCombatMetadataContext context, UserAndUid userAndUid);
 

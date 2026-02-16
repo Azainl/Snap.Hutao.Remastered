@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal enum DaysOfWeek
+public enum DaysOfWeek
 {
     Any,
 

@@ -5,4 +5,4 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpContentHeadersBuilder : IHttpContentBuilder, IHttpHeadersBuilder<HttpContentHeaders>;
+public interface IHttpContentHeadersBuilder : IHttpContentBuilder, IHttpHeadersBuilder<HttpContentHeaders>;

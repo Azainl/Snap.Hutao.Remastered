@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hutao.Response;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal readonly struct TypedWishSummaryBuilderContext
+public readonly struct TypedWishSummaryBuilderContext
 {
     public readonly IServiceProvider ServiceProvider;
     public readonly ITaskContext TaskContext;

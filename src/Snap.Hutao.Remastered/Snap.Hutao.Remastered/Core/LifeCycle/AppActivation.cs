@@ -13,6 +13,7 @@ using Snap.Hutao.Remastered.Service.Job;
 using Snap.Hutao.Remastered.Service.Metadata;
 using Snap.Hutao.Remastered.Service.Navigation;
 using Snap.Hutao.Remastered.Service.Notification;
+using Snap.Hutao.Remastered.Service.Plugin;
 using Snap.Hutao.Remastered.Service.SignIn;
 using Snap.Hutao.Remastered.UI.Input.HotKey;
 using Snap.Hutao.Remastered.UI.Shell;
@@ -29,7 +30,7 @@ namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
 [Service(ServiceLifetime.Singleton, typeof(IAppActivation))]
 [SuppressMessage("", "CA1001")]
-internal sealed partial class AppActivation : IAppActivation, IAppActivationActionHandlersAccess
+public sealed partial class AppActivation : IAppActivation, IAppActivationActionHandlersAccess
 {
     public const string Action = nameof(Action);
     public const string Uid = nameof(Uid);
@@ -208,8 +209,9 @@ internal sealed partial class AppActivation : IAppActivation, IAppActivationActi
         [
             serviceProvider.GetRequiredService<HotKeyOptions>().InitializeAsync().AsTask(),
             serviceProvider.GetRequiredService<HutaoUserOptions>().InitializeAsync().AsTask(),
-            serviceProvider.GetRequiredService<IMetadataService>().InitializeInternalAsync().AsTask(),
-            serviceProvider.GetRequiredService<IQuartzService>().StartAsync()
+            serviceProvider.GetRequiredService<IMetadataService>().InitializepublicAsync().AsTask(),
+            serviceProvider.GetRequiredService<IQuartzService>().StartAsync(),
+            serviceProvider.GetRequiredService<IPluginService>().LoadAllPluginsAsync()
         ]).ConfigureAwait(false);
 
 

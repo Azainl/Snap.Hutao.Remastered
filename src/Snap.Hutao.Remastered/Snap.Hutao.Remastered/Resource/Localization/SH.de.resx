@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>Die aktuelle E-Mail-Adresse ist bereits registriert</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Registrierung fehlgeschlagen, Serverfehler, bitte kontaktiere den Entwickler, um dies zu beheben</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Falsches Passwort, Abmeldung fehlgeschlagen</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Fehler beim Abrufen der Daten, die Statistikdaten werden berechnet</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Das Hochladen des Spiral Abyss-Protokolls ist fehlgeschlagen, Serverfehler, bitte kontaktiere den Entwickler, um dies zu beheben</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Das Hochladen des Spiral Abyss-Protokolls ist fehlgeschlagen, ungültige Daten erkannt</value>
@@ -3979,5 +3973,11 @@ Verfügbarer Speicherplatz: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Spezielle Oberflächenkorrektur</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Registrierung fehlgeschlagen, Serverfehler, bitte kontaktiere den Entwickler, um dies zu beheben</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Das Hochladen des Spiral Abyss-Protokolls ist fehlgeschlagen, Serverfehler, bitte kontaktiere den Entwickler, um dies zu beheben</value>
   </data>
 </root>

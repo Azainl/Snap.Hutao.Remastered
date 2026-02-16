@@ -10,7 +10,7 @@ using Snap.Hutao.Remastered.Service.Metadata;
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AchievementViewModelScopeContext
+public sealed partial class AchievementViewModelScopeContext
 {
     [GeneratedConstructor]
     public partial AchievementViewModelScopeContext(IServiceProvider serviceProvider);

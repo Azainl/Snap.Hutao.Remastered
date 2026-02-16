@@ -5,5 +5,5 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal interface IEquipViewBuilder<out T> : INameIconDescriptionBuilder<T>
+public interface IEquipViewBuilder<out T> : INameIconDescriptionBuilder<T>
     where T : EquipView;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
-internal sealed class RedeemUseRequest
+public sealed class RedeemUseRequest
 {
     public RedeemUseRequest(string code)
     {

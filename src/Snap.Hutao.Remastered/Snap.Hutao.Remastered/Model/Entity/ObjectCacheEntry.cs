@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("object_cache")]
-internal sealed class ObjectCacheEntry
+public sealed class ObjectCacheEntry
 {
     [Key]
     public string Key { get; set; } = default!;

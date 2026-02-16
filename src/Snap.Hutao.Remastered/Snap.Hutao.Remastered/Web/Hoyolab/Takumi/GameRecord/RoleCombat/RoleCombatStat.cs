@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatStat
+public sealed class RoleCombatStat
 {
     [JsonPropertyName("difficulty_id")]
     public required RoleCombatDifficultyLevel DifficultyId { get; init; }

@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
 [Service(ServiceLifetime.Transient, typeof(IOverseaSupportFactory<IUserClient>))]
 
-internal sealed partial class UserClientFactory : OverseaSupportFactory<IUserClient, UserClient, UserClientOversea>
+public sealed partial class UserClientFactory : OverseaSupportFactory<IUserClient, UserClient, UserClientOversea>
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial UserClientFactory(IServiceProvider serviceProvider);

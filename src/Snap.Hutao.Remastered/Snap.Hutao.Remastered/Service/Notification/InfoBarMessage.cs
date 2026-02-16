@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Service.Notification;
 
-internal sealed class InfoBarMessage
+public sealed class InfoBarMessage
 {
     public InfoBarSeverity Severity { get; init; }
 

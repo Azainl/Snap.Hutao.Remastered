@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class ReliquaryProperty
+public sealed class ReliquaryProperty
 {
     [JsonPropertyName("property_type")]
     public FightProperty PropertyType { get; set; }

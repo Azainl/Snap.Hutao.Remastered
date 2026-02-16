@@ -15,7 +15,7 @@ namespace Microsoft.UI.Windowing;
 [Guid("639EC5B2-AC0C-5BBF-8422-98DCA540D219")]
 [WindowsRuntimeHelperType(typeof(global::ABI.Microsoft.UI.Windowing.IAppWindowPlacementDetails))]
 [global::Windows.Foundation.Metadata.ContractVersion(typeof(WindowsAppSDKContract), 65543u)]
-internal interface IAppWindowPlacementDetails
+public interface IAppWindowPlacementDetails
 {
     RectInt32 ArrangeRect { get; }
 

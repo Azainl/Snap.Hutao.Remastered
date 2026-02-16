@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class AvatarCardConverter : ValueConverter<string, Uri>, IIconNameToUriConverter
+public sealed partial class AvatarCardConverter : ValueConverter<string, Uri>, IIconNameToUriConverter
 {
     private const string CostumeCard = "UI_AvatarIcon_Costume_Card.png";
     private static readonly Uri UIAvatarIconCostumeCard = StaticResourcesEndpoints.StaticRaw("AvatarCard", CostumeCard).ToUri();

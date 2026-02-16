@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class Background
+public sealed class Background
 {
     [JsonPropertyName("image")]
     public required string Image { get; init; }

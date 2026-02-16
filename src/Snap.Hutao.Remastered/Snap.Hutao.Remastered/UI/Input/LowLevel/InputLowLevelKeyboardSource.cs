@@ -10,9 +10,9 @@ using static Snap.Hutao.Remastered.Win32.ConstValues;
 
 namespace Snap.Hutao.Remastered.UI.Input.LowLevel;
 
-internal delegate void InputLowLevelKeyboardSourceEventHandler(LowLevelKeyEventArgs args);
+public delegate void InputLowLevelKeyboardSourceEventHandler(LowLevelKeyEventArgs args);
 
-internal static class InputLowLevelKeyboardSource
+public static class InputLowLevelKeyboardSource
 {
     public static event InputLowLevelKeyboardSourceEventHandler? KeyDown;
 

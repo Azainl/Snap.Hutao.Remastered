@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
 [Flags]
-internal enum Theme : byte
+public enum Theme : byte
 {
     BaseMask = 0x03,
     None = 0x00,

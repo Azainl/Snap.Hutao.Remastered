@@ -20,7 +20,7 @@ namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
+public sealed partial class RoleCombatViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
 {
     private readonly IRoleCombatService roleCombatService;
     private readonly IServiceProvider serviceProvider;

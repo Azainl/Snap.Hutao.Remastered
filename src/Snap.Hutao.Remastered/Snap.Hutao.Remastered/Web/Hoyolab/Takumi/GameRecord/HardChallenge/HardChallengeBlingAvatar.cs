@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal class HardChallengeBlingAvatar : HardChallengeSimpleAvatar
+public class HardChallengeBlingAvatar : HardChallengeSimpleAvatar
 {
     /// <summary>
     /// 最终是否上榜

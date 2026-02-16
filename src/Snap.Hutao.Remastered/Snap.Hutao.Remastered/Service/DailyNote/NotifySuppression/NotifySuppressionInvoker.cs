@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Entity;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal static class NotifySuppressionInvoker
+public static class NotifySuppressionInvoker
 {
     public static void Check(DailyNoteEntry entry, out List<DailyNoteNotifyInfo> infos)
     {

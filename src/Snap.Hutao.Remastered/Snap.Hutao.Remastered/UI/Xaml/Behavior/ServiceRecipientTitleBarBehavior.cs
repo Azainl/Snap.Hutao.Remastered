@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.UI.Content;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed class ServiceRecipientTitleBarBehavior : BehaviorBase<TitleBar>
+public sealed class ServiceRecipientTitleBarBehavior : BehaviorBase<TitleBar>
 {
     protected override void OnAssociatedObjectLoaded()
     {

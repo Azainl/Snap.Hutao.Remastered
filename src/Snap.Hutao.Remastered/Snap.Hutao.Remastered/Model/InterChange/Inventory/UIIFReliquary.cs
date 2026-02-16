@@ -8,7 +8,7 @@ using InGameReliquary = Snap.Hutao.Remastered.Service.Yae.PlayerStore.Reliquary;
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIIFReliquary
+public sealed class UIIFReliquary
 {
     [JsonPropertyName("level")]
     public ReliquaryLevel Level { get; init; }

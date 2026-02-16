@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection;
 
-internal static class DependencyInjection
+public static class DependencyInjection
 {
     public static ServiceProvider Initialize()
     {

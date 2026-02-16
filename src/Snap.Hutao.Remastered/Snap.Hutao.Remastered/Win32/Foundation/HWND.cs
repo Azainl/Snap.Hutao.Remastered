@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Win32.Foundation;
 
-internal readonly struct HWND
+public readonly struct HWND
 {
 #pragma warning disable CS0649
     public readonly nint Value;

@@ -9,7 +9,7 @@ using Windows.System;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
-internal sealed class UpdateLogContentProvider : IWebView2ContentProvider
+public sealed class UpdateLogContentProvider : IWebView2ContentProvider
 {
     private string? languageCode;
 

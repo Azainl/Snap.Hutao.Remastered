@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Core.ExceptionService;
 
-internal static class ExceptionAttachment
+public static class ExceptionAttachment
 {
     private static readonly ConditionalWeakTable<Exception, SentryAttachment> Attachments = [];
 

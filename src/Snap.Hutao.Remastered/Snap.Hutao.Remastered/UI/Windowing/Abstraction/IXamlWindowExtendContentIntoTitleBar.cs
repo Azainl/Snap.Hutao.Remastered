@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Windowing.Abstraction;
 
-internal interface IXamlWindowExtendContentIntoTitleBar
+public interface IXamlWindowExtendContentIntoTitleBar
 {
     FrameworkElement TitleBarCaptionAccess { get; }
 

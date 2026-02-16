@@ -6,7 +6,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 
 namespace Snap.Hutao.Remastered.ViewModel.User;
 
-internal sealed class UserAndUid
+public sealed class UserAndUid
 {
     public UserAndUid(EntityUser user, in PlayerUid role)
     {

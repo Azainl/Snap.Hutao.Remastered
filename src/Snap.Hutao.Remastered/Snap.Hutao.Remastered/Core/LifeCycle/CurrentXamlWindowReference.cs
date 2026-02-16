@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml;
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
 [Service(ServiceLifetime.Singleton, typeof(ICurrentXamlWindowReference))]
-internal sealed class CurrentXamlWindowReference : ICurrentXamlWindowReference
+public sealed class CurrentXamlWindowReference : ICurrentXamlWindowReference
 {
     // In fact, we only store MainWindow & GuideWindow
     private readonly WeakReference<Window> reference = new(default!);

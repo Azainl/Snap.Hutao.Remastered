@@ -32,7 +32,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 [DependencyProperty<bool>("IsBetaGameInstallEnabled", CreateDefaultValueCallbackName = nameof(CreateDefaultIsBetaGameInstallEnabledValue), NotNull = true)]
 [DependencyProperty<bool>("IsBetaGameInstall", DefaultValue = false, PropertyChangedCallbackName = nameof(OnIsBetaGameInstallChanged), NotNull = true)]
 [DependencyProperty<string>("BetaBuildBodyFilePath")]
-internal sealed partial class LaunchGameInstallGameDialog : ContentDialog
+public sealed partial class LaunchGameInstallGameDialog : ContentDialog
 {
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
     private readonly JsonSerializerOptions jsonSerializerOptions;

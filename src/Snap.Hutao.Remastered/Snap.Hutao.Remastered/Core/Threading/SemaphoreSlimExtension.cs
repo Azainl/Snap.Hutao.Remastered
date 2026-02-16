@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class SemaphoreSlimExtension
+public static class SemaphoreSlimExtension
 {
     extension(SemaphoreSlim semaphoreSlim)
     {

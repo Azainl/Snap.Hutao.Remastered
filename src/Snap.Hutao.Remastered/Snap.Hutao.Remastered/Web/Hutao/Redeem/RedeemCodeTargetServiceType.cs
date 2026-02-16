@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
-internal enum RedeemCodeTargetServiceType : uint
+public enum RedeemCodeTargetServiceType : uint
 {
     None = 0U,
     GachaLog = 1U,

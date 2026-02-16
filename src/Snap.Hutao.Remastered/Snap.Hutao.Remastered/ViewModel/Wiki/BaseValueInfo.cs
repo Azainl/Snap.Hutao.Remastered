@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed partial class BaseValueInfo : ObservableObject
+public sealed partial class BaseValueInfo : ObservableObject
 {
     private readonly ImmutableArray<PropertyCurveValue> propValues;
     private readonly BaseValueInfoMetadataContext metadataContext;

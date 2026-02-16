@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal static class NavigationExtraDataSupport
+public static class NavigationExtraDataSupport
 {
     public static Task<bool> NotifyRecipientAsync(object? target, INavigationCompletionSource data, CancellationToken token)
     {
@@ -35,7 +35,7 @@ internal static class NavigationExtraDataSupport
         return result;
     }
 
-    internal sealed class FrameworkElementLoaded
+    public sealed class FrameworkElementLoaded
     {
         private readonly FrameworkElement element;
         private readonly TaskCompletionSource loadTcs = new();

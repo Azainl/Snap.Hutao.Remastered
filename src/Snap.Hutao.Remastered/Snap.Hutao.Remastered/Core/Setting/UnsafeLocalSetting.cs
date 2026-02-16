@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Setting;
 
-internal static class UnsafeLocalSetting
+public static class UnsafeLocalSetting
 {
     public static unsafe TEnum Get<TEnum>(string key, TEnum defaultValue = default!)
         where TEnum : unmanaged, Enum

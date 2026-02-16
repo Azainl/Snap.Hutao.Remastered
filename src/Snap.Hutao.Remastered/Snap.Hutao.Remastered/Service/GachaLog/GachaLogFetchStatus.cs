@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal sealed class GachaLogFetchStatus
+public sealed class GachaLogFetchStatus
 {
     public GachaLogFetchStatus(GachaType configType)
     {

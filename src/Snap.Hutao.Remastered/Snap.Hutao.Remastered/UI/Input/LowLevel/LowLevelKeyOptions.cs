@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.UI.Input.LowLevel;
 [SuppressMessage("", "SA1500")]
 [SuppressMessage("", "SA1513")]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LowLevelKeyOptions : ObservableObject
+public sealed partial class LowLevelKeyOptions : ObservableObject
 {
     public static ImmutableArray<NameValue<VIRTUAL_KEY>> VirtualKeys { get => Input.VirtualKeys.Values; }
 

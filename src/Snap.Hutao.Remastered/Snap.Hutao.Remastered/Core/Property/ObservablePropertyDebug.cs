@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace Snap.Hutao.Remastered.Core.Property;
 
 [DebuggerDisplay("{Name,nq} = {Value}")]
-internal sealed partial class ObservablePropertyDebug<T> : IObservableProperty<T>
+public sealed partial class ObservablePropertyDebug<T> : IObservableProperty<T>
 {
     private readonly IObservableProperty<T> source;
 

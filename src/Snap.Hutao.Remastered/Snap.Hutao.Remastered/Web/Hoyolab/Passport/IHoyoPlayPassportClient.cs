@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal interface IHoyoPlayPassportClient
+public interface IHoyoPlayPassportClient
 {
     ValueTask<Response<AuthTicketWrapper>> CreateAuthTicketAsync(User user, CancellationToken token = default);
 

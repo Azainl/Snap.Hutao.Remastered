@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class BatchConsumption
+public sealed class BatchConsumption
 {
     [JsonPropertyName("items")]
     public ImmutableArray<Consumption> Items { get; set; }

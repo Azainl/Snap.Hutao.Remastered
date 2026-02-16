@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal sealed class NativeConfiguration
+public sealed class NativeConfiguration
 {
     [JsonPropertyName("storeCmdId")]
     public required uint StoreCmdId { get; init; }

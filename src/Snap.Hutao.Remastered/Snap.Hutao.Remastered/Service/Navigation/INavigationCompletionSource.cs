@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal interface INavigationCompletionSource
+public interface INavigationCompletionSource
 {
     [SuppressMessage("", "SH003")]
     Task WaitForCompletionAsync();

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal class Certification
+public class Certification
 {
     [JsonPropertyName("type")]
     public int Type { get; set; }

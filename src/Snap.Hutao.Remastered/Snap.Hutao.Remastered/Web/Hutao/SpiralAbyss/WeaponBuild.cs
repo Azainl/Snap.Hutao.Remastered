@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal abstract class WeaponBuild
+public abstract class WeaponBuild
 {
     public WeaponId WeaponId { get; set; }
 }

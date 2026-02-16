@@ -13,7 +13,7 @@ using System.Text;
 namespace Snap.Hutao.Remastered.Web.Hutao.Geetest;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class CustomGeetestClient
+public sealed partial class CustomGeetestClient
 {
     private static readonly FrozenSet<string> ImpossibleHosts =
     [
@@ -40,12 +40,12 @@ internal sealed partial class CustomGeetestClient
             {
                 await taskContext.SwitchToMainThreadAsync();
                 appOptions.GeetestCustomCompositeUrl.Value = string.Empty;
-                return GeetestResponse.InternalFailure;
+                return GeetestResponse.publicFailure;
             }
         }
         catch
         {
-            return GeetestResponse.InternalFailure;
+            return GeetestResponse.publicFailure;
         }
 
         string url;
@@ -55,19 +55,19 @@ internal sealed partial class CustomGeetestClient
             if (format.MinimumArgumentCount < 2)
             {
                 // If there are less than 2 arguments, we cannot format the string correctly.
-                return GeetestResponse.InternalFailure;
+                return GeetestResponse.publicFailure;
             }
 
             url = string.Format(CultureInfo.CurrentCulture, format.Format, gt, challenge);
         }
         catch (FormatException)
         {
-            return GeetestResponse.InternalFailure;
+            return GeetestResponse.publicFailure;
         }
 
         if (string.IsNullOrEmpty(template) || !Uri.TryCreate(url, UriKind.Absolute, out Uri? uri))
         {
-            return GeetestResponse.InternalFailure;
+            return GeetestResponse.publicFailure;
         }
 
         HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
@@ -78,6 +78,6 @@ internal sealed partial class CustomGeetestClient
             .SendAsync<GeetestResponse>(httpClient, false, token)
             .ConfigureAwait(false);
 
-        return resp ?? GeetestResponse.InternalFailure;
+        return resp ?? GeetestResponse.publicFailure;
     }
 }

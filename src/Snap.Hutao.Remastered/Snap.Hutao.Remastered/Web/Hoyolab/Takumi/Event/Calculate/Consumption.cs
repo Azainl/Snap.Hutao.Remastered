@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
 // Api will return empty array if no consumption
-internal class Consumption
+public class Consumption
 {
     [JsonPropertyName("avatar_consume")]
     public ImmutableArray<Item> AvatarConsume { get; set; }

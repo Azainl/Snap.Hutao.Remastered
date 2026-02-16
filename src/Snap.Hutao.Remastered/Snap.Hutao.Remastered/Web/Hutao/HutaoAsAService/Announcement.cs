@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.HutaoAsAService;
 
-internal sealed class Announcement : UploadAnnouncement
+public sealed class Announcement : UploadAnnouncement
 {
     public long Id { get; set; }
 

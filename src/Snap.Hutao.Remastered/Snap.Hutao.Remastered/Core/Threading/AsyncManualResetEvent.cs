@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-1-asyncmanualresetevent/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncManualResetEvent
+public sealed class AsyncManualResetEvent
 {
     private volatile TaskCompletionSource tcs = new();
 

@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal static class AlchemyCrafting
+public static class AlchemyCrafting
 {
     public static double UnWeighted(double orangeItems, double purpleItems, double blueItems, double greenItems)
     {

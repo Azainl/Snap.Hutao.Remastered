@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class SkillViewBuilderExtension
+public static class SkillViewBuilderExtension
 {
     public static TBuilder SetDescription<TBuilder>(this TBuilder builder, string description)
         where TBuilder : class, ISkillViewBuilder

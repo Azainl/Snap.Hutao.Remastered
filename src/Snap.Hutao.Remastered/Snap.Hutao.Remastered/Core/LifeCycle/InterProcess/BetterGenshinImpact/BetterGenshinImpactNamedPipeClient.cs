@@ -9,7 +9,7 @@ using System.IO.Pipes;
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class BetterGenshinImpactNamedPipeClient : IDisposable
+public sealed partial class BetterGenshinImpactNamedPipeClient : IDisposable
 {
     private readonly NamedPipeClientStream clientStream = new(".", "BetterGenshinImpact.NamedPipe", PipeDirection.InOut, PipeOptions.Asynchronous | PipeOptions.WriteThrough);
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation.Message;
 
-internal sealed class NavigationNavigateMessage
+public sealed class NavigationNavigateMessage
 {
     public required Type PageType { get; set; }
 

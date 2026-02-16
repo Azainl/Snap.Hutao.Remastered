@@ -9,7 +9,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<IReadOnlyList<UIGFUidSelection>>("ItemsSource")]
-internal sealed partial class UIGFExportDialog : ContentDialog
+public sealed partial class UIGFExportDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private ImmutableArray<uint> selectedUids = [];

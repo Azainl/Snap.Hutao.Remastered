@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeWindowSubclassCallback
+public readonly unsafe struct HutaoNativeWindowSubclassCallback
 {
     private readonly delegate* unmanaged[Stdcall]<HWND, uint, WPARAM, LPARAM, GCHandle<XamlWindowSubclass>, LRESULT*, BOOL> value;
 

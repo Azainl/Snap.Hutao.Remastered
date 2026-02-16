@@ -23,7 +23,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal class MiHoYoJSBridge
+public class MiHoYoJSBridge
 {
     private readonly Guid bridgeId = Guid.NewGuid();
     private readonly AsyncLock webMessageLock = new();

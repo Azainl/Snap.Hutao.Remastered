@@ -13,7 +13,7 @@ using AvatarView = Snap.Hutao.Remastered.ViewModel.Complex.AvatarView;
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
 [Service(ServiceLifetime.Singleton, typeof(IHutaoSpiralAbyssStatisticsCache))]
-internal sealed partial class HutaoSpiralAbyssStatisticsCache : StatisticsCache, IHutaoSpiralAbyssStatisticsCache
+public sealed partial class HutaoSpiralAbyssStatisticsCache : StatisticsCache, IHutaoSpiralAbyssStatisticsCache
 {
     private readonly IServiceProvider serviceProvider;
 

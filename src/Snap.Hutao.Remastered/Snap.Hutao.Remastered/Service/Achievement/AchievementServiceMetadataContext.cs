@@ -10,7 +10,7 @@ using MetadataAchievement = Snap.Hutao.Remastered.Model.Metadata.Achievement.Ach
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal sealed class AchievementServiceMetadataContext : IMetadataContext,
+public sealed class AchievementServiceMetadataContext : IMetadataContext,
     IMetadataArrayAchievementSource,
     IMetadataDictionaryIdAchievementSource
 {

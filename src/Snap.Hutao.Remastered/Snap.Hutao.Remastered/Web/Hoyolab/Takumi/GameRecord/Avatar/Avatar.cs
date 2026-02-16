@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
 // Index
-internal class Avatar
+public class Avatar
 {
     [JsonPropertyName("id")]
     public AvatarId Id { get; set; }

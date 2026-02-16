@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.Abstraction;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IObjectCacheRepository : IRepository<ObjectCacheEntry>
+public interface IObjectCacheRepository : IRepository<ObjectCacheEntry>
 {
     ValueTask AddObjectCacheAsync<T>(string key, TimeSpan expire, T data)
         where T : class;

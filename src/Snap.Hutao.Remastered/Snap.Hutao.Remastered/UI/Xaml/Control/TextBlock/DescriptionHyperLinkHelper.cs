@@ -7,6 +7,6 @@ using Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock;
 
 [DependencyProperty<Tuple<MiHoYoSyntaxLinkKind, uint>>("LinkData", IsAttached = true, TargetType = typeof(Hyperlink))]
-internal partial class DescriptionHyperLinkHelper
+public partial class DescriptionHyperLinkHelper
 {
 }

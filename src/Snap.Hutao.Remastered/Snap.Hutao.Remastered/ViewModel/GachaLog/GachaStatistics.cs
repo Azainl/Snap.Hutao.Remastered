@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class GachaStatistics
+public sealed class GachaStatistics
 {
     public required TypedWishSummary AvatarWish { get; init; }
 

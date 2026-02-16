@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class TarotCard
+public sealed class TarotCard
 {
     [JsonPropertyName("icon")]
     public required Uri Icon { get; init; }

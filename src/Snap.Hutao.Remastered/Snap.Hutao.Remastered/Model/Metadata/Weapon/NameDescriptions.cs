@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
-internal sealed class NameDescriptions
+public sealed class NameDescriptions
 {
     public required string Name { get; init; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class SizeExtension
+public static class SizeExtension
 {
     public static double Size(this Windows.Foundation.Size size)
     {

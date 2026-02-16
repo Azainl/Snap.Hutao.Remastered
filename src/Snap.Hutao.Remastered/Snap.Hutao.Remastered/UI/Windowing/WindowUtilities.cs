@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
 [SuppressMessage("", "SYSLIB1054")]
-internal static unsafe class WindowUtilities
+public static unsafe class WindowUtilities
 {
     public static void SwitchToWindow(HWND hWnd)
     {

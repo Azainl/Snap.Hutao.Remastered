@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class Lookups
+public static class Lookups
 {
     public const int PurpleExpBookPerItemExp = 20000;
     public const int PurpleWeaponOrePerItemExp = 10000;

@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel;
 
 [DependencyProperty<double>("MinItemWidth", NotNull = true)]
 [DependencyProperty<double>("Spacing", NotNull = true)]
-internal partial class HorizontalEqualPanel : Microsoft.UI.Xaml.Controls.Panel
+public partial class HorizontalEqualPanel : Microsoft.UI.Xaml.Controls.Panel
 {
     private Size effectiveSize;
 

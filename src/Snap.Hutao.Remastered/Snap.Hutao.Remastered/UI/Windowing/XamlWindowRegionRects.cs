@@ -10,7 +10,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
-internal static class XamlWindowRegionRects
+public static class XamlWindowRegionRects
 {
     public static void Update(Window window)
     {

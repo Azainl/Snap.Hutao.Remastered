@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum MaterialType
+public enum MaterialType
 {
     MATERIAL_NONE = 0,
     MATERIAL_FOOD = 1,

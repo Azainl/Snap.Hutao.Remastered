@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 /// <summary>
 /// 实时便笺小组件数据
 /// </summary>
-internal sealed class WidgetDailyNote : DailyNoteCommon
+public sealed class WidgetDailyNote : DailyNoteCommon
 {
     /// <summary>
     /// 是否签到

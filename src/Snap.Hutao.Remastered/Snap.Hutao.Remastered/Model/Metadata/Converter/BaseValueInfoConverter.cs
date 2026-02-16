@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal static class BaseValueInfoConverter
+public static class BaseValueInfoConverter
 {
     public static bool GetPromoted(Level level, PromoteLevel promoteLevel)
     {

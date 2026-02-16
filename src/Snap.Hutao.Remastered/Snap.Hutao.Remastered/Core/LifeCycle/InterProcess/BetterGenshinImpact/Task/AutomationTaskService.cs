@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Task;
 
 [Service(ServiceLifetime.Singleton, typeof(IAutomationTaskService))]
-internal sealed class AutomationTaskService : IAutomationTaskService
+public sealed class AutomationTaskService : IAutomationTaskService
 {
     public PipeResponse CreateOneShotTask(AutomationTaskDefinition definition)
     {

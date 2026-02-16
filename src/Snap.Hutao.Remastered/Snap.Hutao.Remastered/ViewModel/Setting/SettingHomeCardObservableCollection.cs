@@ -6,7 +6,7 @@ using System.Collections.Specialized;
 
 namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
-internal sealed class SettingHomeCardObservableCollection : ObservableCollection<SettingHomeCardViewModel>
+public sealed class SettingHomeCardObservableCollection : ObservableCollection<SettingHomeCardViewModel>
 {
     public SettingHomeCardObservableCollection(List<SettingHomeCardViewModel> items)
         : base(items)

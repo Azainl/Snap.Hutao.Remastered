@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Verification;
 
-internal sealed class VerificationResult
+public sealed class VerificationResult
 {
     [JsonPropertyName("challenge")]
     public string? Challenge { get; set; }

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatFightStatistics
+public sealed class RoleCombatFightStatistics
 {
     [JsonPropertyName("max_defeat_avatar")]
     public RoleCombatAvatarStatistics? MaxDefeatAvatar { get; init; }

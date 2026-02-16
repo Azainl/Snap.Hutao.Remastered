@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal readonly struct SemaphoreSlimToken : IDisposable
+public readonly struct SemaphoreSlimToken : IDisposable
 {
     private readonly SemaphoreSlim semaphoreSlim;
 

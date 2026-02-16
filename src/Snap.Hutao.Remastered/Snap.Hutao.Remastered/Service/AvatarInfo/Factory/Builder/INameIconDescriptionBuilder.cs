@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal interface INameIconDescriptionBuilder<out T> : IBuilder
+public interface INameIconDescriptionBuilder<out T> : IBuilder
     where T : NameIconDescription
 {
     T View { get; }

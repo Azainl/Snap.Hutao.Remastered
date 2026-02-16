@@ -8,7 +8,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal static class AvatarViewFilter
+public static class AvatarViewFilter
 {
     public static Predicate<AvatarView>? Compile(SearchData? searchData)
     {

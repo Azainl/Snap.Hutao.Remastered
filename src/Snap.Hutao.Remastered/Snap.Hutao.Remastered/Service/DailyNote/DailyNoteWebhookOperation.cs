@@ -11,7 +11,7 @@ using WebDailyNote = Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNo
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class DailyNoteWebhookOperation
+public sealed partial class DailyNoteWebhookOperation
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly DailyNoteOptions dailyNoteOptions;

@@ -28,7 +28,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 [SuppressMessage("", "CA1001")]
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class CultivationViewModel : Abstraction.ViewModel
+public sealed partial class CultivationViewModel : Abstraction.ViewModel
 {
     private readonly ExclusiveTokenProvider exclusiveTokenProvider = new();
 

@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Protobuf;
 
-internal static class ByteStringMarshal
+public static class ByteStringMarshal
 {
     /// <summary>
     /// Creates a new ByteString from the given memory. The memory is <b>not</b>

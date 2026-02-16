@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class DailyTask
+public sealed class DailyTask
 {
     [JsonPropertyName("total_num")]
     public int TotalNum { get; set; }

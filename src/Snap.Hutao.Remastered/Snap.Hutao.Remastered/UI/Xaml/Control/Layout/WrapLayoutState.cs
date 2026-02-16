@@ -6,7 +6,7 @@ using Windows.Foundation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
-internal sealed class WrapLayoutState
+public sealed class WrapLayoutState
 {
     private readonly List<WrapItem> items = [];
     private readonly VirtualizingLayoutContext context;

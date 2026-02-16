@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 
-internal sealed class GachaDistribution
+public sealed class GachaDistribution
 {
     public long TotalValidPulls { get; set; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class LiveDataAward
+public sealed class LiveDataAward
 {
     [JsonPropertyName("icon")]
     public required Uri Icon { get; init; }

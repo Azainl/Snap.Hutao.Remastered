@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Post;
 
-internal sealed class SimpleRecord
+public sealed class SimpleRecord
 {
     public SimpleRecord(string uid, ImmutableArray<DetailedCharacter> characters, Hoyolab.Takumi.GameRecord.SpiralAbyss.SpiralAbyss spiralAbyss, string? reservedUserName)
     {

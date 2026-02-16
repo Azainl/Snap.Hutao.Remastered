@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Notification;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 
-internal sealed partial class InfoBarTemplateSelector : DataTemplateSelector
+public sealed partial class InfoBarTemplateSelector : DataTemplateSelector
 {
     public DataTemplate ActionButtonEnabled { get; set; } = default!;
 

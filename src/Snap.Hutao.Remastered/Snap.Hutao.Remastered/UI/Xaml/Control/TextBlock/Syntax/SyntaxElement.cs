@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax;
 
-internal abstract class SyntaxElement<TSelf>
+public abstract class SyntaxElement<TSelf>
     where TSelf : SyntaxElement<TSelf>
 {
     protected SyntaxElement(TextPosition position, ImmutableArray<TSelf> children)

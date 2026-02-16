@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal sealed class MetadataTemplate
+public sealed class MetadataTemplate
 {
     public required string Template { get; init; }
 }

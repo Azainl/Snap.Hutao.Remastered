@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
-internal interface IDailyNoteRepository : IRepository<DailyNoteEntry>
+public interface IDailyNoteRepository : IRepository<DailyNoteEntry>
 {
     void AddDailyNoteEntry(DailyNoteEntry entry);
 

@@ -8,7 +8,7 @@ using CalculateItem = Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate.I
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal sealed class InputConsumption
+public sealed class InputConsumption
 {
     public required CultivateType Type { get; init; }
 

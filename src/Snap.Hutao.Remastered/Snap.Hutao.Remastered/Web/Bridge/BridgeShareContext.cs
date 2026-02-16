@@ -8,7 +8,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal sealed class BridgeShareContext
+public sealed class BridgeShareContext
 {
     public required CoreWebView2 CoreWebView2 { get; init; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class AvatarLevelExperience
+public static class AvatarLevelExperience
 {
     // AvatarLevelExcelConfigData
     private static ReadOnlySpan<int> LevelExperienceData

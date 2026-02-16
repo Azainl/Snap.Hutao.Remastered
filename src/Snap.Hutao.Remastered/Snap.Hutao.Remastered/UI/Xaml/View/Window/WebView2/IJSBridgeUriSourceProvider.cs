@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Bridge;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
-internal interface IJSBridgeUriSourceProvider
+public interface IJSBridgeUriSourceProvider
 {
     MiHoYoJSBridge CreateJSBridge(IServiceProvider serviceProvider, CoreWebView2 coreWebView2, UserAndUid userAndUid);
 

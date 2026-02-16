@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal sealed class HttpRequestMessageBuilder :
+public sealed class HttpRequestMessageBuilder :
     IBuilder,
     IHttpRequestMessageBuilder,
     IHttpHeadersBuilder<HttpHeaders>,

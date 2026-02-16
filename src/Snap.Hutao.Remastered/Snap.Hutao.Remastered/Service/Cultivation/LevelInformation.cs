@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal sealed class LevelInformation
+public sealed class LevelInformation
 {
     public uint AvatarLevelFrom { get; private set; }
 

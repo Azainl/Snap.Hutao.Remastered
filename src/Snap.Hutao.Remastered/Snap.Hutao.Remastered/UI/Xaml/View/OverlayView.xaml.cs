@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View;
 
-internal sealed partial class OverlayView : UserControl
+public sealed partial class OverlayView : UserControl
 {
     public OverlayView()
     {

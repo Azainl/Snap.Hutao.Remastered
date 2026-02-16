@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeRegistryNotificationCallback
+public readonly unsafe struct HutaoNativeRegistryNotificationCallback
 {
     private readonly delegate* unmanaged[Stdcall]<nint, void> value;
 

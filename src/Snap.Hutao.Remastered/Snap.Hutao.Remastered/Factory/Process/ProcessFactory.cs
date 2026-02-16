@@ -10,7 +10,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Factory.Process;
 
-internal sealed class ProcessFactory
+public sealed class ProcessFactory
 {
     public static void KillCurrent()
     {

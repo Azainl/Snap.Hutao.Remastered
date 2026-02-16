@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal interface IAigisProvider
+public interface IAigisProvider
 {
     string? Aigis { get; set; }
 }

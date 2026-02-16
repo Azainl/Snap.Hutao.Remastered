@@ -13,7 +13,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 [DependencyProperty<string>("Text")]
 [DependencyProperty<NameValue<TimeSpan>>("SelectedServerTimeZoneOffset", CreateDefaultValueCallbackName = nameof(CreateSelectedServerTimeZoneOffsetDefaultValue))]
 [DependencyProperty<bool>("IsUidAttached", NotNull = true)]
-internal sealed partial class CultivateProjectDialog : ContentDialog
+public sealed partial class CultivateProjectDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

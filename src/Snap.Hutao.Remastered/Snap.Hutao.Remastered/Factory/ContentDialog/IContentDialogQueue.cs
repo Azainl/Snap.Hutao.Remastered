@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Factory.ContentDialog;
 
 [SuppressMessage("", "SH003")]
-internal interface IContentDialogQueue
+public interface IContentDialogQueue
 {
     bool IsDialogShowing { get; }
 

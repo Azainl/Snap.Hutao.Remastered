@@ -11,7 +11,7 @@ using Windows.Storage.Streams;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal static class BridgeShare
+public static class BridgeShare
 {
     public static async ValueTask<IJsBridgeResult> ShareAsync(JsParam<SharePayload> param, BridgeShareContext context)
     {

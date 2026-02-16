@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-4-asyncbarrier/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncBarrier
+public sealed class AsyncBarrier
 {
     private readonly int participantCount;
     private int remainingParticipants;

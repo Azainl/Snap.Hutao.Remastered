@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
-internal sealed class UniformStaggeredLayoutState
+public sealed class UniformStaggeredLayoutState
 {
     private readonly List<UniformStaggeredItem> items = [];
     private readonly VirtualizingLayoutContext context;
@@ -26,7 +26,7 @@ internal sealed class UniformStaggeredLayoutState
 
     public double RowSpacing { get; internal set; }
 
-    internal void AddItemToColumn(UniformStaggeredItem item, int columnIndex)
+    public void AddItemToColumn(UniformStaggeredItem item, int columnIndex)
     {
         if (!this.columnLayout.TryGetValue(columnIndex, out UniformStaggeredColumnLayout? columnLayout))
         {
@@ -41,7 +41,7 @@ internal sealed class UniformStaggeredLayoutState
     }
 
     [SuppressMessage("", "CA2201")]
-    internal UniformStaggeredItem GetItemAt(int index)
+    public UniformStaggeredItem GetItemAt(int index)
     {
         if (index < 0)
         {
@@ -58,12 +58,12 @@ internal sealed class UniformStaggeredLayoutState
         return item;
     }
 
-    internal UniformStaggeredColumnLayout GetColumnLayout(int columnIndex)
+    public UniformStaggeredColumnLayout GetColumnLayout(int columnIndex)
     {
         return columnLayout[columnIndex];
     }
 
-    internal double GetHeight()
+    public double GetHeight()
     {
         double desiredHeight = columnLayout.Values.Max(c => c.Height);
         int itemCount = columnLayout.Values.Sum(c => c.Count);
@@ -95,7 +95,7 @@ internal sealed class UniformStaggeredLayoutState
         return desiredHeight;
     }
 
-    internal void Clear()
+    public void Clear()
     {
         try
         {
@@ -113,17 +113,17 @@ internal sealed class UniformStaggeredLayoutState
         ClearItems();
     }
 
-    internal void ClearColumns()
+    public void ClearColumns()
     {
         columnLayout.Clear();
     }
 
-    internal void ClearItems()
+    public void ClearItems()
     {
         items.Clear();
     }
 
-    internal void RecycleElements()
+    public void RecycleElements()
     {
         for (int i = 0; i < context.ItemCount; i++)
         {
@@ -131,12 +131,12 @@ internal sealed class UniformStaggeredLayoutState
         }
     }
 
-    internal void RecycleElementAt(int index)
+    public void RecycleElementAt(int index)
     {
         context.RecycleElement(context.GetOrCreateElementAt(index));
     }
 
-    internal void RemoveFromIndex(int index)
+    public void RemoveFromIndex(int index)
     {
         if (index >= items.Count)
         {
@@ -161,7 +161,7 @@ internal sealed class UniformStaggeredLayoutState
         }
     }
 
-    internal void RemoveRange(int startIndex, int endIndex)
+    public void RemoveRange(int startIndex, int endIndex)
     {
         for (int i = startIndex; i <= endIndex; i++)
         {

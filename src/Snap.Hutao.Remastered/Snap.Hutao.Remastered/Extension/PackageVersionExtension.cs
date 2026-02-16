@@ -6,7 +6,7 @@ using Windows.ApplicationModel;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class PackageVersionExtension
+public static class PackageVersionExtension
 {
     extension(PackageVersion packageVersion)
     {

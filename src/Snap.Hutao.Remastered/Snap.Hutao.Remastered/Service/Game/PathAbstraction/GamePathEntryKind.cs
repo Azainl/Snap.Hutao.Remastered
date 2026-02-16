@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.PathAbstraction;
 
-internal enum GamePathEntryKind
+public enum GamePathEntryKind
 {
     None,
     ChineseClient,

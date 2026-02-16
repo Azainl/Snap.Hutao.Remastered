@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class WeaponView : EquipView, ICalculableSource<ICalculableWeapon>
+public sealed class WeaponView : EquipView, ICalculableSource<ICalculableWeapon>
 {
     public NameValue<string>? SubProperty { get; set; }
 
@@ -23,15 +23,15 @@ internal sealed class WeaponView : EquipView, ICalculableSource<ICalculableWeapo
 
     public ImmutableArray<bool> PromoteArray { get; set; }
 
-    internal WeaponId Id { get; set; }
+    public WeaponId Id { get; set; }
 
-    internal uint LevelNumber { get; set; }
+    public uint LevelNumber { get; set; }
 
-    internal uint MaxLevel { get => Model.Metadata.Weapon.Weapon.GetMaxLevelByQuality(Quality); }
+    public uint MaxLevel { get => Model.Metadata.Weapon.Weapon.GetMaxLevelByQuality(Quality); }
 
-    internal WeaponType WeaponType { get; set; }
+    public WeaponType WeaponType { get; set; }
 
-    internal PromoteLevel PromoteLevel { get; set; }
+    public PromoteLevel PromoteLevel { get; set; }
 
     public ICalculableWeapon ToCalculable()
     {

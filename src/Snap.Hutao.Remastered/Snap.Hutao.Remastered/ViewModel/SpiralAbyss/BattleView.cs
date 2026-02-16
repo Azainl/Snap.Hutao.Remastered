@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal sealed class BattleView
+public sealed class BattleView
 {
     private BattleView(TowerLevel towerLevel, uint battleIndex, SpiralAbyssMetadataContext context)
     {
@@ -35,7 +35,7 @@ internal sealed class BattleView
 
     public ImmutableArray<BattleWave> MonsterWaves { get; }
 
-    internal uint IndexValue { get; }
+    public uint IndexValue { get; }
 
     public static BattleView Create(TowerLevel level, uint index, SpiralAbyssMetadataContext context)
     {

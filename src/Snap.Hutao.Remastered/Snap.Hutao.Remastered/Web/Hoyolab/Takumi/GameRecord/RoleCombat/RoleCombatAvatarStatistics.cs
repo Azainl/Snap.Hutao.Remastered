@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatAvatarStatistics
+public sealed class RoleCombatAvatarStatistics
 {
     [JsonPropertyName("avatar_id")]
     public required AvatarId AvatarId { get; init; }

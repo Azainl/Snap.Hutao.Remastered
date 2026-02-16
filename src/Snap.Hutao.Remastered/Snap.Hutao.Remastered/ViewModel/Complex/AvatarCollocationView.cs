@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal sealed class AvatarCollocationView
+public sealed class AvatarCollocationView
 {
     public required AvatarId AvatarId { get; init; }
 

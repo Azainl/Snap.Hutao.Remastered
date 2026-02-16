@@ -8,7 +8,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserService
+public interface IUserService
 {
     ITaskContext TaskContext { get; }
 

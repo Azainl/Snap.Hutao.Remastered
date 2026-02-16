@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal sealed class DailyTaskNotifySuppressionChecker : INotifySuppressionChecker
+public sealed class DailyTaskNotifySuppressionChecker : INotifySuppressionChecker
 {
     public bool ShouldNotify(INotifySuppressionContext context)
     {

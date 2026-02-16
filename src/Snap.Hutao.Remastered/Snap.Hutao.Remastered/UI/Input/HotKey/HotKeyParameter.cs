@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.UI.Input.KeyboardAndMouse;
 
 namespace Snap.Hutao.Remastered.UI.Input.HotKey;
 
-internal readonly struct HotKeyParameter
+public readonly struct HotKeyParameter
 {
     // DO NOT MODIFY: The size of this struct must be sizeof(LPARAM) or 8
     public readonly ushort NativeModifiers;

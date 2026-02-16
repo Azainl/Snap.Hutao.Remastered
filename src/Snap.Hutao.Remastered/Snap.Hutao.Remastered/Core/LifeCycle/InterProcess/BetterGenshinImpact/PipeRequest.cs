@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
-internal sealed class PipeRequest<T>
+public sealed class PipeRequest<T>
 {
     public required PipeRequestKind Kind { get; set; }
 

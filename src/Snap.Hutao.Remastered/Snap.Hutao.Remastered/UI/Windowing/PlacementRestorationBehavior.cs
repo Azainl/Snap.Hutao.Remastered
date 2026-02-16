@@ -13,7 +13,7 @@ namespace Microsoft.UI.Windowing;
 [WindowsRuntimeType("Microsoft.UI")]
 [WinRTExposedType(typeof(EnumTypeDetails<PlacementRestorationBehavior>))]
 [global::Windows.Foundation.Metadata.ContractVersion(typeof(WindowsAppSDKContract), 65543u)]
-internal enum PlacementRestorationBehavior : uint
+public enum PlacementRestorationBehavior : uint
 {
     None = 0U,
     AllowShowMaximized = 0x1U,

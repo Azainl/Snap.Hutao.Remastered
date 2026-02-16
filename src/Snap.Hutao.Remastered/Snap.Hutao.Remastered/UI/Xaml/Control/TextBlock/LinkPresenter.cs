@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock;
 [DependencyProperty<string>("LinkName")]
 [DependencyProperty<string>("LinkDescription")]
 [DependencyProperty<LinkMetadataContext>("LinkContext")]
-internal sealed partial class LinkPresenter : ContentControl
+public sealed partial class LinkPresenter : ContentControl
 {
     public LinkPresenter()
     {

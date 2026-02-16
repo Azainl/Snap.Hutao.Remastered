@@ -8,9 +8,9 @@ using System.Threading.RateLimiting;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal delegate TStatus StreamCopyStatusFactory<out TStatus>(long bytesReadSinceLastReport, long bytesReadSinceCopyStart);
+public delegate TStatus StreamCopyStatusFactory<out TStatus>(long bytesReadSinceLastReport, long bytesReadSinceCopyStart);
 
-internal sealed partial class StreamCopyWorker : StreamCopyWorker<StreamCopyStatus>
+public sealed partial class StreamCopyWorker : StreamCopyWorker<StreamCopyStatus>
 {
     public StreamCopyWorker(Stream source, Stream destination, long totalBytes, int bufferSize = 81920)
         : base(source, destination, (lastReport, copyStart) => new(lastReport, copyStart, totalBytes), bufferSize)
@@ -19,7 +19,7 @@ internal sealed partial class StreamCopyWorker : StreamCopyWorker<StreamCopyStat
 }
 
 [SuppressMessage("", "SA1402")]
-internal partial class StreamCopyWorker<TStatus> : IDisposable
+public partial class StreamCopyWorker<TStatus> : IDisposable
 {
 #pragma warning disable CA2213
     private readonly Stream source;

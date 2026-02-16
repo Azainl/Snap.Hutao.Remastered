@@ -9,7 +9,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.PackageOperation;
 
 [Service(ServiceLifetime.Transient, typeof(IGamePackageOperation), Key = GamePackageOperationKind.Predownload)]
-internal sealed partial class GamePackagePredownloadOperation : GamePackageOperation
+public sealed partial class GamePackagePredownloadOperation : GamePackageOperation
 {
     private readonly JsonSerializerOptions jsonOptions;
 

@@ -19,7 +19,7 @@ namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class HutaoCloudViewModel : Abstraction.ViewModel
+public sealed partial class HutaoCloudViewModel : Abstraction.ViewModel
 {
     private readonly IGachaLogHutaoCloudService hutaoCloudService;
     private readonly IContentDialogFactory contentDialogFactory;
@@ -35,9 +35,9 @@ internal sealed partial class HutaoCloudViewModel : Abstraction.ViewModel
 
     public partial HutaoUserOptions Options { get; }
 
-    internal ICommand? RetrieveCommand { get; set; }
+    public ICommand? RetrieveCommand { get; set; }
 
-    internal async ValueTask<ValueResult<bool, Guid>> RetrieveAsync(string uid)
+    public async ValueTask<ValueResult<bool, Guid>> RetrieveAsync(string uid)
     {
         ContentDialog dialog = await contentDialogFactory
             .CreateForIndeterminateProgressAsync(SH.ViewModelGachaLogRetrieveFromHutaoCloudProgress)

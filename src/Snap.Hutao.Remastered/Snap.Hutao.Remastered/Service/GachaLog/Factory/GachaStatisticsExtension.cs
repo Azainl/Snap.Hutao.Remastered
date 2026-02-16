@@ -11,7 +11,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal static class GachaStatisticsExtension
+public static class GachaStatisticsExtension
 {
     private static readonly ConcurrentDictionary<string, Color> KnownColors = [];
 

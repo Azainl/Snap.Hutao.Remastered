@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class DescriptionsParameters
+public sealed class DescriptionsParameters
 {
     public required ImmutableArray<string> Descriptions { get; init; }
 

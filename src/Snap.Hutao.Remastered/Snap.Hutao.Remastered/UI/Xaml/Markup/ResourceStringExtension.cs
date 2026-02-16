@@ -7,7 +7,7 @@ using System.Globalization;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(string))]
-internal sealed partial class ResourceStringExtension : MarkupExtension
+public sealed partial class ResourceStringExtension : MarkupExtension
 {
     public SHName Name { get; set; }
 

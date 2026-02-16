@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal enum VerifyStatus
+public enum VerifyStatus
 {
     StatusNew,
     StatusVerified,

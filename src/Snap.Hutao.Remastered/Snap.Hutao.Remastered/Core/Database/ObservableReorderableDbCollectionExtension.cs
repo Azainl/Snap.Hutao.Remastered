@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Database;
 
-internal static class ObservableReorderableDbCollectionExtension
+public static class ObservableReorderableDbCollectionExtension
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static ObservableReorderableDbCollection<TEntity> ToObservableReorderableDbCollection<TEntity>(this IEnumerable<TEntity> source, IServiceProvider serviceProvider)

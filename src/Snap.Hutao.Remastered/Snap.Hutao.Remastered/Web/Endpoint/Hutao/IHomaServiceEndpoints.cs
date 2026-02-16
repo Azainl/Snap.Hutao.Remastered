@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaServiceEndpoints : IHomaRootAccess
+public interface IHomaServiceEndpoints : IHomaRootAccess
 {
     string Announcement(string locale)
     {

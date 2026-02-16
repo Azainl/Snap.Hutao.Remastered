@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class Achieve
+public sealed class Achieve
 {
     [JsonPropertyName("like_num")]
     public string LikeNum { get; set; } = default!;

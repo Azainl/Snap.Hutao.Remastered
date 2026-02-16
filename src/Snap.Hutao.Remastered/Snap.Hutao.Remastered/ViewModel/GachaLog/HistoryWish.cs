@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed partial class HistoryWish : Wish, IPropertyValuesProvider
+public sealed partial class HistoryWish : Wish, IPropertyValuesProvider
 {
     public required string Version { get; init; }
 

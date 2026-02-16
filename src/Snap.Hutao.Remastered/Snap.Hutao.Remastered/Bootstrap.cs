@@ -7,6 +7,7 @@ using Snap.Hutao.Remastered.Core.Logging;
 using Snap.Hutao.Remastered.Core.Security.Principal;
 using Snap.Hutao.Remastered.Factory.Process;
 using Snap.Hutao.Remastered.Service;
+using Snap.Hutao.Remastered.Service.Plugin;
 using Snap.Hutao.Remastered.Win32;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -25,7 +26,7 @@ public static partial class Bootstrap
     private static readonly ApplicationInitializationCallback AppInitializationCallback = InitializeApp;
     private static Mutex? mutex;
 
-    internal static void UseNamedPipeRedirection()
+    public static void UseNamedPipeRedirection()
     {
         Debug.Assert(mutex is not null);
         DisposableMarshal.DisposeAndClear(ref mutex);
@@ -80,7 +81,7 @@ public static partial class Bootstrap
 
                 // If you hit a COMException REGDB_E_CLASSNOTREG (0x80040154) during debugging
                 // You can delete bin and obj folder and then rebuild.
-                // In a Desktop app this runs a message pump internally,
+                // In a Desktop app this runs a message pump publicly,
                 // and does not return until the application shuts down.
                 Application.Start(AppInitializationCallback);
                 XamlApplicationLifetime.Exited = true;
@@ -129,7 +130,7 @@ public static partial class Bootstrap
     {
         try
         {
-            string currentProcessPath = Environment.ProcessPath ?? Process.GetCurrentProcess().MainModule?.FileName;
+            string currentProcessPath = Environment.ProcessPath ?? Process.GetCurrentProcess().MainModule?.FileName!;
             if (string.IsNullOrEmpty(currentProcessPath))
             {
                 return;

@@ -12,7 +12,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class SophonClientOversea : ISophonClient
+public sealed partial class SophonClientOversea : ISophonClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Oversea)]

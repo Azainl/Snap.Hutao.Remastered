@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Inventory;
 
-internal enum RefreshOptionKind
+public enum RefreshOptionKind
 {
     None,
     WebCalculator,

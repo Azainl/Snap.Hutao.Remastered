@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Database;
 
-internal static class DbSetExtension
+public static class DbSetExtension
 {
     extension<TEntity>(DbSet<TEntity> dbSet)
         where TEntity : class

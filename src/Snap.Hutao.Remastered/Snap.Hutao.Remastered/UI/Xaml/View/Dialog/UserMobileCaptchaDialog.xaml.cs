@@ -15,7 +15,7 @@ using Windows.System;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
-internal sealed partial class UserMobileCaptchaDialog : ContentDialog, IPassportMobileCaptchaProvider, INotifyPropertyChanged
+public sealed partial class UserMobileCaptchaDialog : ContentDialog, IPassportMobileCaptchaProvider, INotifyPropertyChanged
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceProvider serviceProvider;

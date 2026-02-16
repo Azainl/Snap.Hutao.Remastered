@@ -13,7 +13,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 [DependencyProperty<int>("MinimumValue", DefaultValue = 1, NotNull = true)]
 [DependencyProperty<Color>("Maximum", NotNull = true)]
 [DependencyProperty<Color>("Minimum", NotNull = true)]
-internal sealed partial class Int32ToGradientColorConverter : DependencyValueConverter<int, Color>
+public sealed partial class Int32ToGradientColorConverter : DependencyValueConverter<int, Color>
 {
     public Int32ToGradientColorConverter()
     {

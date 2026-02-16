@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Diagnostics;
 
-internal readonly struct ValueStopwatch
+public readonly struct ValueStopwatch
 {
     private readonly long startTimestamp;
 

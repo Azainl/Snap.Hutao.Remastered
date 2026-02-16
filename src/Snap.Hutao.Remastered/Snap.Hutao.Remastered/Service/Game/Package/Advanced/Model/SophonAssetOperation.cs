@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.Model;
 
-internal sealed class SophonAssetOperation
+public sealed class SophonAssetOperation
 {
     private SophonAssetOperation()
     {

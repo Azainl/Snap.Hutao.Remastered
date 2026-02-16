@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.ViewModel.Game;
 
 namespace Snap.Hutao.Remastered.Service.Inventory;
 
-internal sealed class RefreshOptions
+public sealed class RefreshOptions
 {
     private RefreshOptions()
     {

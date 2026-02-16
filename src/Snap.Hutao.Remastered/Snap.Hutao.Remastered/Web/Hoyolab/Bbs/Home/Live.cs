@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class Live
+public sealed class Live
 {
     [JsonPropertyName("position")]
     public required int Position { get; init; }

@@ -15,7 +15,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.UI.Input.HotKey;
 
-internal sealed partial class HotKeyCombination : ObservableObject, IDisposable
+public sealed partial class HotKeyCombination : ObservableObject, IDisposable
 {
     private readonly IMessenger messenger;
     private readonly HutaoNativeHotKeyActionKind kind;

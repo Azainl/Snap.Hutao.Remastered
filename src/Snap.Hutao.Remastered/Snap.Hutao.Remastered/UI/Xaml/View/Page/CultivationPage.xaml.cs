@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Cultivation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class CultivationPage : ScopedPage
+public sealed partial class CultivationPage : ScopedPage
 {
     public CultivationPage()
     {

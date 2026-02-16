@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal static class AvatarPromotionDeltaExtension
+public static class AvatarPromotionDeltaExtension
 {
     extension(AvatarPromotionDelta source)
     {

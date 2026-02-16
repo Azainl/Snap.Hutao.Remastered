@@ -5,7 +5,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.Service.BackgroundImage;
 
-internal sealed class BackgroundImage
+public sealed class BackgroundImage
 {
     public required string Path { get; init; }
 

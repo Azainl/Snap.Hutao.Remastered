@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class GachaEvent
+public sealed class GachaEvent
 {
     public required string Name { get; init; }
 

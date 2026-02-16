@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Response;
 
-internal sealed class HutaoResponse : Web.Response.Response, ILocalizableResponse, ICommonResponse<HutaoResponse>
+public sealed class HutaoResponse : Web.Response.Response, ILocalizableResponse, ICommonResponse<HutaoResponse>
 {
     [JsonConstructor]
     public HutaoResponse(int returnCode, string message, string? localizationKey)
@@ -33,7 +33,7 @@ internal sealed class HutaoResponse : Web.Response.Response, ILocalizableRespons
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class HutaoResponse<TData> : Response<TData>, ILocalizableResponse, ICommonResponse<HutaoResponse<TData>>
+public sealed class HutaoResponse<TData> : Response<TData>, ILocalizableResponse, ICommonResponse<HutaoResponse<TData>>
 {
     [JsonConstructor]
     public HutaoResponse(int returnCode, string message, TData? data, string? localizationKey)

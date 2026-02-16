@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal enum WorldExplorationType
+public enum WorldExplorationType
 {
     Offering,
     Reputation,

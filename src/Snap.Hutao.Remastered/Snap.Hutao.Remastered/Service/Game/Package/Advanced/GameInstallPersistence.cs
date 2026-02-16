@@ -10,7 +10,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class GameInstallPersistence
+public sealed class GameInstallPersistence
 {
     private const string InstallingName = "snap_hutao_installing";
     private readonly IGameFileSystem gameFileSystem;

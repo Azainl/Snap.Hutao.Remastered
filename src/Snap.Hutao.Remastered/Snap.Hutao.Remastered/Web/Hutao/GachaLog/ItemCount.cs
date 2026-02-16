@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 /// <summary>
 /// 物品与个数
 /// </summary>
-internal sealed class ItemCount
+public sealed class ItemCount
 {
     /// <summary>
     /// 物品 Id

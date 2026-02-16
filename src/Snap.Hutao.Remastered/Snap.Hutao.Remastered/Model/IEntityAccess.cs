@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal interface IEntityAccess<out TEntity>
+public interface IEntityAccess<out TEntity>
 {
     TEntity Entity { get; }
 }

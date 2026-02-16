@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection.Abstraction;
 
-internal static class OverseaSupportFactoryExtension
+public static class OverseaSupportFactoryExtension
 {
     extension<TClient>(IOverseaSupportFactory<TClient> factory)
     {

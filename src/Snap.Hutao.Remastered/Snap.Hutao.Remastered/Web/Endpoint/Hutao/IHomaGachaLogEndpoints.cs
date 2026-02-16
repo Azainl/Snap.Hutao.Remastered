@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaGachaLogEndpoints : IHomaRootAccess
+public interface IHomaGachaLogEndpoints : IHomaRootAccess
 {
     string GachaLogEndIds(string uid)
     {

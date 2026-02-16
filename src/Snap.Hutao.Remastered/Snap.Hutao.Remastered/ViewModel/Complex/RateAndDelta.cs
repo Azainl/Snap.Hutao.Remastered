@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal class RateAndDelta
+public class RateAndDelta
 {
     public RateAndDelta(double rate, double? lastRate)
     {

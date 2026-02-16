@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
-internal readonly struct DailyNoteNotifyInfo
+public readonly struct DailyNoteNotifyInfo
 {
     public readonly string Title;
     public readonly string AdaptiveHint;

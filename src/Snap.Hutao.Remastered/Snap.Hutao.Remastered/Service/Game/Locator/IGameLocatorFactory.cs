@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
-internal interface IGameLocatorFactory
+public interface IGameLocatorFactory
 {
     IGameLocator Create(GameLocationSourceKind source);
 }

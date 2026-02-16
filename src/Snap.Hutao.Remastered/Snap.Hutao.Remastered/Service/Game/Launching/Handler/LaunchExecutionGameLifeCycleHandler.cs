@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionGameLifeCycleHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionGameLifeCycleHandler : AbstractLaunchExecutionHandler
 {
     private readonly bool resume;
 

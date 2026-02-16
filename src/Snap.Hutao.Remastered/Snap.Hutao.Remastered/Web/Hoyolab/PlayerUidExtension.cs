@@ -6,7 +6,7 @@ using System.Web;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal static class PlayerUidExtension
+public static class PlayerUidExtension
 {
     // IMPORTANT: DO NOT CONVERT TO EXTENSION BLOCK
     // ReSharper disable once ConvertToExtensionBlock

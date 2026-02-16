@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 [DependencyProperty<ImageSource>("GreenSource")]
 [DependencyProperty<ImageSource>("WhiteSource")]
 [DependencyProperty<ImageSource>("NoneSource")]
-internal sealed partial class QualityToImageSourceConverter : DependencyValueConverter<QualityType, ImageSource?>
+public sealed partial class QualityToImageSourceConverter : DependencyValueConverter<QualityType, ImageSource?>
 {
     public override ImageSource? Convert(QualityType from)
     {

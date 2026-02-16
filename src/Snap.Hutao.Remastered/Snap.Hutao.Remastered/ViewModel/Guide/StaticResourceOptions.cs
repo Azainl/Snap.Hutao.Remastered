@@ -12,7 +12,7 @@ using System.Globalization;
 namespace Snap.Hutao.Remastered.ViewModel.Guide;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class StaticResourceOptions : ObservableObject
+public sealed partial class StaticResourceOptions : ObservableObject
 {
     public ImmutableArray<NameValue<StaticResourceQuality>> ImageQualities { get; } = ImmutableCollectionsNameValue.FromEnum<StaticResourceQuality>(static q => q.GetLocalizedDescription(SH.ResourceManager, CultureInfo.CurrentCulture) ?? string.Empty);
 

@@ -8,7 +8,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal static class AvatarViewTextTemplating
+public static class AvatarViewTextTemplating
 {
     public static string GetTemplatedText(AvatarView avatar)
     {

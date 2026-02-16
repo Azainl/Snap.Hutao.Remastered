@@ -7,7 +7,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory;
 
-internal sealed class InGameFightPropertyComparer : IComparer<FightProperty>
+public sealed class InGameFightPropertyComparer : IComparer<FightProperty>
 {
     private static readonly FrozenDictionary<FightProperty, int> InGamePropertyOrder = WinRTAdaptive.ToFrozenDictionary(
     [

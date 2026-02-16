@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal interface IGameService
+public interface IGameService
 {
     ValueTask<GameAccount?> DetectGameAccountAsync(SchemeType scheme, Func<string, Task<ValueResult<bool, string?>>> providerNameCallback);
 

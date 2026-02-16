@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal sealed class TargetNativeConfiguration
+public sealed class TargetNativeConfiguration
 {
     public required uint StoreCmdId { get; init; }
 

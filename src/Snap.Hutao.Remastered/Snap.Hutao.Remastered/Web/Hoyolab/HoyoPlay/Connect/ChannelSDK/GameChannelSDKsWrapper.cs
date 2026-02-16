@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.ChannelSDK;
 
-internal sealed class GameChannelSDKsWrapper
+public sealed class GameChannelSDKsWrapper
 {
     [JsonPropertyName("game_channel_sdks")]
     public List<GameChannelSDK> GameChannelSDKs { get; set; } = default!;

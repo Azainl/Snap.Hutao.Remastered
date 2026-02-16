@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal interface IReadOnlyObservableProperty<T> : IReadOnlyProperty<T>, INotifyPropertyChanged;
+public interface IReadOnlyObservableProperty<T> : IReadOnlyProperty<T>, INotifyPropertyChanged;

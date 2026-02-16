@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureFeatureEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureFeatureEndpoints : IInfrastructureRootAccess
 {
     string Feature(string name)
     {

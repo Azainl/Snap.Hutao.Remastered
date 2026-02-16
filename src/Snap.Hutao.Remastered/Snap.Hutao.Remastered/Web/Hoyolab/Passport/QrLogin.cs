@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class QrLogin
+public sealed class QrLogin
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = default!;

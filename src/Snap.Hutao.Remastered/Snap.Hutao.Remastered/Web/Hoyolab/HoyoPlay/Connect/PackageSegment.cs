@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Notification;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect;
 
-internal partial class PackageSegment
+public partial class PackageSegment
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = default!;

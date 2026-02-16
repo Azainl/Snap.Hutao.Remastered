@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class Offering
+public sealed class Offering
 {
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;

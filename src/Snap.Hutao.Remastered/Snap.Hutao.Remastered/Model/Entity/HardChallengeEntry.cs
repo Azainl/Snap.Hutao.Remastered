@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("hard_challenges")]
-internal sealed class HardChallengeEntry
+public sealed class HardChallengeEntry
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

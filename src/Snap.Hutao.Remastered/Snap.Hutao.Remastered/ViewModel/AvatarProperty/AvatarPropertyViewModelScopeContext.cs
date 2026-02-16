@@ -11,7 +11,7 @@ using Snap.Hutao.Remastered.Service.User;
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AvatarPropertyViewModelScopeContext
+public sealed partial class AvatarPropertyViewModelScopeContext
 {
     [GeneratedConstructor]
     public partial AvatarPropertyViewModelScopeContext(IServiceProvider serviceProvider);

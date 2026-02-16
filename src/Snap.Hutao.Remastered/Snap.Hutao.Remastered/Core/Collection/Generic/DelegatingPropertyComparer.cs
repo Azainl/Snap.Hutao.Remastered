@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace Snap.Hutao.Remastered.Core.Collection.Generic;
 
-internal abstract class DelegatingPropertyComparer<T, TProperty> : IComparer<T>
+public abstract class DelegatingPropertyComparer<T, TProperty> : IComparer<T>
     where T : class
 {
     private readonly IComparer<TProperty> delegatedComparer;

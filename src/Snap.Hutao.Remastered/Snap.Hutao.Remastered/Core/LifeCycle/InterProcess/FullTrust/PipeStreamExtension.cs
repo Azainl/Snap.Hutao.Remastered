@@ -8,7 +8,7 @@ using System.IO.Pipes;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal static class PipeStreamExtension
+public static class PipeStreamExtension
 {
     extension(PipeStream stream)
     {

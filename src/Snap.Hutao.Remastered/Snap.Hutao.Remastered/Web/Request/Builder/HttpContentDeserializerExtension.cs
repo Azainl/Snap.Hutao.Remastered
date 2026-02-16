@@ -6,7 +6,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpContentDeserializerExtension
+public static class HttpContentDeserializerExtension
 {
     extension(IHttpContentDeserializer deserializer)
     {

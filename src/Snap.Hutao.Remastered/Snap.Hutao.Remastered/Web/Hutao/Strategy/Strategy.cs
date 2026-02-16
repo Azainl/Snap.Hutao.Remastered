@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Strategy;
 
-internal sealed class Strategy
+public sealed class Strategy
 {
     [JsonPropertyName("mys_strategy_id")]
     public int? MysStrategyId { get; set; }

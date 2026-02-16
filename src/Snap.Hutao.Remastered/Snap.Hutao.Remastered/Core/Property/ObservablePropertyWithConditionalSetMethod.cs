@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class ObservablePropertyWithConditionalSetMethod<T, TState> : IObservableProperty<T>
+public sealed partial class ObservablePropertyWithConditionalSetMethod<T, TState> : IObservableProperty<T>
 {
     private readonly IObservableProperty<T> source;
     private readonly Func<T, TState, bool> condition;

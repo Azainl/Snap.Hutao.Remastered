@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdReliquarySource
+public interface IMetadataDictionaryIdReliquarySource
 {
     ImmutableDictionary<ReliquaryId, Reliquary> IdReliquaryMap { get; set; }
 }

@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("gacha_items")]
-internal sealed class GachaItem
+public sealed class GachaItem
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

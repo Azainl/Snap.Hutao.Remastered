@@ -9,7 +9,7 @@ namespace ABI.Microsoft.UI.Windowing;
 #pragma warning restore IDE0130
 
 [EditorBrowsable(EditorBrowsableState.Never)]
-internal sealed class AppWindowPlacementDetailsRcwFactoryAttribute : WinRTImplementationTypeRcwFactoryAttribute
+public sealed class AppWindowPlacementDetailsRcwFactoryAttribute : WinRTImplementationTypeRcwFactoryAttribute
 {
     public override object CreateInstance(IInspectable inspectable)
     {

@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.System.SystemServices;
 
 // ReSharper disable InconsistentNaming
 [Flags]
-internal enum MODIFIERKEYS_FLAGS : uint
+public enum MODIFIERKEYS_FLAGS : uint
 {
     MK_LBUTTON = 1u,
     MK_RBUTTON = 2u,

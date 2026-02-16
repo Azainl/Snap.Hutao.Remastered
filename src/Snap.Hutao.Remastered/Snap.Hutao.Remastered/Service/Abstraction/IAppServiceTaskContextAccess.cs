@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal interface IAppServiceTaskContextAccess : IAppService
+public interface IAppServiceTaskContextAccess : IAppService
 {
     ITaskContext TaskContext { get; }
 }

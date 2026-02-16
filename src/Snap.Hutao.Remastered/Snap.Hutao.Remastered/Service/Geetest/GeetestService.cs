@@ -13,7 +13,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.Geetest;
 
 [Service(ServiceLifetime.Transient, typeof(IGeetestService))]
-internal sealed partial class GeetestService : IGeetestService
+public sealed partial class GeetestService : IGeetestService
 {
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly CustomGeetestClient customGeetestClient;

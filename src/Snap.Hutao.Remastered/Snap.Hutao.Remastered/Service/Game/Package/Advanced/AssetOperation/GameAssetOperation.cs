@@ -20,9 +20,9 @@ using System.Security.Cryptography;
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.AssetOperation;
 
 [SuppressMessage("", "SA1202")]
-internal abstract partial class GameAssetOperation : IGameAssetOperation
+public abstract partial class GameAssetOperation : IGameAssetOperation
 {
-    protected internal const int ChunkBufferSize = 81920;
+    public const int ChunkBufferSize = 81920;
 
     private readonly IMemoryStreamFactory memoryStreamFactory;
     private readonly JsonSerializerOptions jsonOptions;

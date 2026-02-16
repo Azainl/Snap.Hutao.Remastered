@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
 [JsonConverter(typeof(RegionConverter))]
-internal readonly struct Region : IEquatable<Region>
+public readonly struct Region : IEquatable<Region>
 {
     public static readonly Region CNGF01 = new("cn_gf01");
     public static readonly Region CNQD01 = new("cn_qd01");

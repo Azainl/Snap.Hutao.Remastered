@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class RankValue : ItemRate<int, double>
+public sealed class RankValue : ItemRate<int, double>
 {
     [JsonConstructor]
     public RankValue(int item, int value, double rate, double rateOnAvatar)

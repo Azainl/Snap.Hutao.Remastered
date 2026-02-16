@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Win32.Foundation;
 
 // ReSharper disable InconsistentNaming
-internal readonly partial struct PCSTR
+public readonly partial struct PCSTR
 {
 #pragma warning disable CS0649
     public readonly unsafe byte* Value;
@@ -23,7 +23,7 @@ internal readonly partial struct PCSTR
 
 #if DEBUG
 [global::System.Diagnostics.DebuggerDisplay("{DebuggerDisplay,nq}")]
-internal readonly partial struct PCSTR
+public readonly partial struct PCSTR
 {
     public unsafe string DebuggerDisplay
     {

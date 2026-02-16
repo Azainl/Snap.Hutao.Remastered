@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal readonly struct ImportResult
+public readonly struct ImportResult
 {
     public readonly int Add;
     public readonly int Update;

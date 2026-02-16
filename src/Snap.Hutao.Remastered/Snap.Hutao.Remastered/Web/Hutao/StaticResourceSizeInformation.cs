@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class StaticResourceSizeInformation
+public sealed class StaticResourceSizeInformation
 {
     [JsonPropertyName("original_full")]
     public long OriginalFull { get; init; }

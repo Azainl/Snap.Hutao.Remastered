@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class TypedWishSummaryBuilder
+public sealed class TypedWishSummaryBuilder
 {
     private readonly TypedWishSummaryBuilderContext context;
 

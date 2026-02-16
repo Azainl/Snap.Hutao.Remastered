@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>このメールアドレスは登録済みです。</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>登録に失敗しました。サーバーエラーです。解決しない場合は開発者に連絡してください。</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>パスワードが間違っているため、削除できません</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>データの取得に失敗しました。サーバーが統計データを計算しています。</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>深境螺旋のデータをアップロードに失敗しました。サーバーエラーです。解決しない場合は開発者に連絡してください。</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>深境螺旋のデータをアップロードに失敗しました。異常なデータを検知しました。</value>
@@ -3981,5 +3975,11 @@
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>特殊シーンの補正</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>登録に失敗しました。サーバーエラーです。解決しない場合は開発者に連絡してください。</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>深境螺旋のデータをアップロードに失敗しました。サーバーエラーです。解決しない場合は開発者に連絡してください。</value>
   </data>
 </root>

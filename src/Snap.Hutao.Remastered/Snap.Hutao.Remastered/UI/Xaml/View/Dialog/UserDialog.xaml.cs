@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Factory.ContentDialog;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<string>("Text")]
-internal sealed partial class UserDialog : ContentDialog
+public sealed partial class UserDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

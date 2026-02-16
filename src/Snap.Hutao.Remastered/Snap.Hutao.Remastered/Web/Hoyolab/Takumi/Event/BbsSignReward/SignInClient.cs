@@ -16,7 +16,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
 [PrimaryHttpMessageHandler(UseCookies = false)]
-internal sealed partial class SignInClient : ISignInClient
+public sealed partial class SignInClient : ISignInClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IGeetestService geetestService;

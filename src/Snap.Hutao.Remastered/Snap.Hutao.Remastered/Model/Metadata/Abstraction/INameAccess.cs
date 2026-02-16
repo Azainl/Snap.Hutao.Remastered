@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal interface INameAccess
+public interface INameAccess
 {
     string Name { get; }
 }

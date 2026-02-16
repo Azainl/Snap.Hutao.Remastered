@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.UI.Shell;
 
 // ReSharper disable InconsistentNaming
 [Flags]
-internal enum FILEOPERATION_FLAGS : uint
+public enum FILEOPERATION_FLAGS : uint
 {
     FOFX_NOSKIPJUNCTIONS = 0x00010000,
     FOFX_PREFERHARDLINK = 0x00020000,

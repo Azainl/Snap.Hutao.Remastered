@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Notification;
 
-internal interface IAppNotificationLifeTime : IDisposable;
+public interface IAppNotificationLifeTime : IDisposable;

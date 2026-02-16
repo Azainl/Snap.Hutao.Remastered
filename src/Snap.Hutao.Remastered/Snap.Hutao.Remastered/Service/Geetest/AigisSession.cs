@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Geetest;
 
-internal sealed class AigisSession
+public sealed class AigisSession
 {
     [JsonPropertyName("session_id")]
     public string SessionId { get; set; } = default!;

@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal sealed class TypedHttpResponse<TResult> : IDeconstruct<HttpResponseHeaders?, TResult?>
+public sealed class TypedHttpResponse<TResult> : IDeconstruct<HttpResponseHeaders?, TResult?>
     where TResult : class
 {
     public TypedHttpResponse(HttpResponseHeaders? headers, TResult? result)

@@ -9,7 +9,7 @@ using System.Runtime.ExceptionServices;
 namespace Snap.Hutao.Remastered.Core.IO.Http;
 
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class RetryHttpHandler : DelegatingHandler
+public sealed partial class RetryHttpHandler : DelegatingHandler
 {
     public static HttpRequestOptionsKey<bool> DisableRetry { get; } = new("DisableRetry");
 

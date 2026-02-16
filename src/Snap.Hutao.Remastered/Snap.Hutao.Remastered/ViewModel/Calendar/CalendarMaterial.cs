@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Calendar;
 
-internal sealed class CalendarMaterial
+public sealed class CalendarMaterial
 {
     public required Material Inner { get; init; }
 
@@ -14,5 +14,5 @@ internal sealed class CalendarMaterial
 
     public bool Highlight { get; set; }
 
-    internal required RotationalMaterialIdEntry InnerEntry { get; init; }
+    public required RotationalMaterialIdEntry InnerEntry { get; init; }
 }

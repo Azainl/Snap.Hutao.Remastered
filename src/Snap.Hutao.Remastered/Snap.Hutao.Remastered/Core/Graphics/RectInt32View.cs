@@ -5,7 +5,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal struct RectInt32View
+public struct RectInt32View
 {
     public PointInt32 Position;
     public SizeInt32 Size;

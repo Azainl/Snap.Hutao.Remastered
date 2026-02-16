@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Miyolive;
 
-internal sealed class CodeWrapper
+public sealed class CodeWrapper
 {
     [JsonPropertyName("title")]
     public required string Title { get; init; }

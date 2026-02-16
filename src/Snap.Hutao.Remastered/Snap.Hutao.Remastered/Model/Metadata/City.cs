@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
 // CityTaskOpenExcelConfig
-internal enum City : uint
+public enum City : uint
 {
     None = 0,
     Mondstadt = 1,

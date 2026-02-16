@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 [TemplatePart(Name = "ContentGrid", Type = typeof(FrameworkElement))]
 [TemplatePart(Name = "LoadingOutStoryboard", Type = typeof(Storyboard))]
 [DependencyProperty<bool>("IsLoading", DefaultValue = false, NotNull = true, PropertyChangedCallbackName = nameof(IsLoadingPropertyChanged))]
-internal sealed partial class Loading : Microsoft.UI.Xaml.Controls.ContentControl
+public sealed partial class Loading : Microsoft.UI.Xaml.Controls.ContentControl
 {
     private FrameworkElement? presenter;
 

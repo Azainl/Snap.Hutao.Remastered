@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
-internal sealed partial class XamlWindowNonRude : IDisposable
+public sealed partial class XamlWindowNonRude : IDisposable
 {
     private readonly HutaoNativeWindowNonRude native;
 

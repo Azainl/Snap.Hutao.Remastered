@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.ViewModel.Game;
 
 namespace Snap.Hutao.Remastered.Service.Yae;
 
-internal interface IYaeService
+public interface IYaeService
 {
     ValueTask<UIAF?> GetAchievementAsync(IViewModelSupportLaunchExecution viewModel);
 

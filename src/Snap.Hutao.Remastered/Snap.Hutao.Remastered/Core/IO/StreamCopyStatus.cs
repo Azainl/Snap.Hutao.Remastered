@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal sealed class StreamCopyStatus
+public sealed class StreamCopyStatus
 {
     public StreamCopyStatus(long bytesReadSinceLastReport, long bytesReadSinceCopyStart, long totalBytes)
     {

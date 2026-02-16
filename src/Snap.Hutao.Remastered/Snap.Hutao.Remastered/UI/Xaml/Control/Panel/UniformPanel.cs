@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel;
 [DependencyProperty<double>("MinItemWidth", NotNull = true)]
 [DependencyProperty<double>("ColumnSpacing", NotNull = true)]
 [DependencyProperty<double>("RowSpacing", NotNull = true)]
-internal sealed partial class UniformPanel : Microsoft.UI.Xaml.Controls.Panel
+public sealed partial class UniformPanel : Microsoft.UI.Xaml.Controls.Panel
 {
     private int columnCount;
 

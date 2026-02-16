@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 [DependencyProperty<UIElement>("EmptyContent")]
 [DependencyProperty<bool>("ShowCondition", DefaultValue = false, PropertyChangedCallbackName = nameof(OnShowConditionChanged), NotNull = true)]
 [DependencyProperty<bool>("HideCondition", DefaultValue = false, PropertyChangedCallbackName = nameof(OnHideConditionChanged), NotNull = true)]
-internal sealed partial class StandardView : ContentControl
+public sealed partial class StandardView : ContentControl
 {
     public StandardView()
     {

@@ -11,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal class CultivationMetadataContext : ICultivationMetadataContext
+public class CultivationMetadataContext : ICultivationMetadataContext
 {
     public ImmutableArray<Material> Materials { get; set; } = default!;
 

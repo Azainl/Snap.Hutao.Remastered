@@ -5,7 +5,7 @@ using Microsoft.UI.Dispatching;
 
 namespace Snap.Hutao.Remastered.Factory.Progress;
 
-internal class DispatcherQueueProgress<T> : IProgress<T>
+public class DispatcherQueueProgress<T> : IProgress<T>
 {
     private readonly DispatcherQueue dispatcherQueue;
     private readonly Action<T> handler;
@@ -35,7 +35,7 @@ internal class DispatcherQueueProgress<T> : IProgress<T>
 }
 
 [SuppressMessage("", "SA1402")]
-internal class DispatcherQueueProgress<T, TState> : IProgress<T>
+public class DispatcherQueueProgress<T, TState> : IProgress<T>
 {
     private readonly DispatcherQueue dispatcherQueue;
     private readonly Action<T, TState> handler;

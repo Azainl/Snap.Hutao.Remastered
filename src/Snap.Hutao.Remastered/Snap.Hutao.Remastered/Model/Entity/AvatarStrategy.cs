@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("avatar_strategies")]
-internal sealed class AvatarStrategy
+public sealed class AvatarStrategy
 {
     [Key]
     public uint AvatarId { get; set; }

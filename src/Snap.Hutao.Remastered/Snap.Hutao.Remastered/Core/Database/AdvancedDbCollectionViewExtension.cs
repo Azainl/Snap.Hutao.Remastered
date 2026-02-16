@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Database;
 
-internal static class AdvancedDbCollectionViewExtension
+public static class AdvancedDbCollectionViewExtension
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static IAdvancedDbCollectionView<TEntity> ToAdvancedDbCollectionView<TEntity>(this IList<TEntity> source, IServiceProvider serviceProvider)

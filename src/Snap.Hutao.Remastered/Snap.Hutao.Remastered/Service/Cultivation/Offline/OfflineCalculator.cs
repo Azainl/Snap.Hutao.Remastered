@@ -17,7 +17,7 @@ using static Snap.Hutao.Remastered.Service.Cultivation.Offline.Lookups;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class OfflineCalculator
+public static class OfflineCalculator
 {
     public static BatchConsumption CalculateWikiAvatarConsumption(AvatarPromotionDelta delta, MetadataAvatar avatar)
     {

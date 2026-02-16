@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed partial class ServiceRecipientBackgroundImagePresenterBehavior : BehaviorBase<Image>, IDisposable
+public sealed partial class ServiceRecipientBackgroundImagePresenterBehavior : BehaviorBase<Image>, IDisposable
 {
     private readonly CancellationTokenSource unloadCts = new();
     private readonly AsyncLock backgroundImageLock = new();

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal enum HutaoEndpointsKind
+public enum HutaoEndpointsKind
 {
     AlphaCN,
     AlphaFJ,

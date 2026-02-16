@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed class AvatarDamage : AvatarView
+public sealed class AvatarDamage : AvatarView
 {
     public AvatarDamage(string value, Avatar metaAvatar)
         : base(metaAvatar)

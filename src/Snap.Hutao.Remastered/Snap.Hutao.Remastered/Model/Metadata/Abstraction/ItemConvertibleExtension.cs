@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal static class ItemConvertibleExtension
+public static class ItemConvertibleExtension
 {
     private static readonly ConditionalWeakTable<IItemConvertible, Model.Item> Items = [];
 

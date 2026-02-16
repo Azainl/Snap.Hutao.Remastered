@@ -1,6 +1,7 @@
 // Copyright (c) DGP Studio. All rights reserved.
 // Licensed under the MIT license.
 
+using Snap.Hutao.Remastered.API.Model;
 using Snap.Hutao.Remastered.Core;
 using Snap.Hutao.Remastered.Core.Diagnostics;
 using Snap.Hutao.Remastered.Core.ExceptionService;
@@ -9,6 +10,7 @@ using Snap.Hutao.Remastered.Core.Setting;
 using Snap.Hutao.Remastered.Factory.Process;
 using Snap.Hutao.Remastered.Service.Game.FileSystem;
 using Snap.Hutao.Remastered.Service.Game.Launching.Context;
+using Snap.Hutao.Remastered.Service.Plugin;
 using Snap.Hutao.Remastered.Web.Hutao;
 using Snap.Hutao.Remastered.Web.Hutao.Response;
 using Snap.Hutao.Remastered.Web.Response;
@@ -18,7 +20,7 @@ using Windows.Devices.Input;
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal sealed class GameIslandInterop : IGameIslandInterop
+public sealed class GameIslandInterop : IGameIslandInterop
 {
     private const string IslandEnvironmentName = "4F3E8543-40F7-4808-82DC-21E48A6037A7";
 
@@ -91,6 +93,23 @@ internal sealed class GameIslandInterop : IGameIslandInterop
                     }
 
                     fullTrustProcess.LoadLibrary(FullTrustLoadLibraryRequest.Create("Island", islandPath));
+
+                    IPluginService pluginService = context.PluginService;
+
+					// Load dll in inject of plugins
+					foreach (HutaoPlugin plugin in pluginService.GetAllPlugins())
+                    {
+                        if (!plugin.IsEnabled) continue;
+                        if (!Directory.Exists(Path.Combine(pluginService.GetPluginPath(plugin), "inject"))) continue;
+
+						string injectPath = Path.Combine(pluginService.GetPluginPath(plugin), "inject");
+
+                        foreach (FileInfo inject in new DirectoryInfo(injectPath).GetFiles("*.dll", SearchOption.TopDirectoryOnly))
+                        {
+                            fullTrustProcess.LoadLibrary(FullTrustLoadLibraryRequest.Create($"{plugin.Manifest.Name}::{inject.Name}", inject.FullName));
+						}
+					}
+
                     fullTrustProcess.ResumeMainThread();
                 }
 

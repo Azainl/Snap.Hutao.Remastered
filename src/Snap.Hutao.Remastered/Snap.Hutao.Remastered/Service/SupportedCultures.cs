@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.Service;
 
 [SuppressMessage("", "SA1500")]
 [SuppressMessage("", "SA1513")]
-internal static class SupportedCultures
+public static class SupportedCultures
 {
     public static ImmutableArray<NameCultureInfoValue> GetValues()
     {

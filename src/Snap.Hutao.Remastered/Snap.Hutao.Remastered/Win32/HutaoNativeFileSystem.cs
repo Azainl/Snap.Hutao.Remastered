@@ -10,7 +10,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeFileSystem
+public sealed unsafe class HutaoNativeFileSystem
 {
     private readonly ObjectReference<Vftbl> objRef;
     private readonly ObjectReference<Vftbl2>? objRef2;
@@ -251,22 +251,22 @@ internal sealed unsafe class HutaoNativeFileSystem
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeFileSystem)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> RenameItem;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> RenameItemWithOptions;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> MoveItem;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> MoveItemWithOptions;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, HRESULT> MoveItemWithName;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> MoveItemWithNameAndOptions;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> CopyItem;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> CopyItemWithOptions;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, HRESULT> CopyItemWithName;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> CopyItemWithNameAndOptions;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> DeleteItem;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, FILEOPERATION_FLAGS, HRESULT> DeleteItemWithOptions;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> RenameItem;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> RenameItemWithOptions;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> MoveItem;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> MoveItemWithOptions;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, HRESULT> MoveItemWithName;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> MoveItemWithNameAndOptions;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, HRESULT> CopyItem;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> CopyItemWithOptions;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, HRESULT> CopyItemWithName;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, FILEOPERATION_FLAGS, HRESULT> CopyItemWithNameAndOptions;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, HRESULT> DeleteItem;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, FILEOPERATION_FLAGS, HRESULT> DeleteItemWithOptions;
 #pragma warning restore CS0649
     }
 
@@ -274,8 +274,8 @@ internal sealed unsafe class HutaoNativeFileSystem
     private readonly struct Vftbl2
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, PCWSTR, HRESULT> CreateLink;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, PCWSTR, PCWSTR, HRESULT> CreateLink;
 #pragma warning restore CS0649
     }
 
@@ -283,10 +283,10 @@ internal sealed unsafe class HutaoNativeFileSystem
     private readonly struct Vftbl3
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, PCWSTR, PCWSTR, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> PickFile;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, PCWSTR, PCWSTR, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> SaveFile;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> PickFolder;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, PCWSTR, PCWSTR, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> PickFile;
+        public readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, PCWSTR, PCWSTR, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> SaveFile;
+        public readonly delegate* unmanaged[Stdcall]<nint, HWND, PCWSTR, BOOL*, HutaoString.Vftbl**, HRESULT> PickFolder;
 #pragma warning restore CS0649
     }
 
@@ -294,8 +294,8 @@ internal sealed unsafe class HutaoNativeFileSystem
     private readonly struct Vftbl4
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, BOOL, HRESULT> CopyFileAllowDecryptedDestination;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, PCWSTR, PCWSTR, BOOL, HRESULT> CopyFileAllowDecryptedDestination;
 #pragma warning restore CS0649
     }
 }

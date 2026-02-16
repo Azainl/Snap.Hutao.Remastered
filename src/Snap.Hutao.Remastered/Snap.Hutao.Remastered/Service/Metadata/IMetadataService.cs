@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal interface IMetadataService : IMetadataServiceInitialization
+public interface IMetadataService : IMetadataServiceInitialization
 {
     IMemoryCache MemoryCache { get; }
 

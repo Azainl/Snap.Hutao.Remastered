@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Diagnostics;
 
-internal readonly struct MeasureExecutionToken : IDisposable
+public readonly struct MeasureExecutionToken : IDisposable
 {
     private readonly ValueStopwatch stopwatch;
     private readonly ILogger logger;

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class HardChallengeEntryConfiguration : IEntityTypeConfiguration<HardChallengeEntry>
+public sealed class HardChallengeEntryConfiguration : IEntityTypeConfiguration<HardChallengeEntry>
 {
     public void Configure(EntityTypeBuilder<HardChallengeEntry> builder)
     {

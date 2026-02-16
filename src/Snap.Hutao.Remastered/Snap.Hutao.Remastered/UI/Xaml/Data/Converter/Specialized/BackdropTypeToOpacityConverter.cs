@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Media.Backdrop;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class BackdropTypeToOpacityConverter : ValueConverter<BackdropType, double>
+public sealed partial class BackdropTypeToOpacityConverter : ValueConverter<BackdropType, double>
 {
     public override double Convert(BackdropType from)
     {

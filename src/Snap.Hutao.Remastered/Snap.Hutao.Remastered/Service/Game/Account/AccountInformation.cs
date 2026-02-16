@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
-internal sealed class AccountInformation
+public sealed class AccountInformation
 {
     [JsonPropertyName("uid")]
     public string Uid { get; set; } = default!;

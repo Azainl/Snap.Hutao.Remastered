@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.ExceptionService;
 
-internal sealed class SentryExceptionProcessor : ISentryEventExceptionProcessor
+public sealed class SentryExceptionProcessor : ISentryEventExceptionProcessor
 {
     public void Process(Exception exception, SentryEvent sentryEvent)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum ChannelType
+public enum ChannelType
 {
     Default = 0,
     Official = 1,

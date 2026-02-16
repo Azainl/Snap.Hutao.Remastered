@@ -13,7 +13,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 
 [SuppressMessage("", "CA1001")]
-internal partial class ScopedPage : Page
+public partial class ScopedPage : Page
 {
     private readonly CancellationTokenSource viewCts = new();
     private IServiceScope? scope;

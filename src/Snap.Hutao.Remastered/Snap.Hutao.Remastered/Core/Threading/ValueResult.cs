@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Abstraction;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal readonly struct ValueResult<TResult, TValue> : IDeconstruct<TResult, TValue>
+public readonly struct ValueResult<TResult, TValue> : IDeconstruct<TResult, TValue>
 {
     public readonly TResult IsOk;
     public readonly TValue Value;

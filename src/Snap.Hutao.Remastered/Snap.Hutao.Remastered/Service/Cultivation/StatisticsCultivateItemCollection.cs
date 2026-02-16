@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal sealed partial class StatisticsCultivateItemCollection : ICollection<StatisticsCultivateItem>
+public sealed partial class StatisticsCultivateItemCollection : ICollection<StatisticsCultivateItem>
 {
     private readonly List<StatisticsCultivateItem> items = [];
 

@@ -18,7 +18,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class HutaoRuntime
+public static class HutaoRuntime
 {
     public static Version Version { get; } = Package.Current.Id.Version.ToVersion();
 

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Game.Scheme;
 
-internal sealed class LaunchSchemeOversea : LaunchScheme
+public sealed class LaunchSchemeOversea : LaunchScheme
 {
     private const string HoyoPlayLauncherOverseaId = "VYTpXlbWo8";
     private const string HoyoPlayGameOverseaId = "gopR6Cufr3";

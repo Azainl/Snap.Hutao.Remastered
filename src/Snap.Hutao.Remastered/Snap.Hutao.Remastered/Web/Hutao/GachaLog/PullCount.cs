@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 /// <summary>
 /// 抽数与个数
 /// </summary>
-internal sealed class PullCount
+public sealed class PullCount
 {
     /// <summary>
     /// 抽数

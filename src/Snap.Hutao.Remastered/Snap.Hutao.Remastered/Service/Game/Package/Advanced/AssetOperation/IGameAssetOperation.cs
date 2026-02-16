@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.AssetOperation;
 
-internal interface IGameAssetOperation
+public interface IGameAssetOperation
 {
     ValueTask InstallAssetsAsync(GamePackageServiceContext context, SophonDecodedBuild remoteBuild);
 

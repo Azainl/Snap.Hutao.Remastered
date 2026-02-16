@@ -15,7 +15,7 @@ using System.Web;
 namespace Snap.Hutao.Remastered.Service.GachaLog.QueryProvider;
 
 [Service(ServiceLifetime.Transient, typeof(IGachaLogQueryProvider), Key = RefreshOptionKind.WebCache)]
-internal sealed partial class GachaLogQueryWebCacheProvider : IGachaLogQueryProvider
+public sealed partial class GachaLogQueryWebCacheProvider : IGachaLogQueryProvider
 {
     private readonly IMemoryStreamFactory memoryStreamFactory;
     private readonly IGameService gameService;

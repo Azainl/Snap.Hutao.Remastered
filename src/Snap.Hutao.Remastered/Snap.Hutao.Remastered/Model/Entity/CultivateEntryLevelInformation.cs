@@ -10,7 +10,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("cultivate_entry_level_informations")]
-internal sealed class CultivateEntryLevelInformation
+public sealed class CultivateEntryLevelInformation
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

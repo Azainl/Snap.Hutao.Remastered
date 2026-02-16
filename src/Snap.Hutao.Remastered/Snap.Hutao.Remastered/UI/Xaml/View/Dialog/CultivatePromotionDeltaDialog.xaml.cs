@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<ICalculableAvatar>("Avatar")]
 [DependencyProperty<ICalculableWeapon>("Weapon")]
-internal sealed partial class CultivatePromotionDeltaDialog : ContentDialog
+public sealed partial class CultivatePromotionDeltaDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

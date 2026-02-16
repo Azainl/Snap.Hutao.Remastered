@@ -17,7 +17,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
 [SuppressMessage("", "CA1001")]
-internal sealed partial class WebView2Window : Microsoft.UI.Xaml.Window,
+public sealed partial class WebView2Window : Microsoft.UI.Xaml.Window,
     IXamlWindowExtendContentIntoTitleBar,
     IXamlWindowClosedHandler
 {

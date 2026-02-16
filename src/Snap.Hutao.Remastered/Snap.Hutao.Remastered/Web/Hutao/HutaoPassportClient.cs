@@ -13,7 +13,7 @@ using System.Text;
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HutaoPassportClient
+public sealed partial class HutaoPassportClient
 {
     private const string PublicKey = """
         -----BEGIN RSA PUBLIC KEY-----

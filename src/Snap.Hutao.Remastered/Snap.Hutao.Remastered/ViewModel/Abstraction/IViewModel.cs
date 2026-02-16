@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal interface IViewModel : IPageScoped, IResurrectable, IViewUnloadAware
+public interface IViewModel : IPageScoped, IResurrectable, IViewUnloadAware
 {
     CancellationToken CancellationToken { get; set; }
 

@@ -17,7 +17,7 @@ using System.Collections.ObjectModel;
 namespace Snap.Hutao.Remastered.Service.HardChallenge;
 
 [Service(ServiceLifetime.Scoped, typeof(IHardChallengeService))]
-internal sealed partial class HardChallengeService : IHardChallengeService
+public sealed partial class HardChallengeService : IHardChallengeService
 {
     private readonly IHardChallengeRepository hardChallengeRepository;
     private readonly IServiceScopeFactory serviceScopeFactory;

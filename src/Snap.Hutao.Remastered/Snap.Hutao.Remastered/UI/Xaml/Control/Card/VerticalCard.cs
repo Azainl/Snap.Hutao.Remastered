@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Card;
 [DependencyProperty<VerticalAlignment>("VerticalTopAlignment", DefaultValue = VerticalAlignment.Stretch, NotNull = true)]
 [DependencyProperty<HorizontalAlignment>("HorizontalBottomAlignment", DefaultValue = HorizontalAlignment.Center, NotNull = true)]
 [DependencyProperty<VerticalAlignment>("VerticalBottomAlignment", DefaultValue = VerticalAlignment.Stretch, NotNull = true)]
-internal sealed partial class VerticalCard : Microsoft.UI.Xaml.Controls.Control
+public sealed partial class VerticalCard : Microsoft.UI.Xaml.Controls.Control
 {
     public VerticalCard()
     {

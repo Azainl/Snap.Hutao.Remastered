@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class MobileCaptcha
+public sealed class MobileCaptcha
 {
     [JsonPropertyName("sent_new")]
     public bool SentNew { get; set; }

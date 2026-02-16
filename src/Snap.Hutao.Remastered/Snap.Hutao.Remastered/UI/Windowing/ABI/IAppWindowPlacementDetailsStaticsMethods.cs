@@ -10,7 +10,7 @@ using WinRT;
 namespace ABI.Microsoft.UI.Windowing;
 #pragma warning restore IDE0130
 
-internal static class IAppWindowPlacementDetailsStaticsMethods
+public static class IAppWindowPlacementDetailsStaticsMethods
 {
     public static ref readonly Guid IID
     {
@@ -18,7 +18,7 @@ internal static class IAppWindowPlacementDetailsStaticsMethods
         get => ref MemoryMarshal.AsRef<Guid>([0x45, 0x17, 0x9F, 0xF1, 0xAD, 0x52, 0xF7, 0x5C, 0x97, 0xEA, 0x76, 0xC5, 0xFD, 0x6F, 0xF3, 0xC1]);
     }
 
-    internal static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails Create(IObjectReference obj, global::Windows.Graphics.RectInt32 normalRect, global::Windows.Graphics.RectInt32 workArea, int dpi, int showCmd, global::Windows.Graphics.RectInt32 arrangeRect, global::Microsoft.UI.Windowing.PlacementInfo flags, string deviceName)
+    public static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails Create(IObjectReference obj, global::Windows.Graphics.RectInt32 normalRect, global::Windows.Graphics.RectInt32 workArea, int dpi, int showCmd, global::Windows.Graphics.RectInt32 arrangeRect, global::Microsoft.UI.Windowing.PlacementInfo flags, string deviceName)
     {
         nint thisPtr = obj.ThisPtr;
 

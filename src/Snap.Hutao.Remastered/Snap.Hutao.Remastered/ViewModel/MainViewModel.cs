@@ -20,7 +20,7 @@ namespace Snap.Hutao.Remastered.ViewModel;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
+public sealed partial class MainViewModel : Abstraction.ViewModel, IDisposable
 {
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly IMetadataService metadataService;

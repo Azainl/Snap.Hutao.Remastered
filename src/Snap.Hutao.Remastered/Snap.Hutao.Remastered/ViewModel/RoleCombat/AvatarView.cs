@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal class AvatarView : INameIconSide<Uri>
+public class AvatarView : INameIconSide<Uri>
 {
     protected AvatarView(Avatar metaAvatar)
     {

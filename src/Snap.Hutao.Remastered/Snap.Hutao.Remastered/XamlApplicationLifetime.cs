@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered;
 
 // Place to store critical application state
-internal static class XamlApplicationLifetime
+public static class XamlApplicationLifetime
 {
     public static bool DispatcherQueueInitialized { get => Volatile.Read(ref field); set => Volatile.Write(ref field, value); }
 

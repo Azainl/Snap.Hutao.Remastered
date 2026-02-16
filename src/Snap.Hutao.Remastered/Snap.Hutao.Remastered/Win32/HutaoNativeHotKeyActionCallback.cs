@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeHotKeyActionCallback
+public readonly unsafe struct HutaoNativeHotKeyActionCallback
 {
     private readonly delegate* unmanaged[Stdcall]<BOOL, GCHandle<HotKeyCombination>, void> value;
 

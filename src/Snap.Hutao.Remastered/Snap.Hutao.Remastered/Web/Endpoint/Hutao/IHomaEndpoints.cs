@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaEndpoints :
+public interface IHomaEndpoints :
     IHomaGachaLogEndpoints,
     IHomaServiceEndpoints,
     IHomaPassportEndpoints,

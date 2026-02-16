@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum BodyType
+public enum BodyType
 {
     BODY_NONE,
 

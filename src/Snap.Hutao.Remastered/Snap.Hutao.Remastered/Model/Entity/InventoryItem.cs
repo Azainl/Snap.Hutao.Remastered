@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("inventory_items")]
-internal sealed class InventoryItem
+public sealed class InventoryItem
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

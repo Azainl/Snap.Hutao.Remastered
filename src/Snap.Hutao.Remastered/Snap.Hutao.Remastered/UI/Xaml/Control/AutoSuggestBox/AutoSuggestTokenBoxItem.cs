@@ -17,7 +17,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 [TemplatePart(Name = TokenRemoveButton, Type = typeof(ButtonBase))]
 [TemplatePart(Name = TextAutoSuggestBox, Type = typeof(Microsoft.UI.Xaml.Controls.AutoSuggestBox))]
 [TemplatePart(Name = TextTokensCounter, Type = typeof(Microsoft.UI.Xaml.Controls.TextBlock))]
-internal partial class AutoSuggestTokenBoxItem : ListViewItem
+public partial class AutoSuggestTokenBoxItem : ListViewItem
 {
     private const string TokenRemoveButton = nameof(TokenRemoveButton);
     private const string TextAutoSuggestBox = nameof(TextAutoSuggestBox);

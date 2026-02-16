@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal static class RestrictedGamePathAccessExtension
+public static class RestrictedGamePathAccessExtension
 {
     extension(IRestrictedGamePathAccess access)
     {

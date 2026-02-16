@@ -7,7 +7,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.SpiralAbyss;
 
-internal interface ISpiralAbyssService
+public interface ISpiralAbyssService
 {
     ValueTask<ObservableCollection<SpiralAbyssView>> GetSpiralAbyssViewCollectionAsync(SpiralAbyssMetadataContext context, UserAndUid userAndUid);
 

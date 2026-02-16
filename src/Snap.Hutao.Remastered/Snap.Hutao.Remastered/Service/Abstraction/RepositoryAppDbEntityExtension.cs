@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal static class RepositoryAppDbEntityExtension
+public static class RepositoryAppDbEntityExtension
 {
     extension<TEntity>(IRepository<TEntity> repository)
         where TEntity : class, IAppDbEntity

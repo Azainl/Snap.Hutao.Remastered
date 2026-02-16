@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo;
 
-internal enum RefreshOptionKind
+public enum RefreshOptionKind
 {
     // This means load data directly from the database.
     None,

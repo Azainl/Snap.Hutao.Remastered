@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal enum RoleCombatAvatarType
+public enum RoleCombatAvatarType
 {
     /// <summary>
     /// 已有

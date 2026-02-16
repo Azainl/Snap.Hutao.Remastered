@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal readonly struct PointInt16
+public readonly struct PointInt16
 {
 #pragma warning disable CS0649
     public readonly short X;

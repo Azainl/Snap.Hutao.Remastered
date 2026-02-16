@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Enka.Model;
 
-internal sealed class EnkaResponse
+public sealed class EnkaResponse
 {
     [JsonPropertyName("playerInfo")]
     public PlayerInfo? PlayerInfo { get; set; }

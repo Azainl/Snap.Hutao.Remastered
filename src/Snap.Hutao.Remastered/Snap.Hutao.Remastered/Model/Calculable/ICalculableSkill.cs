@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal interface ICalculableSkill : ICalculableMinMaxLevel
+public interface ICalculableSkill : ICalculableMinMaxLevel
 {
     SkillGroupId GroupId { get; }
 }

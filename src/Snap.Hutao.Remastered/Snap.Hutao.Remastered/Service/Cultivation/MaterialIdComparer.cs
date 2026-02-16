@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal sealed class MaterialIdComparer : IComparer<MaterialId>
+public sealed class MaterialIdComparer : IComparer<MaterialId>
 {
     private static MaterialIdComparer? shared;
 

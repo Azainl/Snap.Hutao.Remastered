@@ -8,7 +8,7 @@ using Windows.ApplicationModel;
 
 namespace Snap.Hutao.Remastered.Core.ApplicationModel;
 
-internal static class LimitedAccessFeatures
+public static class LimitedAccessFeatures
 {
     private static readonly string PackagePublisherId = Package.Current.Id.PublisherId;
     private static readonly string PackageFamilyName = Package.Current.Id.FamilyName;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class ParameterDescription
+public sealed class ParameterDescription
 {
     public ParameterDescription(string parameter, string description)
     {

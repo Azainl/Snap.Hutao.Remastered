@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect;
 
-internal sealed class Game
+public sealed class Game
 {
     [JsonPropertyName("id")]
     public string Id { get; set; } = default!;

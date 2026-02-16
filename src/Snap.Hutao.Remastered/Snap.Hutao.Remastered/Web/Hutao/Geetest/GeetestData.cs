@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Geetest;
 
-internal sealed class GeetestData
+public sealed class GeetestData
 {
     [JsonPropertyName("gt")]
     public string Gt { get; set; } = default!;

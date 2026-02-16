@@ -7,7 +7,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.PackageOperation;
 
 [Service(ServiceLifetime.Transient, typeof(IGamePackageOperation), Key = GamePackageOperationKind.Install)]
-internal sealed class GamePackageInstallOperation : GamePackageOperation
+public sealed class GamePackageInstallOperation : GamePackageOperation
 {
     public override async ValueTask ExecuteAsync(GamePackageServiceContext context)
     {

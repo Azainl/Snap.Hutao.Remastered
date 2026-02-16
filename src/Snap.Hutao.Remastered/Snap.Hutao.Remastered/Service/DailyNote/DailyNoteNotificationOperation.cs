@@ -14,7 +14,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class DailyNoteNotificationOperation
+public sealed partial class DailyNoteNotificationOperation
 {
     private const string ToastAttributionUnknown = "Unknown UID";
 

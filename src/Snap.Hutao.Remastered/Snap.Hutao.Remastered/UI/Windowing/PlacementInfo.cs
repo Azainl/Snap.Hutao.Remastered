@@ -13,7 +13,7 @@ namespace Microsoft.UI.Windowing;
 [WindowsRuntimeType("Microsoft.UI")]
 [WinRTExposedType(typeof(EnumTypeDetails<PlacementInfo>))]
 [global::Windows.Foundation.Metadata.ContractVersion(typeof(WindowsAppSDKContract), 65543u)]
-internal enum PlacementInfo : uint
+public enum PlacementInfo : uint
 {
     None = 0U,
     RestoreToMaximized = 0x2U,

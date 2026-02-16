@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal interface IGameConfigurationFileService
+public interface IGameConfigurationFileService
 {
     void Backup(string source, bool isOversea);
 

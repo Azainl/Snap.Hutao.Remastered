@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserFingerprintService
+public interface IUserFingerprintService
 {
     ValueTask TryInitializeAsync(ViewModel.User.User user, CancellationToken token = default);
 }

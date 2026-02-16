@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum ItemType
+public enum ItemType
 {
     /// <summary>
     /// 无

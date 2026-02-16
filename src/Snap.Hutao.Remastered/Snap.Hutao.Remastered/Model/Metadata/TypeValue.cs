@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal class TypeValue<TType, TValue>
+public class TypeValue<TType, TValue>
 {
     public TypeValue(TType type, TValue value)
     {

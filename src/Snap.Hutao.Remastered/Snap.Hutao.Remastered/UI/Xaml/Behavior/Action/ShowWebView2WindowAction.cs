@@ -10,7 +10,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior.Action;
 
 [DependencyProperty<IWebView2ContentProvider>("ContentProvider")]
-internal sealed partial class ShowWebView2WindowAction : DependencyObject, IAction
+public sealed partial class ShowWebView2WindowAction : DependencyObject, IAction
 {
     public static ShowWebView2WindowAction? TryShow<TProvider>(XamlRoot? xamlRoot)
         where TProvider : IWebView2ContentProvider, new()

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class ReliquarySet
+public sealed class ReliquarySet
 {
     [JsonPropertyName("id")]
     public ReliquarySetId Id { get; set; }

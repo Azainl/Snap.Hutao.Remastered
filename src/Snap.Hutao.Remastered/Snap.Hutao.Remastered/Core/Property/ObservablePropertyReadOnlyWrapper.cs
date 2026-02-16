@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class ObservablePropertyReadOnlyWrapper<T> : IReadOnlyObservableProperty<T>
+public sealed partial class ObservablePropertyReadOnlyWrapper<T> : IReadOnlyObservableProperty<T>
 {
     private readonly IObservableProperty<T> source;
 

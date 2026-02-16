@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Entity.Abstraction;
 
-internal interface IAppDbEntityHasArchive : IAppDbEntity
+public interface IAppDbEntityHasArchive : IAppDbEntity
 {
     Guid ArchiveId { get; }
 }

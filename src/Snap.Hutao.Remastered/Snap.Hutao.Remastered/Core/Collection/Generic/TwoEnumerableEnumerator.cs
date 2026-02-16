@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.Collection.Generic;
 
-internal sealed partial class TwoEnumerableEnumerator<TFirst, TSecond> : IDisposable
+public sealed partial class TwoEnumerableEnumerator<TFirst, TSecond> : IDisposable
 {
     private readonly IEnumerator<TFirst> firstEnumerator;
     private readonly IEnumerator<TSecond> secondEnumerator;

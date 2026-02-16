@@ -5,7 +5,7 @@ using Windows.UI.Text;
 
 namespace Snap.Hutao.Remastered.UI.Text;
 
-internal sealed class FontWeights
+public sealed class FontWeights
 {
     public static FontWeight ExtraBlack { get; } = new(950);
 

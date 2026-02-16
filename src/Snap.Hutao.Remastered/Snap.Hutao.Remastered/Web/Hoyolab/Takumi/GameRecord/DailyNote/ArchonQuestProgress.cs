@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class ArchonQuestProgress
+public sealed class ArchonQuestProgress
 {
     [JsonPropertyName("list")]
     public List<ArchonQuest> List { get; set; } = default!;

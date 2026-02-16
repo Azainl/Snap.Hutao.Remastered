@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal unsafe struct Decompress
+public unsafe struct Decompress
 {
 #pragma warning disable CS0169
     private readonly delegate* unmanaged[Cdecl]<PCSTR, BOOL> isCanOpen;

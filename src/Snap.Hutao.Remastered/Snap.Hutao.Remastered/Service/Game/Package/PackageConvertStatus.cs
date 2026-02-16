@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Service.Game.Package;
 /// <summary>
 /// 包更新状态
 /// </summary>
-internal sealed class PackageConvertStatus
+public sealed class PackageConvertStatus
 {
     public PackageConvertStatus(string name)
     {

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 
-internal sealed class EndIds
+public sealed class EndIds
 {
     [JsonPropertyName("100")]
     public long NoviceWish { get; set; }

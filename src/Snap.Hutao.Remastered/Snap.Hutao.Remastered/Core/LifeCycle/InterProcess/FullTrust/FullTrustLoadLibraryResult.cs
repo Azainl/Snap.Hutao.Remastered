@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal sealed class FullTrustLoadLibraryResult : FullTrustResult;
+public sealed class FullTrustLoadLibraryResult : FullTrustResult;

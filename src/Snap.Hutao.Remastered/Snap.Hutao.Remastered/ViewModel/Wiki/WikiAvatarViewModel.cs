@@ -27,7 +27,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
+public sealed partial class WikiAvatarViewModel : Abstraction.ViewModel
 {
     private readonly IHutaoSpiralAbyssStatisticsCache hutaoCache;
     private readonly IContentDialogFactory contentDialogFactory;

@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 /// <summary>
 /// 圣遗物
 /// </summary>
-internal sealed class Reliquary : Calculable
+public sealed class Reliquary : Calculable
 {
     /// <summary>
     /// 圣遗物分组Id

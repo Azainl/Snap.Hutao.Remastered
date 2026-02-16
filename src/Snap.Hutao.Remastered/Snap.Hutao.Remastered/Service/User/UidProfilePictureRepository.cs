@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Abstraction;
 namespace Snap.Hutao.Remastered.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUidProfilePictureRepository))]
-internal sealed partial class UidProfilePictureRepository : IUidProfilePictureRepository
+public sealed partial class UidProfilePictureRepository : IUidProfilePictureRepository
 {
     [GeneratedConstructor]
     public partial UidProfilePictureRepository(IServiceProvider serviceProvider);

@@ -16,7 +16,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal sealed class GachaLogServiceMetadataContext : IMetadataContext,
+public sealed class GachaLogServiceMetadataContext : IMetadataContext,
     IMetadataArrayGachaEventSource,
     IMetadataDictionaryIdAvatarSource,
     IMetadataDictionaryIdWeaponSource,

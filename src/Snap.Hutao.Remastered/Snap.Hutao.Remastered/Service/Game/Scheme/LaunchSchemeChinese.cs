@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Game.Scheme;
 
-internal sealed class LaunchSchemeChinese : LaunchScheme
+public sealed class LaunchSchemeChinese : LaunchScheme
 {
     private const string HoyoPlayLauncherChineseId = "jGHBHlcOq1";
     private const string HoyoPlayGameChineseId = "1Z8W5NHUQb";

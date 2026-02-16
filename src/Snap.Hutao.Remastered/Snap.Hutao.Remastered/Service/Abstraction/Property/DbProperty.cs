@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal abstract class DbProperty<T> : ObservableObject, IObservableProperty<T>
+public abstract class DbProperty<T> : ObservableObject, IObservableProperty<T>
 {
     private bool deferring;
 

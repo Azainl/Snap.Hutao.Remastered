@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal static partial class SpecialNameHandling
+public static partial class SpecialNameHandling
 {
     [GeneratedRegex("\\{M#(.*?)\\}\\{F#(.*?)\\}")]
     private static partial Regex MaleFemaleRegex { get; }

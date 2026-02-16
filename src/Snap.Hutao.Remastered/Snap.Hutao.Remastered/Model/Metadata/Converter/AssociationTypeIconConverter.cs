@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class AssociationTypeIconConverter : ValueConverter<AssociationType, Uri?>
+public sealed partial class AssociationTypeIconConverter : ValueConverter<AssociationType, Uri?>
 {
     public static Uri? AssociationTypeToIconUri(AssociationType type)
     {

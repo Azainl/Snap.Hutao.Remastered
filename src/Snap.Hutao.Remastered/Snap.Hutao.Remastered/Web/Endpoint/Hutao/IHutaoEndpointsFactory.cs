@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHutaoEndpointsFactory
+public interface IHutaoEndpointsFactory
 {
     IHutaoEndpoints Create();
 }

@@ -16,7 +16,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Service.Game;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePathAccess
+public sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePathAccess
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial LaunchOptions(IServiceProvider serviceProvider);

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Item;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal sealed class ResinStatisticsItem
+public sealed class ResinStatisticsItem
 {
     private readonly ResinStatisticsItemKind kind;
 
@@ -62,9 +62,9 @@ internal sealed class ResinStatisticsItem
     /// <summary>
     /// ONLY BlossomOfWealth has value.
     /// </summary>
-    internal double MiscMoraEarned { get; set; }
+    public double MiscMoraEarned { get; set; }
 
-    internal int RawTimes
+    public int RawTimes
     {
         get
         {
@@ -83,7 +83,7 @@ internal sealed class ResinStatisticsItem
         }
     }
 
-    internal double Mora
+    public double Mora
     {
         get
         {
@@ -105,7 +105,7 @@ internal sealed class ResinStatisticsItem
         }
     }
 
-    internal double ItemCount
+    public double ItemCount
     {
         get => RawItemCount - MiscMoraEarned;
     }

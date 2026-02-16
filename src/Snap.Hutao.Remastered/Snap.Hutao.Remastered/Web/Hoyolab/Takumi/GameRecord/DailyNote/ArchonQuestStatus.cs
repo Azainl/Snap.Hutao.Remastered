@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
 [ExtendedEnum]
-internal enum ArchonQuestStatus
+public enum ArchonQuestStatus
 {
     [LocalizationKey(nameof(SH.WebDailyNoteArchonQuestStatusFinished))]
     StatusFinished,

@@ -16,7 +16,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionGameResourceHandler : AbstractLaunchExecutionHandler
 {
     private readonly bool convertOnly;
 

@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
 [DependencyProperty<object>("VisibleValue")]
 [DependencyProperty<object>("CollapsedValue")]
-internal sealed partial class VisibilityToObjectConverter : DependencyValueConverter<Visibility, object?>
+public sealed partial class VisibilityToObjectConverter : DependencyValueConverter<Visibility, object?>
 {
     public override object? Convert(Visibility from)
     {

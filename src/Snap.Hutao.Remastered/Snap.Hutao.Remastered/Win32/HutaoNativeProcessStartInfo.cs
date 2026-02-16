@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Win32.System.Threading;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal struct HutaoNativeProcessStartInfo
+public struct HutaoNativeProcessStartInfo
 {
     public PCWSTR ApplicationName;
     public PCWSTR CommandLine;

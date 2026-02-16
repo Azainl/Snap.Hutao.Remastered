@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
-internal static class RegistryAccountDataListDecoder
+public static class RegistryAccountDataListDecoder
 {
     private static ReadOnlySpan<byte> InitializationVector { get => [0x12, 0x34, 0x56, 0x78, 0x90, 0xAB, 0xCD, 0xEF]; }
 

@@ -26,7 +26,7 @@ namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class GachaLogViewModel : Abstraction.ViewModel
+public sealed partial class GachaLogViewModel : Abstraction.ViewModel
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceProvider serviceProvider;

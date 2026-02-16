@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class TraceEffect
+public sealed class TraceEffect
 {
     public required MaterialId Id { get; init; }
 

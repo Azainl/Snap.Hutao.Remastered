@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Entity;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal sealed class NotifySuppressionContext : INotifySuppressionContext
+public sealed class NotifySuppressionContext : INotifySuppressionContext
 {
     private readonly List<DailyNoteNotifyInfo> infos;
 

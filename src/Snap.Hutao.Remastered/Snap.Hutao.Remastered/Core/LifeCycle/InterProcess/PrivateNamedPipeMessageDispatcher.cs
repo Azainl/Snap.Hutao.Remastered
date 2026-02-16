@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Factory.Process;
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class PrivateNamedPipeMessageDispatcher
+public sealed partial class PrivateNamedPipeMessageDispatcher
 {
     private readonly IServiceProvider serviceProvider;
 

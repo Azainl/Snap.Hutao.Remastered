@@ -11,7 +11,7 @@ using System.IO.Pipes;
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class PrivateNamedPipeClient : IDisposable
+public sealed partial class PrivateNamedPipeClient : IDisposable
 {
     private readonly NamedPipeClientStream clientStream = new(".", PrivateNamedPipe.PrivateName, PipeDirection.InOut, PipeOptions.Asynchronous | PipeOptions.WriteThrough);
 

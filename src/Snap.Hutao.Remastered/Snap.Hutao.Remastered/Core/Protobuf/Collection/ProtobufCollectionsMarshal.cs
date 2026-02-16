@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Protobuf.Collection;
 
-internal static class ProtobufCollectionsMarshal
+public static class ProtobufCollectionsMarshal
 {
     public static Span<T> AsSpan<T>(RepeatedField<T> field)
     {

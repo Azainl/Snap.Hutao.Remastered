@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class NumberExtension
+public static class NumberExtension
 {
     private static readonly KeyValuePair<string, int>[] RomanNumeralsSequence =
     [

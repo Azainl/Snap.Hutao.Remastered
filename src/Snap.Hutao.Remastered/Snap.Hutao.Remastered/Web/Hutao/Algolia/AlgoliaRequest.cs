@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Algolia;
 
-internal sealed class AlgoliaRequest
+public sealed class AlgoliaRequest
 {
     [JsonPropertyName("query")]
     public string Query { get; set; } = default!;

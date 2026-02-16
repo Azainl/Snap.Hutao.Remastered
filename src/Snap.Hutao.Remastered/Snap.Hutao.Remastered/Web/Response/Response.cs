@@ -7,9 +7,9 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal class Response : ICommonResponse<Response>
+public class Response : ICommonResponse<Response>
 {
-    public const int InternalFailure = 0x26F19335;
+    public const int publicFailure = 0x26F19335;
 
     [JsonConstructor]
     public Response(int returnCode, string message)
@@ -45,7 +45,7 @@ internal class Response : ICommonResponse<Response>
         where TResponse : ICommonResponse<TResponse>
     {
         string message = SH.FormatWebResponseRequestException(callerName, TypeNameHelper.GetTypeDisplayName(typeof(TResponse)));
-        response ??= TResponse.CreateDefault(InternalFailure, message);
+        response ??= TResponse.CreateDefault(publicFailure, message);
 
         if ((KnownReturnCode)response.ReturnCode is KnownReturnCode.PleaseLogin or KnownReturnCode.RET_TOKEN_INVALID)
         {
@@ -76,7 +76,7 @@ internal class Response : ICommonResponse<Response>
 }
 
 [SuppressMessage("", "SA1402")]
-internal class Response<TData> : Response, ICommonResponse<Response<TData>>, IJsBridgeResult
+public class Response<TData> : Response, ICommonResponse<Response<TData>>, IJsBridgeResult
 {
     [JsonConstructor]
     public Response(int returnCode, string message, TData? data)

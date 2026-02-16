@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal interface IPassportMobileCaptchaProvider : IAigisProvider
+public interface IPassportMobileCaptchaProvider : IAigisProvider
 {
     string? ActionType { get; }
 

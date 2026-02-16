@@ -8,7 +8,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.PackageOperation;
 
-internal abstract class GamePackageOperation : IGamePackageOperation
+public abstract class GamePackageOperation : IGamePackageOperation
 {
     public abstract ValueTask ExecuteAsync(GamePackageServiceContext context);
 

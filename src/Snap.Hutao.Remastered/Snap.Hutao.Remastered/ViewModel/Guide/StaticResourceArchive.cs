@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.ViewModel.Guide;
 
 [ExtendedEnum]
-internal enum StaticResourceArchive
+public enum StaticResourceArchive
 {
     [LocalizationKey(nameof(SH.ViewGuideStepStaticResourceSettingMinimumOff))]
     Full,

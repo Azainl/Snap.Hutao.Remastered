@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class GamePackageOperationInfo
+public sealed class GamePackageOperationInfo
 {
     public GamePackageOperationInfo(int downloadTotalChunks, int installTotalChunks, long downloadTotalBytes, long installTotalBytes, ImmutableArray<SophonAssetOperation> diffAssetOperations)
     {

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hutao;
 
 namespace Snap.Hutao.Remastered.Service.Update;
 
-internal sealed class CheckUpdateResult
+public sealed class CheckUpdateResult
 {
     public CheckUpdateResultKind Kind { get; set; }
 

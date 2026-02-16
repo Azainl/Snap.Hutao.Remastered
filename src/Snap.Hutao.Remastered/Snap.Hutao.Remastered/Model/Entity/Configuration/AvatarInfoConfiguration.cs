@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class AvatarInfoConfiguration : IEntityTypeConfiguration<AvatarInfo>
+public sealed class AvatarInfoConfiguration : IEntityTypeConfiguration<AvatarInfo>
 {
     /// <inheritdoc/>
     public void Configure(EntityTypeBuilder<AvatarInfo> builder)

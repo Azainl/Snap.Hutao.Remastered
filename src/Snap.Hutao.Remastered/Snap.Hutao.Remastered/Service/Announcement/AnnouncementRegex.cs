@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Service.Announcement;
 
-internal static partial class AnnouncementRegex
+public static partial class AnnouncementRegex
 {
     [GeneratedRegex("&lt;t class=\"t_(?:gl|lc)\".*?&gt;(?:<span .*?>)?(.*?)(?:</span>)?&lt;/t&gt;", RegexOptions.Multiline)]
     public static partial Regex XmlTimeTagRegex { get; }

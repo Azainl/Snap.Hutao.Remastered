@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.Overlay;
 
-internal sealed class OverlayCatalog
+public sealed class OverlayCatalog
 {
     public OverlayCatalog(string id, string icon, string name)
     {

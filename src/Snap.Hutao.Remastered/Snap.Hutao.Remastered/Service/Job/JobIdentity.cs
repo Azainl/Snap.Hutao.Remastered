@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Job;
 
-internal static class JobIdentity
+public static class JobIdentity
 {
     public const string DailyNoteGroupName = "DailyNote";
     public const string DailyNoteRefreshJobName = "RefreshJob";

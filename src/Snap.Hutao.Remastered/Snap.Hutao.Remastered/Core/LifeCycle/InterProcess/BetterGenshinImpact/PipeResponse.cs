@@ -3,13 +3,13 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
-internal class PipeResponse
+public class PipeResponse
 {
     public required PipeResponseKind Kind { get; set; }
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class PipeResponse<T> : PipeResponse
+public sealed class PipeResponse<T> : PipeResponse
 {
     public T? Data { get; set; }
 }

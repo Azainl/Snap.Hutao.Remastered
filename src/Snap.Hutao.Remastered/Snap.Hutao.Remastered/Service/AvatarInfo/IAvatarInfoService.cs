@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo;
 
-internal interface IAvatarInfoService
+public interface IAvatarInfoService
 {
     ValueTask<Summary?> GetSummaryAsync(SummaryFactoryMetadataContext context, UserAndUid userAndUid, RefreshOptionKind refreshOptionKind, CancellationToken token = default);
 }

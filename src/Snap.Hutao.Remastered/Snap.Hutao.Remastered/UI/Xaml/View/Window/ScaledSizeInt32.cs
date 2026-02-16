@@ -7,7 +7,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
-internal static class ScaledSizeInt32
+public static class ScaledSizeInt32
 {
     public static SizeInt32 CreateForWindow(int width, int height, Microsoft.UI.Xaml.Window window)
     {

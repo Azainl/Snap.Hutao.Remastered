@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class AvatarAppearanceRank
+public sealed class AvatarAppearanceRank
 {
     public int Floor { get; set; }
 

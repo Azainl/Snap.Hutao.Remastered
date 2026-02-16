@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal abstract class CollocationView : RateAndDelta, INameIcon<Uri>
+public abstract class CollocationView : RateAndDelta, INameIcon<Uri>
 {
     protected CollocationView(double rate, double? lastRate)
         : base(rate, lastRate)

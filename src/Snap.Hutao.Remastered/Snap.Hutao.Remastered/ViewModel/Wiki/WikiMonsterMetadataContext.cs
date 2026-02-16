@@ -13,7 +13,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed class WikiMonsterMetadataContext : IMetadataContext,
+public sealed class WikiMonsterMetadataContext : IMetadataContext,
     IMetadataDictionaryLevelMonsterGrowCurveSource,
     IMetadataArrayMonsterSource,
     IMetadataDictionaryIdDisplayItemAndMaterialSource

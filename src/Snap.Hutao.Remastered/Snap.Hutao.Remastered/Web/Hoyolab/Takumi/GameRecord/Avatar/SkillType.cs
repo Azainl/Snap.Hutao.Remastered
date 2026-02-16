@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal enum SkillType
+public enum SkillType
 {
     None = 0,
 

@@ -17,7 +17,7 @@ using MetadataSkill = Snap.Hutao.Remastered.Model.Metadata.Avatar.Skill;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class AvatarViewBuilderExtension
+public static class AvatarViewBuilderExtension
 {
     public static TBuilder SetCostumeIconOrDefault<TBuilder>(this TBuilder builder, DetailedCharacter detailedCharacter, MetadataAvatar avatar)
         where TBuilder : IAvatarViewBuilder

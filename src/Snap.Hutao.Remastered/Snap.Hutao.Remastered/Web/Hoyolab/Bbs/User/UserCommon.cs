@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal class UserCommon
+public class UserCommon
 {
     [JsonPropertyName("uid")]
     public string? Uid { get; init; }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal sealed class RegionConverter : JsonConverter<Region>
+public sealed class RegionConverter : JsonConverter<Region>
 {
     public override Region Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {

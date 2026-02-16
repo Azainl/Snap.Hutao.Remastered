@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class AvatarCollocation : AvatarBuild
+public sealed class AvatarCollocation : AvatarBuild
 {
     public List<ItemRate<AvatarId, double>> Avatars { get; set; } = default!;
 

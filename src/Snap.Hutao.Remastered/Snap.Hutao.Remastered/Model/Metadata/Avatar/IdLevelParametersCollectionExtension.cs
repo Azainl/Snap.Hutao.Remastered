@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal static class IdLevelParametersCollectionExtension
+public static class IdLevelParametersCollectionExtension
 {
     extension(IdLevelParametersCollection<ProudSkillId, SkillLevel, float> collection)
     {

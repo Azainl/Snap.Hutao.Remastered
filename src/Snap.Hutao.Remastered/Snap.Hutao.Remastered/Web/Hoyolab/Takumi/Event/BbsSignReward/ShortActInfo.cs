@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class ShortActInfo
+public sealed class ShortActInfo
 {
     [JsonPropertyName("awards")]
     public List<JsonElement> Awards { get; set; } = default!;

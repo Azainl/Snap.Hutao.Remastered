@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal readonly struct EmptyContent;
+public readonly struct EmptyContent;

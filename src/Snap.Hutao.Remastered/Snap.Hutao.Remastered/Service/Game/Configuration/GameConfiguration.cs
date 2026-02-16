@@ -12,7 +12,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal static class GameConfiguration
+public static class GameConfiguration
 {
     public static ChannelOptions Read(IGameFileSystem gameFileSystem)
     {

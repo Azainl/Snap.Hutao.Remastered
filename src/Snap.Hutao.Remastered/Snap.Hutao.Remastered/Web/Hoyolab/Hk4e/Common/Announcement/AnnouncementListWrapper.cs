@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announcement;
 
-internal sealed class AnnouncementListWrapper : ListWrapper<Announcement>
+public sealed class AnnouncementListWrapper : ListWrapper<Announcement>
 {
     [JsonPropertyName("type_id")]
     public int TypeId { get; set; }

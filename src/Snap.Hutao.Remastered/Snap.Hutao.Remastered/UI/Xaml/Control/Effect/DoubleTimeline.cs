@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Effect;
 
-internal class DoubleTimeline
+public class DoubleTimeline
 {
     private readonly TimelineProgressor progressor;
 

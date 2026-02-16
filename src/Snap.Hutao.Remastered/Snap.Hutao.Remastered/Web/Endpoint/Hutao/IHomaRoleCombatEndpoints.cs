@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaRoleCombatEndpoints : IHomaRootAccess
+public interface IHomaRoleCombatEndpoints : IHomaRootAccess
 {
     string RoleCombatRecordUpload()
     {

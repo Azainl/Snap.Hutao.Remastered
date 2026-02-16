@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.DailyNote;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class DailyNotePage : ScopedPage
+public sealed partial class DailyNotePage : ScopedPage
 {
     public DailyNotePage()
     {

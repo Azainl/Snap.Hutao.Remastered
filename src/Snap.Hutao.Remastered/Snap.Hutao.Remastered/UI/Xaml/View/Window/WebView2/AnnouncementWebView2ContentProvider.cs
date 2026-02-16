@@ -18,7 +18,7 @@ using Windows.System;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
 [DependencyProperty<Announcement>("Announcement")]
-internal sealed partial class AnnouncementWebView2ContentProvider : DependencyObject, IWebView2ContentProvider
+public sealed partial class AnnouncementWebView2ContentProvider : DependencyObject, IWebView2ContentProvider
 {
     // support click open browser.
     private const string MihoyoSDKDefinition = """

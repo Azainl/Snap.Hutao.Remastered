@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal interface IGachaLogHutaoCloudService
+public interface IGachaLogHutaoCloudService
 {
     ValueTask<ValueResult<bool, string>> DeleteGachaItemsAsync(string uid, CancellationToken token = default);
 

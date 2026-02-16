@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal static class ResponseValidationServiceCollectionExtension
+public static class ResponseValidationServiceCollectionExtension
 {
     extension(IServiceCollection services)
     {

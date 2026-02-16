@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal class IdCount
+public class IdCount
 {
     public required MaterialId Id { get; init; }
 

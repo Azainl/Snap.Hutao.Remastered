@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class EnumerableExtension
+public static class EnumerableExtension
 {
     public static IEnumerable<KeyValuePair<TKey, int>> CountByKey<TKey, TValue>(this IEnumerable<Dictionary<TKey, TValue>> source, Func<TValue, bool> predicate)
         where TKey : notnull

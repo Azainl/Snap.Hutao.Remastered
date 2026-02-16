@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announcement;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class AnnouncementClient
+public sealed partial class AnnouncementClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

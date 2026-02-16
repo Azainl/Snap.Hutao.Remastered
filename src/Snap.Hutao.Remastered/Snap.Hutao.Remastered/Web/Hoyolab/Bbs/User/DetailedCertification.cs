@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class DetailedCertification : Certification
+public sealed class DetailedCertification : Certification
 {
     [JsonPropertyName("id")]
     public string Id { get; set; } = default!;

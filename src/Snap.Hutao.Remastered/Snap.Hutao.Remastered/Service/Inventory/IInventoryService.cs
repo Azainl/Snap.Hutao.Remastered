@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Inventory;
 
-internal interface IInventoryService
+public interface IInventoryService
 {
     ImmutableArray<InventoryItemView> GetInventoryItemViews(ICultivationMetadataContext context, CultivateProject cultivateProject, ICommand saveCommand);
 

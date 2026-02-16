@@ -8,7 +8,7 @@ using System.Web;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal sealed class GachaLogTypedQueryOptions
+public sealed class GachaLogTypedQueryOptions
 {
     public const int Size = 20;
 

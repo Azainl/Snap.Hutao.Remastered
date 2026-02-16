@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class RoleCombatPage : ScopedPage
+public sealed partial class RoleCombatPage : ScopedPage
 {
     public RoleCombatPage()
     {

@@ -7,16 +7,16 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal static class HoyolabHttpRequestMessageBuilderExtension
+public static class HoyolabHttpRequestMessageBuilderExtension
 {
     extension(HttpRequestMessageBuilder builder)
     {
-        internal HttpRequestMessageBuilder SetUserCookieAndFpHeader(UserAndUid userAndUid, CookieType cookie)
+        public HttpRequestMessageBuilder SetUserCookieAndFpHeader(UserAndUid userAndUid, CookieType cookie)
         {
             return builder.SetUserCookieAndFpHeader(userAndUid.User, cookie);
         }
 
-        internal HttpRequestMessageBuilder SetUserCookieAndFpHeader(Model.Entity.User user, CookieType cookie)
+        public HttpRequestMessageBuilder SetUserCookieAndFpHeader(Model.Entity.User user, CookieType cookie)
         {
             builder.RemoveHeader("Cookie");
             StringBuilder stringBuilder = new();
@@ -50,17 +50,17 @@ internal static class HoyolabHttpRequestMessageBuilderExtension
             return builder;
         }
 
-        internal HttpRequestMessageBuilder SetXrpcAigis(string aigis)
+        public HttpRequestMessageBuilder SetXrpcAigis(string aigis)
         {
             return builder.SetHeader("x-rpc-aigis", aigis);
         }
 
-        internal HttpRequestMessageBuilder SetXrpcChallenge(string challenge)
+        public HttpRequestMessageBuilder SetXrpcChallenge(string challenge)
         {
             return builder.SetHeader("x-rpc-challenge", challenge);
         }
 
-        internal HttpRequestMessageBuilder SetXrpcChallenge(string challenge, string validate)
+        public HttpRequestMessageBuilder SetXrpcChallenge(string challenge, string validate)
         {
             return builder
                 .SetHeader("x-rpc-challenge", challenge)
@@ -68,7 +68,7 @@ internal static class HoyolabHttpRequestMessageBuilderExtension
                 .SetHeader("x-rpc-seccode", $"{validate}|jordan");
         }
 
-        internal HttpRequestMessageBuilder SetXrpcVerify(string verify)
+        public HttpRequestMessageBuilder SetXrpcVerify(string verify)
         {
             return builder.SetHeader("x-rpc-verify", verify);
         }

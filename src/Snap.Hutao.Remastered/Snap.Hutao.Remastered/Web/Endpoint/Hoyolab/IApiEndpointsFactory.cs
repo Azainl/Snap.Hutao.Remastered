@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
-internal interface IApiEndpointsFactory
+public interface IApiEndpointsFactory
 {
     IApiEndpoints Create(ApiEndpointsKind kind);
 }

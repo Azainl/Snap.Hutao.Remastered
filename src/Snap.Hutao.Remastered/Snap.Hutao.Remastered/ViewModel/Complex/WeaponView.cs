@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal sealed class WeaponView : CollocationView
+public sealed class WeaponView : CollocationView
 {
     public WeaponView(Weapon weapon, double rate, double? lastRate)
         : base(rate, lastRate)

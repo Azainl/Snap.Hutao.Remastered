@@ -18,7 +18,7 @@ namespace Microsoft.UI.Windowing;
 [AppWindowPlacementDetailsRcwFactory]
 [ProjectedRuntimeClass(typeof(IAppWindowPlacementDetails))]
 [global::Windows.Foundation.Metadata.ContractVersion(typeof(WindowsAppSDKContract), 65543u)]
-internal sealed class AppWindowPlacementDetails : ICustomQueryInterface, IWinRTObject, IEquatable<AppWindowPlacementDetails>
+public sealed class AppWindowPlacementDetails : ICustomQueryInterface, IWinRTObject, IEquatable<AppWindowPlacementDetails>
 {
     private static volatile IObjectReference? objRefMicrosoftUIWindowingIAppWindowPlacementDetailsStatics;
 
@@ -27,7 +27,7 @@ internal sealed class AppWindowPlacementDetails : ICustomQueryInterface, IWinRTO
     private volatile ConcurrentDictionary<RuntimeTypeHandle, IObjectReference>? queryInterfaceCache;
     private volatile ConcurrentDictionary<RuntimeTypeHandle, object>? additionalTypeData;
 
-    internal AppWindowPlacementDetails(IObjectReference objRef)
+    public AppWindowPlacementDetails(IObjectReference objRef)
     {
         inner = objRef.As(IAppWindowPlacementDetailsMethods.IID);
     }

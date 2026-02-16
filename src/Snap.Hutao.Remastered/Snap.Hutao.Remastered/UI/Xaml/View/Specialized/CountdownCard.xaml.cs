@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 
 [DependencyProperty<string>("Title")]
 [DependencyProperty<IList<Countdown>>("Countdowns")]
-internal sealed partial class CountdownCard : UserControl
+public sealed partial class CountdownCard : UserControl
 {
     public CountdownCard()
     {

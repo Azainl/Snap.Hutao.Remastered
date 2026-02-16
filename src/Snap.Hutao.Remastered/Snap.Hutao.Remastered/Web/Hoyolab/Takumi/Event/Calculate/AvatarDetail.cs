@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class AvatarDetail
+public sealed class AvatarDetail
 {
     [JsonPropertyName("skill_list")]
     public List<Skill> SkillList { get; set; } = default!;

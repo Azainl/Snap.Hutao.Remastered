@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.DataSigning;
 
-internal enum SaltType
+public enum SaltType
 {
     None,
     PROD,

@@ -7,7 +7,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpRequestOptionsBuilderExtension
+public static class HttpRequestOptionsBuilderExtension
 {
     extension<TBuilder>(TBuilder builder)
         where TBuilder : class, IHttpRequestOptionsBuilder

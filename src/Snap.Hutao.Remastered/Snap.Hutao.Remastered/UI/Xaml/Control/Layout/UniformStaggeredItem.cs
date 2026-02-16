@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
-internal sealed class UniformStaggeredItem
+public sealed class UniformStaggeredItem
 {
     public UniformStaggeredItem(int index)
     {

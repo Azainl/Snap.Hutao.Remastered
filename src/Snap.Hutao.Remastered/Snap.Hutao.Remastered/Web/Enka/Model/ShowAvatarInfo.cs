@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Enka.Model;
 
-internal sealed class ShowAvatarInfo
+public sealed class ShowAvatarInfo
 {
     [JsonPropertyName("avatarId")]
     public AvatarId AvatarId { get; set; }

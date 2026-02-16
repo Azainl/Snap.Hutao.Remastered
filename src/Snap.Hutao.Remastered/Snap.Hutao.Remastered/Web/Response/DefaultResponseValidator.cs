@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Notification;
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal sealed class DefaultResponseValidator : ICommonResponseValidator<Response>
+public sealed class DefaultResponseValidator : ICommonResponseValidator<Response>
 {
     private readonly IMessenger messenger;
 

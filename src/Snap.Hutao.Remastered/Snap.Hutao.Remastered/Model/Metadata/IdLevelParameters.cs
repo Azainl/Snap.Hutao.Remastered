@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class IdLevelParameters<TId, TLevel, TParam> : LevelParameters<TLevel, TParam>
+public sealed class IdLevelParameters<TId, TLevel, TParam> : LevelParameters<TLevel, TParam>
 {
     public IdLevelParameters(TId id, TLevel level, ImmutableArray<TParam> parameters)
         : base(level, parameters)

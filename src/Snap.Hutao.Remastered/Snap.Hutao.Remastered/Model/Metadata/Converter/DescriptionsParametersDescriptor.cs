@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class DescriptionsParametersDescriptor : ValueConverter<DescriptionsParameters, IList<LevelParameters<string, ParameterDescription>>>
+public sealed partial class DescriptionsParametersDescriptor : ValueConverter<DescriptionsParameters, IList<LevelParameters<string, ParameterDescription>>>
 {
     [GeneratedRegex("{param([1-9][0-9]*?):(.+?)}")]
     private static partial Regex ParamRegex { get; }

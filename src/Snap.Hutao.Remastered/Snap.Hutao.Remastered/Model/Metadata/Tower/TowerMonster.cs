@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Tower;
 
-internal sealed class TowerMonster
+public sealed class TowerMonster
 {
     public required MonsterDescribeId Id { get; init; }
 

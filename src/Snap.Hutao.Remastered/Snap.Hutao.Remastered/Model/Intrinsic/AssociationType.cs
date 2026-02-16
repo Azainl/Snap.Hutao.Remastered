@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum AssociationType
+public enum AssociationType
 {
     ASSOC_TYPE_NONE,
 

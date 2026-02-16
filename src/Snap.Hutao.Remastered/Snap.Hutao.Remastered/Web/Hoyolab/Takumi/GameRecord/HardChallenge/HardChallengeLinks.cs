@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeLinks
+public sealed class HardChallengeLinks
 {
     [JsonPropertyName("lineup_link")]
     public required Uri LineupLink { get; init; }

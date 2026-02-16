@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal interface INavigationRecipient
+public interface INavigationRecipient
 {
     /// <summary>
     /// Implement this method to receive extra data during navigation.

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class NameCard
+public sealed class NameCard
 {
     public required NameCardId Id { get; init; }
 

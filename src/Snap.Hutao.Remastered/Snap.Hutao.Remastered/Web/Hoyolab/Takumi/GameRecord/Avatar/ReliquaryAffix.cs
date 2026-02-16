@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class ReliquaryAffix
+public sealed class ReliquaryAffix
 {
     [JsonPropertyName("activation_number")]
     public int ActivationNumber { get; set; }

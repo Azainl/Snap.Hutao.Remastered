@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.QueryProvider;
 
-internal readonly struct GachaLogQuery
+public readonly struct GachaLogQuery
 {
     public readonly string Message;
     public readonly string Query;

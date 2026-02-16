@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO.Hashing;
 
-internal static class XxHash64
+public static class XxHash64
 {
     public static async ValueTask<string> HashAsync(Stream stream, CancellationToken token = default)
     {

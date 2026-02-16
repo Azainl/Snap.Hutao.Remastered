@@ -15,7 +15,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
-internal sealed partial class ExceptionWindow : Microsoft.UI.Xaml.Window, INotifyPropertyChanged
+public sealed partial class ExceptionWindow : Microsoft.UI.Xaml.Window, INotifyPropertyChanged
 {
     private readonly SentryId associatedEventId;
 

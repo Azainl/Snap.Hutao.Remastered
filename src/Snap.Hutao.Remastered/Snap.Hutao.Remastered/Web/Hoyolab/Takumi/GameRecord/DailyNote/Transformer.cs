@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class Transformer
+public sealed class Transformer
 {
     [JsonPropertyName("obtained")]
     [MemberNotNullWhen(true, nameof(RecoveryTime))]

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class Weapon : Calculable
+public sealed class Weapon : Calculable
 {
     [JsonPropertyName("weapon_cat_id")]
     public int WeaponCatId { get; set; }

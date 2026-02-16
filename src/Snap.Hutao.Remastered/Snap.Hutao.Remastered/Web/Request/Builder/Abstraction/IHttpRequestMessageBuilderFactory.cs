@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpRequestMessageBuilderFactory
+public interface IHttpRequestMessageBuilderFactory
 {
     HttpRequestMessageBuilder Create();
 }

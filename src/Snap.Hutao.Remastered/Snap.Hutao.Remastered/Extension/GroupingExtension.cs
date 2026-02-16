@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class GroupingExtension
+public static class GroupingExtension
 {
     extension<TKey, TElement>(IGrouping<TKey, TElement> grouping)
     {

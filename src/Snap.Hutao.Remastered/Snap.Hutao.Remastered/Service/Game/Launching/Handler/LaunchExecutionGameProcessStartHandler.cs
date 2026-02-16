@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionGameProcessStartHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionGameProcessStartHandler : AbstractLaunchExecutionHandler
 {
     public override async ValueTask BeforeAsync(BeforeLaunchExecutionContext context)
     {

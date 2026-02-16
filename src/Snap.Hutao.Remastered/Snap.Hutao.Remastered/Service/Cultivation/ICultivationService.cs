@@ -9,7 +9,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal interface ICultivationService
+public interface ICultivationService
 {
     ValueTask<IAdvancedDbCollectionView<CultivateProject>> GetProjectCollectionAsync();
 

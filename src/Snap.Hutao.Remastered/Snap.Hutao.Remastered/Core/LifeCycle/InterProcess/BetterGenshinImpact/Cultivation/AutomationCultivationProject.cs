@@ -4,7 +4,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Cultivation;
 
-internal sealed class AutomationCultivationProject
+public sealed class AutomationCultivationProject
 {
     public required ImmutableArray<AutomationCultivationEntry> Entries { get; set; }
 

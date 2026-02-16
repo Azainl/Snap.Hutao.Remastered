@@ -31,7 +31,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Image;
 [DependencyProperty<object>("PlaceholderSource")]
 [DependencyProperty<object>("Source", PropertyChangedCallbackName = nameof(OnSourceChanged))]
 [DependencyProperty<bool>("ShowAsMonoChrome", DefaultValue = false, NotNull = true)]
-internal sealed partial class CachedImage : Microsoft.UI.Xaml.Controls.Control
+public sealed partial class CachedImage : Microsoft.UI.Xaml.Controls.Control
 {
     private const string PartImage = "Image";
 
@@ -239,7 +239,7 @@ internal sealed partial class CachedImage : Microsoft.UI.Xaml.Controls.Control
             // Ignored
             throw;
         }
-        catch (InternalImageCacheException)
+        catch (publicImageCacheException)
         {
             // Ignored
             throw;

@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-internal abstract partial class AbstractUIGF40ImportService : IUIGFImportService
+public abstract partial class AbstractUIGF40ImportService : IUIGFImportService
 {
     private readonly IServiceProvider serviceProvider;
     private readonly ITaskContext taskContext;

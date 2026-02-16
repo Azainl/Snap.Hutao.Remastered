@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatDetail
+public sealed class RoleCombatDetail
 {
     [JsonPropertyName("rounds_data")]
     public required ImmutableArray<RoleCombatRoundData> RoundsData { get; init; }

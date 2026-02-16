@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.Game.Scheme;
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal static class GameServiceExtension
+public static class GameServiceExtension
 {
     extension(IGameService gameService)
     {

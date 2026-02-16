@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class DailyNoteEntryConfiguration : IEntityTypeConfiguration<DailyNoteEntry>
+public sealed class DailyNoteEntryConfiguration : IEntityTypeConfiguration<DailyNoteEntry>
 {
     public void Configure(EntityTypeBuilder<DailyNoteEntry> builder)
     {

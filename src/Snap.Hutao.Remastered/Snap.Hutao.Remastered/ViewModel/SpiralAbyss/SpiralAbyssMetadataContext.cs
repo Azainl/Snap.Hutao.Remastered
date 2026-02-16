@@ -11,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal sealed class SpiralAbyssMetadataContext : IMetadataContext,
+public sealed class SpiralAbyssMetadataContext : IMetadataContext,
     IMetadataDictionaryIdTowerScheduleSource,
     IMetadataDictionaryIdTowerFloorSource,
     IMetadataDictionaryIdArrayTowerLevelSource,

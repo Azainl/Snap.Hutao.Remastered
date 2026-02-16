@@ -6,7 +6,7 @@ using System.Text.Json.Serialization.Metadata;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json;
 
-internal static class JsonTypeInfoResolvers
+public static class JsonTypeInfoResolvers
 {
     private static readonly Type JsonEnumHandlingAttributeType = typeof(JsonEnumHandlingAttribute);
 

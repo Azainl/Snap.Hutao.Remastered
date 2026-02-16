@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Achievement;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class AchievementPage : ScopedPage
+public sealed partial class AchievementPage : ScopedPage
 {
     public AchievementPage()
     {

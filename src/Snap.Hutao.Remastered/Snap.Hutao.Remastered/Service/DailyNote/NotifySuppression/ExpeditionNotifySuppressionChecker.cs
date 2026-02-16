@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote.NotifySuppression;
 
-internal sealed class ExpeditionNotifySuppressionChecker : INotifySuppressionChecker
+public sealed class ExpeditionNotifySuppressionChecker : INotifySuppressionChecker
 {
     public bool ShouldNotify(INotifySuppressionContext context)
     {

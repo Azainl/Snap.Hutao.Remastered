@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Animation;
 
-internal static class Constants
+public static class Constants
 {
     public const string Zero = "0";
 

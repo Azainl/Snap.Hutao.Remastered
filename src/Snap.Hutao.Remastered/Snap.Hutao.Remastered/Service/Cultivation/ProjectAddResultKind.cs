@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal enum ProjectAddResultKind
+public enum ProjectAddResultKind
 {
     Added,
     InvalidName,

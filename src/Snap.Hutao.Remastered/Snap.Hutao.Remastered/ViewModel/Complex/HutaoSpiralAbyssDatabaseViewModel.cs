@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class HutaoSpiralAbyssDatabaseViewModel : Abstraction.ViewModel
+public sealed partial class HutaoSpiralAbyssDatabaseViewModel : Abstraction.ViewModel
 {
     private readonly IHutaoSpiralAbyssStatisticsCache hutaoCache;
     private readonly IMetadataService metadataService;

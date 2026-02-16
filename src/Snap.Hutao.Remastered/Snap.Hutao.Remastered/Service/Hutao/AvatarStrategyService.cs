@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
 [Service(ServiceLifetime.Singleton, typeof(IAvatarStrategyService))]
-internal sealed partial class AvatarStrategyService : IAvatarStrategyService
+public sealed partial class AvatarStrategyService : IAvatarStrategyService
 {
     private readonly IAvatarStrategyRepository repository;
     private readonly IServiceProvider serviceProvider;

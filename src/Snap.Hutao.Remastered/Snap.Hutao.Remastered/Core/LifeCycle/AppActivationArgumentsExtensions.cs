@@ -7,7 +7,7 @@ using Windows.ApplicationModel.Activation;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal static class AppActivationArgumentsExtensions
+public static class AppActivationArgumentsExtensions
 {
     extension(AppActivationArguments activatedEventArgs)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class AvatarConstellationInfo : AvatarBuild
+public sealed class AvatarConstellationInfo : AvatarBuild
 {
     public double HoldingRate { get; set; }
 

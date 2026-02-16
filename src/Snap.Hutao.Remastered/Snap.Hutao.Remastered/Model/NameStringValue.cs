@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal sealed class NameStringValue : NameValue<string>
+public sealed class NameStringValue : NameValue<string>
 {
     public NameStringValue(string name, string value)
         : base(name, value)

@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Database;
 
-internal static class SelectableExtension
+public static class SelectableExtension
 {
     extension<TSource>(IEnumerable<TSource> source)
         where TSource : ISelectable

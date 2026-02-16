@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
-internal interface IDeferContentLoader
+public interface IDeferContentLoader
 {
     DependencyObject? Load(string name);
 

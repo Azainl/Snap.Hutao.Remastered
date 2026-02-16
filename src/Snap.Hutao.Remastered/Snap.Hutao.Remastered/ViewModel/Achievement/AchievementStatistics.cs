@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
-internal sealed class AchievementStatistics
+public sealed class AchievementStatistics
 {
     public required string DisplayName { get; init; }
 

@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
 [HttpClient(HttpClientConfiguration.Default)]
 [PrimaryHttpMessageHandler(UseCookies = false)]
-internal sealed partial class UserClientOversea : IUserClient
+public sealed partial class UserClientOversea : IUserClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Oversea)]

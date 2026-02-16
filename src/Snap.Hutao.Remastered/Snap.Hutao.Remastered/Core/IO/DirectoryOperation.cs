@@ -8,7 +8,7 @@ using System.Security.Principal;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class DirectoryOperation
+public static class DirectoryOperation
 {
     public static long GetSize(ValueDirectory directory, CancellationToken token = default)
     {

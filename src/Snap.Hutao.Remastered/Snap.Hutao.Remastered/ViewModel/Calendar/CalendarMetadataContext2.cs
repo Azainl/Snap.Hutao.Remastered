@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.ViewModel.Calendar;
 
-internal sealed class CalendarMetadataContext2
+public sealed class CalendarMetadataContext2
 {
     public required CalendarMetadataContext MetadataContext { get; init; }
 

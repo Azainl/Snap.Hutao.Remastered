@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatSplendourBuff
+public sealed class RoleCombatSplendourBuff
 {
     [JsonPropertyName("name")]
     public required string Name { get; init; }

@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal static partial class CommonNameExtractor
+public static partial class CommonNameExtractor
 {
     [GeneratedRegex("^UI_(.*)$")]
     private static partial Regex UI { get; }

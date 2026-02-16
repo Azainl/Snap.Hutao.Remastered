@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
 namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
-internal sealed class AvatarBling : AvatarView
+public sealed class AvatarBling : AvatarView
 {
     private AvatarBling(bool isPlus, Avatar metaAvatar)
         : base(metaAvatar)

@@ -5,7 +5,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Theme;
 
-internal static class KnownColors
+public static class KnownColors
 {
     public static readonly Color Orange = ColorHelper.ToColor(0xFFBC6932);
     public static readonly Color Purple = ColorHelper.ToColor(0xFFA156E0);

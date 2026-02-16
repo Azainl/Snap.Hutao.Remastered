@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal enum ArchiveAddResultKind
+public enum ArchiveAddResultKind
 {
     Added,
     ArchivesNotInitialized,

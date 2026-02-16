@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.IO;
 
 namespace Snap.Hutao.Remastered.Core.Caching;
 
-internal interface IImageCache
+public interface IImageCache
 {
     ValueFile GetFileFromCategoryAndName(string category, string fileName);
 

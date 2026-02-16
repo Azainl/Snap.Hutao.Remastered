@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class Home
+public sealed class Home
 {
     [JsonPropertyName("level")]
     public int Level { get; set; }

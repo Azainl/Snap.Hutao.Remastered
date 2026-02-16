@@ -10,7 +10,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class GamePackageOperationContext
+public sealed class GamePackageOperationContext
 {
     public GamePackageOperationContext(IServiceProvider serviceProvider, GamePackageOperationKind kind, IGameFileSystem gameFileSystem, string? extractDirectory = default)
     {

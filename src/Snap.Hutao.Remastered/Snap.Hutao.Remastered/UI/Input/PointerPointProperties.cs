@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.System.SystemServices;
 
 namespace Snap.Hutao.Remastered.UI.Input;
 
-internal readonly struct PointerPointProperties
+public readonly struct PointerPointProperties
 {
     public readonly int Delta;
     public readonly bool IsLeftButtonPressed;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.PackageOperation;
 
-internal interface IGamePackageOperation
+public interface IGamePackageOperation
 {
     ValueTask ExecuteAsync(GamePackageServiceContext context);
 }

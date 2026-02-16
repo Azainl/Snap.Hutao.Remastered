@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class VerifyMethodsWrapper
+public sealed class VerifyMethodsWrapper
 {
     [JsonPropertyName("verify_methods")]
     public required ImmutableArray<int> VerifyMethods { get; set; }

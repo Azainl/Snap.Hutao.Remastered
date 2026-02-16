@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Core.Abstraction;
 
-internal static class BuilderExtension
+public static class BuilderExtension
 {
     extension<T>(T builder)
         where T : class, IBuilder

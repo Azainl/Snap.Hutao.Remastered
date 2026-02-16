@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal struct BatchCultivateResult
+public struct BatchCultivateResult
 {
     public int SucceedCount;
     public int SkippedCount;

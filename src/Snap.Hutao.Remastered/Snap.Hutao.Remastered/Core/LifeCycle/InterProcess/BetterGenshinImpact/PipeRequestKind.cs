@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
-internal enum PipeRequestKind
+public enum PipeRequestKind
 {
     None = 0,                            // ContractVersion 1, Both
     GetContractVersion = 1,              // ContractVersion 1, Both

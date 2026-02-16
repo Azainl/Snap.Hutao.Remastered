@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal interface INameIcon<out TIcon>
+public interface INameIcon<out TIcon>
 {
     string Name { get; }
 

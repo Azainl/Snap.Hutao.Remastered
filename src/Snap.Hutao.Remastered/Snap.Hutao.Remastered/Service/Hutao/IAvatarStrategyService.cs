@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IAvatarStrategyService
+public interface IAvatarStrategyService
 {
     ValueTask<AvatarStrategy?> GetStrategyByAvatarId(AvatarId avatarId);
 }

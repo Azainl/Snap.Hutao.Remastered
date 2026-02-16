@@ -11,7 +11,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.Core.Setting;
 
-internal static class LocalSetting
+public static class LocalSetting
 {
     private static readonly FrozenSet<Type> SupportedTypes =
     [

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal sealed class FullTrustLoadLibraryRequest
+public sealed class FullTrustLoadLibraryRequest
 {
     public required string LibraryName { get; set; }
 

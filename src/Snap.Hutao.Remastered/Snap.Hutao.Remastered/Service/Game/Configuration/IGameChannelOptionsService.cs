@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal interface IGameChannelOptionsService
+public interface IGameChannelOptionsService
 {
     ChannelOptions GetChannelOptions();
 }

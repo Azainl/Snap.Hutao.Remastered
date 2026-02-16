@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class ParameterFormat : IFormatProvider, ICustomFormatter
+public sealed class ParameterFormat : IFormatProvider, ICustomFormatter
 {
     private static readonly Lazy<ParameterFormat> LazyFormat = new();
 

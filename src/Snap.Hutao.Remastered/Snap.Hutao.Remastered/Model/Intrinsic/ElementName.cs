@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum ElementName
+public enum ElementName
 {
     None = 0,
     Pyro = 1,

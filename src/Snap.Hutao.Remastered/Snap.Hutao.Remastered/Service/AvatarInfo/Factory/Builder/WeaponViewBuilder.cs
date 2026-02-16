@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal sealed class WeaponViewBuilder : IWeaponViewBuilder
+public sealed class WeaponViewBuilder : IWeaponViewBuilder
 {
     public WeaponView View { get; } = new();
 }

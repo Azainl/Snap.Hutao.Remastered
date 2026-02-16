@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal interface IAppService;
+public interface IAppService;

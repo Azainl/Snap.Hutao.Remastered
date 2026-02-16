@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class PushPagePayload
+public sealed class PushPagePayload
 {
     [JsonPropertyName("page")]
     public string Page { get; set; } = default!;

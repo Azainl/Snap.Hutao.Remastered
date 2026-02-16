@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
 
-internal interface IMetadataSupportInitialization
+public interface IMetadataSupportInitialization
 {
     bool IsInitialized { get; set; }
 }

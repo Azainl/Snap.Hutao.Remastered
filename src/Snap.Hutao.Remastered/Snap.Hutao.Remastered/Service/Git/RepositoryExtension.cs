@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Git;
 
-internal static class RepositoryExtension
+public static class RepositoryExtension
 {
     extension(Repository)
     {

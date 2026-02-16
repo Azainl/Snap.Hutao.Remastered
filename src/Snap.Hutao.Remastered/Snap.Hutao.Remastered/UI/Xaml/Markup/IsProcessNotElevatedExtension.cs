@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(bool))]
-internal sealed partial class IsProcessNotElevatedExtension : MarkupExtension
+public sealed partial class IsProcessNotElevatedExtension : MarkupExtension
 {
     protected override object ProvideValue()
     {

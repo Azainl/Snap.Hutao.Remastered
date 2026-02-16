@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class AvatarExtend
+public sealed class AvatarExtend
 {
     [JsonPropertyName("avatar_type")]
     public required int AvatarType { get; init; }

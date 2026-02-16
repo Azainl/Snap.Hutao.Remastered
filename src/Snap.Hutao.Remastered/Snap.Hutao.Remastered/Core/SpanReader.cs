@@ -27,7 +27,7 @@ namespace Snap.Hutao.Remastered.Core;
 [SuppressMessage("", "SA1614")]
 [SuppressMessage("", "SA1615")]
 [SuppressMessage("", "SA1618")]
-internal unsafe ref struct SpanReader<T>
+public unsafe ref struct SpanReader<T>
     where T : unmanaged, IEquatable<T>
 {
     private ReadOnlySpan<T> unread;

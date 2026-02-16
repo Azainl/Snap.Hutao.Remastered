@@ -5,7 +5,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Windowing.Abstraction;
 
-internal interface IXamlWindowHasInitSize
+public interface IXamlWindowHasInitSize
 {
     SizeInt32 InitSize { get; }
 }

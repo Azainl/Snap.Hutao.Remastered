@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class RoleCombatEntryConfiguration : IEntityTypeConfiguration<RoleCombatEntry>
+public sealed class RoleCombatEntryConfiguration : IEntityTypeConfiguration<RoleCombatEntry>
 {
     public void Configure(EntityTypeBuilder<RoleCombatEntry> builder)
     {

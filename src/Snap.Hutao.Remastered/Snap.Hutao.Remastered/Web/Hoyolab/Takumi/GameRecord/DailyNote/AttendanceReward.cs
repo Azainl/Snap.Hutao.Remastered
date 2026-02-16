@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class AttendanceReward
+public sealed class AttendanceReward
 {
     [JsonPropertyName("status")]
     [JsonConverter(typeof(JsonStringEnumConverter))]

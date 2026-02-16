@@ -14,7 +14,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class HutaoUserOptions : ObservableObject
+public sealed partial class HutaoUserOptions : ObservableObject
 {
     private readonly IServiceProvider serviceProvider;
     private readonly ITaskContext taskContext;

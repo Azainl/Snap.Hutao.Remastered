@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class StringBuilderExtension
+public static class StringBuilderExtension
 {
     extension(StringBuilder sb)
     {

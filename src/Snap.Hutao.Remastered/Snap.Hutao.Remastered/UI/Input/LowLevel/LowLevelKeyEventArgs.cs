@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.UI.WindowsAndMessaging;
 
 namespace Snap.Hutao.Remastered.UI.Input.LowLevel;
 
-internal sealed class LowLevelKeyEventArgs
+public sealed class LowLevelKeyEventArgs
 {
     public LowLevelKeyEventArgs(KBDLLHOOKSTRUCT data)
     {

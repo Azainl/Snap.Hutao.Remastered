@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.User;
 
-internal sealed class UserAndUidChangedMessage
+public sealed class UserAndUidChangedMessage
 {
     public static readonly UserAndUidChangedMessage Empty = new(null);
 

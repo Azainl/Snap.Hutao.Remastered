@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
 [HttpClient(HttpClientConfiguration.XRpc2)]
-internal sealed partial class HomeClient : IHomeClient
+public sealed partial class HomeClient : IHomeClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

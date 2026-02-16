@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class UserFullInfoWrapper
+public sealed class UserFullInfoWrapper
 {
     [JsonPropertyName("user_info")]
     public UserInfo UserInfo { get; set; } = default!;

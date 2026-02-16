@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal static class ResponseValidator
+public static class ResponseValidator
 {
     public static bool TryValidate(Response response, IMessenger messenger)
     {

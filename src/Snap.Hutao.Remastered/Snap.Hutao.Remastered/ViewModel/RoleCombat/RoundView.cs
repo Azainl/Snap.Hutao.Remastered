@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed class RoundView
+public sealed class RoundView
 {
     private RoundView(RoleCombatRoundData data, in TimeSpan offset, RoleCombatMetadataContext context)
     {
@@ -43,7 +43,7 @@ internal sealed class RoundView
 
     public ImmutableArray<SplendourBuffView> SplendourBuffs { get; }
 
-    internal DateTimeOffset FinishTime { get; }
+    public DateTimeOffset FinishTime { get; }
 
     public static RoundView Create(RoleCombatRoundData data, TimeSpan offset, RoleCombatMetadataContext context)
     {

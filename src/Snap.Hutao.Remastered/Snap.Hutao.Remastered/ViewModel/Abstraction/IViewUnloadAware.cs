@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Property;
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal interface IViewUnloadAware
+public interface IViewUnloadAware
 {
     IProperty<bool> IsViewUnloaded { get; }
 }

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
-internal sealed partial class UIGFUidSelection
+public sealed partial class UIGFUidSelection
 {
     public UIGFUidSelection(uint uid)
     {

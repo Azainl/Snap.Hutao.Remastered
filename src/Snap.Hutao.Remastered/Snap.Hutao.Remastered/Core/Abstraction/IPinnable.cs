@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Abstraction;
 
-internal interface IPinnable<TData>
+public interface IPinnable<TData>
 {
     ref TData GetPinnableReference();
 }

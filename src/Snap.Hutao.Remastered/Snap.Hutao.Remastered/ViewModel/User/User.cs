@@ -13,7 +13,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 
 namespace Snap.Hutao.Remastered.ViewModel.User;
 
-internal sealed partial class User : IEntityAccess<EntityUser>,
+public sealed partial class User : IEntityAccess<EntityUser>,
     ISelectable,
     IPropertyValuesProvider
 {

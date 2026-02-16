@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal sealed class VersionItem
+public sealed class VersionItem
 {
     [JsonPropertyName("remoteName")]
     public string RelativePath { get; set; } = default!;

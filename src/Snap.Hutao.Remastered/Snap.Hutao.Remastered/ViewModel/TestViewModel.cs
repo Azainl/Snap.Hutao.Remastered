@@ -40,7 +40,7 @@ namespace Snap.Hutao.Remastered.ViewModel;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class TestViewModel : Abstraction.ViewModel
+public sealed partial class TestViewModel : Abstraction.ViewModel
 {
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
@@ -615,21 +615,21 @@ internal sealed partial class TestViewModel : Abstraction.ViewModel
         }
     }
 
-    internal sealed class ExtractOptions
+    public sealed class ExtractOptions
     {
         public bool IsOversea { get; set; }
 
         public bool IsPreDownload { get; set; }
     }
 
-    internal sealed class DesignationOptions
+    public sealed class DesignationOptions
     {
         public string UserName { get; set; } = default!;
 
         public int Days { get; set; }
     }
 
-    internal sealed partial class RedeemCodeGenerateOptions : ObservableObject
+    public sealed partial class RedeemCodeGenerateOptions : ObservableObject
     {
         public uint Count { get; set; }
 

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Reliquary;
 
-internal sealed class ReliquarySet
+public sealed class ReliquarySet
 {
     public required ReliquarySetId SetId { get; init; }
 

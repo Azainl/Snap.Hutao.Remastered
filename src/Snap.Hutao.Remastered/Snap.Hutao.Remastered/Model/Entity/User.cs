@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("users")]
-internal sealed class User : ISelectable, IReorderable
+public sealed class User : ISelectable, IReorderable
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class ProfilePicture
+public sealed class ProfilePicture
 {
     public required ProfilePictureId Id { get; init; }
 

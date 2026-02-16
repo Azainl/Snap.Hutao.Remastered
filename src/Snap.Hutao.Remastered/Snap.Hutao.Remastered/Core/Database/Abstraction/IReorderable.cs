@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Database.Abstraction;
 
-internal interface IReorderable
+public interface IReorderable
 {
     int Index { get; set; }
 }

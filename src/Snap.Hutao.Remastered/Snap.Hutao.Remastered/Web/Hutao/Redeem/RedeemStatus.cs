@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
-internal enum RedeemStatus
+public enum RedeemStatus
 {
     Ok,
     Invalid,

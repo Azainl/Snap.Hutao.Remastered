@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class Fetter
+public sealed class Fetter
 {
     public required string Title { get; init; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
-internal static class ApiEndpointsFactoryExtension
+public static class ApiEndpointsFactoryExtension
 {
     extension(IApiEndpointsFactory factory)
     {

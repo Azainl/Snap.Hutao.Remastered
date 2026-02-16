@@ -8,7 +8,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal static class RectInt32Convert
+public static class RectInt32Convert
 {
     public static RectInt32 RectInt32(RECT rect)
     {

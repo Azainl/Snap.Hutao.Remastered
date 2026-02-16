@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 namespace Snap.Hutao.Remastered.Model.InterChange.Achievement;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIAFItem
+public sealed class UIAFItem
 {
     [JsonPropertyName("id")]
     public uint Id { get; init; }

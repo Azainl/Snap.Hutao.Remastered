@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Package;
 
-internal sealed class GameBranch
+public sealed class GameBranch
 {
     [JsonPropertyName("major")]
     public Package Major { get; set; } = default!;

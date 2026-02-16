@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal static class AspectRatioExtension
+public static class AspectRatioExtension
 {
     extension(IProperty<ImmutableArray<AspectRatio>> aspectRatios)
     {

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal class Character : Avatar
+public class Character : Avatar
 {
     [JsonPropertyName("weapon_type")]
     public WeaponType WeaponType { get; set; }

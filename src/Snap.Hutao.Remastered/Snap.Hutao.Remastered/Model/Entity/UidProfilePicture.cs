@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("uid_profile_pictures")]
-internal sealed class UidProfilePicture
+public sealed class UidProfilePicture
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

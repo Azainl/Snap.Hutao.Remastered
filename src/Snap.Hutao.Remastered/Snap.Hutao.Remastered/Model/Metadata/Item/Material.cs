@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Item;
 
-internal sealed class Material : DisplayItem
+public sealed class Material : DisplayItem
 {
     public static readonly Material Default = new()
     {

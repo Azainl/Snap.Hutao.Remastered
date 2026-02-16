@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class ValueFileExtension
+public static class ValueFileExtension
 {
     extension(ValueFile file)
     {

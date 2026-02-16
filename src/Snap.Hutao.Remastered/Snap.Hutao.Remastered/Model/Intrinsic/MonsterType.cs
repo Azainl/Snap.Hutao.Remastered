@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum MonsterType
+public enum MonsterType
 {
     MONSTER_NONE = 0,
     MONSTER_ORDINARY = 1,

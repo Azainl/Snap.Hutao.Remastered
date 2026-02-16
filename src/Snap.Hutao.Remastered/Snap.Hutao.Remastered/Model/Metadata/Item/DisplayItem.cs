@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Item;
 
-internal class DisplayItem : IDefaultIdentity<MaterialId>
+public class DisplayItem : IDefaultIdentity<MaterialId>
 {
     public required MaterialId Id { get; init; }
 

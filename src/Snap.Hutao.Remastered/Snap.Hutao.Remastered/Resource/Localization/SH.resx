@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>当前邮箱已被注册</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>注册失败，服务器异常，请尽快联系开发者解决</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>密码错误，注销失败</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>获取数据失败，正在计算统计数据</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>上传深渊记录失败，服务器异常，请尽快联系开发者解决</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>上传深渊记录失败，存在无效的数据</value>
@@ -4046,5 +4040,74 @@
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>反角色虚化</value>
+  </data>
+  <data name="ServicePluginEnablingPluginFailed" xml:space="preserve">
+    <value>在启用插件时发生异常</value>
+  </data>
+  <data name="ServicePluginDisablingPluginFailed" xml:space="preserve">
+    <value>在禁用插件时发生异常</value>
+  </data>
+  <data name="ServicePluginInstallFileNotFound" xml:space="preserve">
+    <value>插件文件未找到</value>
+  </data>
+  <data name="ServicePluginInstallInvalidFileType" xml:space="preserve">
+    <value>无效的插件文件类型，应为.hutao或.hutaodisabled文件</value>
+  </data>
+  <data name="ServicePluginInstallManifestNotFound" xml:space="preserve">
+    <value>插件文件中未找到manifest.json文件</value>
+  </data>
+  <data name="ServicePluginInstallInvalidManifest" xml:space="preserve">
+    <value>插件manifest.json文件无效或缺少ID</value>
+  </data>
+  <data name="ServicePluginInstallSuccess" xml:space="preserve">
+    <value>插件'{0}'安装成功</value>
+  </data>
+  <data name="ServicePluginInstallFailed" xml:space="preserve">
+    <value>插件安装失败</value>
+  </data>
+  <data name="ServicePluginLoadDirectoryNotFound" xml:space="preserve">
+    <value>插件目录'{0}'未找到</value>
+  </data>
+  <data name="ServicePluginLoadManifestNotFound" xml:space="preserve">
+    <value>插件'{0}'的manifest.json文件未找到</value>
+  </data>
+  <data name="ServicePluginLoadDllNotFound" xml:space="preserve">
+    <value>插件'{0}'的DLL文件未找到</value>
+  </data>
+  <data name="ServicePluginLoadSuccess" xml:space="preserve">
+    <value>插件'{0}'加载成功</value>
+  </data>
+  <data name="ServicePluginLoadFailed" xml:space="preserve">
+    <value>插件加载失败</value>
+  </data>
+  <data name="ServicePluginNotFound" xml:space="preserve">
+    <value>找不到插件'{0}'</value>
+  </data>
+  <data name="ServicePluginInstallAlreadyExists" xml:space="preserve">
+    <value>插件'{0}'已经安装</value>
+  </data>
+  <data name="ServicePluginLoadMainTypeNotFound" xml:space="preserve">
+    <value>找不到插件'{0}'的主类</value>
+  </data>
+  <data name="ServicePluginLoadInvalidManifest" xml:space="preserve">
+    <value>插件'{0}'具有无效的清单文件</value>
+  </data>
+  <data name="ServicePluginDisableSuccess" xml:space="preserve">
+    <value>插件'{0}'禁用成功</value>
+  </data>
+  <data name="ServicePluginDeleteSuccess" xml:space="preserve">
+    <value>成功卸载了插件'{0}'</value>
+  </data>
+  <data name="ServicePluginDeleteFailed" xml:space="preserve">
+    <value>在卸载插件'{0}'时发生错误</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>注册失败，服务器异常，请尽快联系开发者解决</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>上传深渊记录失败，服务器异常，请尽快联系开发者解决</value>
+  </data>
+  <data name="ServicePluginEnablingSuccess" xml:space="preserve">
+    <value>插件'{0}'启用成功</value>
   </data>
 </root>

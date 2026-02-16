@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Algolia;
 
-internal sealed class AlgoliaResponse
+public sealed class AlgoliaResponse
 {
     public List<AlgoliaResult> Results { get; set; } = default!;
 }

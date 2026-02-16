@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Wallpaper;
 
-internal sealed class Wallpaper
+public sealed class Wallpaper
 {
     [JsonPropertyName("url")]
     public required Uri Url { get; init; }

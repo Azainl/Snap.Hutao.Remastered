@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>O endereço de e-mail atual está cadastrado</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>O cadastro falhou, erro do servidor, entre em contato com um desenvolvedor para corrigi-lo</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Senha incorreta, falha no logout</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Falha ao buscar dados, o servidor está calculando dados estatísticos</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Falha ao carregar o registro da Ordem do Abismo, erro do servidor, entre em contato com o desenvolvedor para corrigi-lo</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Falha ao carregar o registro da Ordem do Abismo, dados inválidos detectados</value>
@@ -3979,5 +3973,11 @@ Espaço disponível: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Correção de interface especial</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>O cadastro falhou, erro do servidor, entre em contato com um desenvolvedor para corrigi-lo</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Falha ao carregar o registro da Ordem do Abismo, erro do servidor, entre em contato com o desenvolvedor para corrigi-lo</value>
   </data>
 </root>

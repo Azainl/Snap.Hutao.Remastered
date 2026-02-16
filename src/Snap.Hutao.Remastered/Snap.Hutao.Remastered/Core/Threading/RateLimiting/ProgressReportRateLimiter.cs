@@ -5,7 +5,7 @@ using System.Threading.RateLimiting;
 
 namespace Snap.Hutao.Remastered.Core.Threading.RateLimiting;
 
-internal static class ProgressReportRateLimiter
+public static class ProgressReportRateLimiter
 {
     public static TokenBucketRateLimiter Create(int replenishmentMilliSeconds)
     {

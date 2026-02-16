@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatSplendourBuffSummary
+public sealed class RoleCombatSplendourBuffSummary
 {
     [JsonPropertyName("total_level")]
     public required uint TotalLevel { get; init; }

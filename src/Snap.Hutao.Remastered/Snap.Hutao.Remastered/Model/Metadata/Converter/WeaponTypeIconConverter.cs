@@ -10,7 +10,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class WeaponTypeIconConverter : ValueConverter<WeaponType, Uri>
+public sealed partial class WeaponTypeIconConverter : ValueConverter<WeaponType, Uri>
 {
     private static readonly FrozenDictionary<string, WeaponType> LocalizedNameToWeaponType = WinRTAdaptive.ToFrozenDictionary(
     [

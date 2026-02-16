@@ -29,7 +29,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AchievementViewModel : Abstraction.ViewModel, INavigationRecipient, IDisposable
+public sealed partial class AchievementViewModel : Abstraction.ViewModel, INavigationRecipient, IDisposable
 {
     public const string ImportUIAFFromClipboard = nameof(ImportUIAFFromClipboard);
 

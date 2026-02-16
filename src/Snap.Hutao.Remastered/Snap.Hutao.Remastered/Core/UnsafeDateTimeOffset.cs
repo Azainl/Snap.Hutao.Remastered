@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class UnsafeDateTimeOffset
+public static class UnsafeDateTimeOffset
 {
     public static DateTimeOffset ParseDateTime(ReadOnlySpan<char> span, TimeSpan offset)
     {

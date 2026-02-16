@@ -7,7 +7,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpRequestMessageExtension
+public static class HttpRequestMessageExtension
 {
     private const int MessageNotYetSent = 0;
 

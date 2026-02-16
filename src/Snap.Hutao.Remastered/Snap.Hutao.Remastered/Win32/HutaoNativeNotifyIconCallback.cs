@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeNotifyIconCallback
+public readonly unsafe struct HutaoNativeNotifyIconCallback
 {
     private readonly delegate* unmanaged[Stdcall]<HutaoNativeNotifyIconCallbackKind, RECT, POINT, GCHandle<NotifyIconController>, void> value;
 

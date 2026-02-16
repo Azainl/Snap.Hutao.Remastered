@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Win32.Foundation;
 
 // ReSharper disable InconsistentNaming
-internal readonly struct BOOL
+public readonly struct BOOL
 {
     public static readonly BOOL FALSE = 0;
     public static readonly BOOL TRUE = 1;

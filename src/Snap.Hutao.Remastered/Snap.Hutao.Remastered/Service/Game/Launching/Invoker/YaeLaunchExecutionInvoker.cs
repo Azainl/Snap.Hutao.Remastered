@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Service.Yae.Achievement;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Invoker;
 
-internal sealed class YaeLaunchExecutionInvoker : AbstractLaunchExecutionInvoker
+public sealed class YaeLaunchExecutionInvoker : AbstractLaunchExecutionInvoker
 {
     public YaeLaunchExecutionInvoker(TargetNativeConfiguration config, YaeDataArrayReceiver receiver)
     {

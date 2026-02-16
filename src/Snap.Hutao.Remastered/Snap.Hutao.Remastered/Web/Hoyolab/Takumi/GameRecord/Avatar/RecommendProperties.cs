@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class RecommendProperties
+public sealed class RecommendProperties
 {
     [JsonPropertyName("sand_main_property_list")]
     public ImmutableArray<FightProperty> SandMainPropertyList { get; set; }

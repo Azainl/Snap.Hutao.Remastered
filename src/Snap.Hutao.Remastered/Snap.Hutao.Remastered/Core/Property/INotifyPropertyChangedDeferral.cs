@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal interface INotifyPropertyChangedDeferral : IDisposable;
+public interface INotifyPropertyChangedDeferral : IDisposable;

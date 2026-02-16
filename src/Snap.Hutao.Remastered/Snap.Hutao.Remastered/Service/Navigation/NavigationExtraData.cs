@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Media.Animation;
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal class NavigationExtraData : INavigationExtraData, ISupportNavigationTransitionInfo
+public class NavigationExtraData : INavigationExtraData, ISupportNavigationTransitionInfo
 {
     private readonly TaskCompletionSource navigationCompletedTcs = new();
 
@@ -44,7 +44,7 @@ internal class NavigationExtraData : INavigationExtraData, ISupportNavigationTra
 }
 
 [SuppressMessage("", "SA1402")]
-internal class NavigationExtraData<T> : NavigationExtraData
+public class NavigationExtraData<T> : NavigationExtraData
     where T : class
 {
     public NavigationExtraData(NavigationTransitionInfo transitionInfo, T data)

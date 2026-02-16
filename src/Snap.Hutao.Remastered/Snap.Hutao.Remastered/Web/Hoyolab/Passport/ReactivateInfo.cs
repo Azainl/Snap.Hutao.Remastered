@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class ReactivateInfo
+public sealed class ReactivateInfo
 {
     [JsonPropertyName("required")]
     public bool Required { get; set; }

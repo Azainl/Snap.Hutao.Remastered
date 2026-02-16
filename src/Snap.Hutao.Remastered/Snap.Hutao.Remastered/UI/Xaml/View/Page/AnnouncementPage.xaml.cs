@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Home;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class AnnouncementPage : ScopedPage
+public sealed partial class AnnouncementPage : ScopedPage
 {
     public AnnouncementPage()
     {

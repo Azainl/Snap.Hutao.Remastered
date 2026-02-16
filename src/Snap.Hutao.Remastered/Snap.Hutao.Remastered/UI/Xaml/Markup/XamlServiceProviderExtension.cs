@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 /// <summary>
 /// Xaml 服务提供器扩展
 /// </summary>
-internal static class XamlServiceProviderExtension
+public static class XamlServiceProviderExtension
 {
     extension(IXamlServiceProvider provider)
     {

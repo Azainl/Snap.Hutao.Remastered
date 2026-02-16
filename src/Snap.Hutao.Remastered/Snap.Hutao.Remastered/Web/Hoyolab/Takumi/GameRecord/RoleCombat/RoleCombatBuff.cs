@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatBuff
+public sealed class RoleCombatBuff
 {
     [JsonPropertyName("icon")]
     public required string Icon { get; init; }

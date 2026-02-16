@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 /// <summary>
 /// 启动游戏资源 Expander
 /// </summary>
-internal sealed partial class LaunchGameResourceExpander : SettingsExpander
+public sealed partial class LaunchGameResourceExpander : SettingsExpander
 {
     /// <summary>
     /// 构造一个新的启动游戏资源 Expander

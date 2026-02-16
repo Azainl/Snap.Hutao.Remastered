@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Behavior.Action;
 
 [DependencyProperty<AnimationSet>("Animation")]
 [DependencyProperty<UIElement>("TargetObject")]
-internal sealed partial class StartAnimationActionNoThrow : DependencyObject, IAction
+public sealed partial class StartAnimationActionNoThrow : DependencyObject, IAction
 {
     /// <inheritdoc/>
     public object Execute(object sender, object parameter)

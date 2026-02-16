@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 namespace Snap.Hutao.Remastered.Model.InterChange.GachaLog;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class Hk4eItem : IJsonOnDeserialized
+public sealed class Hk4eItem : IJsonOnDeserialized
 {
     // ReSharper disable once InconsistentNaming
     [JsonPropertyName("uigf_gacha_type")]

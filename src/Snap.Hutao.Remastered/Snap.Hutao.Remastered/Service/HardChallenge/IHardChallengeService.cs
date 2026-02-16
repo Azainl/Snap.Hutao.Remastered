@@ -8,7 +8,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.HardChallenge;
 
-internal interface IHardChallengeService
+public interface IHardChallengeService
 {
     ValueTask<ObservableCollection<HardChallengeView>> GetHardChallengeViewCollectionAsync(HardChallengeMetadataContext context, UserAndUid userAndUid);
 

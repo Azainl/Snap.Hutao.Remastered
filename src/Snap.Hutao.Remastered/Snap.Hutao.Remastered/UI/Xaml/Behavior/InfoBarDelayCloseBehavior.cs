@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
 [SuppressMessage("", "CA1001")]
 [DependencyProperty<int>("MilliSecondsDelay", NotNull = true)]
-internal sealed partial class InfoBarDelayCloseBehavior : BehaviorBase<InfoBar>
+public sealed partial class InfoBarDelayCloseBehavior : BehaviorBase<InfoBar>
 {
     private readonly CancellationTokenSource userCloseTokenSource = new();
 

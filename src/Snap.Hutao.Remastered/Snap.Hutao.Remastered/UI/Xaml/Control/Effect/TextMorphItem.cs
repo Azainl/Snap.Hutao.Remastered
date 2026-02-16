@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Effect;
 
-internal sealed class TextMorphItem
+public sealed class TextMorphItem
 {
     public required string Text { get; init; }
 

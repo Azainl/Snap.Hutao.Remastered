@@ -7,7 +7,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
 [Serializable]
-internal sealed class HttpContentSerializationException : Exception
+public sealed class HttpContentSerializationException : Exception
 {
     public HttpContentSerializationException(string? message, Exception? innerException)
         : base(message ?? GetDefaultMessage(), innerException)

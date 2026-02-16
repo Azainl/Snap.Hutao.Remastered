@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal class BaseValue
+public class BaseValue
 {
     public required float HpBase { get; init; }
 

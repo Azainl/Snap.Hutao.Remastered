@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Win32.Foundation;
 
 // ReSharper disable InconsistentNaming
-internal readonly struct LRESULT
+public readonly struct LRESULT
 {
 #pragma warning disable CS0649
     public readonly nint Value;

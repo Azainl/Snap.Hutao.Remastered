@@ -8,7 +8,7 @@ using Microsoft.Xaml.Interactivity;
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior.Action;
 
 [DependencyProperty<TeachingTip>("TeachingTip")]
-internal sealed partial class ShowTeachingTipAction : DependencyObject, IAction
+public sealed partial class ShowTeachingTipAction : DependencyObject, IAction
 {
     public object? Execute(object? sender, object parameter)
     {

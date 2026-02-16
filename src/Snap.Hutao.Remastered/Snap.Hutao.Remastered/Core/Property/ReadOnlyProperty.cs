@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal static class ReadOnlyProperty
+public static class ReadOnlyProperty
 {
     extension<T>(IReadOnlyProperty<T> property)
     {

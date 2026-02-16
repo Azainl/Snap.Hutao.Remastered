@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
-internal sealed class RedeemGenerateRequest
+public sealed class RedeemGenerateRequest
 {
     public required uint Count { get; set; }
 

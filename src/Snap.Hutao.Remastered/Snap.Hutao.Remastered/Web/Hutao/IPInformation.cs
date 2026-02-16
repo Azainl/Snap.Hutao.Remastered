@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed partial class IPInformation
+public sealed partial class IPInformation
 {
     private const string Unknown = "Unknown";
 

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatSplendourBuffLevelEffect
+public sealed class RoleCombatSplendourBuffLevelEffect
 {
     [JsonPropertyName("icon")]
     public required string Icon { get; init; }

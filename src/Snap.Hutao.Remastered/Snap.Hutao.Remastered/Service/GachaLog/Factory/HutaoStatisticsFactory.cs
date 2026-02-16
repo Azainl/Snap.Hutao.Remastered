@@ -13,7 +13,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class HutaoStatisticsFactory
+public sealed class HutaoStatisticsFactory
 {
     private readonly HutaoStatisticsFactoryMetadataContext context;
     private readonly GachaEvent avatarEvent;

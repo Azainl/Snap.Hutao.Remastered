@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal interface IPageScoped;
+public interface IPageScoped;

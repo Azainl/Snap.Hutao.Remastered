@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Metadata.Tower;
 
 [ExtendedEnum]
-internal enum WaveType
+public enum WaveType
 {
     [LocalizationKey(nameof(SH.ModelMetadataTowerWaveTypeIndependent))]
     Independent = 0,

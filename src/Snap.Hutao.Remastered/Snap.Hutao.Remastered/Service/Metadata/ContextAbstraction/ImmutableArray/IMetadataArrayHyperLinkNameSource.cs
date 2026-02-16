@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayHyperLinkNameSource
+public interface IMetadataArrayHyperLinkNameSource
 {
     ImmutableArray<HyperLinkName> HyperLinkNames { get; set; }
 }

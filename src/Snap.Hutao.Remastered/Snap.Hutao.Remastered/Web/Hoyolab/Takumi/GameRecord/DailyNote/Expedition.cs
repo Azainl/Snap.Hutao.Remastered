@@ -5,7 +5,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class Expedition
+public sealed class Expedition
 {
     private const string Bennett = "https://upload-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Bennett.png";
     private const string Chongyun = "https://upload-bbs.mihoyo.com/game_record/genshin/character_side_icon/UI_AvatarIcon_Side_Chongyun.png";

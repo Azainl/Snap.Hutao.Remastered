@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core.LifeCycle;
 namespace Snap.Hutao.Remastered.Factory.Picker;
 
 [Service(ServiceLifetime.Transient, typeof(IFileSystemPickerInteraction))]
-internal sealed partial class FileSystemPickerInteraction : IFileSystemPickerInteraction
+public sealed partial class FileSystemPickerInteraction : IFileSystemPickerInteraction
 {
     private readonly ICurrentXamlWindowReference currentWindowReference;
 

@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed class GameInstallOptions : IDeconstruct<IGameFileSystem, LaunchScheme>, IDeconstruct<IGameFileSystem, LaunchScheme, SophonBuild>
+public sealed class GameInstallOptions : IDeconstruct<IGameFileSystem, LaunchScheme>, IDeconstruct<IGameFileSystem, LaunchScheme, SophonBuild>
 {
     private readonly IGameFileSystem gameFileSystem;
     private readonly LaunchScheme launchScheme;

@@ -13,7 +13,7 @@ namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class GachaLogViewModelSlim : Abstraction.ViewModelSlim<GachaLogPage>
+public sealed partial class GachaLogViewModelSlim : Abstraction.ViewModelSlim<GachaLogPage>
 {
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;

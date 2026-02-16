@@ -16,7 +16,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 [DependencyProperty<string>("NewUserName")]
 [DependencyProperty<string>("VerifyCode")]
 [DependencyProperty<string>("NewVerifyCode")]
-internal sealed partial class HutaoPassportResetUsernameDialog : ContentDialog
+public sealed partial class HutaoPassportResetUsernameDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly IServiceScopeFactory serviceScopeFactory;

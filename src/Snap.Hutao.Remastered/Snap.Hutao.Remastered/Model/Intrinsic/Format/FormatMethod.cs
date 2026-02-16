@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic.Format;
 
-internal enum FormatMethod
+public enum FormatMethod
 {
     /// <summary>
     /// 无格式化

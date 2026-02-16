@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Text.Json;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class StructUsingJsonDbProperty<T> : StructUsingCustomDbProperty<T>
+public sealed partial class StructUsingJsonDbProperty<T> : StructUsingCustomDbProperty<T>
     where T : struct
 {
     public StructUsingJsonDbProperty(IServiceProvider serviceProvider, string key, Func<T> defaultValueFactory)

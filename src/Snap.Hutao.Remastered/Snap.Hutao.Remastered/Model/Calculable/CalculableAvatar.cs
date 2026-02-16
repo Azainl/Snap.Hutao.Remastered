@@ -12,7 +12,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal sealed partial class CalculableAvatar : ObservableObject, ICalculableAvatar
+public sealed partial class CalculableAvatar : ObservableObject, ICalculableAvatar
 {
     // Only persists current level for non-view avatars
     private readonly bool persistsCurrentLevel;

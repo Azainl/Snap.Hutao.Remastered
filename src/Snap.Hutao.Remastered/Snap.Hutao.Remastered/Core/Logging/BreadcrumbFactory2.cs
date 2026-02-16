@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Logging;
 
-internal static class BreadcrumbFactory2
+public static class BreadcrumbFactory2
 {
     [EditorBrowsable(EditorBrowsableState.Advanced)]
     public static Breadcrumb CreateDefault(string message, string? category = null, (string, string)[]? data = null, BreadcrumbLevel level = default)

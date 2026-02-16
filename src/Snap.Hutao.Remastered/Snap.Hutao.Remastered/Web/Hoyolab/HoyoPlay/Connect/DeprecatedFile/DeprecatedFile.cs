@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
 
-internal sealed class DeprecatedFile
+public sealed class DeprecatedFile
 {
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;

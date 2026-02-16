@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum EquipType
+public enum EquipType
 {
     EQUIP_NONE = 0,
 

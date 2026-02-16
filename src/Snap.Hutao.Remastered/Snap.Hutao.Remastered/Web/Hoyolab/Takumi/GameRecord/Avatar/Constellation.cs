@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class Constellation
+public sealed class Constellation
 {
     [JsonPropertyName("id")]
     public SkillId Id { get; set; }

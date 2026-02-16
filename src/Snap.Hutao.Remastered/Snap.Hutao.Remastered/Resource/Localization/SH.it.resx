@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>L'indirizzo email corrente è già registrato</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Registrazione non riuscita, errore del server. Si prega di contattare al più presto lo sviluppatore per risolvere il problema</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Password errata, cancellazione fallita</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Recupero dei dati non riuscito, calcolo dei dati statistici in corso</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Caricamento dei dati dell'Abisso a Spirale non riuscito, errore del server. Si prega di contattare al più presto lo sviluppatore per risolvere il problema</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Caricamento dei dati dell'Abisso a Spirale non riuscito, rilevati dati non validi</value>
@@ -3979,5 +3973,11 @@ Spazio disponibile: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Correzione interfaccia speciale</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Registrazione non riuscita, errore del server. Si prega di contattare al più presto lo sviluppatore per risolvere il problema</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Caricamento dei dati dell'Abisso a Spirale non riuscito, errore del server. Si prega di contattare al più presto lo sviluppatore per risolvere il problema</value>
   </data>
 </root>

@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
 [Flags]
-internal enum VerifyCodeRequestType
+public enum VerifyCodeRequestType
 {
     Registration = 0b0000,
     ResetPassword = 0b0001,

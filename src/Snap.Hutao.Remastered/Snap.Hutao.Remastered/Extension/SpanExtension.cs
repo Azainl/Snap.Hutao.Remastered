@@ -6,7 +6,7 @@ using System.Numerics;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class SpanExtension
+public static class SpanExtension
 {
     extension<T>(ReadOnlySpan<T> span)
         where T : IEquatable<T>

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
-internal sealed class MonsterView
+public sealed class MonsterView
 {
     private MonsterView(HardChallengeMonster monster, HardChallengeMetadataContext context)
     {

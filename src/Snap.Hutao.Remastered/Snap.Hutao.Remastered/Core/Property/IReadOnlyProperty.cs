@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal interface IReadOnlyProperty<T>
+public interface IReadOnlyProperty<T>
 {
     T Value { get; }
 }

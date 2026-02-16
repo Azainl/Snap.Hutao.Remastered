@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Converter;
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
 [JsonConverter(typeof(ReliquarySetsConverter))]
-internal sealed partial class ReliquarySets : List<ReliquarySet>, IEquatable<ReliquarySets>
+public sealed partial class ReliquarySets : List<ReliquarySet>, IEquatable<ReliquarySets>
 {
     public ReliquarySets(IEnumerable<ReliquarySet> sets)
         : base(sets)

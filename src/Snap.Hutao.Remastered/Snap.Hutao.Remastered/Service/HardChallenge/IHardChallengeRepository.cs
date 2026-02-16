@@ -7,7 +7,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Service.HardChallenge;
 
-internal interface IHardChallengeRepository : IRepository<HardChallengeEntry>
+public interface IHardChallengeRepository : IRepository<HardChallengeEntry>
 {
     void AddHardChallengeEntry(HardChallengeEntry entry);
 

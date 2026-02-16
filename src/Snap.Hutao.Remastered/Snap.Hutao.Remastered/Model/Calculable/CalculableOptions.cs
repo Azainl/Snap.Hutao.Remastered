@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal readonly struct CalculableOptions
+public readonly struct CalculableOptions
 {
     public readonly ICalculableAvatar? Avatar;
 

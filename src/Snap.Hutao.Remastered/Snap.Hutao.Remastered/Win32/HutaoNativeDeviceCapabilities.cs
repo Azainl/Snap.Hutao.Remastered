@@ -8,7 +8,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeDeviceCapabilities
+public sealed unsafe class HutaoNativeDeviceCapabilities
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -25,11 +25,11 @@ internal sealed unsafe class HutaoNativeDeviceCapabilities
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeDeviceCapabilities)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, int*, HRESULT> GetPrimaryScreenVerticalRefreshRate;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, int*, HRESULT> GetPrimaryScreenVerticalRefreshRate;
 #pragma warning restore CS0649
     }
 }

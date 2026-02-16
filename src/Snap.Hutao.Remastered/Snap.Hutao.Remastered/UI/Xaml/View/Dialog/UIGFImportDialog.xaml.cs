@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<UIGF>("UIGF")]
 [DependencyProperty<ImmutableArray<UIGFUidSelection>>("ItemsSource", NotNull = true)]
-internal sealed partial class UIGFImportDialog : ContentDialog
+public sealed partial class UIGFImportDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private ImmutableArray<uint> selectedUids = [];

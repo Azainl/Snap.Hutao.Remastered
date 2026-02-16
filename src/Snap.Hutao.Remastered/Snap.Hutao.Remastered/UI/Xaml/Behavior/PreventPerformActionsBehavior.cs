@@ -7,7 +7,7 @@ using Microsoft.UI.Xaml.Input;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed class PreventPerformActionsBehavior : BehaviorBase<UIElement>
+public sealed class PreventPerformActionsBehavior : BehaviorBase<UIElement>
 {
     protected override bool Initialize()
     {

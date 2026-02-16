@@ -7,7 +7,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
-internal sealed partial class IdentifyMonitorWindow : Microsoft.UI.Xaml.Window
+public sealed partial class IdentifyMonitorWindow : Microsoft.UI.Xaml.Window
 {
     public IdentifyMonitorWindow(DisplayArea displayArea, int index)
     {

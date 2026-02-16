@@ -11,7 +11,7 @@ using EntityArchive = Snap.Hutao.Remastered.Model.Entity.AchievementArchive;
 
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
-internal interface IAchievementRepository : IRepository<EntityArchive>, IRepository<EntityAchievement>
+public interface IAchievementRepository : IRepository<EntityArchive>, IRepository<EntityAchievement>
 {
     void AddAchievementArchive(EntityArchive archive);
 

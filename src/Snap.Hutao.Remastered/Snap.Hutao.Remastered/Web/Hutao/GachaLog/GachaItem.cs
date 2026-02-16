@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 /// <summary>
 /// 服务器接口使用的祈愿记录物品
 /// </summary>
-internal sealed class GachaItem
+public sealed class GachaItem
 {
     /// <summary>
     /// 祈愿记录分类

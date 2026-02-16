@@ -7,7 +7,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserCollectionService
+public interface IUserCollectionService
 {
     ValueTask<AdvancedDbCollectionView<BindingUser, EntityUser>> GetUsersAsync();
 

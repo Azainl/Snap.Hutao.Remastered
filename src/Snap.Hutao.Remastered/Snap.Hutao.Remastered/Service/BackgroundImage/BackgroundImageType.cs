@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Service.BackgroundImage;
 
 [ExtendedEnum]
-internal enum BackgroundImageType
+public enum BackgroundImageType
 {
     [LocalizationKey(nameof(SH.ServiceBackgroundImageTypeNone))]
     None,

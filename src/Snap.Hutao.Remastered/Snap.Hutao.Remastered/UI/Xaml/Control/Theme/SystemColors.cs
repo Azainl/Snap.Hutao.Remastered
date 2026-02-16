@@ -5,7 +5,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Theme;
 
-internal static class SystemColors
+public static class SystemColors
 {
     public static Color BaseLowColor(bool isDarkMode)
     {

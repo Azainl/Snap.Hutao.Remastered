@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.Service.Metadata;
 
 [Service(ServiceLifetime.Singleton, typeof(IMetadataService))]
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class MetadataService : IMetadataService
+public sealed partial class MetadataService : IMetadataService
 {
     private readonly TaskCompletionSource initializeCompletionSource = new();
 
@@ -36,7 +36,7 @@ internal sealed partial class MetadataService : IMetadataService
         return isInitialized;
     }
 
-    public async ValueTask InitializeInternalAsync(CancellationToken token = default)
+    public async ValueTask InitializepublicAsync(CancellationToken token = default)
     {
         if (isInitialized)
         {

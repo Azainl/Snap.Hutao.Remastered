@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 [DependencyProperty<int>("Maximum", DefaultValue = -1, PropertyChangedCallbackName = nameof(OnChunksChanged), NotNull = true)]
 [DependencyProperty<string>("Description")]
 [DependencyProperty<string>("IconGlyph")]
-internal sealed partial class SophonProgressBar : UserControl, INotifyPropertyChanged
+public sealed partial class SophonProgressBar : UserControl, INotifyPropertyChanged
 {
     public SophonProgressBar()
     {

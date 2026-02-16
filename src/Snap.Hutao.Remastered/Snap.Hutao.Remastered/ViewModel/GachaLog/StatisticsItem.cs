@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class StatisticsItem : Item
+public sealed class StatisticsItem : Item
 {
     public int Count { get; set; }
 }

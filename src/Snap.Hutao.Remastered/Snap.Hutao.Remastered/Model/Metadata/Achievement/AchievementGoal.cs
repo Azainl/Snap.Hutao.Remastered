@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Achievement;
 
-internal sealed class AchievementGoal
+public sealed class AchievementGoal
 {
     public required AchievementGoalId Id { get; init; }
 

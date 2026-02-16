@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 /// <summary>
 /// 胡桃云祈愿统计卡片
 /// </summary>
-internal sealed partial class HutaoStatisticsCard : UserControl
+public sealed partial class HutaoStatisticsCard : UserControl
 {
     public HutaoStatisticsCard()
     {

@@ -12,7 +12,7 @@
 //#nullable enable
 //namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-//internal static class SaltConstants
+//public static class SaltConstants
 //{
 //    public const string CNVersion = "2.95.1";
 //    public const string CNK2 = "sfYPEgpxkOe1I3XVMLdwp1Lyt9ORgZsq";

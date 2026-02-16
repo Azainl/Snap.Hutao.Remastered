@@ -5,7 +5,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IHutaoAsAService
+public interface IHutaoAsAService
 {
     ValueTask<ObservableCollection<Web.Hutao.HutaoAsAService.Announcement>> GetHutaoAnnouncementCollectionAsync(CancellationToken token = default);
 }

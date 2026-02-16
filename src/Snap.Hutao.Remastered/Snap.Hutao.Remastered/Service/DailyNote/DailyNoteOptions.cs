@@ -12,7 +12,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class DailyNoteOptions : DbStoreOptions
+public sealed partial class DailyNoteOptions : DbStoreOptions
 {
     private const int OneMinute = 60;
 

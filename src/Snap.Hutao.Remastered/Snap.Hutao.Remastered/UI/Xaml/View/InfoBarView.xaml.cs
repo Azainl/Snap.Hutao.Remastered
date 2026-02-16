@@ -13,7 +13,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.View;
 
 [DependencyProperty<ObservableCollection<InfoBarOptions>>("InfoBars")]
-internal sealed partial class InfoBarView : UserControl
+public sealed partial class InfoBarView : UserControl
 {
     public InfoBarView()
     {

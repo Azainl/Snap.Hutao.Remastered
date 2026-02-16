@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class Random
+public static class Random
 {
     public static string GetLowerHexString(int length)
     {

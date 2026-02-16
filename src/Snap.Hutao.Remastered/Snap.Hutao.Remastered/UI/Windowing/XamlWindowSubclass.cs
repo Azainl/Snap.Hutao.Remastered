@@ -16,7 +16,7 @@ using static Snap.Hutao.Remastered.Win32.ConstValues;
 
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
-internal sealed partial class XamlWindowSubclass : IDisposable
+public sealed partial class XamlWindowSubclass : IDisposable
 {
     private readonly HutaoNativeWindowSubclass native;
     private readonly Window window;

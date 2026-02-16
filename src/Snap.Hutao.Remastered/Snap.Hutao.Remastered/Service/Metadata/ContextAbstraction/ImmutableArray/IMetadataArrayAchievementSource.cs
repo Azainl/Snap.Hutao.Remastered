@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayAchievementSource
+public interface IMetadataArrayAchievementSource
 {
     ImmutableArray<Model.Metadata.Achievement.Achievement> Achievements { get; set; }
 }

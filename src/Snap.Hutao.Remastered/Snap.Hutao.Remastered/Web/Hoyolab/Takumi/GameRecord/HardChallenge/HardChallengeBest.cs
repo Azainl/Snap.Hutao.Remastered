@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeBest
+public sealed class HardChallengeBest
 {
     [JsonPropertyName("difficulty")]
     public required HardChallengeDifficultyLevel Difficulty { get; init; }

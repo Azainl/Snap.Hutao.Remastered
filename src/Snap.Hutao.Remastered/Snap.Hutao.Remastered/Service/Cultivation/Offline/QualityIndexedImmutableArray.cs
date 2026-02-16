@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class QualityIndexedArray
+public static class QualityIndexedArray
 {
     public static readonly int EnumCount = Enum.GetValues<QualityType>().Length;
 
@@ -23,7 +23,7 @@ internal static class QualityIndexedArray
 }
 
 [CollectionBuilder(typeof(QualityIndexedArray), nameof(QualityIndexedArray.Create))]
-internal sealed class QualityIndexedImmutableArray<T>
+public sealed class QualityIndexedImmutableArray<T>
 {
     private readonly T[] array;
 

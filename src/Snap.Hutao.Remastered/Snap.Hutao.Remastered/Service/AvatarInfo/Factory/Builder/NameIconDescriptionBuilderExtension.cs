@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class NameIconDescriptionBuilderExtension
+public static class NameIconDescriptionBuilderExtension
 {
     public static TBuilder SetDescription<TBuilder, T>(this TBuilder builder, string description)
         where TBuilder : class, INameIconDescriptionBuilder<T>

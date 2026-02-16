@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal sealed class RankAvatar : AvatarView
+public sealed class RankAvatar : AvatarView
 {
     public RankAvatar(int value, Model.Metadata.Avatar.Avatar avatar)
         : base(avatar)

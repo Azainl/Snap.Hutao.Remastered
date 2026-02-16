@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model;
 
 namespace Snap.Hutao.Remastered.ViewModel.Calendar;
 
-internal sealed class CalendarItem : Item
+public sealed class CalendarItem : Item
 {
     public bool Highlight { get; set; }
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal sealed class AsyncLockValue<T>
+public sealed class AsyncLockValue<T>
     where T : class
 {
     public AsyncLock Lock { get; } = new();

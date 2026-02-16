@@ -7,7 +7,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.Extension;
 
 // ReSharper disable once InconsistentNaming
-internal static class WinRTExtension
+public static class WinRTExtension
 {
     extension(IWinRTObject? obj)
     {

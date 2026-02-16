@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class HutaoWishSummary
+public sealed class HutaoWishSummary
 {
     public required GachaEvent Event { get; init; }
 

@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Sdk.Combo;
 
 [HttpClient(HttpClientConfiguration.XRpc2)]
-internal sealed partial class PandaClient
+public sealed partial class PandaClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

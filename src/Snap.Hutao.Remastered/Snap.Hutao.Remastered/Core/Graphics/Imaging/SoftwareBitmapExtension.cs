@@ -9,7 +9,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.Core.Graphics.Imaging;
 
-internal static class SoftwareBitmapExtension
+public static class SoftwareBitmapExtension
 {
     extension(SoftwareBitmap softwareBitmap)
     {

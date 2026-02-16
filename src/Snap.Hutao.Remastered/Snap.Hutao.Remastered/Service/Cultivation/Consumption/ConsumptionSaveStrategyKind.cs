@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Consumption;
 
-internal enum ConsumptionSaveStrategyKind
+public enum ConsumptionSaveStrategyKind
 {
     PreserveExisting,
     OverwriteExisting,

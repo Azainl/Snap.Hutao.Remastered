@@ -6,7 +6,7 @@ using Windows.Foundation;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal sealed class CoreWebView2Navigator
+public sealed class CoreWebView2Navigator
 {
     private readonly TypedEventHandler<CoreWebView2, CoreWebView2NavigationCompletedEventArgs> coreWebView2NavigationCompletedEventHandler;
     private readonly CoreWebView2 coreWebView2;

@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
 [ExtendedEnum]
-internal enum AttendanceRewardStatus
+public enum AttendanceRewardStatus
 {
     [LocalizationKey(nameof(SH.WebDailyNoteAttendanceRewardStatusInvalid))]
     AttendanceRewardStatusInvalid,

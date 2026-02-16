@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class Skill
+public sealed class Skill
 {
     [JsonPropertyName("skill_id")]
     public SkillId SkillId { get; set; }

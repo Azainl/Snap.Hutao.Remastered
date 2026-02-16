@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.RoleCombat.Post;
 
-internal sealed class SimpleRoleCombatRecord
+public sealed class SimpleRoleCombatRecord
 {
     public SimpleRoleCombatRecord(string uid, ImmutableArray<uint> backupAvatars, uint scheduleId)
     {

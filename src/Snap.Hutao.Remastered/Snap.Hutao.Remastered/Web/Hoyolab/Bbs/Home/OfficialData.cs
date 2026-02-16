@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class OfficialData
+public sealed class OfficialData
 {
     [JsonPropertyName("post_id")]
     public required string PostId { get; init; }

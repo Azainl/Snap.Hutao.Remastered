@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal enum UserOptionResultKind
+public enum UserOptionResultKind
 {
     Added,
     CookieIncomplete,

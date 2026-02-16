@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
-internal class GachaLogItem
+public class GachaLogItem
 {
     [JsonPropertyName("uid")]
     public string Uid { get; set; } = default!;

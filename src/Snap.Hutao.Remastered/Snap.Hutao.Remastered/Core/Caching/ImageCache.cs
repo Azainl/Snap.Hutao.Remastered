@@ -16,7 +16,7 @@ using ThemeFile = (Microsoft.UI.Xaml.ElementTheme, Snap.Hutao.Remastered.Core.IO
 namespace Snap.Hutao.Remastered.Core.Caching;
 
 [Service(ServiceLifetime.Singleton, typeof(IImageCache))]
-internal sealed partial class ImageCache : IImageCache
+public sealed partial class ImageCache : IImageCache
 {
     private static readonly FrozenSet<string> SupportedSchemes =
     [
@@ -139,7 +139,7 @@ internal sealed partial class ImageCache : IImageCache
         }
         catch (IOException ex)
         {
-            throw InternalImageCacheException.Throw("Failed to convert image", ex);
+            throw publicImageCacheException.Throw("Failed to convert image", ex);
         }
     }
 }

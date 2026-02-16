@@ -12,7 +12,7 @@ using Windows.Graphics;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class GuideWindow : Microsoft.UI.Xaml.Window,
+public sealed partial class GuideWindow : Microsoft.UI.Xaml.Window,
     IXamlWindowExtendContentIntoTitleBar,
     IXamlWindowHasInitSize
 {

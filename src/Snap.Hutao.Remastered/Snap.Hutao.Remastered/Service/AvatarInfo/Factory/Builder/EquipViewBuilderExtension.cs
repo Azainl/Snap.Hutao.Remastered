@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class EquipViewBuilderExtension
+public static class EquipViewBuilderExtension
 {
     public static TBuilder SetEquipType<TBuilder, T>(this TBuilder builder, EquipType equipType)
         where TBuilder : class, IEquipViewBuilder<T>

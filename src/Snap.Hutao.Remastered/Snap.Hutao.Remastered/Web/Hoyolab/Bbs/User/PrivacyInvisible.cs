@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class PrivacyInvisible
+public sealed class PrivacyInvisible
 {
     [JsonPropertyName("post")]
     public bool Post { get; set; }

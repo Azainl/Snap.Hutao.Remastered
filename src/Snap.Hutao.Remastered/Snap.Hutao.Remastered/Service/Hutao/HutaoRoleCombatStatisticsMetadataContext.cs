@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal sealed class HutaoRoleCombatStatisticsMetadataContext : IMetadataContext,
+public sealed class HutaoRoleCombatStatisticsMetadataContext : IMetadataContext,
     IMetadataDictionaryIdAvatarWithPlayersSource
 {
     public ImmutableDictionary<AvatarId, Avatar> IdAvatarMap { get; set; } = default!;

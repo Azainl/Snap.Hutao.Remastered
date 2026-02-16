@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 [SuppressMessage("", "SA1202")]
-internal static class AvatarPropertySortDescriptions
+public static class AvatarPropertySortDescriptions
 {
     private static readonly SortDescription LevelNumber = new(nameof(AvatarView.LevelNumber), SortDirection.Descending);
     private static readonly SortDescription Quality = new(nameof(AvatarView.Quality), SortDirection.Descending);

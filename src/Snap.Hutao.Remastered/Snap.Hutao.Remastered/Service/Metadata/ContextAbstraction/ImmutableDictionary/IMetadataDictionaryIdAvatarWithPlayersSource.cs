@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdAvatarWithPlayersSource : IMetadataDictionaryIdAvatarSource;
+public interface IMetadataDictionaryIdAvatarWithPlayersSource : IMetadataDictionaryIdAvatarSource;

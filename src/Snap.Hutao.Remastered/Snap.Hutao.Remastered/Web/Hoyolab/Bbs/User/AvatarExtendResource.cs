@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class AvatarExtendResource
+public sealed class AvatarExtendResource
 {
     [JsonPropertyName("format")]
     public required int Format { get; init; }

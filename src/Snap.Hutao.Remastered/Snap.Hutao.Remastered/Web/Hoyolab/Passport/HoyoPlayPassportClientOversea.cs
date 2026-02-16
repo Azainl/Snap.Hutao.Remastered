@@ -15,7 +15,7 @@ using System.Text;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 [HttpClient(HttpClientConfiguration.XRpc6)]
-internal sealed partial class HoyoPlayPassportClientOversea : IHoyoPlayPassportClient
+public sealed partial class HoyoPlayPassportClientOversea : IHoyoPlayPassportClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Oversea)]

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Enka.Model;
 
-internal sealed class PlayerInfo
+public sealed class PlayerInfo
 {
     [JsonPropertyName("nickname")]
     public string Nickname { get; set; } = default!;

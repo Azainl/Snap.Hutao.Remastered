@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.IO;
 
 namespace Snap.Hutao.Remastered.Service.Git;
 
-internal interface IGitRepositoryService
+public interface IGitRepositoryService
 {
     ValueTask<ValueResult<bool, ValueDirectory>> EnsureRepositoryAsync(string name);
 }

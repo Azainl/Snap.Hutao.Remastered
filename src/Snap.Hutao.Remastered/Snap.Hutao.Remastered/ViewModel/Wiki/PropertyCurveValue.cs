@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Metadata;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed class PropertyCurveValue
+public sealed class PropertyCurveValue
 {
     public PropertyCurveValue(FightProperty property, GrowCurveType type, float value)
     {

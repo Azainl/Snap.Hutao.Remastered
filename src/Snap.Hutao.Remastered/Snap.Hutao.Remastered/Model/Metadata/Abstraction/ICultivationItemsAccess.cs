@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal interface ICultivationItemsAccess : INameAccess
+public interface ICultivationItemsAccess : INameAccess
 {
     ImmutableArray<MaterialId> CultivationItems { get; }
 }

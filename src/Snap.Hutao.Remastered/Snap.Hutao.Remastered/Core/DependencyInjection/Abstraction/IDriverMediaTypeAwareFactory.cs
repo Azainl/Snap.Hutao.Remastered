@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection.Abstraction;
 
-internal interface IDriverMediaTypeAwareFactory<out TService>
+public interface IDriverMediaTypeAwareFactory<out TService>
 {
     TService Create(string path);
 }

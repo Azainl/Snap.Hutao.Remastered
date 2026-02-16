@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Entity.Abstraction;
 
 namespace Snap.Hutao.Remastered.Core.Database.Abstraction;
 
-internal interface ISelectable : IAppDbEntity
+public interface ISelectable : IAppDbEntity
 {
     bool IsSelected { get; set; }
 }

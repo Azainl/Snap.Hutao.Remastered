@@ -5,7 +5,7 @@ using System.Collections.Concurrent;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal abstract class StatisticsCache
+public abstract class StatisticsCache
 {
     private readonly ConcurrentDictionary<Type, TaskCompletionSource> typeToTcs = [];
 

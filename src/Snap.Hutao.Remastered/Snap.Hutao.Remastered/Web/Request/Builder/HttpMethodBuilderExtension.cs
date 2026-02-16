@@ -8,7 +8,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpMethodBuilderExtension
+public static class HttpMethodBuilderExtension
 {
     extension<T>(T builder)
         where T : class, IHttpMethodBuilder

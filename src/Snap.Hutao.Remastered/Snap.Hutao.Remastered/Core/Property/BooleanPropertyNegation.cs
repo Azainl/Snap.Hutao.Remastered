@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed class BooleanPropertyNegation : IProperty<bool>
+public sealed class BooleanPropertyNegation : IProperty<bool>
 {
     private readonly IProperty<bool> source;
 

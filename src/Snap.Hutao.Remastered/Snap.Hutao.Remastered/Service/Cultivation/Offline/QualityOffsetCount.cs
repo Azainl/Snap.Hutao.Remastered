@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Abstraction;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal readonly struct QualityOffsetCount : IDeconstruct<uint, uint>
+public readonly struct QualityOffsetCount : IDeconstruct<uint, uint>
 {
     public readonly uint QualityOffset;
     public readonly uint Count;

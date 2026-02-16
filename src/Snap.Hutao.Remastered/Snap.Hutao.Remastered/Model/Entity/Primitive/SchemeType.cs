@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Entity.Primitive;
 
-internal enum SchemeType
+public enum SchemeType
 {
     ChineseOfficial,
     Oversea,

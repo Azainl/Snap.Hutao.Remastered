@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.SpiralAbyss;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Post;
 
-internal sealed class SimpleFloor
+public sealed class SimpleFloor
 {
     public SimpleFloor(SpiralAbyssFloor floor)
     {

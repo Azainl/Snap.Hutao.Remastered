@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class FrameRateStringConverter : ValueConverter<int, string>
+public sealed partial class FrameRateStringConverter : ValueConverter<int, string>
 {
     public override string Convert(int from)
     {

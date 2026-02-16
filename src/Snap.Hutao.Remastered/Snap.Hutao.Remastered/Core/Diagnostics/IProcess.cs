@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Core.Diagnostics;
 
-internal interface IProcess : IDisposable
+public interface IProcess : IDisposable
 {
     int Id { get; }
 

@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class PullPrediction
+public sealed class PullPrediction
 {
     private readonly TypedWishSummary typedWishSummary;
     private readonly TypedWishSummaryBuilderContext context;

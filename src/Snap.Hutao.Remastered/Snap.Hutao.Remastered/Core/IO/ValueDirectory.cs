@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal readonly struct ValueDirectory : IEquatable<ValueDirectory>
+public readonly struct ValueDirectory : IEquatable<ValueDirectory>
 {
     private readonly string value;
 

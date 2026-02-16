@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.Model.InterChange.GachaLog;
 
 // This class unfortunately can't use required properties because it's been rooted in XamlTypeInfo
 // ReSharper disable once InconsistentNaming
-internal sealed class UIGF
+public sealed class UIGF
 {
     [JsonRequired]
     [JsonPropertyName("info")]

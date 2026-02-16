@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
-internal sealed class CultivatePromotionDeltaOptions
+public sealed class CultivatePromotionDeltaOptions
 {
     public CultivatePromotionDeltaOptions(AvatarPromotionDelta delta, ConsumptionSaveStrategyKind strategy)
     {

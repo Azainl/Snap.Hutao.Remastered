@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 /// <summary>
 /// 奖励物品
 /// </summary>
-internal class Award
+public class Award
 {
     /// <summary>
     /// 图标

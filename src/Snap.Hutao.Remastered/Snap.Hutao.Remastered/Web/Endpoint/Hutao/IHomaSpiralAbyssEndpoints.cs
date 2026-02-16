@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaSpiralAbyssEndpoints : IHomaRootAccess
+public interface IHomaSpiralAbyssEndpoints : IHomaRootAccess
 {
     string RecordCheck(string uid)
     {

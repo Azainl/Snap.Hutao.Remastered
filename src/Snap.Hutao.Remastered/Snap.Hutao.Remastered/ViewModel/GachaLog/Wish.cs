@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal abstract class Wish
+public abstract class Wish
 {
     public required string Name { get; init; }
 
@@ -27,7 +27,7 @@ internal abstract class Wish
         get => SH.FormatModelBindingGachaWishBaseTotalCount(TotalCount);
     }
 
-    internal required DateTimeOffset From { get; init; }
+    public required DateTimeOffset From { get; init; }
 
-    internal required DateTimeOffset To { get; init; }
+    public required DateTimeOffset To { get; init; }
 }

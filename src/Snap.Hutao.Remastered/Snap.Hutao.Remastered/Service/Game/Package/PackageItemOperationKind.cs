@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal enum PackageItemOperationKind
+public enum PackageItemOperationKind
 {
     Backup = 0,
     Replace = 1,

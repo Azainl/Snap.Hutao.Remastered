@@ -16,7 +16,7 @@ using MetadataWeapon = Snap.Hutao.Remastered.Model.Metadata.Weapon.Weapon;
 namespace Snap.Hutao.Remastered.Service.Inventory;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class PromotionDeltaFactory
+public sealed partial class PromotionDeltaFactory
 {
     private readonly ILogger<PromotionDeltaFactory> logger;
     private readonly IServiceProvider serviceProvider;

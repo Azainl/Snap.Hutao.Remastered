@@ -5,7 +5,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class WinRTAdaptive
+public static class WinRTAdaptive
 {
     public static FrozenDictionary<TKey, TValue> ToFrozenDictionary<TKey, TValue>(KeyValuePair<TKey, TValue>[] source)
         where TKey : notnull

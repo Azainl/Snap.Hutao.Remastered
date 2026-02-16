@@ -16,7 +16,7 @@ namespace Snap.Hutao.Remastered.Core.Caching;
 [Service(ServiceLifetime.Singleton, typeof(IImageCacheDownloadOperation))]
 [HttpClient(HttpClientConfiguration.Default)]
 [PrimaryHttpMessageHandler(MaxConnectionsPerServer = 8)]
-internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadOperation
+public sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadOperation
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHttpClientFactory httpClientFactory;
@@ -40,7 +40,7 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
 
         if (!File.Exists(baseFile))
         {
-            throw InternalImageCacheException.Throw($"'{uri.OriginalString}': File not exists after download attempt.");
+            throw publicImageCacheException.Throw($"'{uri.OriginalString}': File not exists after download attempt.");
         }
     }
 
@@ -60,14 +60,14 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
                 {
                     throw responseMessage.StatusCode switch
                     {
-                        HttpStatusCode.NotFound => InternalImageCacheException.Throw($"Unable to download file from '{uri.OriginalString}': 404 Not Found"),
-                        _ => InternalImageCacheException.Throw($"Unexpected HTTP status code {responseMessage.StatusCode}"),
+                        HttpStatusCode.NotFound => publicImageCacheException.Throw($"Unable to download file from '{uri.OriginalString}': 404 Not Found"),
+                        _ => publicImageCacheException.Throw($"Unexpected HTTP status code {responseMessage.StatusCode}"),
                     };
                 }
 
                 if (responseMessage.Content.Headers.ContentType?.MediaType is MediaTypeNames.Application.Json)
                 {
-                    InternalImageCacheException.Throw($"Unexpected content type: {MediaTypeNames.Application.Json}");
+                    publicImageCacheException.Throw($"Unexpected content type: {MediaTypeNames.Application.Json}");
                 }
 
                 using (Stream httpStream = await responseMessage.Content.ReadAsStreamAsync().ConfigureAwait(false))
@@ -81,7 +81,7 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
                     }
                     catch (DirectoryNotFoundException dnfEx)
                     {
-                        throw InternalImageCacheException.Throw($"Unable to create folder at '{directoryName}'", dnfEx);
+                        throw publicImageCacheException.Throw($"Unable to create folder at '{directoryName}'", dnfEx);
                     }
 
                     FileStream fileStream;
@@ -92,7 +92,7 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
                     catch (IOException ex)
                     {
                         // The process cannot access the file '?' because it is being used by another process.
-                        throw InternalImageCacheException.Throw($"Unable to create file at '{baseFile}'", ex);
+                        throw publicImageCacheException.Throw($"Unable to create file at '{baseFile}'", ex);
                     }
 
                     try
@@ -109,7 +109,7 @@ internal sealed partial class ImageCacheDownloadOperation : IImageCacheDownloadO
                         // Unable to read data from the transport connection: 你的主机中的软件中止了一个已建立的连接。. SocketException: ConnectionAborted
                         // HttpIOException: The response ended prematurely. (ResponseEnded)
                         // 磁盘空间不足。 : '?'.
-                        throw InternalImageCacheException.Throw("Unable to copy stream content to file", ex);
+                        throw publicImageCacheException.Throw("Unable to copy stream content to file", ex);
                     }
                 }
             }

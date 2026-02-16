@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Service.Game.PathAbstraction;
 
 [Service(ServiceLifetime.Singleton, typeof(IGamePathService))]
-internal sealed partial class GamePathService : IGamePathService
+public sealed partial class GamePathService : IGamePathService
 {
     private readonly IGameLocatorFactory gameLocatorFactory;
     private readonly LaunchOptions launchOptions;

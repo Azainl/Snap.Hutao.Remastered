@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal static class GameFileSystemExtension
+public static class GameFileSystemExtension
 {
     private static readonly ConditionalWeakTable<IGameFileSystemView, string> GameFileSystemGameFileNames = [];
     private static readonly ConditionalWeakTable<IGameFileSystemView, string> GameFileSystemGameDirectories = [];

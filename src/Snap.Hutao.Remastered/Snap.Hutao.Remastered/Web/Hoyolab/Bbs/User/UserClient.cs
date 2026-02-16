@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
-internal sealed partial class UserClient : IUserClient
+public sealed partial class UserClient : IUserClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

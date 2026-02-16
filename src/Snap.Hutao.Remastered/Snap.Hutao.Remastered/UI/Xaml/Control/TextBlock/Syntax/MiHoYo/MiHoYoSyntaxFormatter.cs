@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal static class MiHoYoSyntaxFormatter
+public static class MiHoYoSyntaxFormatter
 {
     public static string Format(ImmutableArray<MiHoYoSyntaxElement> elements, string input)
     {

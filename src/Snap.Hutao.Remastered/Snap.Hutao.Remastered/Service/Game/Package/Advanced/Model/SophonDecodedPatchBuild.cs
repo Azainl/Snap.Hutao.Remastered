@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.Model;
 
-internal sealed class SophonDecodedPatchBuild
+public sealed class SophonDecodedPatchBuild
 {
     public SophonDecodedPatchBuild(string originalTag, string tag, long downloadTotalBytes, long downloadFileCount, long uncompressedTotalBytes, long installFileCount, ImmutableArray<SophonDecodedPatchManifest> manifests)
     {

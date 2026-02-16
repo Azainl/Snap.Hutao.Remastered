@@ -10,7 +10,7 @@ using WebDailyNote = Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNo
 
 namespace Snap.Hutao.Remastered.ViewModel.DailyNote;
 
-internal sealed class DailyNoteArchonQuestView
+public sealed class DailyNoteArchonQuestView
 {
     private DailyNoteArchonQuestView(WebDailyNote? dailyNote, ImmutableArray<Chapter> chapters)
     {

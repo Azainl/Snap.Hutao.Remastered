@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal class ItemRate<TItem, TRate>
+public class ItemRate<TItem, TRate>
 {
     public ItemRate(TItem item, TRate rate)
     {

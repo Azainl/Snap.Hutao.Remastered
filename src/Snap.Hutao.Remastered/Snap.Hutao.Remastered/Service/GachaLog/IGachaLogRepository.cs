@@ -9,7 +9,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal interface IGachaLogRepository : IRepository<GachaArchive>, IRepository<GachaItem>
+public interface IGachaLogRepository : IRepository<GachaArchive>, IRepository<GachaItem>
 {
     void AddGachaArchive(GachaArchive archive);
 

@@ -13,7 +13,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed class WikiAvatarMetadataContext : IMetadataContext,
+public sealed class WikiAvatarMetadataContext : IMetadataContext,
     IMetadataDictionaryLevelAvatarGrowCurveSource,
     IMetadataDictionaryIdDictionaryLevelAvatarPromoteSource,
     IMetadataDictionaryIdMaterialSource,

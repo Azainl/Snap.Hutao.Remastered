@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-2-asyncautoresetevent/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncAutoResetEvent
+public sealed class AsyncAutoResetEvent
 {
     private readonly Queue<TaskCompletionSource> waits = [];
     private bool signaled;

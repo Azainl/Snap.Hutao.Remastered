@@ -3,11 +3,11 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal abstract class GamePackageOperationReport
+public abstract class GamePackageOperationReport
 {
     public GamePackageOperationReportKind Kind { get; private set; }
 
-    internal abstract class Update : GamePackageOperationReport
+    public abstract class Update : GamePackageOperationReport
     {
         public Update(long bytesRead, int chunks, string fileName)
         {
@@ -23,7 +23,7 @@ internal abstract class GamePackageOperationReport
         public string FileName { get; }
     }
 
-    internal sealed class Download : Update
+    public sealed class Download : Update
     {
         public Download(long bytesRead, int chunks, string fileName = default!)
             : base(bytesRead, chunks, fileName)
@@ -32,7 +32,7 @@ internal abstract class GamePackageOperationReport
         }
     }
 
-    internal sealed class Install : Update
+    public sealed class Install : Update
     {
         public Install(long bytesRead, int chunks, string fileName = default!)
             : base(bytesRead, chunks, fileName)
@@ -41,7 +41,7 @@ internal abstract class GamePackageOperationReport
         }
     }
 
-    internal sealed class Reset : GamePackageOperationReport
+    public sealed class Reset : GamePackageOperationReport
     {
         public Reset(string title)
         {
@@ -96,7 +96,7 @@ internal abstract class GamePackageOperationReport
         public long InstallTotalBytes { get; }
     }
 
-    internal sealed class Finish : GamePackageOperationReport
+    public sealed class Finish : GamePackageOperationReport
     {
         public Finish(GamePackageOperationKind kind, bool repaired = false)
         {
@@ -110,7 +110,7 @@ internal abstract class GamePackageOperationReport
         public bool Repaired { get; }
     }
 
-    internal sealed class Abort : GamePackageOperationReport
+    public sealed class Abort : GamePackageOperationReport
     {
         public Abort(string reason)
         {

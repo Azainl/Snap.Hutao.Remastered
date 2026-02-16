@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum FurnitureDeploySurfaceType
+public enum FurnitureDeploySurfaceType
 {
     Ground = 0,
     Wall = 1,

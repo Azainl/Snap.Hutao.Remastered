@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.ViewModel.Game;
 
-internal sealed partial class AspectRatioComboBoxTemplateSelector : DataTemplateSelector
+public sealed partial class AspectRatioComboBoxTemplateSelector : DataTemplateSelector
 {
     public DataTemplate ListTemplate { get; set; } = default!;
 

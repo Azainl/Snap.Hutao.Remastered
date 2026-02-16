@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.Core.Database;
 
-internal sealed partial class AdvancedDbCollectionView<TEntity> : AdvancedCollectionView<TEntity>,
+public sealed partial class AdvancedDbCollectionView<TEntity> : AdvancedCollectionView<TEntity>,
     IAdvancedDbCollectionView<TEntity>
     where TEntity : class, IPropertyValuesProvider, ISelectable
 {
@@ -75,7 +75,7 @@ internal sealed partial class AdvancedDbCollectionView<TEntity> : AdvancedCollec
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed partial class AdvancedDbCollectionView<TEntityAccess, TEntity> : AdvancedCollectionView<TEntityAccess>,
+public sealed partial class AdvancedDbCollectionView<TEntityAccess, TEntity> : AdvancedCollectionView<TEntityAccess>,
     IAdvancedDbCollectionView<TEntityAccess>
     where TEntityAccess : class, IEntityAccess<TEntity>, IPropertyValuesProvider
     where TEntity : class, ISelectable

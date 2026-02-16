@@ -20,7 +20,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class LaunchGameViewModelSlim : Abstraction.ViewModelSlim<LaunchGamePage>,
+public sealed partial class LaunchGameViewModelSlim : Abstraction.ViewModelSlim<LaunchGamePage>,
     IViewModelSupportLaunchExecution,
     IRecipient<UserAndUidChangedMessage>
 {

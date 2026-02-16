@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Response;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal interface ISophonClient
+public interface ISophonClient
 {
     ValueTask<Response<SophonBuild>> GetBuildAsync(BranchWrapper branch, CancellationToken token = default);
 

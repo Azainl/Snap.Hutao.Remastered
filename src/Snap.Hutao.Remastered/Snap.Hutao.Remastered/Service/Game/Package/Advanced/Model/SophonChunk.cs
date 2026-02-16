@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Downloader.Proto;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.Model;
 
-internal sealed class SophonChunk
+public sealed class SophonChunk
 {
     public SophonChunk(string urlPrefix, string urlSuffix, AssetChunk assetChunk)
     {

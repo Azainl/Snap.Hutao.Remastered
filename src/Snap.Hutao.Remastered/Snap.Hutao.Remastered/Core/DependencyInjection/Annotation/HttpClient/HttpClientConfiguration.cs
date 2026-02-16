@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection.Annotation.HttpClient;
 
-internal enum HttpClientConfiguration
+public enum HttpClientConfiguration
 {
     /// <summary>
     /// 默认配置

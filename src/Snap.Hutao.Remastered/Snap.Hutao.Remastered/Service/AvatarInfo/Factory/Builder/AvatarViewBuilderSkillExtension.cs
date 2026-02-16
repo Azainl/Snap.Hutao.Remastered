@@ -11,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal static class AvatarViewBuilderSkillExtension
+public static class AvatarViewBuilderSkillExtension
 {
     public static TBuilder SetSkills<TBuilder>(this TBuilder builder, ImmutableArray<ProudSkill> proudSkills, FrozenDictionary<SkillId, SkillLevel> skillLevels, FrozenDictionary<SkillId, SkillLevel> extraLevels)
         where TBuilder : class, IAvatarViewBuilder

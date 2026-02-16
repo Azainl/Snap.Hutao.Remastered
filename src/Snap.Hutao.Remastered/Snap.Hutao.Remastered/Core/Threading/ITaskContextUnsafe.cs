@@ -5,7 +5,7 @@ using Microsoft.UI.Dispatching;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal interface ITaskContextUnsafe
+public interface ITaskContextUnsafe
 {
     DispatcherQueue DispatcherQueue { get; }
 }

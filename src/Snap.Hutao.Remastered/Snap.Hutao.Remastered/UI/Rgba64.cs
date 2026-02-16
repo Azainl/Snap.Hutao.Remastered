@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI;
 
-internal struct Rgba64
+public struct Rgba64
 {
 #pragma warning disable CS0649
     public Half R;

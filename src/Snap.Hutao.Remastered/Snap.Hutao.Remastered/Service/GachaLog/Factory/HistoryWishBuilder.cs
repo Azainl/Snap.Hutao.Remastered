@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class HistoryWishBuilder
+public sealed class HistoryWishBuilder
 {
     private readonly GachaEvent gachaEvent;
 

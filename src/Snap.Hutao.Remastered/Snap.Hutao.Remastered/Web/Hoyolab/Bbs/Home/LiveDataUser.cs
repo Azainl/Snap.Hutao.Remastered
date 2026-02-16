@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class LiveDataUser : UserCommon
+public sealed class LiveDataUser : UserCommon
 {
     [JsonPropertyName("is_following")]
     public required bool IsFollowing { get; init; }

@@ -9,7 +9,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal static unsafe class HutaoNativeWilCallbacks
+public static unsafe class HutaoNativeWilCallbacks
 {
     public static void HutaoInitializeWilCallbacks()
     {
@@ -44,7 +44,7 @@ internal static unsafe class HutaoNativeWilCallbacks
 #pragma warning disable SA1307
 
     // ReSharper disable InconsistentNaming
-    internal enum FailureType
+    public enum FailureType
     {
         // THROW_...
         Exception,
@@ -59,7 +59,7 @@ internal static unsafe class HutaoNativeWilCallbacks
         FailFast,
     }
 
-    internal enum FailureFlags
+    public enum FailureFlags
     {
         None = 0x00,
         RequestFailFast = 0x01,
@@ -68,7 +68,7 @@ internal static unsafe class HutaoNativeWilCallbacks
         NtStatus = 0x08,
     }
 
-    internal struct CallContextInfo
+    public struct CallContextInfo
     {
         // incrementing ID for this call context (unique across an individual module load within process)
         public long contextId;
@@ -80,7 +80,7 @@ internal static unsafe class HutaoNativeWilCallbacks
         public PCWSTR contextMessage;
     }
 
-    internal struct FailureInfo
+    public struct FailureInfo
     {
         public FailureType type;
         public FailureFlags flags;
@@ -131,7 +131,7 @@ internal static unsafe class HutaoNativeWilCallbacks
 #pragma warning restore SA1201
 #pragma warning restore CS0649
 
-    internal sealed class HutaoNativeException : Exception
+    public sealed class HutaoNativeException : Exception
     {
         public HutaoNativeException(FailureInfo info)
             : base($"{info.hr}: {MemoryMarshal.CreateReadOnlySpanFromNullTerminated(info.pszMessage).ToString()}")

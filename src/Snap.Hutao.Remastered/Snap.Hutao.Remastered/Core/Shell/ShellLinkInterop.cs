@@ -8,7 +8,7 @@ using Windows.ApplicationModel;
 namespace Snap.Hutao.Remastered.Core.Shell;
 
 [Service(ServiceLifetime.Transient, typeof(IShellLinkInterop))]
-internal sealed class ShellLinkInterop : IShellLinkInterop
+public sealed class ShellLinkInterop : IShellLinkInterop
 {
     public bool TryCreateDesktopShortcut()
     {

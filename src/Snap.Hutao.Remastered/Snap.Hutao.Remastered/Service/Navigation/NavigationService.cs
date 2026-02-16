@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Navigation.Message;
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
 [Service(ServiceLifetime.Singleton, typeof(INavigationService))]
-internal sealed partial class NavigationService : INavigationService
+public sealed partial class NavigationService : INavigationService
 {
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal interface ITypedResponseValidator<TData> : ICommonResponseValidator<Response<TData>>
+public interface ITypedResponseValidator<TData> : ICommonResponseValidator<Response<TData>>
 {
     bool TryValidate(Response<TData> response, [NotNullWhen(true)] out TData? data);
 

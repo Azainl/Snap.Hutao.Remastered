@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal sealed class SignInJSBridgeOversea : MiHoYoJSBridge
+public sealed class SignInJSBridgeOversea : MiHoYoJSBridge
 {
     // 移除 请旋转手机 提示所在的HTML元素
     /* lang=javascript */

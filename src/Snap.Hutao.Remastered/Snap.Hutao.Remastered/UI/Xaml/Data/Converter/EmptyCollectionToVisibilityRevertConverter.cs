@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
-internal sealed partial class EmptyCollectionToVisibilityRevertConverter : EmptyObjectToObjectConverter
+public sealed partial class EmptyCollectionToVisibilityRevertConverter : EmptyObjectToObjectConverter
 {
     public EmptyCollectionToVisibilityRevertConverter()
     {

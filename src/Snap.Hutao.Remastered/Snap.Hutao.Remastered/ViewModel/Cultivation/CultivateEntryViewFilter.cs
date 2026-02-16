@@ -13,7 +13,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal static class CultivateEntryViewFilter
+public static class CultivateEntryViewFilter
 {
     public static Predicate<CultivateEntryView>? Compile(SearchData? searchData, ICultivationMetadataContext metadataContext)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class ArchonQuest
+public sealed class ArchonQuest
 {
     [JsonPropertyName("status")]
     [JsonConverter(typeof(JsonStringEnumConverter))]

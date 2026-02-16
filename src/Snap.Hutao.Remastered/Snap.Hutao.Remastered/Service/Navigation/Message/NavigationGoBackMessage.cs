@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation.Message;
 
-internal sealed class NavigationGoBackMessage
+public sealed class NavigationGoBackMessage
 {
     public bool Result { get; set; }
 }

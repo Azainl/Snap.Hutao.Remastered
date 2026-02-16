@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 /// <summary>
 /// 祈愿活动统计
 /// </summary>
-internal sealed class GachaEventStatistics
+public sealed class GachaEventStatistics
 {
     /// <summary>
     /// 角色活动1

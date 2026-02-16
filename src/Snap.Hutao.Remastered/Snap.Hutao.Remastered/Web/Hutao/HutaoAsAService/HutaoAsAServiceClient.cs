@@ -14,7 +14,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hutao.HutaoAsAService;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HutaoAsAServiceClient
+public sealed partial class HutaoAsAServiceClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

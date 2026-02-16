@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal abstract class FullTrustResult
+public abstract class FullTrustResult
 {
     public bool Succeeded { get; set; }
 

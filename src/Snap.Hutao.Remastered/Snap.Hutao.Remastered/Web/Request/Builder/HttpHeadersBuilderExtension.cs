@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpHeadersBuilderExtension
+public static class HttpHeadersBuilderExtension
 {
     [DebuggerStepThrough]
     public static T AddHeader<T>(this T builder, string name)

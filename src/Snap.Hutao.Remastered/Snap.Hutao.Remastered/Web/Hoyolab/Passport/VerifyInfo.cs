@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class VerifyInfo
+public sealed class VerifyInfo
 {
     [JsonPropertyName("status")]
     [JsonEnumHandling(JsonEnumHandling.String)]

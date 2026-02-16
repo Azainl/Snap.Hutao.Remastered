@@ -6,7 +6,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal static class RectInt32Extension
+public static class RectInt32Extension
 {
     extension(RectInt32 rectInt32)
     {

@@ -5,7 +5,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class ObservablePropertyObserver<TSource, T> : ObservableObject, IReadOnlyObservableProperty<T>
+public sealed partial class ObservablePropertyObserver<TSource, T> : ObservableObject, IReadOnlyObservableProperty<T>
 {
     private readonly IObservableProperty<TSource> source;
     private readonly Func<TSource, T> converter;

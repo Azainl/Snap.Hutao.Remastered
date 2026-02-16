@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Service.SignIn;
 
-internal interface ISignInService
+public interface ISignInService
 {
     ValueTask<bool> ClaimSignInRewardAsync(UserAndUid userAndUid, CancellationToken token = default);
 

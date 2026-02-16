@@ -5,7 +5,7 @@ using Windows.Storage.Streams;
 
 namespace Snap.Hutao.Remastered.Core.DataTransfer;
 
-internal interface IClipboardProvider
+public interface IClipboardProvider
 {
     ValueTask<T?> DeserializeFromJsonAsync<T>()
         where T : class;

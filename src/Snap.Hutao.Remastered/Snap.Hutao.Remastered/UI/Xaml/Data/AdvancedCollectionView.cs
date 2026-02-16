@@ -16,7 +16,7 @@ using NotifyCollectionChangedAction = System.Collections.Specialized.NotifyColle
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal partial class AdvancedCollectionView<T> : IAdvancedCollectionView<T>, INotifyPropertyChanged, ISupportIncrementalLoading, IComparer<T>
+public partial class AdvancedCollectionView<T> : IAdvancedCollectionView<T>, INotifyPropertyChanged, ISupportIncrementalLoading, IComparer<T>
     where T : class, IPropertyValuesProvider
 {
     private readonly bool created;
@@ -704,7 +704,7 @@ internal partial class AdvancedCollectionView<T> : IAdvancedCollectionView<T>, I
         OnPropertyChanged(nameof(Count));
     }
 
-    internal sealed partial class NotificationDeferrer : IDisposable
+    public sealed partial class NotificationDeferrer : IDisposable
     {
         private readonly AdvancedCollectionView<T> advancedCollectionView;
         private readonly T? currentItem;

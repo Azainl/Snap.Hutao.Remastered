@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
-internal sealed class LevelDescription
+public sealed class LevelDescription
 {
     public required int Level { get; init; }
 

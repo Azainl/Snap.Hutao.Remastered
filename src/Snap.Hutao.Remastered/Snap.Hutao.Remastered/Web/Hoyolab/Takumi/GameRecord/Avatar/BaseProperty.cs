@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class BaseProperty
+public sealed class BaseProperty
 {
     [JsonPropertyName("property_type")]
     public FightProperty PropertyType { get; set; }

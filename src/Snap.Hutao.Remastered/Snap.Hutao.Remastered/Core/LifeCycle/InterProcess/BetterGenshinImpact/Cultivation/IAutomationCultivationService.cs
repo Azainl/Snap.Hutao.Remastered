@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Cultivation;
 
-internal interface IAutomationCultivationService
+public interface IAutomationCultivationService
 {
     AutomationCultivationProject? GetCurrentProject();
 }

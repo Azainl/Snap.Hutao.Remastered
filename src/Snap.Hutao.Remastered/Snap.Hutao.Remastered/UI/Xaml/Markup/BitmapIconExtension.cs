@@ -7,7 +7,7 @@ using Microsoft.UI.Xaml.Markup;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(BitmapIcon))]
-internal sealed partial class BitmapIconExtension : MarkupExtension
+public sealed partial class BitmapIconExtension : MarkupExtension
 {
     public Uri Source { get; set; } = default!;
 

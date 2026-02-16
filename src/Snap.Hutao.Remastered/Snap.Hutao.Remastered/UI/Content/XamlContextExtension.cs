@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Content;
 
-internal static class XamlContextExtension
+public static class XamlContextExtension
 {
     extension(ContentIsland? contentIsland)
     {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.DependencyInjection.Abstraction;
 
-internal abstract partial class OverseaSupportFactory<TClient, TClientCN, TClientOS> : IOverseaSupportFactory<TClient>
+public abstract partial class OverseaSupportFactory<TClient, TClientCN, TClientOS> : IOverseaSupportFactory<TClient>
     where TClient : notnull
     where TClientCN : TClient
     where TClientOS : TClient

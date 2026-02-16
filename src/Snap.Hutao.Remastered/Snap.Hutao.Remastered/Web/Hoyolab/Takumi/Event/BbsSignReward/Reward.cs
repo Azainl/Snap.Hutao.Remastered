@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class Reward
+public sealed class Reward
 {
     [JsonPropertyName("month")]
     public int Month { get; set; }

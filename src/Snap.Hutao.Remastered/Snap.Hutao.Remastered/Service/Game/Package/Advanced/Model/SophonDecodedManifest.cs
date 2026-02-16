@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Downloader.Proto;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.Model;
 
-internal sealed class SophonDecodedManifest
+public sealed class SophonDecodedManifest
 {
     public SophonDecodedManifest(string urlPrefix, string urlSuffix, SophonManifestProto sophonData)
     {

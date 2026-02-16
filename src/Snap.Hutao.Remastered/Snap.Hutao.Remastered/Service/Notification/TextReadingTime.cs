@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Service.Notification;
 
-internal static partial class TextReadingTime
+public static partial class TextReadingTime
 {
     [GeneratedRegex("""\p{IsCJKUnifiedIdeographs}""")]
     private static partial Regex ChineseRegex { get; }

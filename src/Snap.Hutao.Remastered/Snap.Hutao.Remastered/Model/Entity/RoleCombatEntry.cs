@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("role_combats")]
-internal sealed class RoleCombatEntry
+public sealed class RoleCombatEntry
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

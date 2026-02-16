@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
 namespace Snap.Hutao.Remastered.ViewModel.Calendar;
 
-internal readonly struct MonthAndDay : IEquatable<MonthAndDay>
+public readonly struct MonthAndDay : IEquatable<MonthAndDay>
 {
     public readonly uint Month;
     public readonly uint Day;

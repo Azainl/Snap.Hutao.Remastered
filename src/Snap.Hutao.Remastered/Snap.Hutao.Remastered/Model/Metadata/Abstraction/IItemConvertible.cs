@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal interface IItemConvertible
+public interface IItemConvertible
 {
     TItem ToItem<TItem>()
         where TItem : Model.Item, new();

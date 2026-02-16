@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>L'adresse e-mail actuelle est enregistrée</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>L'inscription a échoué, erreur du serveur, veuillez contacter le développeur dès que possible pour résoudre ce problème</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Mot de passe incorrect, échec de la déconnexion</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Échec de la récupération des données, calcul des statistiques en cours</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Échec du chargement de l'enregistrement de l'Abîme, erreur du serveur, veuillez contacter le développeur dès que possible pour résoudre le problème</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Échec du chargement de l'enregistrement de l'Abîme, données non valides détectées</value>
@@ -3979,5 +3973,11 @@ Espace disponible : {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Correction de l'interface spéciale</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>L'inscription a échoué, erreur du serveur, veuillez contacter le développeur dès que possible pour résoudre ce problème</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Échec du chargement de l'enregistrement de l'Abîme, erreur du serveur, veuillez contacter le développeur dès que possible pour résoudre le problème</value>
   </data>
 </root>

@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
 [Serializable]
-internal readonly struct NoContent : IEquatable<NoContent>
+public readonly struct NoContent : IEquatable<NoContent>
 {
     public static bool operator ==(NoContent a, NoContent b)
     {

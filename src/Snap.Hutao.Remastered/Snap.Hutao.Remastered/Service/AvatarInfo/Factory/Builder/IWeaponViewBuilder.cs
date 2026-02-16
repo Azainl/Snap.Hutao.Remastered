@@ -5,4 +5,4 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal interface IWeaponViewBuilder : IEquipViewBuilder<WeaponView>;
+public interface IWeaponViewBuilder : IEquipViewBuilder<WeaponView>;

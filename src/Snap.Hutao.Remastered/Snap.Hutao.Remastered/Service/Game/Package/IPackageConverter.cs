@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal interface IPackageConverter
+public interface IPackageConverter
 {
     ValueTask<bool> EnsureGameResourceAsync(PackageConverterContext context);
 

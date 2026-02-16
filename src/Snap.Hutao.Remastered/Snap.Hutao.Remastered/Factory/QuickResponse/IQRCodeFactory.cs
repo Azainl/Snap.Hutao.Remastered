@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Factory.QuickResponse;
 
-internal interface IQRCodeFactory
+public interface IQRCodeFactory
 {
     byte[] Create(string source);
 }

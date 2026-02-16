@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class CardVerifiationHeaders
+public sealed class CardVerifiationHeaders
 {
     public int ChallengeGame { get; private set; }
 

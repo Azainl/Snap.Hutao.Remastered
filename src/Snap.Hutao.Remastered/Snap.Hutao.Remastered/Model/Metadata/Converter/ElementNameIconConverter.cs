@@ -9,7 +9,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class ElementNameIconConverter : ValueConverter<string, Uri>
+public sealed partial class ElementNameIconConverter : ValueConverter<string, Uri>
 {
     private static readonly FrozenDictionary<string, string> LocalizedNameToElementIconName = WinRTAdaptive.ToFrozenDictionary(
     [

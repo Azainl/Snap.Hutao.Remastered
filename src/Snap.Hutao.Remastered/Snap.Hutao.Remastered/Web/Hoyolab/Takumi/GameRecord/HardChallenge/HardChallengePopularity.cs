@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengePopularity
+public sealed class HardChallengePopularity
 {
     [JsonPropertyName("avatar_list")]
     public required ImmutableArray<HardChallengeSimpleAvatar> AvatarList { get; init; }

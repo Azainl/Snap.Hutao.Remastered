@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>目前電子郵件地址已被註冊</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>註冊失敗，伺服器異常，請盡快聯繫開發者解決</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>密碼錯誤，刪除失敗</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>獲取資料失敗，正在計算統計資料</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>上傳深淵紀錄失敗，伺服器異常，請盡快聯繫開發者解決</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>上傳深淵紀錄失敗，存在無效的資料</value>
@@ -3982,5 +3976,11 @@
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>特殊介面修正</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>註冊失敗，伺服器異常，請盡快聯繫開發者解決</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>上傳深淵紀錄失敗，伺服器異常，請盡快聯繫開發者解決</value>
   </data>
 </root>

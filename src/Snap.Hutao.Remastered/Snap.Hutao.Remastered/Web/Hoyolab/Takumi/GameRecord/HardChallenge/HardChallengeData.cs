@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeData
+public sealed class HardChallengeData
 {
     [JsonPropertyName("schedule")]
     public required HardChallengeSchedule Schedule { get; init; }

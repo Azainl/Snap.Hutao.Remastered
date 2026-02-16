@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Web.WebView2;
 
-internal static class WebView2Extension
+public static class WebView2Extension
 {
     extension(CoreWebView2 webView)
     {

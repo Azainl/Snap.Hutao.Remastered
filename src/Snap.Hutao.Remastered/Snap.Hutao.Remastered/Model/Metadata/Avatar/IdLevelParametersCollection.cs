@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
 [JsonConverter(typeof(ConverterFactory))]
-internal sealed class IdLevelParametersCollection<TId, TLevel, TParameter>
+public sealed class IdLevelParametersCollection<TId, TLevel, TParameter>
     where TId : notnull
     where TLevel : notnull
 {
@@ -25,9 +25,9 @@ internal sealed class IdLevelParametersCollection<TId, TLevel, TParameter>
 
     public int Count { get; }
 
-    internal IReadOnlyDictionary<TId, ImmutableArray<TParameter>> IdParameters { get => idParameters; }
+    public IReadOnlyDictionary<TId, ImmutableArray<TParameter>> IdParameters { get => idParameters; }
 
-    internal IReadOnlyDictionary<TLevel, ImmutableArray<TParameter>> LevelParameters { get => levelParameters; }
+    public IReadOnlyDictionary<TLevel, ImmutableArray<TParameter>> LevelParameters { get => levelParameters; }
 
     public ImmutableArray<TParameter> this[TId id]
     {

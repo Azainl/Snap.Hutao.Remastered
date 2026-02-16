@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.Core.IO.Compression.Zstandard;
 
 // See https://github.com/skbkontur/ZstdNet
 // ReSharper disable LocalizableElement
-internal sealed partial class ZstandardCompressStream : Stream
+public sealed partial class ZstandardCompressStream : Stream
 {
     [SuppressMessage("", "CA2213")]
     private readonly Stream outputStream;
@@ -92,39 +92,39 @@ internal sealed partial class ZstandardCompressStream : Stream
     public override unsafe void Flush()
     {
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        FlushInternal(ZSTD_EndDirective.ZSTD_e_flush);
+        Flushpublic(ZSTD_EndDirective.ZSTD_e_flush);
     }
 
     public override unsafe Task FlushAsync(CancellationToken cancellationToken)
     {
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        return FlushInternalAsync(ZSTD_EndDirective.ZSTD_e_flush, cancellationToken).AsTask();
+        return FlushpublicAsync(ZSTD_EndDirective.ZSTD_e_flush, cancellationToken).AsTask();
     }
 
     public override unsafe void Write(ReadOnlySpan<byte> buffer)
     {
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        WriteInternal(buffer);
+        Writepublic(buffer);
     }
 
     public override unsafe void Write(byte[] buffer, int offset, int count)
     {
         CheckParamsValid(buffer, offset, count);
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        WriteInternal(new Span<byte>(buffer, offset, count));
+        Writepublic(new Span<byte>(buffer, offset, count));
     }
 
     public override unsafe ValueTask WriteAsync(ReadOnlyMemory<byte> buffer, CancellationToken cancellationToken = default)
     {
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        return WriteInternalAsync(buffer, cancellationToken);
+        return WritepublicAsync(buffer, cancellationToken);
     }
 
     public override unsafe Task WriteAsync(byte[] buffer, int offset, int count, CancellationToken cancellationToken)
     {
         CheckParamsValid(buffer, offset, count);
         ObjectDisposedException.ThrowIf(compressStreamContext is null, this);
-        return WriteInternalAsync(new(buffer, offset, count), cancellationToken).AsTask();
+        return WritepublicAsync(new(buffer, offset, count), cancellationToken).AsTask();
     }
 
     protected override unsafe void Dispose(bool disposing)
@@ -143,7 +143,7 @@ internal sealed partial class ZstandardCompressStream : Stream
                 return;
             }
 
-            FlushInternal(ZSTD_EndDirective.ZSTD_e_end);
+            Flushpublic(ZSTD_EndDirective.ZSTD_e_end);
         }
         finally
         {
@@ -166,7 +166,7 @@ internal sealed partial class ZstandardCompressStream : Stream
         }
     }
 
-    private void WriteInternal(ReadOnlySpan<byte> buffer)
+    private void Writepublic(ReadOnlySpan<byte> buffer)
     {
         if (buffer.Length == 0)
         {
@@ -197,7 +197,7 @@ internal sealed partial class ZstandardCompressStream : Stream
         position = output.pos;
     }
 
-    private async ValueTask WriteInternalAsync(ReadOnlyMemory<byte> buffer, CancellationToken cancellationToken)
+    private async ValueTask WritepublicAsync(ReadOnlyMemory<byte> buffer, CancellationToken cancellationToken)
     {
         if (buffer.Length == 0)
         {
@@ -226,7 +226,7 @@ internal sealed partial class ZstandardCompressStream : Stream
         position = output.pos;
     }
 
-    private void FlushInternal(ZSTD_EndDirective directive)
+    private void Flushpublic(ZSTD_EndDirective directive)
     {
         ZSTD_inBuffer_s input = default;
         input.size = 0;
@@ -255,7 +255,7 @@ internal sealed partial class ZstandardCompressStream : Stream
         position = 0;
     }
 
-    private async ValueTask FlushInternalAsync(ZSTD_EndDirective directive, CancellationToken cancellationToken)
+    private async ValueTask FlushpublicAsync(ZSTD_EndDirective directive, CancellationToken cancellationToken)
     {
         ZSTD_inBuffer_s input = default;
         input.size = 0;

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class FetterInfo
+public sealed class FetterInfo
 {
     public required string Title { get; init; }
 

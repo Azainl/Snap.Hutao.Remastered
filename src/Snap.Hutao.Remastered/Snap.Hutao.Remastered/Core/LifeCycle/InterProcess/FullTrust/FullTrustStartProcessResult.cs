@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal sealed class FullTrustStartProcessResult : FullTrustResult
+public sealed class FullTrustStartProcessResult : FullTrustResult
 {
     public uint ProcessId { get; set; }
 }

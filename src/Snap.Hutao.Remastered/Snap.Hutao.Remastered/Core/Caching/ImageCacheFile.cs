@@ -9,7 +9,7 @@ using System.Security.Cryptography;
 
 namespace Snap.Hutao.Remastered.Core.Caching;
 
-internal sealed class ImageCacheFile
+public sealed class ImageCacheFile
 {
     private readonly string directory;
 

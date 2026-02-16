@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserFingerprintService))]
-internal sealed partial class UserFingerprintService : IUserFingerprintService
+public sealed partial class UserFingerprintService : IUserFingerprintService
 {
     private readonly IServiceScopeFactory serviceScopeFactory;
 

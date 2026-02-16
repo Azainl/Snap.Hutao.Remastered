@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Service.Notification;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionGameIslandHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionGameIslandHandler : AbstractLaunchExecutionHandler
 {
     private readonly bool resume;
     private GameIslandInterop? interop;

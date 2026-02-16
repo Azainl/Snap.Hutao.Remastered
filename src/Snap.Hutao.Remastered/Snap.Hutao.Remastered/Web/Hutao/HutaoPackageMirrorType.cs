@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal enum HutaoPackageMirrorType
+public enum HutaoPackageMirrorType
 {
     Direct,
     Archive,

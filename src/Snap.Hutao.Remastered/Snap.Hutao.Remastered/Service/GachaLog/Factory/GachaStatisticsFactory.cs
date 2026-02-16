@@ -15,7 +15,7 @@ using GachaItem = Snap.Hutao.Remastered.Model.Entity.GachaItem;
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
 [Service(ServiceLifetime.Singleton, typeof(IGachaStatisticsFactory))]
-internal sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
+public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
 {
     // We must use the root service provider, if not, PullPrediction will cause memory leak
     private readonly IServiceProvider serviceProvider;

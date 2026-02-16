@@ -10,7 +10,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 [DependencyProperty<IList>("Skills", PropertyChangedCallbackName = nameof(OnSkillsChanged))]
 [DependencyProperty<object>("Selected")]
 [DependencyProperty<DataTemplate>("ItemTemplate")]
-internal sealed partial class SkillPivot : UserControl
+public sealed partial class SkillPivot : UserControl
 {
     public SkillPivot()
     {

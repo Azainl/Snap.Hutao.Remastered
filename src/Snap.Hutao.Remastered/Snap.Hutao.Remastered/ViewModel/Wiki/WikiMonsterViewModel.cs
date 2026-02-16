@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class WikiMonsterViewModel : Abstraction.ViewModel
+public sealed partial class WikiMonsterViewModel : Abstraction.ViewModel
 {
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;

@@ -5,7 +5,7 @@ using Microsoft.Graphics.Canvas.Effects;
 
 namespace Snap.Hutao.Remastered.Core.Graphics.Canvas.Effect;
 
-internal static class Matrix
+public static class Matrix
 {
     public static Matrix5x4 Create5x4(float[][] values)
     {

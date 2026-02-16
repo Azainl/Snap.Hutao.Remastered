@@ -8,7 +8,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Primitive.Converter;
 
-internal sealed partial class CultivateTypeIconConverter : ValueConverter<CultivateType, Uri>
+public sealed partial class CultivateTypeIconConverter : ValueConverter<CultivateType, Uri>
 {
     private static readonly FrozenDictionary<string, CultivateType> LocalizedNameToCultivateType = WinRTAdaptive.ToFrozenDictionary(
     [

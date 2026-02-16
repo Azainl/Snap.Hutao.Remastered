@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
-internal sealed partial class AchievementView : ObservableObject,
+public sealed partial class AchievementView : ObservableObject,
     IEntityAccessWithMetadata<Model.Entity.Achievement, Model.Metadata.Achievement.Achievement>,
     IPropertyValuesProvider
 {

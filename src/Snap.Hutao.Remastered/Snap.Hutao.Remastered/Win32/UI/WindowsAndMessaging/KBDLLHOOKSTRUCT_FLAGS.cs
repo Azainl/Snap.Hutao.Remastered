@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Win32.UI.WindowsAndMessaging;
 
 // ReSharper disable InconsistentNaming
 [Flags]
-internal enum KBDLLHOOKSTRUCT_FLAGS : uint
+public enum KBDLLHOOKSTRUCT_FLAGS : uint
 {
     LLKHF_EXTENDED = 1U,
     LLKHF_ALTDOWN = 0x20U,

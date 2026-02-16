@@ -5,7 +5,7 @@ using System.Security.Principal;
 
 namespace Snap.Hutao.Remastered.Core.Security.Principal;
 
-internal static class SecurityIdentifiers
+public static class SecurityIdentifiers
 {
     public static SecurityIdentifier Everyone { get; } = new(WellKnownSidType.WorldSid, null);
 }

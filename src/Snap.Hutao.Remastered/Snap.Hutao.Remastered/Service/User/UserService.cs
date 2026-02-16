@@ -17,7 +17,7 @@ using EntityUser = Snap.Hutao.Remastered.Model.Entity.User;
 namespace Snap.Hutao.Remastered.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserService))]
-internal sealed partial class UserService : IUserService
+public sealed partial class UserService : IUserService
 {
     private readonly IUserInitializationService userInitializationService;
     private readonly IProfilePictureService profilePictureService;

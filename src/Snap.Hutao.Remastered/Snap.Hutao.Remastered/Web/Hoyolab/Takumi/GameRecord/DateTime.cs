@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal sealed class DateTime
+public sealed class DateTime
 {
     [JsonPropertyName("year")]
     public int Year { get; set; }

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
-internal static class GameLocatorFactoryExtensions
+public static class GameLocatorFactoryExtensions
 {
     extension(IGameLocatorFactory factory)
     {

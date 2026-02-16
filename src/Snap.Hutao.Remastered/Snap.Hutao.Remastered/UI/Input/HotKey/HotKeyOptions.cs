@@ -15,7 +15,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.UI.Input.HotKey;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class HotKeyOptions : ObservableObject, IDisposable
+public sealed partial class HotKeyOptions : ObservableObject, IDisposable
 {
     private readonly IServiceProvider serviceProvider;
     private readonly ITaskContext taskContext;
@@ -69,7 +69,7 @@ internal sealed partial class HotKeyOptions : ObservableObject, IDisposable
     [UnmanagedCallersOnly(CallConvs = [typeof(CallConvStdcall)])]
     private static BOOL HandleShouldPreventSwitch()
     {
-        // This callback should always be called by the internal wndproc, so we are on the main thread.
+        // This callback should always be called by the public wndproc, so we are on the main thread.
         return IsInGameOnly && !GameLifeCycle.IsGameRunningRequiresMainThread();
     }
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Factory.Picker;
 
-internal sealed class FileSystemPickerOptions
+public sealed class FileSystemPickerOptions
 {
     public string? Title { get; init; }
 

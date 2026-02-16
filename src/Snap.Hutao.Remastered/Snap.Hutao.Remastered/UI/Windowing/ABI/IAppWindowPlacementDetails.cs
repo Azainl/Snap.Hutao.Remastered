@@ -9,4 +9,4 @@ namespace ABI.Microsoft.UI.Windowing;
 #pragma warning restore IDE0130
 
 [Guid("639EC5B2-AC0C-5BBF-8422-98DCA540D219")]
-internal interface IAppWindowPlacementDetails : global::Microsoft.UI.Windowing.IAppWindowPlacementDetails;
+public interface IAppWindowPlacementDetails : global::Microsoft.UI.Windowing.IAppWindowPlacementDetails;

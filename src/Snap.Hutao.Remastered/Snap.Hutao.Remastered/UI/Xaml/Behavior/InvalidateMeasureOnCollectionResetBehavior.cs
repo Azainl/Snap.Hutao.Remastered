@@ -10,7 +10,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
 [DependencyProperty<IObservableVector<object>>("ItemsSource", PropertyChangedCallbackName = nameof(OnItemsSourceChanged))]
-internal sealed partial class InvalidateMeasureOnCollectionResetBehavior : BehaviorBase<ItemsRepeater>
+public sealed partial class InvalidateMeasureOnCollectionResetBehavior : BehaviorBase<ItemsRepeater>
 {
     protected override bool Uninitialize()
     {

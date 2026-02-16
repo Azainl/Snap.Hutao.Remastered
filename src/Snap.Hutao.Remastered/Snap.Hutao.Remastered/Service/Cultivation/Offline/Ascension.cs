@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation.Offline;
 
-internal static class Ascension
+public static class Ascension
 {
     public static ImmutableArray<int> GetRequiredLevels(ImmutableArray<int> levels, AvatarPromotionDelta delta)
     {

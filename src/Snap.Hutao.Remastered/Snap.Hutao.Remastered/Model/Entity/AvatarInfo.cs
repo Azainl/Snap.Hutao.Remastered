@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("avatar_infos")]
-internal sealed class AvatarInfo
+public sealed class AvatarInfo
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

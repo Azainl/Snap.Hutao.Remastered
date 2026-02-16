@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserRepository : IRepository<Model.Entity.User>
+public interface IUserRepository : IRepository<Model.Entity.User>
 {
     void DeleteUserById(Guid id);
 

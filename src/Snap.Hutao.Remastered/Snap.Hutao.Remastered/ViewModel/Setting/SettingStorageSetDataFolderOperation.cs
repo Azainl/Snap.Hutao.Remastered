@@ -13,7 +13,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
-internal sealed class SettingStorageSetDataFolderOperation
+public sealed class SettingStorageSetDataFolderOperation
 {
     public required IFileSystemPickerInteraction FileSystemPickerInteraction { private get; init; }
 
@@ -21,7 +21,7 @@ internal sealed class SettingStorageSetDataFolderOperation
 
     public required IMessenger Messenger { get; init; }
 
-    internal async ValueTask<bool> TryExecuteAsync()
+    public async ValueTask<bool> TryExecuteAsync()
     {
         if (!FileSystemPickerInteraction.PickFolder().TryGetValue(out string? newFolderPath))
         {

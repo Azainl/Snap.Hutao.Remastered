@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Task;
 
-internal sealed class AddAutomationTaskStepDefinition
+public sealed class AddAutomationTaskStepDefinition
 {
     public required string Id { get; set; }
 

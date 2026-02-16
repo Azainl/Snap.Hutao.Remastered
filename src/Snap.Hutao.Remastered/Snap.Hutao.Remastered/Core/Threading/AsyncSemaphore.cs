@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-5-asyncsemaphore/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncSemaphore
+public sealed class AsyncSemaphore
 {
     private readonly Queue<TaskCompletionSource> waiters = [];
     private readonly int maxCount;

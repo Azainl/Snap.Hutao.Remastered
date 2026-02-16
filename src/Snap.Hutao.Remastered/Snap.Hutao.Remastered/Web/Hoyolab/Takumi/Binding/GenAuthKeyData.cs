@@ -5,7 +5,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
-internal sealed class GenAuthKeyData
+public sealed class GenAuthKeyData
 {
     public GenAuthKeyData(string authAppId, string gameBiz, PlayerUid uid)
     {

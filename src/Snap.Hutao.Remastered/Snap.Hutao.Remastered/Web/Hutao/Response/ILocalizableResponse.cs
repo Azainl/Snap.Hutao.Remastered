@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Response;
 
-internal interface ILocalizableResponse
+public interface ILocalizableResponse
 {
     public string? LocalizationKey { get; set; }
 }

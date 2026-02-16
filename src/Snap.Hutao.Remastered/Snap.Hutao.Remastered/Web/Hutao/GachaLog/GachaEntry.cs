@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.GachaLog;
 
-internal sealed class GachaEntry
+public sealed class GachaEntry
 {
     /// <summary>
     /// Uid

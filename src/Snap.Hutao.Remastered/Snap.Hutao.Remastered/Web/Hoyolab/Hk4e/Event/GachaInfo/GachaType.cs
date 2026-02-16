@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 [ExtendedEnum]
-internal enum GachaType
+public enum GachaType
 {
     [LocalizationKey(nameof(SH.WebGachaConfigTypeNoviceWish))]
     NewBie = 100,

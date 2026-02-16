@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum AchievementStatus
+public enum AchievementStatus
 {
     STATUS_UNRECOGNIZED = -1,
     STATUS_INVALID = 0,

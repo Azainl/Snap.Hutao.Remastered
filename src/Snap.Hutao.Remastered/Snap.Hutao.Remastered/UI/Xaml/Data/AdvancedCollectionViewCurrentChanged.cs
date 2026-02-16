@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal static class AdvancedCollectionViewCurrentChanged
+public static class AdvancedCollectionViewCurrentChanged
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static void Attach<T>(IAdvancedCollectionView<T>? acv, EventHandler<object> handler)

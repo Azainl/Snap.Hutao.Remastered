@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal static class AdvancedCollectionViewExtension
+public static class AdvancedCollectionViewExtension
 {
     extension<T>(IEnumerable<T> source)
         where T : class, IPropertyValuesProvider

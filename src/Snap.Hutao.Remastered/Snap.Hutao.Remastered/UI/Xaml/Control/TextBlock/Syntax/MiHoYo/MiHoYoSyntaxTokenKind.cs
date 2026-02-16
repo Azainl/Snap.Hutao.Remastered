@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal enum MiHoYoSyntaxTokenKind
+public enum MiHoYoSyntaxTokenKind
 {
     EndOfFile,
     Text,

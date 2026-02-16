@@ -1,0 +1,11 @@
+namespace Snap.Hutao.Remastered.API.Model;
+
+public class PluginContext
+{
+    public IServiceProvider ServiceProvider { get; }
+
+    public PluginContext(IServiceProvider serviceProvider)
+    {
+        ServiceProvider = serviceProvider;
+    }
+}

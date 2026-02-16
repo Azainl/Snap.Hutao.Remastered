@@ -17,7 +17,7 @@ namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class HardChallengeViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
+public sealed partial class HardChallengeViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>
 {
     private readonly IHardChallengeService hardChallengeService;
     private readonly IMetadataService metadataService;

@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class JsonBuilderExtension
+public static class JsonBuilderExtension
 {
     extension<TBuilder>(TBuilder builder)
         where TBuilder : class, IHttpContentBuilder

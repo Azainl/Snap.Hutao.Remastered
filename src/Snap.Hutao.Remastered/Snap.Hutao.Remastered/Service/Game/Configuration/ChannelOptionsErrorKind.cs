@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal enum ChannelOptionsErrorKind
+public enum ChannelOptionsErrorKind
 {
     None = 0,
     GamePathNullOrEmpty,

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.IO.Ini;
 
-internal sealed class IniParameter : IniElement, IEquatable<IniParameter>
+public sealed class IniParameter : IniElement, IEquatable<IniParameter>
 {
     public IniParameter(string key, string value)
     {

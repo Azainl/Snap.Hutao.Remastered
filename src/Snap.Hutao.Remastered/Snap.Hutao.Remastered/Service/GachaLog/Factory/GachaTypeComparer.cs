@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class GachaTypeComparer : IComparer<GachaType>
+public sealed class GachaTypeComparer : IComparer<GachaType>
 {
     private static readonly Lazy<GachaTypeComparer> LazyShared = new(() => new());
     private static readonly FrozenDictionary<GachaType, int> OrderMap = WinRTAdaptive.ToFrozenDictionary(

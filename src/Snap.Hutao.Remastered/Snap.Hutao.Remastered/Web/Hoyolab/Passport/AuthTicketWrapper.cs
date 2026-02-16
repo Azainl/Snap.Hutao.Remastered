@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class AuthTicketWrapper
+public sealed class AuthTicketWrapper
 {
     [JsonPropertyName("ticket")]
     public string Ticket { get; set; } = default!;

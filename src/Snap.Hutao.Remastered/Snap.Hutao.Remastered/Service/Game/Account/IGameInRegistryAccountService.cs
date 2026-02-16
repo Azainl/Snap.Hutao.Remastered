@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
-internal interface IGameInRegistryAccountService
+public interface IGameInRegistryAccountService
 {
     GameAccount? DetectCurrentGameAccount(SchemeType schemeType);
 

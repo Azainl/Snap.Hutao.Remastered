@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class OfficialDataImage
+public sealed class OfficialDataImage
 {
     [JsonPropertyName("image_id")]
     public required string ImageId { get; init; }

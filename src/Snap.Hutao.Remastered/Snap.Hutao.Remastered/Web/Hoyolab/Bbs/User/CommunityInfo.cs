@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class CommunityInfo
+public sealed class CommunityInfo
 {
     [JsonPropertyName("is_realname")]
     public bool IsRealname { get; set; }

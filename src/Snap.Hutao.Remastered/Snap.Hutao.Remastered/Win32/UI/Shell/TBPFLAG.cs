@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Win32.UI.Shell;
 
 [Flags]
-internal enum TBPFLAG
+public enum TBPFLAG
 {
     TBPF_NOPROGRESS = 0,
     TBPF_INDETERMINATE = 1,

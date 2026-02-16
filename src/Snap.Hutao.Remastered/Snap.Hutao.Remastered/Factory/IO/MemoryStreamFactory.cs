@@ -7,7 +7,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Factory.IO;
 
 [Service(ServiceLifetime.Singleton, typeof(IMemoryStreamFactory))]
-internal sealed class MemoryStreamFactory : IMemoryStreamFactory
+public sealed class MemoryStreamFactory : IMemoryStreamFactory
 {
     private readonly RecyclableMemoryStreamManager manager;
 

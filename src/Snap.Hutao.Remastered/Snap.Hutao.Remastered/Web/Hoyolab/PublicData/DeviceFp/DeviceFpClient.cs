@@ -11,7 +11,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.PublicData.DeviceFp;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class DeviceFpClient
+public sealed partial class DeviceFpClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

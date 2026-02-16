@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal static class AchievementParser
+public static class AchievementParser
 {
     public static UIAF? Parse(ByteString bytes, AchievementFieldId? fieldId = default)
     {

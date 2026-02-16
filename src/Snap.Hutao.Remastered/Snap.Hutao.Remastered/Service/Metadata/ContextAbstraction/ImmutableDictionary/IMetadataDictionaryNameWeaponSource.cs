@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryNameWeaponSource
+public interface IMetadataDictionaryNameWeaponSource
 {
     ImmutableDictionary<string, Model.Metadata.Weapon.Weapon> NameWeaponMap { get; set; }
 }

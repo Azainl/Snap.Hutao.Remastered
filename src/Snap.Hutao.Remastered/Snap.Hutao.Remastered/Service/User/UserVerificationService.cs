@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 namespace Snap.Hutao.Remastered.Service.User;
 
 [Service(ServiceLifetime.Transient, typeof(IUserVerificationService))]
-internal sealed partial class UserVerificationService : IUserVerificationService
+public sealed partial class UserVerificationService : IUserVerificationService
 {
     private readonly IContentDialogFactory contentDialogFactory;
     private readonly JsonSerializerOptions jsonOptions;

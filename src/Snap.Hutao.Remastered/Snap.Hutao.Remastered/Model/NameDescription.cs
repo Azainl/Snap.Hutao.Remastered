@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal class NameDescription
+public class NameDescription
 {
     public NameDescription()
     {

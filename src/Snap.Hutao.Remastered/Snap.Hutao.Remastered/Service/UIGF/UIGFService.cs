@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
 [Service(ServiceLifetime.Singleton, typeof(IUIGFService))]
-internal sealed partial class UIGFService : IUIGFService
+public sealed partial class UIGFService : IUIGFService
 {
     private readonly IServiceProvider serviceProvider;
 

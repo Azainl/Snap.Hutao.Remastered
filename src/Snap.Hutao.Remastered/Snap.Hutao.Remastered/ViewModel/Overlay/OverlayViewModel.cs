@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Overlay;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class OverlayViewModel : Abstraction.ViewModel
+public sealed partial class OverlayViewModel : Abstraction.ViewModel
 {
     [GeneratedConstructor]
     public partial OverlayViewModel(IServiceProvider serviceProvider);
@@ -40,7 +40,7 @@ internal sealed partial class OverlayViewModel : Abstraction.ViewModel
         }
     }
 
-    internal void HandleMouseWheel(int lines)
+    public void HandleMouseWheel(int lines)
     {
         if (lines is 0)
         {

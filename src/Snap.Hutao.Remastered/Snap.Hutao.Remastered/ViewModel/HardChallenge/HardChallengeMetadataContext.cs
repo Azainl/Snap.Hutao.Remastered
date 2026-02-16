@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
-internal sealed class HardChallengeMetadataContext : IMetadataContext,
+public sealed class HardChallengeMetadataContext : IMetadataContext,
     IMetadataDictionaryIdHardChallengeScheduleSource,
     IMetadataDictionaryIdAvatarWithPlayersSource
 {

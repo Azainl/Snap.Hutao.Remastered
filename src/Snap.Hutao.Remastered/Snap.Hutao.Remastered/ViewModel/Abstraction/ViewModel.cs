@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal abstract partial class ViewModel : ObservableObject, IViewModel, IDisposable
+public abstract partial class ViewModel : ObservableObject, IViewModel, IDisposable
 {
     private bool initializing;
 

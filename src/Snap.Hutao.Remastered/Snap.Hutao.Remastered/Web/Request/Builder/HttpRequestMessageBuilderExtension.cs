@@ -11,35 +11,35 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpRequestMessageBuilderExtension
+public static class HttpRequestMessageBuilderExtension
 {
     extension(HttpRequestMessageBuilder builder)
     {
-        internal HttpRequestMessageBuilder Resurrect()
+        public HttpRequestMessageBuilder Resurrect()
         {
             builder.HttpRequestMessage.Resurrect();
             return builder;
         }
 
-        internal ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, CancellationToken token)
+        public ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, CancellationToken token)
             where TResult : class
         {
             return SendAsync<TResult>(builder, httpClient, HttpCompletionOption.ResponseContentRead, true, token);
         }
 
-        internal ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, bool logException, CancellationToken token)
+        public ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, bool logException, CancellationToken token)
             where TResult : class
         {
             return SendAsync<TResult>(builder, httpClient, HttpCompletionOption.ResponseContentRead, logException, token);
         }
 
-        internal ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, HttpCompletionOption completionOption, CancellationToken token)
+        public ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, HttpCompletionOption completionOption, CancellationToken token)
             where TResult : class
         {
             return SendAsync<TResult>(builder, httpClient, completionOption, true, token);
         }
 
-        internal async ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, HttpCompletionOption completionOption, bool logException, CancellationToken token)
+        public async ValueTask<TypedHttpResponse<TResult>> SendAsync<TResult>(HttpClient httpClient, HttpCompletionOption completionOption, bool logException, CancellationToken token)
             where TResult : class
         {
             HttpContext context = new()
@@ -91,7 +91,7 @@ internal static class HttpRequestMessageBuilderExtension
             }
         }
 
-        internal async ValueTask SendAsync(HttpContext context)
+        public async ValueTask SendAsync(HttpContext context)
         {
             try
             {
@@ -105,7 +105,7 @@ internal static class HttpRequestMessageBuilderExtension
             }
         }
 
-        internal void Send(HttpClient httpClient)
+        public void Send(HttpClient httpClient)
         {
             try
             {

@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 
 [DependencyProperty<double>("HorizontalSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(LayoutPropertyChanged), NotNull = true)]
 [DependencyProperty<double>("VerticalSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(LayoutPropertyChanged), NotNull = true)]
-internal sealed partial class WrapLayout : VirtualizingLayout
+public sealed partial class WrapLayout : VirtualizingLayout
 {
     protected override void InitializeForContextCore(VirtualizingLayoutContext context)
     {

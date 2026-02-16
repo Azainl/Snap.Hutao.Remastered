@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Downloader.Proto;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.Model;
 
-internal sealed class SophonPatchAsset
+public sealed class SophonPatchAsset
 {
     public SophonPatchAsset(string urlPrefix, string urlSuffix, FileData fileData, PatchInfo patchInfo)
     {

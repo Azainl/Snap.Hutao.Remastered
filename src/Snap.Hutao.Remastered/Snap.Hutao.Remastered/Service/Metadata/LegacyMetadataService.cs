@@ -23,7 +23,7 @@ namespace Snap.Hutao.Remastered.Service.Metadata;
 // This file is left here for future compatibility issues.
 // [Service(ServiceLifetime.Singleton, typeof(IMetadataService))]
 // [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class LegacyMetadataService : IMetadataService
+public sealed partial class LegacyMetadataService : IMetadataService
 {
     private const string MetaFileName = "Meta.json";
 
@@ -51,7 +51,7 @@ internal sealed partial class LegacyMetadataService : IMetadataService
         return isInitialized;
     }
 
-    public async ValueTask InitializeInternalAsync(CancellationToken token = default)
+    public async ValueTask InitializepublicAsync(CancellationToken token = default)
     {
         if (isInitialized)
         {

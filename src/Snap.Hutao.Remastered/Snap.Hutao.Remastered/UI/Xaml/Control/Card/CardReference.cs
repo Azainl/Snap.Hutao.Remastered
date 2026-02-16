@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.Setting;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Card;
 
-internal sealed class CardReference
+public sealed class CardReference
 {
     public Button? Card { get; set; }
 

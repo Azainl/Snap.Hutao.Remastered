@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed partial class AvatarView : INameIconSide<Uri>,
+public sealed partial class AvatarView : INameIconSide<Uri>,
     ICalculableSource<ICalculableAvatar>,
     IPropertyValuesProvider
 {
@@ -58,7 +58,7 @@ internal sealed partial class AvatarView : INameIconSide<Uri>,
 
     public int ElementMastery { get => GetAvatarPropertyValue(FightProperty.FIGHT_PROP_ELEMENT_MASTERY); }
 
-    internal PromoteLevel PromoteLevel { get; set; }
+    public PromoteLevel PromoteLevel { get; set; }
 
     public ICalculableAvatar ToCalculable()
     {

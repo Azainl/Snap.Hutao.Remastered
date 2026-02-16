@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal static class NotifyPropertyChangedDeferral
+public static class NotifyPropertyChangedDeferral
 {
     public static NotifyPropertyChangedDeferral<T> Create<T>(T source, Action<T> raisePropertyChanged)
         where T : INotifyPropertyChanged
@@ -19,7 +19,7 @@ internal static class NotifyPropertyChangedDeferral
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class NotifyPropertyChangedDeferral<T> : INotifyPropertyChangedDeferral
+public sealed class NotifyPropertyChangedDeferral<T> : INotifyPropertyChangedDeferral
     where T : INotifyPropertyChanged
 {
     private readonly T source;
@@ -38,7 +38,7 @@ internal sealed class NotifyPropertyChangedDeferral<T> : INotifyPropertyChangedD
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class NotifyPropertyChangedDeferral<T, TState> : INotifyPropertyChangedDeferral
+public sealed class NotifyPropertyChangedDeferral<T, TState> : INotifyPropertyChangedDeferral
     where T : INotifyPropertyChanged
 {
     private readonly T source;

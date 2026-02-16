@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal enum NavigationResult
+public enum NavigationResult
 {
     Succeed,
     Failed,

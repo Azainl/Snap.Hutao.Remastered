@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureGitRepositoryEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureGitRepositoryEndpoints : IInfrastructureRootAccess
 {
     string GitRepository(string name)
     {

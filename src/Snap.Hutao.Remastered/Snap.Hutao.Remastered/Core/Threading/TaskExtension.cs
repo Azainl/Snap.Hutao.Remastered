@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class TaskExtension
+public static class TaskExtension
 {
     extension(Task task)
     {

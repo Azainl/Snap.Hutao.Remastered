@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Layout;
 [DependencyProperty<double>("MinItemWidth", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnMinItemWidthChanged), NotNull = true)]
 [DependencyProperty<double>("MinColumnSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnSpacingChanged), NotNull = true)]
 [DependencyProperty<double>("MinRowSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnSpacingChanged), NotNull = true)]
-internal sealed partial class UniformStaggeredLayout : VirtualizingLayout
+public sealed partial class UniformStaggeredLayout : VirtualizingLayout
 {
     /// <inheritdoc/>
     protected override void InitializeForContextCore(VirtualizingLayoutContext context)

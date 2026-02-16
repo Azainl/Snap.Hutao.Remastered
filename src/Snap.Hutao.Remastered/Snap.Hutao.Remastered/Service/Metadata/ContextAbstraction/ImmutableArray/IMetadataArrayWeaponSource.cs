@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayWeaponSource
+public interface IMetadataArrayWeaponSource
 {
     ImmutableArray<Weapon> Weapons { get; set; }
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class DailyNote : DailyNoteCommon, IJsonOnDeserialized
+public sealed class DailyNote : DailyNoteCommon, IJsonOnDeserialized
 {
     #region Binding
     [JsonIgnore]

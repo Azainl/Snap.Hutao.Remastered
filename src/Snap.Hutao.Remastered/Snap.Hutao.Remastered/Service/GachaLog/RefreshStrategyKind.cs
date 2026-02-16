@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal enum RefreshStrategyKind
+public enum RefreshStrategyKind
 {
     None = 0,
     AggressiveMerge = 1,

@@ -5,7 +5,7 @@ using System.Buffers;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static partial class MemoryPoolExtension
+public static partial class MemoryPoolExtension
 {
     extension<T>(MemoryPool<T> memoryPool)
     {

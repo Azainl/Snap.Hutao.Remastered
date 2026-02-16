@@ -8,16 +8,16 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel.DataTable;
 
 [DependencyProperty<bool>("CanResize", NotNull = true)]
 [DependencyProperty<GridLength>("DesiredWidth", PropertyChangedCallbackName = nameof(OnDesiredWidthPropertyChanged), CreateDefaultValueCallbackName = nameof(CreateDesiredWidthDefaultValue), NotNull = true)]
-internal sealed partial class DataColumn : ContentControl
+public sealed partial class DataColumn : ContentControl
 {
     public DataColumn()
     {
         DefaultStyleKey = typeof(DataColumn);
     }
 
-    internal double MaxChildDesiredWidth { get; set; }
+    public double MaxChildDesiredWidth { get; set; }
 
-    internal GridLength CurrentWidth { get; private set; }
+    public GridLength CurrentWidth { get; private set; }
 
     private static object CreateDesiredWidthDefaultValue()
     {
@@ -26,7 +26,7 @@ internal sealed partial class DataColumn : ContentControl
 
     private static void OnDesiredWidthPropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
     {
-        // If the developer updates the size of the column, update our internal copy
+        // If the developer updates the size of the column, update our public copy
         if (d is DataColumn column)
         {
             column.CurrentWidth = column.DesiredWidth;

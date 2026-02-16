@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
-internal sealed class GameBranchesWrapper
+public sealed class GameBranchesWrapper
 {
     [JsonPropertyName("game_branches")]
     public List<GameBranch> GameBranches { get; set; } = default!;

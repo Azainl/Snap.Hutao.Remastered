@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum PlatformType
+public enum PlatformType
 {
     EDITOR = 0,
     IOS = 1,

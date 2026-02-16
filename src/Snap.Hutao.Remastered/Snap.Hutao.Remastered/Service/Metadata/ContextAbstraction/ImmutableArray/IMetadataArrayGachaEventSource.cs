@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayGachaEventSource
+public interface IMetadataArrayGachaEventSource
 {
     ImmutableArray<GachaEvent> GachaEvents { get; set; }
 }

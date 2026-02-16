@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class HutaoRoleCombatDatabaseViewModel : Abstraction.ViewModel
+public sealed partial class HutaoRoleCombatDatabaseViewModel : Abstraction.ViewModel
 {
     private readonly IHutaoRoleCombatStatisticsCache hutaoCache;
     private readonly IMetadataService metadataService;

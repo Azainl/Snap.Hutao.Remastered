@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Invoker;
 
-internal sealed class DefaultLaunchExecutionInvoker : AbstractLaunchExecutionInvoker
+public sealed class DefaultLaunchExecutionInvoker : AbstractLaunchExecutionInvoker
 {
     public DefaultLaunchExecutionInvoker()
     {

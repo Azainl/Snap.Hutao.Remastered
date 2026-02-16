@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal sealed partial class GameFileSystemReference : IGameFileSystem
+public sealed partial class GameFileSystemReference : IGameFileSystem
 {
     private IGameFileSystem reference;
 

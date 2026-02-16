@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.SpiralAbyss;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Post;
 
-internal sealed class SimpleRank
+public sealed class SimpleRank
 {
     private SimpleRank(SpiralAbyssRank rank)
     {

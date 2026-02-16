@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Model.Primitive;
 
-internal readonly partial struct AvatarId;
+public readonly partial struct AvatarId;

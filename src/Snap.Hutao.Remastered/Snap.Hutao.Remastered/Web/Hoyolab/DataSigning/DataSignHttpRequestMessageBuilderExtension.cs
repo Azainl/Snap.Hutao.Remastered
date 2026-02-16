@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Request.Builder;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.DataSigning;
 
-internal static class DataSignHttpRequestMessageBuilderExtension
+public static class DataSignHttpRequestMessageBuilderExtension
 {
     extension(HttpRequestMessageBuilder builder)
     {

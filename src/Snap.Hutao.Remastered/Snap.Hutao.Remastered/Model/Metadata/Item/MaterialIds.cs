@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Item;
 
-internal static class MaterialIds
+public static class MaterialIds
 {
     public const uint Mora = 202U;                       // 摩拉
     public const uint WanderersAdvice = 104001U;         // 流浪者的经验

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Theme;
 
-internal static class ThemeHelper
+public static class ThemeHelper
 {
     public static SystemBackdropTheme ElementToSystemBackdrop(ElementTheme elementTheme)
     {

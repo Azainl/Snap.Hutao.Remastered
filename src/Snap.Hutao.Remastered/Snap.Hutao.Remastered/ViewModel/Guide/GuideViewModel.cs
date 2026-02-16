@@ -22,7 +22,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Guide;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class GuideViewModel : Abstraction.ViewModel
+public sealed partial class GuideViewModel : Abstraction.ViewModel
 {
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
     private readonly IContentDialogFactory contentDialogFactory;

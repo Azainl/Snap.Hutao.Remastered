@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal enum SearchTokenKind
+public enum SearchTokenKind
 {
     None,
     CultivateType,

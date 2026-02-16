@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
-internal sealed class UIIF
+public sealed class UIIF
 {
     public const string CurrentVersion = "v1.0";
 

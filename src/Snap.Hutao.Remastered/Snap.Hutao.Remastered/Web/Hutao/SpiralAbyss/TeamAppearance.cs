@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class TeamAppearance
+public sealed class TeamAppearance
 {
     public int Floor { get; set; }
 

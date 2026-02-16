@@ -6,7 +6,7 @@ using System.Diagnostics;
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
 [DebuggerDisplay("Action:{Kind} Remote:{Remote} Local:{Local}")]
-internal readonly struct PackageItemOperationInfo
+public readonly struct PackageItemOperationInfo
 {
     public readonly PackageItemOperationKind Kind;
     public readonly VersionItem Remote;

@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Service.Game.Scheme;
 
 namespace Snap.Hutao.Remastered.ViewModel.Game;
 
-internal interface IViewModelSupportLaunchExecution
+public interface IViewModelSupportLaunchExecution
 {
     LaunchScheme? TargetScheme { get; }
 

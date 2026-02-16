@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 
 namespace Snap.Hutao.Remastered.Web.Response;
 
-internal interface ICommonResponse<[MeansImplicitUse(ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature, ImplicitUseTargetFlags.WithMembers)] out TResponse>
+public interface ICommonResponse<[MeansImplicitUse(ImplicitUseKindFlags.InstantiatedNoFixedConstructorSignature, ImplicitUseTargetFlags.WithMembers)] out TResponse>
     where TResponse : ICommonResponse<TResponse>
 {
     int ReturnCode { get; }

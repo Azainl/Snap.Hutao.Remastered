@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web;
 
 // ReSharper disable InconsistentNaming
-internal enum NetworkError
+public enum NetworkError
 {
     NULL,
     ERR_CONNECTION_ABORTED,
@@ -26,7 +26,7 @@ internal enum NetworkError
     ERR_SECURE_CONNECTION_ERROR,
     ERR_SECURE_CONNECTION_RESET,
     ERR_SECURE_CONNECTION_SEC_E_ILLEGAL_MESSAGE,
-    ERR_SECURE_CONNECTION_SEC_E_INTERNAL_ERROR,
+    ERR_SECURE_CONNECTION_SEC_E_public_ERROR,
     ERR_UNKNOWN,
     ERR_UNKNOWN_ACCESS_DENIED,
     ERR_UNKNOWN_AUTHENTICATION_ERROR,

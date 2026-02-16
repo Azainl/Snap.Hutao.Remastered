@@ -13,7 +13,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 [HttpClient(HttpClientConfiguration.XRpc5)]
-internal sealed partial class HoyoPlayPassportClient : IHoyoPlayPassportClient
+public sealed partial class HoyoPlayPassportClient : IHoyoPlayPassportClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

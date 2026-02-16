@@ -11,7 +11,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal sealed partial class QualityColorConverter : ValueConverter<QualityType, Color>
+public sealed partial class QualityColorConverter : ValueConverter<QualityType, Color>
 {
     private static readonly FrozenDictionary<string, QualityType> LocalizedNameToQualityType = WinRTAdaptive.ToFrozenDictionary(
     [

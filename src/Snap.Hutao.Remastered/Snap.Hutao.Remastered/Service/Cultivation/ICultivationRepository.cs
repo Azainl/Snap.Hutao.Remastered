@@ -8,7 +8,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal interface ICultivationRepository : IRepository<CultivateEntryLevelInformation>,
+public interface ICultivationRepository : IRepository<CultivateEntryLevelInformation>,
     IRepository<CultivateProject>,
     IRepository<CultivateEntry>,
     IRepository<CultivateItem>

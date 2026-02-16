@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal sealed class Manifest
+public sealed class Manifest
 {
     [JsonPropertyName("id")]
     public string Id { get; set; } = default!;

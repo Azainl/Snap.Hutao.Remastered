@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal static class HutaoPassportRequestHeadersBuilderExtension
+public static class HutaoPassportRequestHeadersBuilderExtension
 {
     extension<TBuilder>(TBuilder builder)
         where TBuilder : IHttpHeadersBuilder<HttpRequestHeaders>

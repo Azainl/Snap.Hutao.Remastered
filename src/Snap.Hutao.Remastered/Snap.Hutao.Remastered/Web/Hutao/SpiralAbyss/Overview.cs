@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class Overview
+public sealed class Overview
 {
     public int ScheduleId { get; set; }
 

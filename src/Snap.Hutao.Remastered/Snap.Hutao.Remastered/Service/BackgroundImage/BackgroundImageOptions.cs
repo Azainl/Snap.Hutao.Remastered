@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hutao.Wallpaper;
 namespace Snap.Hutao.Remastered.Service.BackgroundImage;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class BackgroundImageOptions : ObservableObject
+public sealed partial class BackgroundImageOptions : ObservableObject
 {
     [ObservableProperty]
     public partial Wallpaper? Wallpaper { get; set; }

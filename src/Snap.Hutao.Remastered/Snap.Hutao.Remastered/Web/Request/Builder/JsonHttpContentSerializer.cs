@@ -9,14 +9,14 @@ using System.Text;
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed class JsonHttpContentSerializer : HttpContentSerializer
+public sealed class JsonHttpContentSerializer : HttpContentSerializer
 {
     public JsonHttpContentSerializer(JsonSerializerOptions jsonSerializerOptions)
     {
         JsonSerializerOptions = jsonSerializerOptions;
     }
 
-    internal JsonSerializerOptions? JsonSerializerOptions { get; }
+    public JsonSerializerOptions? JsonSerializerOptions { get; }
 
     protected override HttpContent? SerializeOverride(object? content, Type contentType, Encoding encoding)
     {

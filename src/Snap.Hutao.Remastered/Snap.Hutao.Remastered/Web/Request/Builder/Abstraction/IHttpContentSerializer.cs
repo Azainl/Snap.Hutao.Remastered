@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpContentSerializer
+public interface IHttpContentSerializer
 {
     HttpContent? Serialize(object? content, Type contentType, Encoding? encoding);
 }

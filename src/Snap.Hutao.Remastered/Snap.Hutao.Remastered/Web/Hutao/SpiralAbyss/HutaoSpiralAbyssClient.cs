@@ -19,7 +19,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HutaoSpiralAbyssClient
+public sealed partial class HutaoSpiralAbyssClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

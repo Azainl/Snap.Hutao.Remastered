@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class Skill : GroupCalculable;
+public sealed class Skill : GroupCalculable;

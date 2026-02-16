@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 [UsedImplicitly]
 [DependencyProperty<ICommand>("Command")]
 [DependencyProperty<object>("CommandParameter")]
-internal sealed partial class InvokeCommandOnLoadedBehavior : BehaviorBase<UIElement>
+public sealed partial class InvokeCommandOnLoadedBehavior : BehaviorBase<UIElement>
 {
     private bool executed;
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class ConstellationView : NameIconDescription
+public sealed class ConstellationView : NameIconDescription
 {
     public bool IsActivated { get; set; }
 }

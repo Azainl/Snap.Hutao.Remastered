@@ -12,7 +12,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.Core.Caching;
 
-internal static class MonoChromeImageConverter
+public static class MonoChromeImageConverter
 {
     public static async ValueTask ConvertAndCopyToAsync(ElementTheme theme, Stream source, Stream destination)
     {

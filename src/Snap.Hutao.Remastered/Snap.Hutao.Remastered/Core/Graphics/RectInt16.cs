@@ -5,7 +5,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal readonly struct RectInt16
+public readonly struct RectInt16
 {
     public readonly short X;
     public readonly short Y;

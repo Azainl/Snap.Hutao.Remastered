@@ -6,7 +6,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.UI;
 
-internal struct Rgba32
+public struct Rgba32
 {
     public byte R;
     public byte G;

@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Model;
 
-internal static class ImmutableCollectionsNameValue
+public static class ImmutableCollectionsNameValue
 {
     public static ImmutableArray<NameValue<TEnum>> FromEnum<TEnum>()
         where TEnum : struct, Enum

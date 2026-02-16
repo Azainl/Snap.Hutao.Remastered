@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal interface ICalculablePromoteLevel : ICalculableMinMaxLevel
+public interface ICalculablePromoteLevel : ICalculableMinMaxLevel
 {
     PromoteLevel PromoteLevel { get; }
 

@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Win32;
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal static class GameLifeCycle
+public static class GameLifeCycle
 {
     public static IObservableProperty<bool> IsGameRunningProperty { get; } = Property.CreateObservable(PrivateIsGameRunning(out _));
 

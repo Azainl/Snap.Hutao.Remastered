@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
-internal readonly struct ChannelOptions
+public readonly struct ChannelOptions
 {
     public const string ChannelName = "channel";
     public const string SubChannelName = "sub_channel";

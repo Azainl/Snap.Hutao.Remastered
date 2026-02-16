@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Core.IO.Hashing;
 
-internal static class Hash
+public static class Hash
 {
     public static string ToHexString(HashAlgorithmName hashAlgorithm, string input)
     {

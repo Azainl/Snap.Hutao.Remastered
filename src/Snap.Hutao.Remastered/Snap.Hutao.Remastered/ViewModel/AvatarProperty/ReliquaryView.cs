@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class ReliquaryView : EquipView
+public sealed class ReliquaryView : EquipView
 {
     public ImmutableArray<ReliquaryComposedSubProperty> ComposedSubProperties { get; set; }
 

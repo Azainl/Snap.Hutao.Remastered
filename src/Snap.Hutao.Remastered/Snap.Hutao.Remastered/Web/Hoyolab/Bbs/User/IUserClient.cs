@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 /// <summary>
 /// 用户信息客户端
 /// </summary>
-internal interface IUserClient
+public interface IUserClient
 {
     /// <summary>
     /// 获取当前用户详细信息

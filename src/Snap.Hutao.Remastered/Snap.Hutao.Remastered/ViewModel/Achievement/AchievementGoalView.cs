@@ -10,7 +10,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
-internal sealed partial class AchievementGoalView : ObservableObject,
+public sealed partial class AchievementGoalView : ObservableObject,
     INameIcon<Uri>,
     IPropertyValuesProvider
 {

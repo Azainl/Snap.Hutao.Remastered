@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum HardChallengeDifficultyLevel
+public enum HardChallengeDifficultyLevel
 {
     None = 0,
 

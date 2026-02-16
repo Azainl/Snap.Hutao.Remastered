@@ -8,7 +8,7 @@ using System.Numerics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Animation;
 
-internal sealed class ImageZoomInAnimation : ImplicitAnimation<string, Vector3>
+public sealed class ImageZoomInAnimation : ImplicitAnimation<string, Vector3>
 {
     public ImageZoomInAnimation()
     {

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal static unsafe class MemoryUtilities
+public static unsafe class MemoryUtilities
 {
     public static void Patch(ReadOnlySpan<char> moduleName, uint offset, int size, Action<Span<byte>> action)
     {

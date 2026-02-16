@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed partial class Costume : IPropertyValuesProvider
+public sealed partial class Costume : IPropertyValuesProvider
 {
     public required CostumeId Id { get; init; }
 

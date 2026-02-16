@@ -11,7 +11,7 @@ public class UnsafeAccessorTest
     public void UnsafeAccessorCanGetInterfaceProperty()
     {
         TestClass test = new();
-        int value = InternalGetInterfaceProperty(test);
+        int value = publicGetInterfaceProperty(test);
         Assert.AreEqual(3, value);
 
         IWebProxy proxy = ConstructSystemProxy(null);
@@ -26,7 +26,7 @@ public class UnsafeAccessorTest
     }
 
     [UnsafeAccessor(UnsafeAccessorKind.Method, Name = "get_TestProperty")]
-    private static extern int InternalGetInterfaceProperty(ITestInterface instance);
+    private static extern int publicGetInterfaceProperty(ITestInterface instance);
 
     // private readonly int _offsetMinutes;
     [UnsafeAccessor(UnsafeAccessorKind.Field, Name = "_offsetMinutes")]
@@ -38,12 +38,12 @@ public class UnsafeAccessorTest
     [UnsafeAccessor(UnsafeAccessorKind.StaticMethod, Name = "ConstructSystemProxy")]
     private extern static IWebProxy ConstructSystemProxy([UnsafeAccessorType("System.Net.Http.SystemProxyInfo, System.Net.Http")] object? c);
 
-    internal interface ITestInterface
+    public interface ITestInterface
     {
-        internal int TestProperty { get; }
+        public int TestProperty { get; }
     }
 
-    internal sealed class TestClass : ITestInterface
+    public sealed class TestClass : ITestInterface
     {
         public int TestProperty { get; } = 3;
     }

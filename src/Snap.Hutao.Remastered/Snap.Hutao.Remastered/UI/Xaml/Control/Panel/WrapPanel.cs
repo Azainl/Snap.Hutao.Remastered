@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel;
 [DependencyProperty<double>("HorizontalSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
 [DependencyProperty<double>("VerticalSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
 [DependencyProperty<Thickness>("Padding", PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
-internal sealed partial class WrapPanel : Microsoft.UI.Xaml.Controls.Panel
+public sealed partial class WrapPanel : Microsoft.UI.Xaml.Controls.Panel
 {
     private readonly List<Row> rows = [];
 

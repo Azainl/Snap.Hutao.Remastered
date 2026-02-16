@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Furniture;
 
-internal sealed class FurnitureType
+public sealed class FurnitureType
 {
     public required FurnitureTypeId Id { get; init; }
 

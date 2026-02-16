@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class Summary
+public sealed class Summary
 {
     public IAdvancedCollectionView<AvatarView> Avatars { get; set; } = default!;
 

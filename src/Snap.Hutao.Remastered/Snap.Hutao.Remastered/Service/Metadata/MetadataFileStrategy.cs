@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal sealed class MetadataFileStrategy
+public sealed class MetadataFileStrategy
 {
     public MetadataFileStrategy(string fileName, bool isScattered = false)
     {

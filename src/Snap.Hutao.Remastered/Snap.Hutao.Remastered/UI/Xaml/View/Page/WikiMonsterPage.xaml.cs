@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Wiki;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class WikiMonsterPage : ScopedPage
+public sealed partial class WikiMonsterPage : ScopedPage
 {
     public WikiMonsterPage()
     {

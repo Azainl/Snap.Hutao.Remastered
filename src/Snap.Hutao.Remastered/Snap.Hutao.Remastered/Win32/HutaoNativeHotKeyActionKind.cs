@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal enum HutaoNativeHotKeyActionKind
+public enum HutaoNativeHotKeyActionKind
 {
     None,
     MouseClickRepeatForever,

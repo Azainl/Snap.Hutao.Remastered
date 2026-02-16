@@ -1,6 +1,6 @@
 namespace Snap.Hutao.Remastered.Service.SignIn;
 
-internal interface IAutoSignInService
+public interface IAutoSignInService
 {
     ValueTask InitializeAsync(CancellationToken token = default);
 

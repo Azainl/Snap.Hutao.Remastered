@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
 [PrimaryHttpMessageHandler(UseCookies = false)]
-internal sealed partial class BindingClient2
+public sealed partial class BindingClient2
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

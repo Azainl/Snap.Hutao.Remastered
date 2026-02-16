@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class DetailedCharacter
+public sealed class DetailedCharacter
 {
     [JsonPropertyName("base")]
     public Character Base { get; init; } = default!;

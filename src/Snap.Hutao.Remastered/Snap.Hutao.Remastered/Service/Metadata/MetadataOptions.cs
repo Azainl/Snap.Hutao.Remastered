@@ -7,7 +7,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class MetadataOptions
+public sealed partial class MetadataOptions
 {
     private readonly CultureOptions cultureOptions;
 

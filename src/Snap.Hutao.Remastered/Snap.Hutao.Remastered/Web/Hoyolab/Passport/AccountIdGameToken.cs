@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class AccountIdGameToken
+public sealed class AccountIdGameToken
 {
     [JsonPropertyName("account_id")]
     public int AccountId { get; set; }

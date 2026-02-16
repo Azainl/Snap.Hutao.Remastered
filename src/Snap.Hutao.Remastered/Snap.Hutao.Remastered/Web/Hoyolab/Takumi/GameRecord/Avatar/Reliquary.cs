@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class Reliquary
+public sealed class Reliquary
 {
     [JsonPropertyName("id")]
     public ReliquaryId Id { get; set; }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal sealed class ManifestStats
+public sealed class ManifestStats
 {
     [JsonPropertyName("compressed_size")]
     public long CompressedSize { get; set; } = default!;

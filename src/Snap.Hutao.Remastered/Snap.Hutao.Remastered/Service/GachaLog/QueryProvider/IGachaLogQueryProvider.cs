@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.QueryProvider;
 
-internal interface IGachaLogQueryProvider
+public interface IGachaLogQueryProvider
 {
     ValueTask<ValueResult<bool, GachaLogQuery>> GetQueryAsync();
 }

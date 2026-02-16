@@ -6,7 +6,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class StorageFolderExtension
+public static class StorageFolderExtension
 {
     extension(StorageFolder sourceFolder)
     {

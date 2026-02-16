@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Setting;
 
 namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
-internal sealed class SettingHomeCardViewModel : ObservableObject
+public sealed class SettingHomeCardViewModel : ObservableObject
 {
     private readonly string presentKey;
     private readonly string orderKey;

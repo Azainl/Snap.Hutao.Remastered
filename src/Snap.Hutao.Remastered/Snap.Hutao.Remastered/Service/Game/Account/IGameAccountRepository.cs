@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Abstraction;
 
 namespace Snap.Hutao.Remastered.Service.Game.Account;
 
-internal interface IGameAccountRepository : IRepository<GameAccount>
+public interface IGameAccountRepository : IRepository<GameAccount>
 {
     void AddGameAccount(GameAccount gameAccount);
 

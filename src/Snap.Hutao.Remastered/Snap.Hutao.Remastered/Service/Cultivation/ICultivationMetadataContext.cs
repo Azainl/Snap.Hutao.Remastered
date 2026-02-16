@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDiction
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal interface ICultivationMetadataContext : IMetadataContext,
+public interface ICultivationMetadataContext : IMetadataContext,
     IMetadataArrayMaterialSource,
     IMetadataDictionaryIdMaterialSource,
     IMetadataDictionaryIdAvatarSource,

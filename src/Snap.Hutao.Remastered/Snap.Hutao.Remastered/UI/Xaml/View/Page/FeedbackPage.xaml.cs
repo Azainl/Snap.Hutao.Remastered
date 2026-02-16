@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Feedback;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class FeedbackPage : ScopedPage
+public sealed partial class FeedbackPage : ScopedPage
 {
     public FeedbackPage()
     {

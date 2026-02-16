@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Factory.IO;
 
-internal static class MemoryStreamFactoryExtension
+public static class MemoryStreamFactoryExtension
 {
     extension(IMemoryStreamFactory memoryStreamFactory)
     {

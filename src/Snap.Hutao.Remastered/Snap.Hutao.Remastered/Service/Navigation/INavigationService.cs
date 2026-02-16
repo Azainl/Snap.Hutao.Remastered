@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Service.Navigation;
 
-internal interface INavigationService
+public interface INavigationService
 {
     NavigationResult Navigate(Type pageType, INavigationCompletionSource data, bool syncNavigationViewItem = false);
 

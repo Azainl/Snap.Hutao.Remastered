@@ -5,7 +5,7 @@ using CommunityToolkit.Common.Deferred;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.AutoSuggestBox;
 
-internal sealed class TokenItemAddingEventArgs : DeferredCancelEventArgs
+public sealed class TokenItemAddingEventArgs : DeferredCancelEventArgs
 {
     public TokenItemAddingEventArgs(string token)
     {

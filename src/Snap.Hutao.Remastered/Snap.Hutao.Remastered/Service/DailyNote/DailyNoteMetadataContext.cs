@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.DailyNote;
 
-internal class DailyNoteMetadataContext : IMetadataContext,
+public class DailyNoteMetadataContext : IMetadataContext,
     IMetadataArrayChapterSource
 {
     public ImmutableArray<Chapter> Chapters { get; set; } = default!;

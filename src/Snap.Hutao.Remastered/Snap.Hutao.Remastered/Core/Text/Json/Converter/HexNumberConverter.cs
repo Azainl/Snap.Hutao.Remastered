@@ -6,7 +6,7 @@ using System.Numerics;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
-internal sealed class HexNumberConverter<T> : JsonConverter<T>
+public sealed class HexNumberConverter<T> : JsonConverter<T>
     where T : struct, INumberBase<T>
 {
     public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

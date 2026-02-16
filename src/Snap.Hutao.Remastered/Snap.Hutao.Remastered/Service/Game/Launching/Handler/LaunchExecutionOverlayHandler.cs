@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal sealed class LaunchExecutionOverlayHandler : AbstractLaunchExecutionHandler
+public sealed class LaunchExecutionOverlayHandler : AbstractLaunchExecutionHandler
 {
     private LaunchExecutionOverlayWindow? window;
 

@@ -7,7 +7,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Item;
 
-internal sealed class RotationalMaterialIdEntry
+public sealed class RotationalMaterialIdEntry
 {
     public RotationalMaterialIdEntry(DaysOfWeek daysOfWeek, MaterialId green, MaterialId blue, MaterialId purple, MaterialId orange)
         : this(daysOfWeek, green, blue, purple)

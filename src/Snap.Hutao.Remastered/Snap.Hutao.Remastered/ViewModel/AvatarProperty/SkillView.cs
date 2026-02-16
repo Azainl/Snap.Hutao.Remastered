@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal sealed class SkillView : NameIconDescription, ITypedCalculableSource<ICalculableSkill, SkillType>
+public sealed class SkillView : NameIconDescription, ITypedCalculableSource<ICalculableSkill, SkillType>
 {
     public LevelParameters<string, ParameterDescription> Info { get; set; } = default!;
 
@@ -15,7 +15,7 @@ internal sealed class SkillView : NameIconDescription, ITypedCalculableSource<IC
 
     public string Level { get; set; } = default!;
 
-    internal SkillGroupId GroupId { get; set; }
+    public SkillGroupId GroupId { get; set; }
 
     public ICalculableSkill ToCalculable(SkillType type)
     {

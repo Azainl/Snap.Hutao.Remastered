@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Service.Abstraction;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal interface IAvatarStrategyRepository : IRepository<AvatarStrategy>
+public interface IAvatarStrategyRepository : IRepository<AvatarStrategy>
 {
     AvatarStrategy? GetStrategyByAvatarId(AvatarId avatarId);
 

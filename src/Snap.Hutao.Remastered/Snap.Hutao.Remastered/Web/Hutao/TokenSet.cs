@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class TokenSet
+public sealed class TokenSet
 {
     public required string AccessToken { get; set; }
 

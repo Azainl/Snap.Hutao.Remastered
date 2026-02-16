@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal sealed class AchievementFieldId
+public sealed class AchievementFieldId
 {
     [JsonPropertyName("id")]
     public required int Id { get; init; }

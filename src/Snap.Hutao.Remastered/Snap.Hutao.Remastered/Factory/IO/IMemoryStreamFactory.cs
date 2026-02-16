@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Factory.IO;
 
-internal interface IMemoryStreamFactory
+public interface IMemoryStreamFactory
 {
     MemoryStream GetStream();
 

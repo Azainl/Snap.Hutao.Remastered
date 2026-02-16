@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Text.Json.Annotation;
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class HutaoPackageMirror
+public sealed class HutaoPackageMirror
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = default!;

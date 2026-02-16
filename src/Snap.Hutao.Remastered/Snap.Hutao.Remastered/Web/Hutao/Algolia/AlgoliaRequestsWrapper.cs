@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Algolia;
 
-internal sealed class AlgoliaRequestsWrapper
+public sealed class AlgoliaRequestsWrapper
 {
     [JsonPropertyName("requests")]
     public List<AlgoliaRequest> Requests { get; set; } = default!;

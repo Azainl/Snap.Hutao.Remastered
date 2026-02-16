@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
 [JsonConverter(typeof(ConverterFactory))]
-internal sealed class TypeValueCollection<TType, TValue>
+public sealed class TypeValueCollection<TType, TValue>
     where TType : notnull
 {
     private readonly SortedDictionary<TType, TValue> typeValues = [];
@@ -20,9 +20,9 @@ internal sealed class TypeValueCollection<TType, TValue>
         }
     }
 
-    internal ImmutableArray<TypeValue<TType, TValue>> Array { get; }
+    public ImmutableArray<TypeValue<TType, TValue>> Array { get; }
 
-    internal IReadOnlyDictionary<TType, TValue> TypeValues { get => typeValues; }
+    public IReadOnlyDictionary<TType, TValue> TypeValues { get => typeValues; }
 
     public TValue? GetValueOrDefault(TType type)
     {

@@ -5,7 +5,7 @@ using BindingAchievementGoal = Snap.Hutao.Remastered.ViewModel.Achievement.Achie
 
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
-internal sealed class AchievementGoalStatistics
+public sealed class AchievementGoalStatistics
 {
     private AchievementGoalStatistics(BindingAchievementGoal goal)
     {

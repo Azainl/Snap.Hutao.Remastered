@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class Uuid
+public static class Uuid
 {
     public static Guid NewV5(string name, Guid namespaceId)
     {

@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal sealed class ReliquaryViewBuilder : IReliquaryViewBuilder
+public sealed class ReliquaryViewBuilder : IReliquaryViewBuilder
 {
     public ReliquaryView View { get; } = new();
 }

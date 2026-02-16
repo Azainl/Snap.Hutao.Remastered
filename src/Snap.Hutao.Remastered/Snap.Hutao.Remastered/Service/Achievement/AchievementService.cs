@@ -16,7 +16,7 @@ using EntityAchievement = Snap.Hutao.Remastered.Model.Entity.Achievement;
 namespace Snap.Hutao.Remastered.Service.Achievement;
 
 [Service(ServiceLifetime.Scoped, typeof(IAchievementService))]
-internal sealed partial class AchievementService : IAchievementService
+public sealed partial class AchievementService : IAchievementService
 {
     private readonly ConcurrentDictionary<Guid, Lock> viewCollectionLocks = [];
     private readonly ConcurrentDictionary<Guid, IAdvancedCollectionView<AchievementView>> viewCollectionCache = [];

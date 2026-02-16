@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.Service.Metadata;
 
 // This file is left here for future compatibility issues.
 // [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LegacyMetadataOptions
+public sealed partial class LegacyMetadataOptions
 {
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;
     private readonly CultureOptions cultureOptions;

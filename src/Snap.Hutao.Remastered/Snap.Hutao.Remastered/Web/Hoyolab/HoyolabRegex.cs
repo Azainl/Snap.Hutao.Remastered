@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal static partial class HoyolabRegex
+public static partial class HoyolabRegex
 {
     [GeneratedRegex("^(?:1|)[1-9][0-9]{8}$")]
     public static partial Regex UidRegex { get; }

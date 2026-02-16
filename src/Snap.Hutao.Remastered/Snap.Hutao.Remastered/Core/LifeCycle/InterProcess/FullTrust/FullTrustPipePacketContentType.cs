@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal enum FullTrustPipePacketContentType : byte
+public enum FullTrustPipePacketContentType : byte
 {
     None = 0,
     Json = 1,

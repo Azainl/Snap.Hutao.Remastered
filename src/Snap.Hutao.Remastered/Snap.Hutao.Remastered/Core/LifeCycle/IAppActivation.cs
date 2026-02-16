@@ -5,7 +5,7 @@ using Microsoft.Windows.AppNotifications;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal interface IAppActivation
+public interface IAppActivation
 {
     void RedirectedActivate(HutaoActivationArguments args);
 

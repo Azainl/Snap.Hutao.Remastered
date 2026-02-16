@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel;
 
-internal static class EqualPanelAlgorithm
+public static class EqualPanelAlgorithm
 {
     public static double GetTotalLength(double itemLength, int itemsCount, double spacing)
     {

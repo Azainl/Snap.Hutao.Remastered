@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
-internal enum GameLocationSourceKind
+public enum GameLocationSourceKind
 {
     UnityLog,
     Manual,

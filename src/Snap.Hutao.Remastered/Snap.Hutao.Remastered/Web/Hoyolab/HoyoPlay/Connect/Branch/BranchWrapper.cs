@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
-internal sealed class BranchWrapper
+public sealed class BranchWrapper
 {
     [JsonPropertyName("package_id")]
     public string PackageId { get; set; } = default!;

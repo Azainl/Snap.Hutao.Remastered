@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.PathAbstraction;
 
-internal interface IGamePathService
+public interface IGamePathService
 {
     ValueTask<ValueResult<bool, string>> SilentLocateGamePathAsync();
 

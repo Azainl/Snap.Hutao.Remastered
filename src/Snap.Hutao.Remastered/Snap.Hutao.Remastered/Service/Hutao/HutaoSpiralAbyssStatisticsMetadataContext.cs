@@ -11,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
-internal sealed class HutaoSpiralAbyssStatisticsMetadataContext : IMetadataContext,
+public sealed class HutaoSpiralAbyssStatisticsMetadataContext : IMetadataContext,
     IMetadataDictionaryIdAvatarWithPlayersSource,
     IMetadataDictionaryIdWeaponSource,
     IMetadataDictionaryExtendedEquipAffixIdReliquarySetSource

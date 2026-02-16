@@ -6,7 +6,7 @@ using System.IO.Pipes;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal sealed partial class FullTrustNamedPipeClient : IDisposable
+public sealed partial class FullTrustNamedPipeClient : IDisposable
 {
     private readonly NamedPipeClientStream clientStream = new(".", PrivateNamedPipe.FullTrustName, PipeDirection.InOut, PipeOptions.Asynchronous | PipeOptions.WriteThrough);
     private readonly Lock syncRoot = new();

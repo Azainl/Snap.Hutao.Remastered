@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
-internal readonly struct LaunchExecutionOptionsKey<TValue>
+public readonly struct LaunchExecutionOptionsKey<TValue>
 {
     public LaunchExecutionOptionsKey(string key)
     {
@@ -15,7 +15,7 @@ internal readonly struct LaunchExecutionOptionsKey<TValue>
     public string Key { get; }
 }
 
-internal sealed class LaunchExecutionOptionsKey
+public sealed class LaunchExecutionOptionsKey
 {
     public static readonly LaunchExecutionOptionsKey<bool> ChannelOptionsChanged = new(nameof(ChannelOptionsChanged));
     public static readonly LaunchExecutionOptionsKey<string> LoginAuthTicket = new(nameof(LoginAuthTicket));

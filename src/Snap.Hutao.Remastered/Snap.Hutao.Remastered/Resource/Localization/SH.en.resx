@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>Current emaill address is registered</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Register failed, server error, please contact developer to fix it</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Incorrect password, logout failed</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Failed to fetch data, server is calculating statistical data</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Failed to upload Sprial Abyss record, server error, please contact developer to fix it</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Failed to upload Sprial Abyss record, invalid data detected</value>
@@ -3986,6 +3980,12 @@ Space Available: {2}</value>
   <data name="ViewPageLaunchGameIslandDisplayPaimonDescription" xml:space="preserve">
     <value>Display Paimon</value>
   </data>
+  <data name="ViewPageLaunchGameIslandHideGrassHeader" xml:space="preserve">
+    <value>Hide Grass</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandHideGrassDescription" xml:space="preserve">
+    <value>Hide Grass in Game</value>
+  </data>
   <data name="ViewPageLaunchGameIslandDebugModeHeader" xml:space="preserve">
     <value>Debug Mode</value>
   </data>
@@ -4004,10 +4004,10 @@ Space Available: {2}</value>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Special Interface Fix</value>
   </data>
-  <data name="ViewPageLaunchGameIslandHideGrassHeader" xml:space="preserve">
-    <value>Hide Grass</value>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Register failed, server error, please contact developer to fix it</value>
   </data>
-  <data name="ViewPageLaunchGameIslandHideGrassDescription" xml:space="preserve">
-    <value>Hide Grass in Game</value>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Failed to upload Sprial Abyss record, server error, please contact developer to fix it</value>
   </data>
 </root>

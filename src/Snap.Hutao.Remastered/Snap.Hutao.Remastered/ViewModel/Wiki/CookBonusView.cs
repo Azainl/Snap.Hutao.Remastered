@@ -8,7 +8,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed class CookBonusView
+public sealed class CookBonusView
 {
     public Material OriginItem { get; set; } = default!;
 

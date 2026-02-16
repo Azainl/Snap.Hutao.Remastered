@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class DataSignV2Payload
+public sealed class DataSignV2Payload
 {
     [JsonPropertyName("query")]
     public Dictionary<string, JsonElement> Query { get; set; } = default!;

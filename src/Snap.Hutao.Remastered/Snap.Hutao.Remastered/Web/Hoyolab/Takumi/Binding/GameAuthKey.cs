@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
-internal sealed class GameAuthKey
+public sealed class GameAuthKey
 {
     [JsonPropertyName("authkey")]
     public string AuthKey { get; set; } = default!;

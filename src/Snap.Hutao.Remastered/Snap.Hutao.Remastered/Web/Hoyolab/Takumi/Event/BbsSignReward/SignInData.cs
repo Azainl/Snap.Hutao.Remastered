@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class SignInData
+public sealed class SignInData
 {
     public SignInData(IApiEndpoints apiEndpoints, PlayerUid uid)
     {

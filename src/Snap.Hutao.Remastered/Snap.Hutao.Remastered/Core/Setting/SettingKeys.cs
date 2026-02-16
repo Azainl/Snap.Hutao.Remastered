@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Setting;
 
-internal static class SettingKeys
+public static class SettingKeys
 {
     // Application
     public const string DataDirectory                   = "Snap::Hutao::Application::DataFolderPath";

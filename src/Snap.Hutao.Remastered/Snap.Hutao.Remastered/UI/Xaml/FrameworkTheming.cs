@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
-internal static class FrameworkTheming
+public static class FrameworkTheming
 {
     public static void SetTheme(Theme theme)
     {

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal static class Property
+public static class Property
 {
     public static IProperty<T> Create<T>(T value)
     {
@@ -113,7 +113,7 @@ internal static class Property
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class Property<T> : IProperty<T>
+public sealed class Property<T> : IProperty<T>
 {
     public Property(T value)
     {

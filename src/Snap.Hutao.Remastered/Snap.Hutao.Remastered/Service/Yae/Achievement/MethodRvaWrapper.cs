@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Yae.Achievement;
 
-internal sealed class MethodRvaWrapper
+public sealed class MethodRvaWrapper
 {
     [JsonPropertyName("chinese")]
     public required MethodRva Chinese { get; init; }

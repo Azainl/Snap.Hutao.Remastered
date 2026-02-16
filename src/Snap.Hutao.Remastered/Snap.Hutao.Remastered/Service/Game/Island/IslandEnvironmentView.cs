@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal readonly struct IslandEnvironmentView
+public readonly struct IslandEnvironmentView
 {
 #pragma warning disable CS0649
     public readonly uint Size;

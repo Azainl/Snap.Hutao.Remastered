@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.Core;
 
 // https://github.com/dotnet/runtime/blob/main/src/libraries/System.Private.CoreLib/src/System/Gen2GcCallback.cs
-internal sealed class Gen2GcCallback : CriticalFinalizerObject
+public sealed class Gen2GcCallback : CriticalFinalizerObject
 {
     private readonly Func<bool>? callback0;
     private readonly Func<object, bool>? callback1;

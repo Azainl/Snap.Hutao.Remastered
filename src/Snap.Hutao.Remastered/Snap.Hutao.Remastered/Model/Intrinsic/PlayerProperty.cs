@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum PlayerProperty
+public enum PlayerProperty
 {
     /// <summary>
     /// 空

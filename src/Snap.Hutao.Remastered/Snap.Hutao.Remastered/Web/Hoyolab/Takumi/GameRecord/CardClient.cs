@@ -15,7 +15,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
-internal sealed partial class CardClient
+public sealed partial class CardClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Card;
 [DependencyProperty<bool>("IsIndeterminate", NotNull = true, DefaultValue = false)]
 [DependencyProperty<string>("Header")]
 [DependencyProperty<string>("Description")]
-internal sealed partial class CardProgressBar : Microsoft.UI.Xaml.Controls.Control
+public sealed partial class CardProgressBar : Microsoft.UI.Xaml.Controls.Control
 {
     public CardProgressBar()
     {

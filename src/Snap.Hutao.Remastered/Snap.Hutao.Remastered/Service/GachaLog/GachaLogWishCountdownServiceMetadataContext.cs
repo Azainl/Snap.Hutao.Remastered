@@ -12,7 +12,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal sealed class GachaLogWishCountdownServiceMetadataContext : IMetadataContext,
+public sealed class GachaLogWishCountdownServiceMetadataContext : IMetadataContext,
     IMetadataSupportInitialization,
     IMetadataArrayGachaEventSource,
     IMetadataDictionaryIdAvatarSource,

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdAchievementSource
+public interface IMetadataDictionaryIdAchievementSource
 {
     ImmutableDictionary<AchievementId, Model.Metadata.Achievement.Achievement> IdAchievementMap { get; set; }
 }

@@ -16,7 +16,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.Update;
 
 [Service(ServiceLifetime.Singleton, typeof(IUpdateService))]
-internal sealed partial class UpdateService : IUpdateService
+public sealed partial class UpdateService : IUpdateService
 {
     private const string UpdaterFilename = "Snap.Hutao.Remastered.Deployment.exe";
 

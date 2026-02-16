@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.Game.Configuration;
 
 namespace Snap.Hutao.Remastered.Service.Game.Scheme;
 
-internal class LaunchScheme : IEquatable<ChannelOptions>
+public class LaunchScheme : IEquatable<ChannelOptions>
 {
     public string DisplayName
     {

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed class SplendourBuffView
+public sealed class SplendourBuffView
 {
     private SplendourBuffView(RoleCombatSplendourBuff roleCombatSplendourBuff)
     {

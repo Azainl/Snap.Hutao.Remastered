@@ -10,7 +10,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 [DependencyProperty<IList<LevelParameters<string, ParameterDescription>>>("Source", PropertyChangedCallbackName = nameof(OnSourceChanged))]
 [DependencyProperty<LevelParameters<string, ParameterDescription>>("SelectedItem")]
 [DependencyProperty<int>("PreferredSelectedIndex", DefaultValue = 0, NotNull = true)]
-internal sealed partial class DescParamComboBox : UserControl
+public sealed partial class DescParamComboBox : UserControl
 {
     public DescParamComboBox()
     {

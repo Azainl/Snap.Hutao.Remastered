@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class LazySlim
+public static class LazySlim
 {
     public static LazySlim<T> Create<T>()
         where T : new()
@@ -13,7 +13,7 @@ internal static class LazySlim
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class LazySlim<T>
+public sealed class LazySlim<T>
 {
     private readonly Func<T> valueFactory;
 

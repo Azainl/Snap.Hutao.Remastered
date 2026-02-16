@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Achievement;
 
-internal sealed class Reward : IdCount;
+public sealed class Reward : IdCount;

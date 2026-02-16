@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Logging;
 
 [SuppressMessage("", "SA1611")]
 [SuppressMessage("", "SA1615")]
-internal static class BreadcrumbFactory
+public static class BreadcrumbFactory
 {
     /// <summary>
     /// If the category is 'console' then will display as 'debug'<br/>

@@ -12,7 +12,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class GachaInfoClient
+public sealed partial class GachaInfoClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

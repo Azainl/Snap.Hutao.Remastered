@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.ViewModel.Cultivation;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal sealed class StatisticsCultivateItemComparer : DelegatingPropertyComparer<StatisticsCultivateItem, MaterialId>
+public sealed class StatisticsCultivateItemComparer : DelegatingPropertyComparer<StatisticsCultivateItem, MaterialId>
 {
     private static readonly LazySlim<StatisticsCultivateItemComparer> LazyShared = new(() => new());
 

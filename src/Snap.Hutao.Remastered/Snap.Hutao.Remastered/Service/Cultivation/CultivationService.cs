@@ -21,7 +21,7 @@ using ModelItem = Snap.Hutao.Remastered.Model.Item;
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
 [Service(ServiceLifetime.Singleton, typeof(ICultivationService))]
-internal sealed partial class CultivationService : ICultivationService
+public sealed partial class CultivationService : ICultivationService
 {
     private readonly ConcurrentDictionary<Guid, ObservableCollection<CultivateEntryView>> entryCollectionCache = [];
     private readonly AsyncLock entryCollectionLock = new();

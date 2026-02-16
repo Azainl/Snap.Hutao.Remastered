@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal enum ElementAttributeId
+public enum ElementAttributeId
 {
     None = 0,
     Fire = 1,

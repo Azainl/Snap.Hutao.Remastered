@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal class AvatarView : INameIconSide<Uri>
+public class AvatarView : INameIconSide<Uri>
 {
     protected AvatarView(Avatar metaAvatar)
     {

@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Inventory;
 
-internal interface IInventoryRepository : IRepository<InventoryItem>
+public interface IInventoryRepository : IRepository<InventoryItem>
 {
     void AddInventoryItemRangeByProjectId(IEnumerable<InventoryItem> items);
 

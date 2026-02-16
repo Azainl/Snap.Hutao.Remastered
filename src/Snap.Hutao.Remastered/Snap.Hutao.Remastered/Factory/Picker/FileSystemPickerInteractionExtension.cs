@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.IO;
 
 namespace Snap.Hutao.Remastered.Factory.Picker;
 
-internal static class FileSystemPickerInteractionExtension
+public static class FileSystemPickerInteractionExtension
 {
     extension(IFileSystemPickerInteraction interaction)
     {

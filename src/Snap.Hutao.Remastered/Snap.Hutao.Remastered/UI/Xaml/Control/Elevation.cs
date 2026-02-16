@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 
-internal sealed partial class Elevation : Microsoft.UI.Xaml.Controls.ContentControl
+public sealed partial class Elevation : Microsoft.UI.Xaml.Controls.ContentControl
 {
     public Elevation()
     {

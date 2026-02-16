@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
-internal enum ScheduleType
+public enum ScheduleType
 {
     /// <summary>
     /// 当期

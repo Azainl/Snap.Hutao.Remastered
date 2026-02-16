@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml.Data;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter;
 
-internal sealed partial class Int32ToVisibilityConverter : IValueConverter
+public sealed partial class Int32ToVisibilityConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, object parameter, string language)
     {

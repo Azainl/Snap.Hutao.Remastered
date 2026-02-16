@@ -5,7 +5,7 @@ using Microsoft.UI.Dispatching;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal sealed class TaskContextWrapperForDispatcherQueue : ITaskContext
+public sealed class TaskContextWrapperForDispatcherQueue : ITaskContext
 {
     public TaskContextWrapperForDispatcherQueue(DispatcherQueue dispatcherQueue)
     {

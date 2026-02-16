@@ -11,7 +11,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("achievements")]
-internal sealed class Achievement : IAppDbEntityHasArchive,
+public sealed class Achievement : IAppDbEntityHasArchive,
     IEquatable<Achievement>
 {
     [Key]

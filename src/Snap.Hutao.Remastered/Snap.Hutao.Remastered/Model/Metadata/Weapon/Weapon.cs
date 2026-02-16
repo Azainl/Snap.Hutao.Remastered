@@ -14,7 +14,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Weapon;
 
-internal sealed partial class Weapon : IDefaultIdentity<WeaponId>,
+public sealed partial class Weapon : IDefaultIdentity<WeaponId>,
     INameQualityAccess,
     IStatisticsItemConvertible,
     ISummaryItemConvertible,
@@ -59,7 +59,7 @@ internal sealed partial class Weapon : IDefaultIdentity<WeaponId>,
         get => RankLevel;
     }
 
-    internal uint MaxLevel { get => GetMaxLevelByQuality(Quality); }
+    public uint MaxLevel { get => GetMaxLevelByQuality(Quality); }
 
     public static uint GetMaxLevelByQuality(QualityType quality)
     {

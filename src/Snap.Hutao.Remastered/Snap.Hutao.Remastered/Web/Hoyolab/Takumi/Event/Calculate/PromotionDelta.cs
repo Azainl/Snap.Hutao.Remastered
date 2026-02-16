@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal class PromotionDelta
+public class PromotionDelta
 {
     [JsonPropertyName("id")]
     public uint Id { get; set; }

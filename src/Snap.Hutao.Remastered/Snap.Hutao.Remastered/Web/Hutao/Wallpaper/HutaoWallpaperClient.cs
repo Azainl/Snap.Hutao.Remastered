@@ -12,7 +12,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hutao.Wallpaper;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HutaoWallpaperClient
+public sealed partial class HutaoWallpaperClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

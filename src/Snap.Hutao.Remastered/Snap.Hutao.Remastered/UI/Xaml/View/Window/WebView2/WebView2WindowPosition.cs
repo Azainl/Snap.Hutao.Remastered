@@ -7,7 +7,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
-internal static class WebView2WindowPosition
+public static class WebView2WindowPosition
 {
     public static RectInt32 Padding(RectInt32 parentRect, int padding)
     {

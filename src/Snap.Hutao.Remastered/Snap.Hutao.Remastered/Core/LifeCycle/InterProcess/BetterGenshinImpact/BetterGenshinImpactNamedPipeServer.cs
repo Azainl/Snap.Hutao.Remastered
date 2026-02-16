@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Task
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class BetterGenshinImpactNamedPipeServer
+public sealed partial class BetterGenshinImpactNamedPipeServer
 {
     private readonly IAutomationCultivationService automationCultivationService;
     private readonly ILogger<BetterGenshinImpactNamedPipeServer> logger;

@@ -22,7 +22,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class SettingStorageViewModel : Abstraction.ViewModel
+public sealed partial class SettingStorageViewModel : Abstraction.ViewModel
 {
     private readonly IFileSystemPickerInteraction fileSystemPickerInteraction;
     private readonly IContentDialogFactory contentDialogFactory;

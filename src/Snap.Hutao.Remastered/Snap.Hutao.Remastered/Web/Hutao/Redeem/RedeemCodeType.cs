@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
 [Flags]
-internal enum RedeemCodeType : uint
+public enum RedeemCodeType : uint
 {
     None = 0b0000U,
     TimeLimited = 0b0001U,

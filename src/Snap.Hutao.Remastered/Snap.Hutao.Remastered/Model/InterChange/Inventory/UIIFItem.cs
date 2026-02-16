@@ -5,7 +5,7 @@ using InGameItem = Snap.Hutao.Remastered.Service.Yae.PlayerStore.Item;
 
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
-internal sealed class UIIFItem
+public sealed class UIIFItem
 {
     [JsonPropertyName("itemId")]
     public uint ItemId { get; init; }

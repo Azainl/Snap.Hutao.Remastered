@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml;
 
-internal static class FrameworkElementExtension
+public static class FrameworkElementExtension
 {
     extension(FrameworkElement frameworkElement)
     {

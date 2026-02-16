@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Input;
 
-internal static class CommandInvocation
+public static class CommandInvocation
 {
     extension(ICommand? command)
     {

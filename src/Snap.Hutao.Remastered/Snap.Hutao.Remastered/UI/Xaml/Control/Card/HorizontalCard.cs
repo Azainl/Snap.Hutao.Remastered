@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Card;
 
 [DependencyProperty<UIElement>("Left")]
 [DependencyProperty<UIElement>("Right")]
-internal sealed partial class HorizontalCard : Microsoft.UI.Xaml.Controls.Control
+public sealed partial class HorizontalCard : Microsoft.UI.Xaml.Controls.Control
 {
     public HorizontalCard()
     {

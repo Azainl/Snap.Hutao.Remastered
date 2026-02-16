@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class HyperLinkName : IDefaultIdentity<HyperLinkNameId>
+public sealed class HyperLinkName : IDefaultIdentity<HyperLinkNameId>
 {
     public required HyperLinkNameId Id { get; init; }
 

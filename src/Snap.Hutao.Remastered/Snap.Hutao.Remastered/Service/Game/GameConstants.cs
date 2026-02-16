@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game;
 
-internal static class GameConstants
+public static class GameConstants
 {
     public const string ConfigFileName = "config.ini";
     public const string GameVersion = "game_version";

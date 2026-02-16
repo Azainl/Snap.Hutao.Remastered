@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Entity.Database;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction;
 
-internal static class ServiceScopeExtension
+public static class ServiceScopeExtension
 {
     extension(IServiceScope scope)
     {

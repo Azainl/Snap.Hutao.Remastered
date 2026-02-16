@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Geetest;
 
-internal sealed class GeetestWebResponse
+public sealed class GeetestWebResponse
 {
     public GeetestWebResponse(string challenge, string validate)
     {

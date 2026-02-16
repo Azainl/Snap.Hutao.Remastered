@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 /// <summary>
 /// 胡桃云记录操作视图模型
 /// </summary>
-internal sealed class HutaoCloudEntryOperationViewModel
+public sealed class HutaoCloudEntryOperationViewModel
 {
     /// <summary>
     /// 构造一个新的胡桃云记录操作视图模型

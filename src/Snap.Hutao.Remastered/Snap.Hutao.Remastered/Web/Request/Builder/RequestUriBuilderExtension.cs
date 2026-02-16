@@ -7,7 +7,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class RequestUriBuilderExtension
+public static class RequestUriBuilderExtension
 {
     extension<T>(T builder)
         where T : class, IRequestUriBuilder

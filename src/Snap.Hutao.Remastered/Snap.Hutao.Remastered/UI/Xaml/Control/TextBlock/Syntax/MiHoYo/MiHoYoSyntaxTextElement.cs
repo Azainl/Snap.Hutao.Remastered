@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal sealed class MiHoYoSyntaxTextElement : MiHoYoSyntaxElement
+public sealed class MiHoYoSyntaxTextElement : MiHoYoSyntaxElement
 {
     public MiHoYoSyntaxTextElement(TextPosition position, ImmutableArray<MiHoYoSyntaxElement> children)
         : base(position, children)

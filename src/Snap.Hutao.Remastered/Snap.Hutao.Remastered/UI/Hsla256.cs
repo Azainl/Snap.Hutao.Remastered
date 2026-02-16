@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI;
 
-internal struct Hsla256
+public struct Hsla256
 {
     public double H;
     public double S;

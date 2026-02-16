@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal sealed class InputCookie : IDeconstruct<Cookie, bool, string?>
+public sealed class InputCookie : IDeconstruct<Cookie, bool, string?>
 {
     private InputCookie(Cookie cookie, bool isOversea)
     {

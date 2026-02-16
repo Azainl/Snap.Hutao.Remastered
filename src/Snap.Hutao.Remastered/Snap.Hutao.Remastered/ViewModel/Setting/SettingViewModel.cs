@@ -15,7 +15,7 @@ using Windows.Foundation;
 namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class SettingViewModel : Abstraction.ViewModel, INavigationRecipient
+public sealed partial class SettingViewModel : Abstraction.ViewModel, INavigationRecipient
 {
     public const string UIGFImportExport = nameof(UIGFImportExport);
 

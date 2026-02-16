@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal sealed unsafe partial class StreamInputStream : Stream
+public sealed unsafe partial class StreamInputStream : Stream
 {
     private readonly StreamInput* input;
     private readonly ulong begin;

@@ -15,7 +15,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<NavigationView>,
+public sealed class ServiceRecipientNavigationViewBehavior : BehaviorBase<NavigationView>,
     IRecipient<NavigationNavigateMessage>,
     IRecipient<NavigationGoBackMessage>,
     IRecipient<NavigationPaneToggleMessage>

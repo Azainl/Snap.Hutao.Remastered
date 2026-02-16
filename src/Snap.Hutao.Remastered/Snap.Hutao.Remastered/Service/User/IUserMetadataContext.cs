@@ -6,5 +6,5 @@ using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserMetadataContext : IMetadataContext,
+public interface IUserMetadataContext : IMetadataContext,
     IMetadataArrayProfilePictureSource;

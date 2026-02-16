@@ -6,7 +6,7 @@ using System.Net.Http.Headers;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
-internal interface IHttpHeadersBuilder<out T> : IBuilder
+public interface IHttpHeadersBuilder<out T> : IBuilder
     where T : HttpHeaders
 {
     T Headers { get; }

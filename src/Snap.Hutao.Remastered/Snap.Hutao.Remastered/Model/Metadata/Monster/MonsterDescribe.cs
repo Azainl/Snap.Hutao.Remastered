@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Monster;
 
-internal static class MonsterDescribe
+public static class MonsterDescribe
 {
     public static MonsterDescribeId Normalize(in MonsterDescribeId id)
     {

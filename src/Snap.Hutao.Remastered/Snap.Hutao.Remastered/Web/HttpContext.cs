@@ -6,7 +6,7 @@ using System.Runtime.ExceptionServices;
 
 namespace Snap.Hutao.Remastered.Web;
 
-internal sealed partial class HttpContext : IDisposable
+public sealed partial class HttpContext : IDisposable
 {
     public required HttpClient HttpClient { get; init; }
 

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal sealed class LevelView
+public sealed class LevelView
 {
     private LevelView(TowerLevel towerLevel, SpiralAbyssMetadataContext context)
     {
@@ -21,7 +21,7 @@ internal sealed class LevelView
 
     public ImmutableArray<BattleView> Battles { get; }
 
-    internal uint IndexValue { get; }
+    public uint IndexValue { get; }
 
     public static LevelView Create(TowerLevel towerLevel, SpiralAbyssMetadataContext context)
     {

@@ -20,7 +20,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.ViewModel.Guide;
 
-internal sealed partial class DownloadSummary : ObservableObject
+public sealed partial class DownloadSummary : ObservableObject
 {
     private static readonly FrozenSet<string?> AllowedMediaTypes =
     [

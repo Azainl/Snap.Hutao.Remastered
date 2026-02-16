@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.ViewModel;
 
 namespace Snap.Hutao.Remastered.UI.Shell;
 
-internal sealed partial class NotifyIconContextMenu : Flyout
+public sealed partial class NotifyIconContextMenu : Flyout
 {
     public NotifyIconContextMenu(IServiceProvider serviceProvider)
     {

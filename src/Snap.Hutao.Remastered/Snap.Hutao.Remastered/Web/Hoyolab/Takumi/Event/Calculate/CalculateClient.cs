@@ -13,7 +13,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class CalculateClient
+public sealed partial class CalculateClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

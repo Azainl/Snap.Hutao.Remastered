@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed class BuffView
+public sealed class BuffView
 {
     private BuffView(RoleCombatBuff roleCombatBuff)
     {

@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.Threading.Abstraction;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal readonly struct ThreadPoolSwitchOperation : IAwaitable<ThreadPoolSwitchOperation>, ICriticalAwaiter
+public readonly struct ThreadPoolSwitchOperation : IAwaitable<ThreadPoolSwitchOperation>, ICriticalAwaiter
 {
     private static readonly Action<Action> WaitCallbackRunAction = RunAction;
     private readonly DispatcherQueue dispatcherQueue;

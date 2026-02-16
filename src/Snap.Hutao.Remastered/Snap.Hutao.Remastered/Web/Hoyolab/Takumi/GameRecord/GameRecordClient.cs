@@ -19,7 +19,7 @@ namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord;
 
 [HttpClient(HttpClientConfiguration.XRpc)]
 [PrimaryHttpMessageHandler(UseCookies = false)]
-internal sealed partial class GameRecordClient : IGameRecordClient
+public sealed partial class GameRecordClient : IGameRecordClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IServiceProvider serviceProvider;

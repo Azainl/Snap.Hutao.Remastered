@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum FightProperty
+public enum FightProperty
 {
     FIGHT_PROP_NONE = 0,
 

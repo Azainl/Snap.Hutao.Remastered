@@ -7,7 +7,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
-internal sealed class DefaultWebView2ContentProvider : IWebView2ContentProvider
+public sealed class DefaultWebView2ContentProvider : IWebView2ContentProvider
 {
     public ElementTheme ActualTheme { get; set; }
 

@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 namespace Snap.Hutao.Remastered.Service.Hutao;
 
 [Service(ServiceLifetime.Scoped, typeof(IHutaoSpiralAbyssService))]
-internal sealed partial class HutaoSpiralAbyssService : ObjectCacheService, IHutaoSpiralAbyssService
+public sealed partial class HutaoSpiralAbyssService : ObjectCacheService, IHutaoSpiralAbyssService
 {
     [GeneratedConstructor(CallBaseConstructor = true)]
     public partial HutaoSpiralAbyssService(IServiceProvider serviceProvider);

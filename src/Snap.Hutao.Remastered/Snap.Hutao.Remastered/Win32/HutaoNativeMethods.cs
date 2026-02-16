@@ -7,7 +7,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal static unsafe class HutaoNativeMethods
+public static unsafe class HutaoNativeMethods
 {
     // ReSharper disable InconsistentNaming
     public const string IID_IHutaoString = "F1F44E9E-858D-4746-B44E-213A1DDA4510";

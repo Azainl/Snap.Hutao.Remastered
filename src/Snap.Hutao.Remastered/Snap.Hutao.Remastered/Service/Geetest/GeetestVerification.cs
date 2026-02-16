@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Geetest;
 
-internal sealed class GeetestVerification
+public sealed class GeetestVerification
 {
     [JsonPropertyName("success")]
     public int Success { get; set; }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Downloader;
 
-internal sealed class SophonBuild
+public sealed class SophonBuild
 {
     [JsonPropertyName("build_id")]
     public string BuildId { get; set; } = default!;

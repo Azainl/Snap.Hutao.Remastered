@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureWallpaperEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureWallpaperEndpoints : IInfrastructureRootAccess
 {
     string WallpaperBing()
     {

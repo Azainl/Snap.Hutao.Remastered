@@ -11,7 +11,7 @@ namespace Snap.Hutao.Remastered.Core.IO.Compression.Zstandard;
 
 // See https://github.com/skbkontur/ZstdNet
 // ReSharper disable LocalizableElement
-internal sealed partial class ZstandardDecompressStream : Stream
+public sealed partial class ZstandardDecompressStream : Stream
 {
     [SuppressMessage("", "CA2213")]
     private readonly Stream inputStream;
@@ -98,27 +98,27 @@ internal sealed partial class ZstandardDecompressStream : Stream
     public override unsafe int Read(Span<byte> buffer)
     {
         ObjectDisposedException.ThrowIf(decompressStreamContext is null, this);
-        return ReadInternal(buffer);
+        return Readpublic(buffer);
     }
 
     public override unsafe int Read(byte[] buffer, int offset, int count)
     {
         CheckParamsValid(buffer, offset, count);
         ObjectDisposedException.ThrowIf(decompressStreamContext is null, this);
-        return ReadInternal(buffer.AsSpan(offset, count));
+        return Readpublic(buffer.AsSpan(offset, count));
     }
 
     public override unsafe ValueTask<int> ReadAsync(Memory<byte> buffer, CancellationToken token = default)
     {
         ObjectDisposedException.ThrowIf(decompressStreamContext is null, this);
-        return ReadInternalAsync(buffer, token);
+        return ReadpublicAsync(buffer, token);
     }
 
     public override unsafe Task<int> ReadAsync(byte[] buffer, int offset, int count, CancellationToken token)
     {
         CheckParamsValid(buffer, offset, count);
         ObjectDisposedException.ThrowIf(decompressStreamContext is null, this);
-        return ReadInternalAsync(buffer.AsMemory(offset, count), token).AsTask();
+        return ReadpublicAsync(buffer.AsMemory(offset, count), token).AsTask();
     }
 
     protected override unsafe void Dispose(bool disposing)
@@ -149,7 +149,7 @@ internal sealed partial class ZstandardDecompressStream : Stream
         }
     }
 
-    private int ReadInternal(Span<byte> buffer)
+    private int Readpublic(Span<byte> buffer)
     {
         ZSTD_inBuffer_s input = default;
         input.size = size;
@@ -181,7 +181,7 @@ internal sealed partial class ZstandardDecompressStream : Stream
         return (int)output.pos;
     }
 
-    private async ValueTask<int> ReadInternalAsync(Memory<byte> buffer, CancellationToken token)
+    private async ValueTask<int> ReadpublicAsync(Memory<byte> buffer, CancellationToken token)
     {
         ZSTD_inBuffer_s input = default;
         input.size = size;

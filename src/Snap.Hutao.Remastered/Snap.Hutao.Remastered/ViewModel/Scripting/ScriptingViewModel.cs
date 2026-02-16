@@ -12,7 +12,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Scripting;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class ScriptingViewModel : Abstraction.ViewModel
+public sealed partial class ScriptingViewModel : Abstraction.ViewModel
 {
     private readonly ITaskContext taskContext;
 

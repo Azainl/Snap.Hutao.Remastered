@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IHomaPassportEndpoints : IHomaRootAccess
+public interface IHomaPassportEndpoints : IHomaRootAccess
 {
     string PassportVerify()
     {

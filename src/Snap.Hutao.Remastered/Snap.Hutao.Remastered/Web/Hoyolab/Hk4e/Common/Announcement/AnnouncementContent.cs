@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Common.Announcement;
 
-internal class AnnouncementContent
+public class AnnouncementContent
 {
     [JsonPropertyName("ann_id")]
     public int AnnId { get; set; }

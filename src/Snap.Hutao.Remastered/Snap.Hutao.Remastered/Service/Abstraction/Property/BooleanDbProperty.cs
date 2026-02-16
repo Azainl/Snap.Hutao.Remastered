@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Entity.Database;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class BooleanDbProperty : DbProperty<bool>
+public sealed partial class BooleanDbProperty : DbProperty<bool>
 {
     private readonly IServiceProvider serviceProvider;
     private readonly string key;

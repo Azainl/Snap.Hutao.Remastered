@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.User;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching;
 
-internal sealed class GameIdentity
+public sealed class GameIdentity
 {
     public UserAndUid? UserAndUid { get; init; }
 

@@ -4,4 +4,4 @@
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 
 [Service(ServiceLifetime.Singleton, typeof(IApiEndpoints), Key = ApiEndpointsKind.Oversea)]
-internal sealed class ApiEndpointsForOversea : ApiEndpointsImplementationForOversea;
+public sealed class ApiEndpointsForOversea : ApiEndpointsImplementationForOversea;

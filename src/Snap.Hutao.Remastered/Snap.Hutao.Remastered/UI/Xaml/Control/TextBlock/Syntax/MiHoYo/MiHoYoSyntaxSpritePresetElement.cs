@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal sealed class MiHoYoSyntaxSpritePresetElement : MiHoYoSyntaxElement
+public sealed class MiHoYoSyntaxSpritePresetElement : MiHoYoSyntaxElement
 {
     public MiHoYoSyntaxSpritePresetElement(TextPosition position, TextPosition idPosition, ImmutableArray<MiHoYoSyntaxElement> children)
         : base(position, children)

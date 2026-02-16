@@ -6,7 +6,7 @@ using System.Globalization;
 namespace Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
 // 此转换器无法实现无损往返 必须在反序列化后调整 Offset
-internal sealed class SimpleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
+public sealed class SimpleDateTimeOffsetConverter : JsonConverter<DateTimeOffset>
 {
     private const string Format = "yyyy-MM-dd HH:mm:ss";
 

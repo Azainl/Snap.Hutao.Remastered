@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class Item
+public sealed class Item
 {
     [JsonPropertyName("id")]
     public uint Id { get; set; }

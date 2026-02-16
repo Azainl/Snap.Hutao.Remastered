@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-internal sealed class UIGFExportOptions
+public sealed class UIGFExportOptions
 {
     public required string FilePath { get; set; }
 

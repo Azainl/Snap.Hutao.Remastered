@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Entity;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
-internal sealed partial class DailyNoteNotificationDialog : ContentDialog
+public sealed partial class DailyNoteNotificationDialog : ContentDialog
 {
     public DailyNoteNotificationDialog(IServiceProvider serviceProvider, DailyNoteEntry entry)
     {

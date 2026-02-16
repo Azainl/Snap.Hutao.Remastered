@@ -7,7 +7,7 @@ using Microsoft.UI.Xaml.Markup;
 namespace Snap.Hutao.Remastered.UI.Xaml.Markup;
 
 [MarkupExtensionReturnType(ReturnType = typeof(FontIcon))]
-internal sealed partial class FontIconExtension : MarkupExtension
+public sealed partial class FontIconExtension : MarkupExtension
 {
     public string Glyph { get; set; } = default!;
 

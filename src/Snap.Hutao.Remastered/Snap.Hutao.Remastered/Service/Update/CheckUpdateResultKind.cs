@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Update;
 
-internal enum CheckUpdateResultKind
+public enum CheckUpdateResultKind
 {
     None = 0,
     VersionApiInvalidResponse = 1,

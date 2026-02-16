@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Service;
 
-internal static class KnownServerRegionTimeZones
+public static class KnownServerRegionTimeZones
 {
     public static ImmutableArray<NameValue<TimeSpan>> Value
     {

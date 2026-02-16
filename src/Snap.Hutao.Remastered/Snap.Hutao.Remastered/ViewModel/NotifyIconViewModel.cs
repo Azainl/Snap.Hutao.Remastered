@@ -22,7 +22,7 @@ using Windows.Storage.Streams;
 namespace Snap.Hutao.Remastered.ViewModel;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class NotifyIconViewModel : ObservableObject
+public sealed partial class NotifyIconViewModel : ObservableObject
 {
     [FromKeyed(typeof(CompactWebView2Window))]
     private readonly ICurrentXamlWindowReference currentCompactWebView2WindowReference;
@@ -184,7 +184,7 @@ internal sealed partial class NotifyIconViewModel : ObservableObject
     }
 }
 
-internal sealed partial class NotifyIconViewModel
+public sealed partial class NotifyIconViewModel
 {
     public static bool CanTakeScreenshot
     {

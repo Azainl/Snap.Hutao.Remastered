@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum GrowCurveType
+public enum GrowCurveType
 {
     GROW_CURVE_NONE = 0,
     GROW_CURVE_HP = 1,

@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class ReliquarySet : IEquatable<ReliquarySet>
+public sealed class ReliquarySet : IEquatable<ReliquarySet>
 {
     public ReliquarySet(string set)
         : this(set.AsSpan())

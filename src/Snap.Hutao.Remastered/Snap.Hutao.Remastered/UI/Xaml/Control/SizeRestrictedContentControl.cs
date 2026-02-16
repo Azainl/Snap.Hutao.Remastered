@@ -9,7 +9,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 
 [DependencyProperty<bool>("IsWidthRestricted", DefaultValue = true, NotNull = true)]
 [DependencyProperty<bool>("IsHeightRestricted", DefaultValue = true, NotNull = true)]
-internal sealed partial class SizeRestrictedContentControl : ContentControl
+public sealed partial class SizeRestrictedContentControl : ContentControl
 {
     private double minContentWidth;
     private double minContentHeight;

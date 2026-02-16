@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.PublicData.DeviceFp;
 
-internal sealed class DeviceFpWrapper
+public sealed class DeviceFpWrapper
 {
     [JsonPropertyName("device_fp")]
     public string DeviceFp { get; set; } = default!;

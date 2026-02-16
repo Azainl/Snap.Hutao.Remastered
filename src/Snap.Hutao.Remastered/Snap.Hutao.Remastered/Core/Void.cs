@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal readonly struct Void;
+public readonly struct Void;

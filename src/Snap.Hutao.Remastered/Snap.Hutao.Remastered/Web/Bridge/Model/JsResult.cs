@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class JsResult<TData> : IJsBridgeResult
+public sealed class JsResult<TData> : IJsBridgeResult
 {
     [JsonPropertyName("retcode")]
     public int ReturnCode { get; set; }

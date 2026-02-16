@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal interface IGameIslandInterop
+public interface IGameIslandInterop
 {
     ValueTask BeforeAsync(BeforeLaunchExecutionContext context);
 

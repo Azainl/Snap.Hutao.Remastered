@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum QuestType : uint
+public enum QuestType : uint
 {
     /// <summary>
     /// Archon Quest 魔神任务

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class UserInformation
+public sealed class UserInformation
 {
     [JsonPropertyName("aid")]
     public string Aid { get; set; } = default!;

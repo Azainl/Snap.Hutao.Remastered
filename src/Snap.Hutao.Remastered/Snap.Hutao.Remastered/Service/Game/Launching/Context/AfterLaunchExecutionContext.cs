@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
-internal sealed class AfterLaunchExecutionContext
+public sealed class AfterLaunchExecutionContext
 {
     public required IServiceProvider ServiceProvider { get; init; }
 

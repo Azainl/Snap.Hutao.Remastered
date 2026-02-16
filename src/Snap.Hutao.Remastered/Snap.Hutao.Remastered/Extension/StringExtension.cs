@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class StringExtension
+public static class StringExtension
 {
     extension(string value)
     {

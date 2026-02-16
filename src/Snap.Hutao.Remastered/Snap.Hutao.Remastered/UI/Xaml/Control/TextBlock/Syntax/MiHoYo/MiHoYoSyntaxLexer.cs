@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal ref struct MiHoYoSyntaxLexer
+public ref struct MiHoYoSyntaxLexer
 {
     public readonly ReadOnlySpan<char> Input;
     private int position;

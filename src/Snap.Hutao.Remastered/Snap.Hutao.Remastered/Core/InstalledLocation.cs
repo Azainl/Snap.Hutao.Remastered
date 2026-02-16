@@ -9,7 +9,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.Core;
 
-internal static class InstalledLocation
+public static class InstalledLocation
 {
     public static string GetAbsolutePath(string relativePath)
     {

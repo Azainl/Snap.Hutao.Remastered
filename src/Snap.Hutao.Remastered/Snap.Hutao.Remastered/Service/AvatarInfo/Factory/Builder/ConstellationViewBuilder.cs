@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory.Builder;
 
-internal sealed class ConstellationViewBuilder : IConstellationViewBuilder
+public sealed class ConstellationViewBuilder : IConstellationViewBuilder
 {
     public ConstellationView View { get; } = new();
 }

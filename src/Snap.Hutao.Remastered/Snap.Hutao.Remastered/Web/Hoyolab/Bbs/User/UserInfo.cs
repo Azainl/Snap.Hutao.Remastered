@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class UserInfo : UserCommon
+public sealed class UserInfo : UserCommon
 {
     [JsonPropertyName("level_exps")]
     public ImmutableArray<LevelExperience> LevelExps { get; init; }

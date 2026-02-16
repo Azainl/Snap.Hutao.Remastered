@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact;
 
-internal enum PipeResponseKind
+public enum PipeResponseKind
 {
     None,
     Object = 1,

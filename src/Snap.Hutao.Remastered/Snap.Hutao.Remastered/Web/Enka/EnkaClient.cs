@@ -16,7 +16,7 @@ using System.Net.Http.Json;
 namespace Snap.Hutao.Remastered.Web.Enka;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class EnkaClient
+public sealed partial class EnkaClient
 {
     private const string EnkaAPI = "https://enka.network/api/uid/{0}";
     private const string EnkaInfoAPI = "https://enka.network/api/uid/{0}?info";

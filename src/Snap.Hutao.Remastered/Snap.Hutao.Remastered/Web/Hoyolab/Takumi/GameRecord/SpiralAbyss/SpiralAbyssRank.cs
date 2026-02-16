@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.SpiralAbyss;
 
-internal sealed class SpiralAbyssRank
+public sealed class SpiralAbyssRank
 {
     [JsonPropertyName("avatar_id")]
     public required AvatarId AvatarId { get; set; }

@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
 [BindableCustomPropertyProvider]
-internal sealed partial class AvatarPromotionDelta : ObservableObject
+public sealed partial class AvatarPromotionDelta : ObservableObject
 {
     [ObservableProperty]
     [JsonPropertyName("avatar_id")]
@@ -45,7 +45,7 @@ internal sealed partial class AvatarPromotionDelta : ObservableObject
     [JsonPropertyName("avatar_promote_level")]
     public partial uint AvatarPromoteLevel { get; set; }
 
-    internal IProperty<bool> IsViewUnloaded { get; } = Property.Create(false);
+    public IProperty<bool> IsViewUnloaded { get; } = Property.Create(false);
 
     public static AvatarPromotionDelta CreateForBaseline()
     {

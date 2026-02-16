@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal static unsafe class StreamIO
+public static unsafe class StreamIO
 {
     [UnmanagedCallersOnly(CallConvs = [typeof(CallConvCdecl)])]
     public static BOOL FileSegmentRead(void* input, ulong position, byte* start, byte* end)

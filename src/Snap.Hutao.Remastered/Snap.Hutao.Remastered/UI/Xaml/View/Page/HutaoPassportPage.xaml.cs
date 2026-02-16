@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.HutaoPassport;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class HutaoPassportPage : ScopedPage
+public sealed partial class HutaoPassportPage : ScopedPage
 {
     public HutaoPassportPage()
     {

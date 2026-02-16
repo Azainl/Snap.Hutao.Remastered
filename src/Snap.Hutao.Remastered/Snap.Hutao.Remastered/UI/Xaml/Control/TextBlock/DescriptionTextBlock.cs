@@ -25,7 +25,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock;
 [DependencyProperty<string>("Description", PropertyChangedCallbackName = nameof(OnDescriptionChanged))]
 [DependencyProperty<LinkMetadataContext>("LinkContext", PropertyChangedCallbackName = nameof(OnLinkContextChanged))]
 [DependencyProperty<Style>("TextStyle", PropertyChangedCallbackName = nameof(OnTextStyleChanged))]
-internal sealed partial class DescriptionTextBlock : ContentControl
+public sealed partial class DescriptionTextBlock : ContentControl
 {
     private static readonly BitmapImage BitmapSourceIce = new("ms-appx:///Resource/Icon/UI_Gcg_Buff_Common_Element_Ice.png".ToUri());
     private static readonly BitmapImage BitmapSourceWater = new("ms-appx:///Resource/Icon/UI_Gcg_Buff_Common_Element_Water.png".ToUri());

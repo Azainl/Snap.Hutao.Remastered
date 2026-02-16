@@ -8,7 +8,7 @@ using System.Net.Http;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal readonly struct PackageConverterDeprecationContext
+public readonly struct PackageConverterDeprecationContext
 {
     public readonly HttpClient HttpClient;
     public readonly IGameFileSystemView GameFileSystem;

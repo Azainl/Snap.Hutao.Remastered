@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum QualityType
+public enum QualityType
 {
     /// <summary>
     /// 无

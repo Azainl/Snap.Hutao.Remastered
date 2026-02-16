@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum RecipeType
+public enum RecipeType
 {
     RECIPE_TYPE_NONE,
     RECIPE_TYPE_COMBINE,

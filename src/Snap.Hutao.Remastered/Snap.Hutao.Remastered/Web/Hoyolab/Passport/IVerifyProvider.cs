@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal interface IVerifyProvider
+public interface IVerifyProvider
 {
     string? Verify { get; set; }
 }

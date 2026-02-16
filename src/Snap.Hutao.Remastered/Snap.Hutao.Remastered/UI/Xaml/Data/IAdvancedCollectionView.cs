@@ -9,7 +9,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data;
 
-internal interface IAdvancedCollectionView<T> : ICollectionView
+public interface IAdvancedCollectionView<T> : ICollectionView
     where T : class
 {
     object? ICollectionView.CurrentItem

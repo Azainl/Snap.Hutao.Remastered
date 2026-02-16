@@ -9,7 +9,7 @@ using Random = Snap.Hutao.Remastered.Core.Random;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal static class HoyolabOptions
+public static class HoyolabOptions
 {
     public const string UserAgent = $"Mozilla/5.0 (Windows NT 10.0; Win64; x64) miHoYoBBS/{SaltConstants.CNVersion}";
 

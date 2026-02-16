@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class Official
+public sealed class Official
 {
     [JsonPropertyName("position")]
     public required int Position { get; init; }

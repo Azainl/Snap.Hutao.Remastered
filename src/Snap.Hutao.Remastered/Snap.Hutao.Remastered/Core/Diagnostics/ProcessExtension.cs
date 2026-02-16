@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Diagnostics;
 
-internal static class ProcessExtension
+public static class ProcessExtension
 {
     extension(IProcess process)
     {

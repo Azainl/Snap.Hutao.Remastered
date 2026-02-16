@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Win32.UI.WindowsAndMessaging;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly unsafe struct HutaoNativeInputLowLevelKeyboardSourceCallback
+public readonly unsafe struct HutaoNativeInputLowLevelKeyboardSourceCallback
 {
     private readonly delegate* unmanaged[Stdcall]<uint, KBDLLHOOKSTRUCT*, BOOL> value;
 

@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 /// <summary>
 /// 简化的类型化的祈愿概览
 /// </summary>
-internal sealed class TypedWishSummarySlim
+public sealed class TypedWishSummarySlim
 {
     /// <summary>
     /// 构造一个新的简化的类型化的祈愿概览

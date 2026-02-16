@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model;
 
 [Flags]
-internal enum LocalizationSource
+public enum LocalizationSource
 {
     None = 0b0000,
     Hutao = 0b0001,

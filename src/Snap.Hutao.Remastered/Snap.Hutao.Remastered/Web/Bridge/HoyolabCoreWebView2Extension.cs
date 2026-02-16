@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.WebView2;
 
 namespace Snap.Hutao.Remastered.Web.Bridge;
 
-internal static class HoyolabCoreWebView2Extension
+public static class HoyolabCoreWebView2Extension
 {
     extension(CoreWebView2 webView)
     {

@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Core.Text.Json.Converter;
 
-internal sealed class UnsafeEnumConverter<TEnum> : JsonConverter<TEnum>
+public sealed class UnsafeEnumConverter<TEnum> : JsonConverter<TEnum>
     where TEnum : struct, Enum
 {
     private readonly TypeCode enumTypeCode = Type.GetTypeCode(typeof(TEnum));

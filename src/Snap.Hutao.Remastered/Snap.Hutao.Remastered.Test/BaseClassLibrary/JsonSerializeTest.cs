@@ -340,7 +340,7 @@ public sealed class JsonSerializeTest
         public uint Number2 { get; set; }
     }
 
-    internal sealed class HexNumberConverter<T> : JsonConverter<T>
+    public sealed class HexNumberConverter<T> : JsonConverter<T>
         where T : struct, INumberBase<T>
     {
         public override T Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)

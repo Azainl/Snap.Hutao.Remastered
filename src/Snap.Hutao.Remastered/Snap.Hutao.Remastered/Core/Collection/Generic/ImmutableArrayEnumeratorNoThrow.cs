@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Core.Collection.Generic;
 
-internal sealed class ImmutableArrayEnumeratorNoThrow<T> : IEnumerator<T>
+public sealed class ImmutableArrayEnumeratorNoThrow<T> : IEnumerator<T>
 {
     private readonly ImmutableArray<T> array;
     private int index;

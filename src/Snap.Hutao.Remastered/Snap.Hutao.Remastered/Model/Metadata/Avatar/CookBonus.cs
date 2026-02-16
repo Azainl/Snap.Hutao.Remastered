@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class CookBonus
+public sealed class CookBonus
 {
     public required MaterialId OriginItemId { get; init; }
 

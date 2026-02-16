@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum GroupRecordType
+public enum GroupRecordType
 {
     None,
     Racing,

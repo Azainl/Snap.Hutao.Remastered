@@ -10,7 +10,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Window.WebView2;
 
 [DependencyProperty<string>("ChineseSource")]
 [DependencyProperty<string>("OverseaSource")]
-internal sealed partial class StaticJSBridgeUriSourceProvider : DependencyObject, IJSBridgeUriSourceProvider
+public sealed partial class StaticJSBridgeUriSourceProvider : DependencyObject, IJSBridgeUriSourceProvider
 {
     public MiHoYoJSBridge CreateJSBridge(IServiceProvider serviceProvider, CoreWebView2 coreWebView2, UserAndUid userAndUid)
     {

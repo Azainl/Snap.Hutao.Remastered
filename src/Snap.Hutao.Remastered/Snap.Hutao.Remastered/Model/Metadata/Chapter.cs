@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class Chapter
+public sealed class Chapter
 {
     public required ChapterId Id { get; init; }
 

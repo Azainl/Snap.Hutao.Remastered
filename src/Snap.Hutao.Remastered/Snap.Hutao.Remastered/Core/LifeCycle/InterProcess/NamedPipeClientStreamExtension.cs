@@ -5,7 +5,7 @@ using System.IO.Pipes;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 
-internal static class NamedPipeClientStreamExtension
+public static class NamedPipeClientStreamExtension
 {
     extension(NamedPipeClientStream clientStream)
     {

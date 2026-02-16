@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryIdDisplayItemAndMaterialSource
+public interface IMetadataDictionaryIdDisplayItemAndMaterialSource
 {
     ImmutableDictionary<MaterialId, DisplayItem> IdDisplayItemAndMaterialMap { get; set; }
 }

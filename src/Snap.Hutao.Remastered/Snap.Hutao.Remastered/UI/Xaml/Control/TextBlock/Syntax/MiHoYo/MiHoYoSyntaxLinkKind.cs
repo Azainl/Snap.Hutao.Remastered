@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal enum MiHoYoSyntaxLinkKind
+public enum MiHoYoSyntaxLinkKind
 {
     None,
     Name,

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal static class ServerRegionTimeZone
+public static class ServerRegionTimeZone
 {
     /// <summary>
     /// UTC-05

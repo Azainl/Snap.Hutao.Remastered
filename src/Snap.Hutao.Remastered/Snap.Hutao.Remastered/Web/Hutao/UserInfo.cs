@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal sealed class UserInfo
+public sealed class UserInfo
 {
     public required string NormalizedUserName { get; init; }
 

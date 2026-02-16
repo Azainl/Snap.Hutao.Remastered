@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal sealed partial class FileSegment : IDisposable
+public sealed partial class FileSegment : IDisposable
 {
     private readonly SafeFileHandle fileHandle;
     private readonly bool ownsHandle;

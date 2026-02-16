@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Request.Builder.Abstraction;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpRequestMessageBuilderFactoryExtension
+public static class HttpRequestMessageBuilderFactoryExtension
 {
     extension(IHttpRequestMessageBuilderFactory factory)
     {

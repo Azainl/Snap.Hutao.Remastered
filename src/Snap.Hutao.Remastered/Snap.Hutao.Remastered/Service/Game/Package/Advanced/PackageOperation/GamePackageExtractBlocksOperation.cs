@@ -11,7 +11,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced.PackageOperation;
 
 [Service(ServiceLifetime.Transient, typeof(IGamePackageOperation), Key = GamePackageOperationKind.ExtractBlocks)]
-internal sealed class GamePackageExtractBlocksOperation : GamePackageOperation
+public sealed class GamePackageExtractBlocksOperation : GamePackageOperation
 {
     public override async ValueTask ExecuteAsync(GamePackageServiceContext context)
     {

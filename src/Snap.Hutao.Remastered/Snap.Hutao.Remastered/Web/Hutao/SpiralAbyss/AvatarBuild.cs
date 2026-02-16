@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal abstract class AvatarBuild
+public abstract class AvatarBuild
 {
     public AvatarId AvatarId { get; set; }
 }

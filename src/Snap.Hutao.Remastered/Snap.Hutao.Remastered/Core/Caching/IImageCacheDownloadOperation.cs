@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.IO;
 
 namespace Snap.Hutao.Remastered.Core.Caching;
 
-internal interface IImageCacheDownloadOperation
+public interface IImageCacheDownloadOperation
 {
     ValueTask DownloadFileAsync(Uri uri, ValueFile baseFile);
 }

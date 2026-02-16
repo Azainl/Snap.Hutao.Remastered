@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal readonly struct GachaStatisticsFactoryContext
+public readonly struct GachaStatisticsFactoryContext
 {
     public readonly IServiceProvider ServiceProvider;
     public readonly ImmutableArray<Model.Entity.GachaItem> Items;

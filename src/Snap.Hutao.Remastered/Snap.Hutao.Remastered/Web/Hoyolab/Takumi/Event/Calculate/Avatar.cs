@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal sealed class Avatar : Calculable
+public sealed class Avatar : Calculable
 {
     [JsonPropertyName("avatar_level")]
     public QualityType AvatarLevel { get; set; }

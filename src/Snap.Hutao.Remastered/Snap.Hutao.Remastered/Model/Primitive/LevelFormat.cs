@@ -5,7 +5,7 @@ using System.Runtime.CompilerServices;
 
 namespace Snap.Hutao.Remastered.Model.Primitive;
 
-internal static class LevelFormat
+public static class LevelFormat
 {
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     public static string Format(uint value)

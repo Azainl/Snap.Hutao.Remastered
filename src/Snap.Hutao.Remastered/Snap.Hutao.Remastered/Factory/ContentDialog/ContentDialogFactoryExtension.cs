@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.Factory.ContentDialog;
 
-internal static class ContentDialogFactoryExtension
+public static class ContentDialogFactoryExtension
 {
     extension(IContentDialogFactory contentDialogFactory)
     {

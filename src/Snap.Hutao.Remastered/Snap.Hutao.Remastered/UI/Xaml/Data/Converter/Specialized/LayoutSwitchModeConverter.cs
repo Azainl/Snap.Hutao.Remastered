@@ -7,7 +7,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
 [DependencyProperty<object>("ListValue")]
 [DependencyProperty<object>("GridValue")]
-internal sealed partial class LayoutSwitchModeConverter : DependencyValueConverter<string, object?>
+public sealed partial class LayoutSwitchModeConverter : DependencyValueConverter<string, object?>
 {
     public override object? Convert(string from)
     {

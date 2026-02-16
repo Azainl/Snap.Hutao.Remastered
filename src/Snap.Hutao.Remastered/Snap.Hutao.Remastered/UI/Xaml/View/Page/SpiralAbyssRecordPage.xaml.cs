@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class SpiralAbyssRecordPage : ScopedPage
+public sealed partial class SpiralAbyssRecordPage : ScopedPage
 {
     public SpiralAbyssRecordPage()
     {

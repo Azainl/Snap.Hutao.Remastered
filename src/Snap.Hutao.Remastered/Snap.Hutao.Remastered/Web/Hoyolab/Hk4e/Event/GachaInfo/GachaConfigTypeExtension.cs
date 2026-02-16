@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
-internal static class GachaConfigTypeExtension
+public static class GachaConfigTypeExtension
 {
     extension(GachaType configType)
     {

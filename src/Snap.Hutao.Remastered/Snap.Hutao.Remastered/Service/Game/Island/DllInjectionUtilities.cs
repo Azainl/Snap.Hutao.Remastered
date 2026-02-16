@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal static class DllInjectionUtilities
+public static class DllInjectionUtilities
 {
     public static unsafe void InjectUsingWindowsHook(ReadOnlySpan<char> dllPath, ReadOnlySpan<char> functionName, int processId)
     {

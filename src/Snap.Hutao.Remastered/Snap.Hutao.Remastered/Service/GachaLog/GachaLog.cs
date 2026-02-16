@@ -6,7 +6,7 @@ using System.Collections.Frozen;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal static class GachaLog
+public static class GachaLog
 {
     public static readonly FrozenSet<GachaType> QueryTypes =
     [

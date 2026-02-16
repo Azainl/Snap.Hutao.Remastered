@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IUserInitializationService
+public interface IUserInitializationService
 {
     ValueTask<ViewModel.User.User?> CreateUserFromInputCookieOrDefaultAsync(InputCookie inputCookie, CancellationToken token = default);
 

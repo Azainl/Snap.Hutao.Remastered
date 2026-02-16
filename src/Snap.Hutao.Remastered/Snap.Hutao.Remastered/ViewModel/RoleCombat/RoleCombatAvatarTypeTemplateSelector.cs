@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed partial class RoleCombatAvatarTypeTemplateSelector : DataTemplateSelector
+public sealed partial class RoleCombatAvatarTypeTemplateSelector : DataTemplateSelector
 {
     private static readonly DataTemplate EmptyDataTemplate = new();
 

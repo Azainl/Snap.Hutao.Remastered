@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 [DependencyProperty<string>("Current", DefaultValue = List)]
 [DependencyProperty<string>("LocalSettingKeySuffixForCurrent")]
 [DependencyProperty<string>("LocalSettingKeyExtraForCurrent", DefaultValue = "")]
-internal sealed partial class LayoutSwitch : Segmented
+public sealed partial class LayoutSwitch : Segmented
 {
     public const string List = nameof(List);
     public const string Grid = nameof(Grid);

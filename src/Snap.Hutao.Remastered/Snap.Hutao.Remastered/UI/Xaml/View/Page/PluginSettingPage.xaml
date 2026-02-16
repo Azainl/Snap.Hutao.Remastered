@@ -1,0 +1,205 @@
+<shuxc:ScopedPage
+    x:Class="Snap.Hutao.Remastered.UI.Xaml.View.Page.PluginSettingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwc="using:CommunityToolkit.WinUI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:Snap.Hutao.Remastered.UI.Xaml.Behavior"
+    xmlns:shuxc="using:Snap.Hutao.Remastered.UI.Xaml.Control"
+    xmlns:shuxm="using:Snap.Hutao.Remastered.UI.Xaml.Markup"
+    xmlns:shuxd="using:Snap.Hutao.Remastered.UI.Xaml.Data.Converter"
+    xmlns:shvp="using:Snap.Hutao.Remastered.ViewModel.Plugin" xmlns:cw1="using:CommunityToolkit.WinUI.Converters"
+    d:DataContext="{d:DesignInstance shvp:PluginSettingViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Page.Resources>
+        <cw1:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <cw1:BoolNegationConverter x:Key="BoolNegationConverter"/>
+        
+        <shuxd:ValueTypeVisibilityConverter x:Key="StringTypeConverter" TargetType="System.String"/>
+        <shuxd:ValueTypeVisibilityConverter x:Key="Int32TypeConverter" TargetType="System.Int32"/>
+        <shuxd:ValueTypeVisibilityConverter x:Key="BooleanTypeConverter" TargetType="System.Boolean"/>
+        <shuxd:ValueTypeVisibilityConverter x:Key="DefaultTypeConverter" TargetType=""/>
+    </Page.Resources>
+
+    <Grid x:Name="Root">
+        <shuxc:StandardView ShowCondition="{Binding IsInitialized, Mode=OneWay}">
+            <shuxc:StandardView.EmptyContent>
+                <Grid>
+                    <ProgressRing IsActive="True" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </shuxc:StandardView.EmptyContent>
+
+            <Grid Margin="16">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <!-- 标题栏 -->
+                <Border
+                    Grid.Row="0"
+                    Margin="0,0,0,16"
+                    cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <StackPanel Orientation="Horizontal" Padding="16" Spacing="12">
+                            <Button
+                                Command="{Binding GoBackCommand}"
+                                Content="返回"
+                                Style="{StaticResource DefaultButtonStyle}">
+                                <Button.ContentTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <FontIcon Glyph="&#xE72B;"/>
+                                            <TextBlock Text="返回"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </Button.ContentTemplate>
+                            </Button>
+
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                Style="{StaticResource TitleTextBlockStyle}"
+                                Text="{Binding PluginName}"/>
+
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                Text="插件设置"/>
+                        </StackPanel>
+                    </Border>
+                </Border>
+
+                <!-- 设置列表 -->
+                <Border
+                    Grid.Row="1"
+                    cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Grid Style="{ThemeResource AcrylicGridCardStyle}">
+                        <shuxc:StandardView ShowCondition="{Binding Settings.Count, Converter={StaticResource Int32ToBoolConverter}}">
+                            <shuxc:StandardView.EmptyContent>
+                                <StackPanel
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                Spacing="16">
+                                    <FontIcon
+                                    FontSize="48"
+                                    Glyph="&#xE713;"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"/>
+                                    <TextBlock
+                                    HorizontalAlignment="Center"
+                                    Style="{StaticResource SubtitleTextBlockStyle}"
+                                    Text="暂无设置"/>
+                                    <TextBlock
+                                    HorizontalAlignment="Center"
+                                    Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                    Text="此插件没有可配置的设置"/>
+                                </StackPanel>
+                            </shuxc:StandardView.EmptyContent>
+
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <ItemsControl
+                                ItemContainerTransitions="{ThemeResource ListViewLikeThemeTransitions}"
+                                ItemsPanel="{ThemeResource StackPanelSpacing8Template}"
+                                ItemsSource="{Binding Settings}"
+                                Margin="16">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border Style="{ThemeResource BorderCardStyle}" Padding="12">
+                                                <Grid>
+                                                    <Grid.RowDefinitions>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                        <RowDefinition Height="Auto"/>
+                                                    </Grid.RowDefinitions>
+
+                                                    <!-- 设置名称和描述 -->
+                                                    <StackPanel Grid.Row="0">
+                                                        <TextBlock
+                                                        Style="{StaticResource BodyStrongTextBlockStyle}"
+                                                        Text="{Binding Name}"/>
+                                                        
+                                                        <TextBlock
+                                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                                        Text="{Binding Description}"
+                                                        TextWrapping="Wrap"/>
+                                                    </StackPanel>
+
+                                                    <Grid Grid.Row="1" Margin="0,8,0,0">
+                                                        <Grid.ColumnDefinitions>
+                                                            <ColumnDefinition Width="*"/>
+                                                            <ColumnDefinition Width="Auto"/>
+                                                        </Grid.ColumnDefinitions>
+
+                                                        <StackPanel Grid.Column="0">
+                                                            <!-- 字符串类型 -->
+                                                            <TextBox
+                                                            Text="{Binding CurrentValue, Mode=TwoWay}"
+                                                            PlaceholderText="请输入文本"
+                                                            Visibility="{Binding Converter={StaticResource StringTypeConverter}}"/>
+                                                            
+                                                            <!-- 整数类型 -->
+                                                            <NumberBox
+                                                            Value="{Binding CurrentValue, Mode=TwoWay}"
+                                                            PlaceholderText="请输入整数"
+                                                            Visibility="{Binding Converter={StaticResource Int32TypeConverter}}"/>
+                                                            
+                                                            <!-- 布尔类型 -->
+                                                            <ToggleSwitch
+                                                            IsOn="{Binding CurrentValue, Mode=TwoWay}"
+                                                            OffContent="关"
+                                                            OnContent="开"
+                                                            Visibility="{Binding Converter={StaticResource BooleanTypeConverter}}"/>
+                                                            
+                                                            <!-- 默认类型 -->
+                                                            <TextBox
+                                                            Text="{Binding CurrentValue, Mode=TwoWay}"
+                                                            PlaceholderText="请输入值"
+                                                            Visibility="{Binding Converter={StaticResource DefaultTypeConverter}}"/>
+                                                        </StackPanel>
+                                                        <!-- 操作按钮 -->
+                                                        <StackPanel Grid.Column="1" Orientation="Horizontal" Spacing="8" Margin="12,0,0,0">
+                                                            <Button
+                                                            Command="{Binding ElementName=Root, Path=DataContext.SaveSettingCommand}"
+                                                            CommandParameter="{Binding}"
+                                                            Content="保存"
+                                                            Style="{StaticResource AccentButtonStyle}"/>
+                                                            
+                                                            <Button
+                                                            Command="{Binding ElementName=Root, Path=DataContext.ResetSettingCommand}"
+                                                            CommandParameter="{Binding}"
+                                                            Content="重置"
+                                                            Style="{StaticResource DefaultButtonStyle}"/>
+                                                        </StackPanel>
+                                                    </Grid>
+
+                                                    <!-- 默认值提示 -->
+                                                    <TextBlock
+                                                    Grid.Row="2"
+                                                    Margin="0,4,0,0"
+                                                    Style="{StaticResource CaptionTextBlockStyle}"
+                                                    Foreground="{ThemeResource TextFillColorTertiaryBrush}">
+                                                    <Run Text="默认值: "/>
+                                                    <Run Text="{Binding DefaultValue}"/>
+                                                    </TextBlock>
+                                                </Grid>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </ScrollViewer>
+                        </shuxc:StandardView>
+                    </Grid>
+                </Border>
+            </Grid>
+        </shuxc:StandardView>
+    </Grid>
+</shuxc:ScopedPage>

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Algolia;
 
-internal sealed class AlgoliaHit
+public sealed class AlgoliaHit
 {
     [JsonPropertyName("url")]
     public string Url { get; set; } = default!;

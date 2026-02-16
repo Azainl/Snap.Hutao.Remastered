@@ -9,7 +9,7 @@ using System.Collections.Concurrent;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
-internal sealed class BeforeLaunchExecutionContext
+public sealed class BeforeLaunchExecutionContext
 {
     private readonly ConcurrentDictionary<string, object?> options = [];
 

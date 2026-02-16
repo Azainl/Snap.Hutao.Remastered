@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal interface IMetadataServiceInitialization
+public interface IMetadataServiceInitialization
 {
-    ValueTask InitializeInternalAsync(CancellationToken token = default);
+    ValueTask InitializepublicAsync(CancellationToken token = default);
 }

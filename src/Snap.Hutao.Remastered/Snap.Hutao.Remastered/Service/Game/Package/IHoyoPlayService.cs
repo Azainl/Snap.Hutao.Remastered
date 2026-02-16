@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.DeprecatedFile;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal interface IHoyoPlayService
+public interface IHoyoPlayService
 {
     ValueTask<ValueResult<bool, GameBranchesWrapper>> TryGetBranchesAsync(LaunchScheme scheme);
 

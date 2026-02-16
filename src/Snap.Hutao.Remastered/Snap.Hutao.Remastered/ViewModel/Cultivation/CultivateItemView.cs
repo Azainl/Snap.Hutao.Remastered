@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Item;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal sealed partial class CultivateItemView : ObservableObject, IEntityAccessWithMetadata<Model.Entity.CultivateItem, Material>
+public sealed partial class CultivateItemView : ObservableObject, IEntityAccessWithMetadata<Model.Entity.CultivateItem, Material>
 {
     private readonly TimeSpan offset;
 

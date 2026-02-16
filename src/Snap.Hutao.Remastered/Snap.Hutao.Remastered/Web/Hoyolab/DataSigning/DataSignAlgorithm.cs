@@ -6,7 +6,7 @@ using System.Security.Cryptography;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.DataSigning;
 
-internal static class DataSignAlgorithm
+public static class DataSignAlgorithm
 {
     public static string GetDataSign(DataSignOptions options)
     {

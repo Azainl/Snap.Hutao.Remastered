@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class ShareContent
+public sealed class ShareContent
 {
     [JsonPropertyName("preview")]
     public bool Preview { get; set; }

@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.Core.IO.HPatch;
 
-internal static unsafe class HPatch
+public static unsafe class HPatch
 {
     public static long GetNewDataSize(FileSegment diff)
     {

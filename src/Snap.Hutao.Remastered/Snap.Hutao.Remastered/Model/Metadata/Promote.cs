@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal sealed class Promote
+public sealed class Promote
 {
     public required PromoteId Id { get; init; }
 

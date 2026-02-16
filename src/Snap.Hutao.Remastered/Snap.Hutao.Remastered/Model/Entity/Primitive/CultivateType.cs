@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Entity.Primitive;
 
 [ExtendedEnum]
-internal enum CultivateType
+public enum CultivateType
 {
     None,
 

@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.HutaoAsAService;
 
-internal class UploadAnnouncement
+public class UploadAnnouncement
 {
     public string Title { get; set; } = default!;
 

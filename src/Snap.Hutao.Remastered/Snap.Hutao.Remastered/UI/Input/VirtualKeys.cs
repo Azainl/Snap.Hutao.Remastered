@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Input;
 
-internal static class VirtualKeys
+public static class VirtualKeys
 {
     public static ImmutableArray<NameValue<VIRTUAL_KEY>> Values { get; } = ImmutableCollectionsNameValue.FromEnum<VIRTUAL_KEY>();
 

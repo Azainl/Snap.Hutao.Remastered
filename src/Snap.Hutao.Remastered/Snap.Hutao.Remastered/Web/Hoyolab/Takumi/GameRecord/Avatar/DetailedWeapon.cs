@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class DetailedWeapon : Weapon
+public sealed class DetailedWeapon : Weapon
 {
     [JsonPropertyName("promote_level")]
     public PromoteLevel PromoteLevel { get; set; }

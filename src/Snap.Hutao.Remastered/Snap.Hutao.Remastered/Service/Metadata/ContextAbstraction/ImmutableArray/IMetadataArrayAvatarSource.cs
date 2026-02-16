@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableArray;
 
-internal interface IMetadataArrayAvatarSource
+public interface IMetadataArrayAvatarSource
 {
     ImmutableArray<Avatar> Avatars { get; set; }
 }

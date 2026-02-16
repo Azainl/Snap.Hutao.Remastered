@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class SignInResult
+public sealed class SignInResult
 {
     [JsonPropertyName("code")]
     public string Code { get; set; } = default!;

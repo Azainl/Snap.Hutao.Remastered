@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>Alamat email saat ini telah terdaftar.</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Pendaftaran gagal, ada kesalahan server, harap hubungi pengembang untuk memperbaikinya.</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Kata sandi salah, gagal logout</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Gagal mengambil data, server sedang menghitung data statistik.</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Gagal mengunggah catatan Sprial Abyss, ada kesalahan server, silakan hubungi pengembang untuk memperbaikinya.</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Gagal mengunggah catatan Sprial Abyss, data tidak valid terdeteksi.</value>
@@ -3979,5 +3973,11 @@ Ruang Tersedia: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Perbaikan Antarmuka Khusus</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Pendaftaran gagal, ada kesalahan server, harap hubungi pengembang untuk memperbaikinya.</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Gagal mengunggah catatan Sprial Abyss, ada kesalahan server, silakan hubungi pengembang untuk memperbaikinya.</value>
   </data>
 </root>

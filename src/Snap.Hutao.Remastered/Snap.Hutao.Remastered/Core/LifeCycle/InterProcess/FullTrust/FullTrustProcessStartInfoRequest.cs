@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.System.Threading;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.FullTrust;
 
-internal sealed class FullTrustProcessStartInfoRequest
+public sealed class FullTrustProcessStartInfoRequest
 {
     public required string ApplicationName { get; set; }
 

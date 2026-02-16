@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Entity.Database;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class NullableStringDbProperty : DbProperty<string?>
+public sealed partial class NullableStringDbProperty : DbProperty<string?>
 {
     private readonly IServiceProvider serviceProvider;
     private readonly string key;

@@ -10,7 +10,7 @@ using Windows.Storage;
 
 namespace Snap.Hutao.Remastered.Service.Git;
 
-internal static class RepositoryAffinity
+public static class RepositoryAffinity
 {
     private static readonly ApplicationDataContainer RepositoryContainer = ApplicationData.Current.LocalSettings.CreateContainer("RepositoryAffinity", ApplicationDataCreateDisposition.Always);
     private static readonly Lock SyncRoot = new();

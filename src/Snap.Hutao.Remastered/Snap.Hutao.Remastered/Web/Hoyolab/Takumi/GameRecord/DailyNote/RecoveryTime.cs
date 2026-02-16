@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal sealed class RecoveryTime
+public sealed class RecoveryTime
 {
     [JsonPropertyName("Day")]
     public int Day { get; set; }

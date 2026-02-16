@@ -8,7 +8,7 @@ using System.Collections.ObjectModel;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal static class CultivationServiceExtension
+public static class CultivationServiceExtension
 {
     extension(ICultivationService cultivationService)
     {

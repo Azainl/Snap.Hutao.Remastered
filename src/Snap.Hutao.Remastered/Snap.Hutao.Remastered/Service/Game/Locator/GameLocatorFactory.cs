@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameLocatorFactory))]
-internal sealed partial class GameLocatorFactory : IGameLocatorFactory
+public sealed partial class GameLocatorFactory : IGameLocatorFactory
 {
     private readonly IServiceProvider serviceProvider;
 

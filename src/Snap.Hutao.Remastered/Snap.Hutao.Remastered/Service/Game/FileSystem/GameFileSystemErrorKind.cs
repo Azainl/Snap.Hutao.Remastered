@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal enum GameFileSystemErrorKind
+public enum GameFileSystemErrorKind
 {
     None,
     GamePathNullOrEmpty,

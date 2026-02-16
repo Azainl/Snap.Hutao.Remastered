@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Factory.Process;
 
-internal sealed partial class FullTrustProcess : IProcess
+public sealed partial class FullTrustProcess : IProcess
 {
     private readonly FullTrustNamedPipeClient client = new();
     private global::System.Diagnostics.Process? process;
@@ -65,7 +65,7 @@ internal sealed partial class FullTrustProcess : IProcess
         process.WaitForExit();
     }
 
-    internal void LoadLibrary(FullTrustLoadLibraryRequest request)
+    public void LoadLibrary(FullTrustLoadLibraryRequest request)
     {
         client.LoadLibrary(request);
     }

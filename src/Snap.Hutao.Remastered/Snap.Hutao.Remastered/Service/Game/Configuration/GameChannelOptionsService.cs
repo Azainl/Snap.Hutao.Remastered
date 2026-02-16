@@ -7,7 +7,7 @@ using System.IO;
 namespace Snap.Hutao.Remastered.Service.Game.Configuration;
 
 [Service(ServiceLifetime.Singleton, typeof(IGameChannelOptionsService))]
-internal sealed partial class GameChannelOptionsService : IGameChannelOptionsService
+public sealed partial class GameChannelOptionsService : IGameChannelOptionsService
 {
     private readonly IGameConfigurationFileService gameConfigurationFileService;
     private readonly LaunchOptions launchOptions;

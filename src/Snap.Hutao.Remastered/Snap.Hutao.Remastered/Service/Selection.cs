@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service;
 
-internal static class Selection
+public static class Selection
 {
     public static TNameValue? Initialize<TNameValue, T>(Lazy<ImmutableArray<TNameValue>> options, T current)
         where TNameValue : NameValue<T>

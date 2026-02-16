@@ -16,7 +16,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect;
 
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class HoyoPlayClient
+public sealed partial class HoyoPlayClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IApiEndpointsFactory apiEndpointsFactory;

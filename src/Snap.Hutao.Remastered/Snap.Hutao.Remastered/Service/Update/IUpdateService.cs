@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Update;
 
-internal interface IUpdateService
+public interface IUpdateService
 {
     string? UpdateInfo { get; }
 

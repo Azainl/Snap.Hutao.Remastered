@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class GachaStatisticsSlim
+public sealed class GachaStatisticsSlim
 {
     public required string Uid { get; init; }
 

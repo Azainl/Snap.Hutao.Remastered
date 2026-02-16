@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Reliquary;
 
-internal sealed class Reliquary
+public sealed class Reliquary
 {
     public required ImmutableArray<ReliquaryId> Ids { get; init; }
 

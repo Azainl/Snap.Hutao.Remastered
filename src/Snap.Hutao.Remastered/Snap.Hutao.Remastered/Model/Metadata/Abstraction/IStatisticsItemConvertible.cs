@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.GachaLog;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal interface IStatisticsItemConvertible
+public interface IStatisticsItemConvertible
 {
     StatisticsItem ToStatisticsItem(int count);
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class CookieTokenPayload
+public sealed class CookieTokenPayload
 {
     [JsonPropertyName("forceRefresh")]
     public bool ForceRefresh { get; set; }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal interface IGameFileSystemView
+public interface IGameFileSystemView
 {
     bool IsDisposed { get; }
 

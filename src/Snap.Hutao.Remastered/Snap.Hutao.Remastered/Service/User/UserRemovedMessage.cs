@@ -5,7 +5,7 @@ using BindingUser = Snap.Hutao.Remastered.ViewModel.User.User;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal sealed class UserRemovedMessage
+public sealed class UserRemovedMessage
 {
     public UserRemovedMessage(BindingUser removedUser)
     {

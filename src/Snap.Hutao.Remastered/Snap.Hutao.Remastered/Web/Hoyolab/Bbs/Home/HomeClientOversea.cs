@@ -9,7 +9,7 @@ using System.Net.Http;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
 [HttpClient(HttpClientConfiguration.XRpc3)]
-internal sealed partial class HomeClientOversea : IHomeClient
+public sealed partial class HomeClientOversea : IHomeClient
 {
     [GeneratedConstructor]
     public partial HomeClientOversea(IServiceProvider serviceProvider, HttpClient httpClient);

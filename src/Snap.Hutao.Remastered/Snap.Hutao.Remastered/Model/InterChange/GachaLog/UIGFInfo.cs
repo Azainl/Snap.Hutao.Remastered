@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.InterChange.GachaLog;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIGFInfo
+public sealed class UIGFInfo
 {
     [JsonPropertyName("export_timestamp")]
     public required long ExportTimestamp { get; init; }

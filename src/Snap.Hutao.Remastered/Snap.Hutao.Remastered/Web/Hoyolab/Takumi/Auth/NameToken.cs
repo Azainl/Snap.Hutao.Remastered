@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Auth;
 
-internal sealed class NameToken
+public sealed class NameToken
 {
     [JsonPropertyName("name")]
     public string Name { get; set; } = default!;

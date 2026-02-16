@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO.Ini;
 
-internal static class IniSerializer
+public static class IniSerializer
 {
     public static ImmutableArray<IniElement> DeserializeFromFile(string filePath)
     {

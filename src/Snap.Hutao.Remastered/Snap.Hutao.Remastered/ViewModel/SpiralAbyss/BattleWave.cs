@@ -9,7 +9,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.ViewModel.SpiralAbyss;
 
-internal sealed class BattleWave
+public sealed class BattleWave
 {
     private BattleWave(TowerWave towerWave, SpiralAbyssMetadataContext context)
     {

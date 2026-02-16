@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("settings")]
-internal sealed class SettingEntry
+public sealed class SettingEntry
 {
     public SettingEntry(string key, string? value)
     {

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class DirectoryExtension
+public static class DirectoryExtension
 {
     extension(Directory)
     {

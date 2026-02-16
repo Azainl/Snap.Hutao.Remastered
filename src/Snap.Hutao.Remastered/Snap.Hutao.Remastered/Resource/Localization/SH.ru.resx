@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>Текущий адрес электронной почты уже зарегистрирован</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Ошибка регистрации, проблемы с сервером. Пожалуйста, свяжитесь с разработчиком для решения проблемы</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Неверный пароль, выход не выполнен</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Не удалось получить данные, выполняется подсчет статистики</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Не удалось загрузить записи из Бездны, Сервер недоступен, пожалуйста, свяжитесь с разработчиком для решения проблемы</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Не удалось загрузить записи из Бездны, обнаружены недопустимые данные</value>
@@ -3977,5 +3971,11 @@
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Исправление особых интерфейсов</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Ошибка регистрации, проблемы с сервером. Пожалуйста, свяжитесь с разработчиком для решения проблемы</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Не удалось загрузить записи из Бездны, Сервер недоступен, пожалуйста, свяжитесь с разработчиком для решения проблемы</value>
   </data>
 </root>

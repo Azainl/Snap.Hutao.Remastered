@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Game.Locator;
 
-internal interface IGameLocator2
+public interface IGameLocator2
 {
     ValueTask<ImmutableArray<string>> LocateMultipleGamePathAsync();
 }

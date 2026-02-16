@@ -30,7 +30,7 @@ namespace Snap.Hutao.Remastered.ViewModel.User;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class UserViewModel : ObservableObject
+public sealed partial class UserViewModel : ObservableObject
 {
     private readonly ICurrentXamlWindowReference currentXamlWindowReference;
     private readonly IContentDialogFactory contentDialogFactory;
@@ -52,7 +52,7 @@ internal sealed partial class UserViewModel : ObservableObject
 
     public IProperty<bool> IsViewUnloaded { get; } = Property.Create(false);
 
-    internal void HandleUserOptionResult(UserOptionResultKind optionResultKind, string? uid)
+    public void HandleUserOptionResult(UserOptionResultKind optionResultKind, string? uid)
     {
         switch (optionResultKind)
         {

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal abstract class DailyNoteCommon
+public abstract class DailyNoteCommon
 {
     [JsonPropertyName("current_expedition_num")]
     public int CurrentExpeditionNum { get; init; }

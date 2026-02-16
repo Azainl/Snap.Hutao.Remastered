@@ -10,7 +10,7 @@ using Windows.System;
 
 namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
-internal sealed partial class SettingFolderViewModel : ObservableObject
+public sealed partial class SettingFolderViewModel : ObservableObject
 {
     private readonly ITaskContext taskContext;
 

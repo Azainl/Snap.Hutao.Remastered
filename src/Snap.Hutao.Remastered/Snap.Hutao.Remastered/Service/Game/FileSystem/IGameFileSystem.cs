@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal interface IGameFileSystem : IGameFileSystemView, IDisposable;
+public interface IGameFileSystem : IGameFileSystemView, IDisposable;

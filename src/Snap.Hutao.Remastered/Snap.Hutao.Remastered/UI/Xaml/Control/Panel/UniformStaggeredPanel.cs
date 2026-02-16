@@ -10,7 +10,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel;
 [DependencyProperty<double>("MinItemWidth", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
 [DependencyProperty<double>("ColumnSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
 [DependencyProperty<double>("RowSpacing", DefaultValue = 0D, PropertyChangedCallbackName = nameof(OnPropertyChanged), NotNull = true)]
-internal sealed partial class UniformStaggeredPanel : Microsoft.UI.Xaml.Controls.Panel
+public sealed partial class UniformStaggeredPanel : Microsoft.UI.Xaml.Controls.Panel
 {
     private readonly List<Column> columns = [];
 

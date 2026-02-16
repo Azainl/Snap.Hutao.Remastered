@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.Notification;
 namespace Snap.Hutao.Remastered.Web.Response;
 
 [SuppressMessage("", "SA1402")]
-internal sealed class TypedResponseValidator<TData> : ITypedResponseValidator<TData>
+public sealed class TypedResponseValidator<TData> : ITypedResponseValidator<TData>
 {
     private readonly IMessenger messenger;
 

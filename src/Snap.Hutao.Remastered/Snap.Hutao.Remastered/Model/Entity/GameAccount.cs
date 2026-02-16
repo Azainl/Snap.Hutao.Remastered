@@ -12,7 +12,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Snap.Hutao.Remastered.Model.Entity;
 
 [Table("game_accounts")]
-internal sealed partial class GameAccount : ObservableObject,
+public sealed partial class GameAccount : ObservableObject,
     IAppDbEntity,
     IReorderable,
     IPropertyValuesProvider

@@ -14,7 +14,7 @@ using Windows.Foundation;
 
 namespace Snap.Hutao.Remastered.UI.Shell;
 
-internal sealed class NotifyIconXamlHostWindow : Window, IWindowNeedEraseBackground, IXamlWindowClosedHandler
+public sealed class NotifyIconXamlHostWindow : Window, IWindowNeedEraseBackground, IXamlWindowClosedHandler
 {
     public NotifyIconXamlHostWindow(IServiceProvider serviceProvider)
     {

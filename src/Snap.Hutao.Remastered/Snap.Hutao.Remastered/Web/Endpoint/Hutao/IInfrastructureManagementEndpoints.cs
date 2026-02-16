@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureManagementEndpoints : IInfrastructureRawRootAccess
+public interface IInfrastructureManagementEndpoints : IInfrastructureRawRootAccess
 {
     string AmIBanned()
     {

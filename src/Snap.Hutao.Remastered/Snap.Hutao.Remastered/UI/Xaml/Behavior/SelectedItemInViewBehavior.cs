@@ -7,7 +7,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Behavior;
 
-internal sealed class SelectedItemInViewBehavior : BehaviorBase<ListViewBase>
+public sealed class SelectedItemInViewBehavior : BehaviorBase<ListViewBase>
 {
     protected override bool Initialize()
     {

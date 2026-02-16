@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 namespace Snap.Hutao.Remastered.Core.IO.Http.Proxy;
 
 [SuppressMessage("", "CA1001")]
-internal sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWebProxy
+public sealed partial class HttpProxyUsingSystemProxy : ObservableObject, IWebProxy
 {
     private const string ProxySettingPath = @"HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Connections";
 

@@ -9,7 +9,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeHotKeyAction
+public sealed unsafe class HutaoNativeHotKeyAction
 {
     private readonly ObjectReference<Vftbl> objRef;
 
@@ -47,13 +47,13 @@ internal sealed unsafe class HutaoNativeHotKeyAction
     private static extern HRESULT HutaoNativeHotKeyInitializeBeforeSwitchCallback(HutaoNativeHotKeyBeforeSwitchCallback callback);
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeHotKeyAction)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HOT_KEY_MODIFIERS, uint, HRESULT> Update;
-        internal readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> GetIsEnabled;
-        internal readonly delegate* unmanaged[Stdcall]<nint, BOOL, HRESULT> SetIsEnabled;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HOT_KEY_MODIFIERS, uint, HRESULT> Update;
+        public readonly delegate* unmanaged[Stdcall]<nint, BOOL*, HRESULT> GetIsEnabled;
+        public readonly delegate* unmanaged[Stdcall]<nint, BOOL, HRESULT> SetIsEnabled;
 #pragma warning restore CS0649
     }
 }

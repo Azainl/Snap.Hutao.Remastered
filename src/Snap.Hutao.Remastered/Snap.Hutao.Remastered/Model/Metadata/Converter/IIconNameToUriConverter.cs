@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Converter;
 
-internal interface IIconNameToUriConverter
+public interface IIconNameToUriConverter
 {
     static abstract Uri IconNameToUri(string name);
 }

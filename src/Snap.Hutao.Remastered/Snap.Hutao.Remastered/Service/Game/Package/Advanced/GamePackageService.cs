@@ -30,7 +30,7 @@ namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 [SuppressMessage("", "CA1001")]
 [SuppressMessage("", "SA1201")]
 [SuppressMessage("", "SA1204")]
-internal sealed partial class GamePackageService : IGamePackageService
+public sealed partial class GamePackageService : IGamePackageService
 {
     public const string HttpClientName = "SophonChunkRateLimited";
 

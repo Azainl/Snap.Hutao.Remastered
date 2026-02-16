@@ -13,7 +13,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal static class MetadataServiceImmutableArrayExtension
+public static class MetadataServiceImmutableArrayExtension
 {
     extension(IMetadataService metadataService)
     {

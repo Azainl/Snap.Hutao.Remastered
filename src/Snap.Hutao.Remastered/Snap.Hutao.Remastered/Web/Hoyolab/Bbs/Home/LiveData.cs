@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class LiveData
+public sealed class LiveData
 {
     [JsonPropertyName("title")]
     public required string Title { get; init; }

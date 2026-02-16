@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class ThirdPartyIconConverter : ValueConverter<string, BitmapIcon>
+public sealed partial class ThirdPartyIconConverter : ValueConverter<string, BitmapIcon>
 {
     public const string TwitterName = "X (Twitter)";
 

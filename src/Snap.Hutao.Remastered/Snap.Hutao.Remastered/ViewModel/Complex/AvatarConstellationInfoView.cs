@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Complex;
 
-internal sealed class AvatarConstellationInfoView : AvatarView
+public sealed class AvatarConstellationInfoView : AvatarView
 {
     public AvatarConstellationInfoView(Avatar avatar, double rate, double? lastRate)
         : base(avatar, rate, lastRate)

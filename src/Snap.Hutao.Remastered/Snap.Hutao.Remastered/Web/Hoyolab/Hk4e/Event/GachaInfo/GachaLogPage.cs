@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
-internal sealed class GachaLogPage : IJsonOnDeserialized
+public sealed class GachaLogPage : IJsonOnDeserialized
 {
     [JsonPropertyName("page")]
     public string Page { get; set; } = default!;

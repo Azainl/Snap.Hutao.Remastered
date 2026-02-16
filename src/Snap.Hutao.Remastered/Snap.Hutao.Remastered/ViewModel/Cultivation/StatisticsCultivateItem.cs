@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Metadata.Item;
 
 namespace Snap.Hutao.Remastered.ViewModel.Cultivation;
 
-internal sealed class StatisticsCultivateItem
+public sealed class StatisticsCultivateItem
 {
     private readonly TimeSpan offset;
 
@@ -35,7 +35,7 @@ internal sealed class StatisticsCultivateItem
 
     public bool IsToday { get => Inner.IsItemOfToday(offset, true); }
 
-    internal bool ExcludedFromPresentation { get; set; }
+    public bool ExcludedFromPresentation { get; set; }
 
     public static StatisticsCultivateItem Create(Material inner, TimeSpan offset)
     {

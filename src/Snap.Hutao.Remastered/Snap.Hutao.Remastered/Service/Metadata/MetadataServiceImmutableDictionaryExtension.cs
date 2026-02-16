@@ -17,7 +17,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata;
 
-internal static class MetadataServiceImmutableDictionaryExtension
+public static class MetadataServiceImmutableDictionaryExtension
 {
     extension(IMetadataService metadataService)
     {

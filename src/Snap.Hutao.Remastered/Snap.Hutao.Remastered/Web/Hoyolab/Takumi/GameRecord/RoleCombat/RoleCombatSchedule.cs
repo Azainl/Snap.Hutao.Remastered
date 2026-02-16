@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatSchedule
+public sealed class RoleCombatSchedule
 {
     [JsonPropertyName("start_time")]
     public required long StartTime { get; init; }

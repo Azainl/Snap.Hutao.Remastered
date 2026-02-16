@@ -10,7 +10,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class SelectedOneBasedIndexDbProperty : DbProperty<NameValue<int>?>
+public sealed partial class SelectedOneBasedIndexDbProperty : DbProperty<NameValue<int>?>
 {
     private readonly IServiceProvider serviceProvider;
     private readonly string key;

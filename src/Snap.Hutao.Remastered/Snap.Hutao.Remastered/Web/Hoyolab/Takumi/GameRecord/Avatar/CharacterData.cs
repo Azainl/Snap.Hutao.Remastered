@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class CharacterData
+public sealed class CharacterData
 {
     public CharacterData(PlayerUid uid)
     {

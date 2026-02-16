@@ -9,7 +9,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Backdrop;
 
-internal sealed partial class TransparentBackdrop : SystemBackdrop, IBackdropNeedEraseBackground
+public sealed partial class TransparentBackdrop : SystemBackdrop, IBackdropNeedEraseBackground
 {
     private readonly Color tintColor;
 
@@ -27,7 +27,7 @@ internal sealed partial class TransparentBackdrop : SystemBackdrop, IBackdropNee
         this.tintColor = tintColor;
     }
 
-    internal Windows.UI.Composition.Compositor Compositor
+    public Windows.UI.Composition.Compositor Compositor
     {
         // ReSharper disable once InconsistentlySynchronizedField
         get => LazyInitializer.EnsureInitialized(ref compositor, ref compositorLock, () =>

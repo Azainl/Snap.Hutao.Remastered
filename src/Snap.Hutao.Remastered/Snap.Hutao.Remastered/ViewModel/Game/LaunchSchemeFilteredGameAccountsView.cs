@@ -12,7 +12,7 @@ using Snap.Hutao.Remastered.UI.Xaml.Data;
 namespace Snap.Hutao.Remastered.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
-internal sealed partial class LaunchSchemeFilteredGameAccountsView : ObservableObject
+public sealed partial class LaunchSchemeFilteredGameAccountsView : ObservableObject
 {
     private readonly AsyncLock syncRoot = new();
 

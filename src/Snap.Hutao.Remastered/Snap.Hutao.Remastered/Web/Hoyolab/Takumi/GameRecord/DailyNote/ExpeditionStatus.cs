@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.DailyNote;
 
-internal enum ExpeditionStatus
+public enum ExpeditionStatus
 {
     Finished,
     Ongoing,

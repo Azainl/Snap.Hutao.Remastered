@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class SkillDepot
+public sealed class SkillDepot
 {
     public required Arkhe Arkhe { get; init; }
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.IO.Ini;
 
-internal abstract class IniElement
+public abstract class IniElement
 {
     public new abstract string ToString();
 }

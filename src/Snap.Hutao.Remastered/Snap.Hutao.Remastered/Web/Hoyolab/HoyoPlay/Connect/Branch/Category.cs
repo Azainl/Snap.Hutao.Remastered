@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
-internal sealed class Category
+public sealed class Category
 {
     [JsonPropertyName("category_id")]
     public string CategoryId { get; set; } = default!;

@@ -6,7 +6,7 @@ using Windows.UI;
 
 namespace Snap.Hutao.Remastered.UI;
 
-internal static class ColorHelper
+public static class ColorHelper
 {
     public static unsafe Bgra32 ToBgra32(Color color)
     {

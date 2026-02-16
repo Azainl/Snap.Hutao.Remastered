@@ -9,7 +9,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Specialized;
 
 [DependencyProperty<bool>("IsPredictPullAvailable", DefaultValue = false, PropertyChangedCallbackName = nameof(OnIsPredictPullAvailableChanged), NotNull = true)]
-internal sealed partial class StatisticsSegmented : Segmented
+public sealed partial class StatisticsSegmented : Segmented
 {
     private readonly SegmentedItem predictPullItem = new()
     {

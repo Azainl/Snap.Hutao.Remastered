@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Binding;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal interface IProfilePictureService
+public interface IProfilePictureService
 {
     ValueTask TryInitializeAsync(ViewModel.User.User user, CancellationToken token = default);
 

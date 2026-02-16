@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class ActionTicketInfoRequestOversea
+public sealed class ActionTicketInfoRequestOversea
 {
     [JsonPropertyName("action_type")]
     public string ActionType { get; set; } = "verify_for_component";

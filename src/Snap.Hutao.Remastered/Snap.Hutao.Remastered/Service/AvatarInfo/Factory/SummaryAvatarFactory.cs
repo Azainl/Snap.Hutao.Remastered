@@ -21,7 +21,7 @@ using MetadataWeapon = Snap.Hutao.Remastered.Model.Metadata.Weapon.Weapon;
 
 namespace Snap.Hutao.Remastered.Service.AvatarInfo.Factory;
 
-internal sealed class SummaryAvatarFactory
+public sealed class SummaryAvatarFactory
 {
     private readonly DetailedCharacter character;
     private readonly SummaryFactoryMetadataContext context;

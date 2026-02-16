@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class HardChallengePage : ScopedPage
+public sealed partial class HardChallengePage : ScopedPage
 {
     public HardChallengePage()
     {

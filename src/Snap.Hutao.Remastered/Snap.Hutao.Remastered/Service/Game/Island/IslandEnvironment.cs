@@ -6,7 +6,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Service.Game.Island;
 
-internal struct IslandEnvironment
+public struct IslandEnvironment
 {
 #pragma warning disable CS0649
     public IslandEnvironmentView View;
@@ -36,10 +36,12 @@ internal struct IslandEnvironment
     public BOOL DebugMode;
     public BOOL HidePlayerInfo;
     public BOOL HideGrass;
+#pragma warning disable CS0649
     public HookFunctionOffsets Offsets;
+#pragma warning restore CS0649
 }
 
-internal struct HookFunctionOffsets
+public struct HookFunctionOffsets
 {
 #pragma warning disable CS0649
     [JsonConverter(typeof(HexStringToNintConverter))]

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
 namespace Snap.Hutao.Remastered.Service.Yae.PlayerStore;
 
-internal static class PlayerStoreParser
+public static class PlayerStoreParser
 {
     public static UIIF? Parse(ByteString bytes)
     {

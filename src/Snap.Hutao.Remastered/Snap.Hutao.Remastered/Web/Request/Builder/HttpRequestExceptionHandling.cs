@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Web.Request.Builder;
 
-internal static class HttpRequestExceptionHandling
+public static class HttpRequestExceptionHandling
 {
     public static bool TryHandle(HttpRequestMessageBuilder builder, Exception ex, out StringBuilder message)
     {
@@ -185,9 +185,9 @@ internal static class HttpRequestExceptionHandling
                                 case Win32Exception win32Exception:
                                     switch (win32Exception.NativeErrorCode)
                                     {
-                                        // 无法连接到本地安全机构 SEC_E_INTERNAL_ERROR
+                                        // 无法连接到本地安全机构 SEC_E_public_ERROR
                                         case unchecked((int)0x80090304):
-                                            return NetworkError.ERR_SECURE_CONNECTION_SEC_E_INTERNAL_ERROR;
+                                            return NetworkError.ERR_SECURE_CONNECTION_SEC_E_public_ERROR;
 
                                         // 接收到的消息异常，或格式不正确 SEC_E_ILLEGAL_MESSAGE
                                         case unchecked((int)0x80090326):

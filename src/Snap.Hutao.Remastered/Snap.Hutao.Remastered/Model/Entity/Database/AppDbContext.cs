@@ -9,7 +9,7 @@ using System.Diagnostics;
 namespace Snap.Hutao.Remastered.Model.Entity.Database;
 
 [DebuggerDisplay("Id = {ContextId}")]
-internal sealed partial class AppDbContext : DbContext
+public sealed partial class AppDbContext : DbContext
 {
     private readonly ILogger<AppDbContext>? logger;
 

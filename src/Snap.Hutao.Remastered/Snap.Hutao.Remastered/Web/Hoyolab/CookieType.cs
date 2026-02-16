@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
 [Flags]
-internal enum CookieType
+public enum CookieType
 {
     None = 0B0000,
     CookieToken = 0B0001,

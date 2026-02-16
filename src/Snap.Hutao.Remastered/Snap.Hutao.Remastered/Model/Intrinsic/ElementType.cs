@@ -4,7 +4,7 @@
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
 [ExtendedEnum]
-internal enum ElementType
+public enum ElementType
 {
     None = 0, // 无元素
 

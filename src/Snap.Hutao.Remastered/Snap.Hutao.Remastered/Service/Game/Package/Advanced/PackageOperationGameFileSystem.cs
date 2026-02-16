@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Game.FileSystem;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal sealed partial class PackageOperationGameFileSystem : IGameFileSystem
+public sealed partial class PackageOperationGameFileSystem : IGameFileSystem
 {
     public PackageOperationGameFileSystem(string gameFilePath, GameAudioInstallation? gameAudioSystem = default)
     {

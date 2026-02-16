@@ -13,7 +13,7 @@ namespace Snap.Hutao.Remastered.Service.Feature;
 
 [Service(ServiceLifetime.Singleton, typeof(IFeatureService))]
 [HttpClient(HttpClientConfiguration.Default)]
-internal sealed partial class FeatureService : IFeatureService
+public sealed partial class FeatureService : IFeatureService
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     private readonly IHutaoEndpointsFactory hutaoEndpointsFactory;

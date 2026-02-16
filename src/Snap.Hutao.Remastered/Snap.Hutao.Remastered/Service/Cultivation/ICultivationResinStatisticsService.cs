@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.ViewModel.Cultivation;
 
 namespace Snap.Hutao.Remastered.Service.Cultivation;
 
-internal interface ICultivationResinStatisticsService
+public interface ICultivationResinStatisticsService
 {
     ValueTask<ResinStatistics> GetResinStatisticsAsync(IEnumerable<StatisticsCultivateItem> statisticsCultivateItems, CancellationToken token);
 }

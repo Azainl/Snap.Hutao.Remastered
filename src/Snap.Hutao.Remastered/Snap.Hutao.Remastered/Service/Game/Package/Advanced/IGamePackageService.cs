@@ -8,7 +8,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.HoyoPlay.Connect.Branch;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal interface IGamePackageService
+public interface IGamePackageService
 {
     ValueTask<bool> ExecuteOperationAsync(GamePackageOperationContext context);
 

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.IO.Ini;
 
-internal sealed class IniComment : IniElement, IEquatable<IniComment>
+public sealed class IniComment : IniElement, IEquatable<IniComment>
 {
     public IniComment(string comment)
     {

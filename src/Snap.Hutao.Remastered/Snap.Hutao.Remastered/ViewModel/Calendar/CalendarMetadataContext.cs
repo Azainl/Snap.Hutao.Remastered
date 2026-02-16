@@ -11,7 +11,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Calendar;
 
-internal sealed class CalendarMetadataContext : CultivationMetadataContext, IMetadataContext,
+public sealed class CalendarMetadataContext : CultivationMetadataContext, IMetadataContext,
     ICultivationMetadataContext,
     IMetadataArrayAvatarSource,
     IMetadataArrayWeaponSource,

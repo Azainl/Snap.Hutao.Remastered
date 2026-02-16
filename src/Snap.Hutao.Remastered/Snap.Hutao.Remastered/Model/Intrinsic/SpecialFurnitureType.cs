@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic;
 
-internal enum SpecialFurnitureType
+public enum SpecialFurnitureType
 {
     NormalFurniture,
     BlockDependent,

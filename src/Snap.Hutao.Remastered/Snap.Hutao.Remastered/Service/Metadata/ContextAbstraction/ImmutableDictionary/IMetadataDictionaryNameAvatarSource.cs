@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction.ImmutableDictionary;
 
-internal interface IMetadataDictionaryNameAvatarSource
+public interface IMetadataDictionaryNameAvatarSource
 {
     ImmutableDictionary<string, Model.Metadata.Avatar.Avatar> NameAvatarMap { get; set; }
 }

@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class TokenWrapper
+public sealed class TokenWrapper
 {
     [JsonPropertyName("token_type")]
     public int TokenType { get; set; }

@@ -6,7 +6,7 @@ using System.Collections.ObjectModel;
 namespace Snap.Hutao.Remastered.Service.Notification;
 
 [Service(ServiceLifetime.Singleton, typeof(IInfoBarService))]
-internal sealed partial class InfoBarService : IInfoBarService, IRecipient<InfoBarMessage>
+public sealed partial class InfoBarService : IInfoBarService, IRecipient<InfoBarMessage>
 {
     private readonly ITaskContext taskContext;
 

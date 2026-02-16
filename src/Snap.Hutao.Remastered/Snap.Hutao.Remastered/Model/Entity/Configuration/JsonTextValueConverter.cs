@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.Text.Json;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class JsonTextValueConverter<TPropertyType> : ValueConverter<TPropertyType, string>
+public sealed class JsonTextValueConverter<TPropertyType> : ValueConverter<TPropertyType, string>
 {
     [SuppressMessage("", "SH007")]
     public JsonTextValueConverter()

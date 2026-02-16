@@ -10,7 +10,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal sealed unsafe class HutaoNativeWindowSubclass
+public sealed unsafe class HutaoNativeWindowSubclass
 {
     private readonly ObjectReference<Vftbl2>? objRef2;
 
@@ -47,22 +47,22 @@ internal sealed unsafe class HutaoNativeWindowSubclass
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeWindowSubclass)]
-    internal readonly struct Vftbl
+    public readonly struct Vftbl
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Attach;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Detach;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Attach;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> Detach;
 #pragma warning restore CS0649
     }
 
     [Guid(HutaoNativeMethods.IID_IHutaoNativeWindowSubclass2)]
-    internal readonly struct Vftbl2
+    public readonly struct Vftbl2
     {
 #pragma warning disable CS0649
-        internal readonly IUnknownVftbl IUnknownVftbl;
-        internal readonly delegate* unmanaged[Stdcall]<nint, HRESULT> InitializeTaskbarProgress;
-        internal readonly delegate* unmanaged[Stdcall]<nint, TBPFLAG, ulong, ulong, HRESULT> SetTaskbarProgress;
+        public readonly IUnknownVftbl IUnknownVftbl;
+        public readonly delegate* unmanaged[Stdcall]<nint, HRESULT> InitializeTaskbarProgress;
+        public readonly delegate* unmanaged[Stdcall]<nint, TBPFLAG, ulong, ulong, HRESULT> SetTaskbarProgress;
 #pragma warning restore CS0649
     }
 }

@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Model.Entity.Database;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class EnumDbProperty<TEnum> : DbProperty<TEnum>
+public sealed partial class EnumDbProperty<TEnum> : DbProperty<TEnum>
     where TEnum : struct, Enum
 {
     private readonly IServiceProvider serviceProvider;

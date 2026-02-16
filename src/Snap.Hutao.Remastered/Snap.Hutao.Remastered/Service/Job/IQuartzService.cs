@@ -6,7 +6,7 @@ using Quartz;
 namespace Snap.Hutao.Remastered.Service.Job;
 
 [SuppressMessage("", "SH003")]
-internal interface IQuartzService
+public interface IQuartzService
 {
     Task StartAsync(CancellationToken token = default);
 

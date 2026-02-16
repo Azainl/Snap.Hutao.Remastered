@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class AppNavigator
+public sealed class AppNavigator
 {
     [JsonPropertyName("id")]
     public required int Id { get; init; }

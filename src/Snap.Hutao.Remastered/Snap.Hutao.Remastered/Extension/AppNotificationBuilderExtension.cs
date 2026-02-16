@@ -6,7 +6,7 @@ using Microsoft.Windows.AppNotifications.Builder;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class AppNotificationBuilderExtension
+public static class AppNotificationBuilderExtension
 {
     extension(AppNotificationBuilder builder)
     {

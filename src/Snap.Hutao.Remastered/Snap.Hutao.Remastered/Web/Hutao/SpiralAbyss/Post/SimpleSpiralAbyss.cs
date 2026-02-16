@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Post;
 
-internal sealed class SimpleSpiralAbyss
+public sealed class SimpleSpiralAbyss
 {
     public SimpleSpiralAbyss(Hoyolab.Takumi.GameRecord.SpiralAbyss.SpiralAbyss spiralAbyss)
     {

@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.User;
 
-internal class UserMetadataContext : IUserMetadataContext
+public class UserMetadataContext : IUserMetadataContext
 {
     public ImmutableArray<ProfilePicture> ProfilePictures { get; set; } = default!;
 }

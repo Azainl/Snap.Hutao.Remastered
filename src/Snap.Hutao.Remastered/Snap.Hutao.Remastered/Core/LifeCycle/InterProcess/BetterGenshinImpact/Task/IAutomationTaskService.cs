@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.BetterGenshinImpact.Task;
 
-internal interface IAutomationTaskService
+public interface IAutomationTaskService
 {
     PipeResponse CreateOneShotTask(AutomationTaskDefinition definition);
 

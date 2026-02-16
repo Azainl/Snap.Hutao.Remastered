@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class JsParam
+public sealed class JsParam
 {
     [JsonPropertyName("method")]
     public string Method { get; set; } = default!;
@@ -16,7 +16,7 @@ internal sealed class JsParam
 }
 
 [SuppressMessage("", "SA1402")]
-internal sealed class JsParam<TPayload>
+public sealed class JsParam<TPayload>
 {
     [JsonPropertyName("method")]
     public string Method { get; set; } = default!;

@@ -8,7 +8,7 @@ using System.Diagnostics;
 
 namespace Snap.Hutao.Remastered.Service;
 
-internal static class KnownRegions
+public static class KnownRegions
 {
     public static ImmutableArray<NameValue<Region>> Value
     {

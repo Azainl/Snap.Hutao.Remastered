@@ -3,13 +3,13 @@
 
 namespace Snap.Hutao.Remastered.Core.Threading.Abstraction;
 
-internal interface IAwaitable<out TAwaiter>
+public interface IAwaitable<out TAwaiter>
     where TAwaiter : IAwaiter
 {
     TAwaiter GetAwaiter();
 }
 
-internal interface IAwaitable<out TAwaiter, out TResult>
+public interface IAwaitable<out TAwaiter, out TResult>
     where TAwaiter : IAwaiter<TResult>
 {
     TAwaiter GetAwaiter();

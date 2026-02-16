@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
-internal abstract class EquipView : NameIconDescription
+public abstract class EquipView : NameIconDescription
 {
     public string Level { get; set; } = default!;
 
@@ -14,5 +14,5 @@ internal abstract class EquipView : NameIconDescription
 
     public NameValue<string>? MainProperty { get; set; }
 
-    internal EquipType EquipType { get; set; }
+    public EquipType EquipType { get; set; }
 }

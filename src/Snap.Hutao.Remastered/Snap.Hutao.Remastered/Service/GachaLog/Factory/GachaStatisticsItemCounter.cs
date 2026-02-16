@@ -9,7 +9,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog.Factory;
 
-internal sealed class GachaStatisticsItemCounter
+public sealed class GachaStatisticsItemCounter
 {
     public GachaStatisticsItemCounter(GachaStatisticsFactoryContext context)
     {

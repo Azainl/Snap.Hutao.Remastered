@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Core.ExceptionService;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab;
 
-internal readonly struct PlayerUid
+public readonly struct PlayerUid
 {
     public readonly string Value;
 

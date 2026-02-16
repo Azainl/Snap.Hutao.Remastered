@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.RoleCombat;
 
-internal sealed class RoleCombatSplendourBuffLink
+public sealed class RoleCombatSplendourBuffLink
 {
     [JsonPropertyName("id")]
     public required uint Id { get; init; }

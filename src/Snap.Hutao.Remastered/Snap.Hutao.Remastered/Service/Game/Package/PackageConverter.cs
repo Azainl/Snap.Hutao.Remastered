@@ -26,7 +26,7 @@ using System.Security.Cryptography;
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
 [Service(ServiceLifetime.Transient, typeof(IPackageConverter))]
-internal sealed partial class PackageConverter : IPackageConverter
+public sealed partial class PackageConverter : IPackageConverter
 {
     private readonly IMemoryStreamFactory memoryStreamFactory;
     private readonly ILogger<PackageConverter> logger;

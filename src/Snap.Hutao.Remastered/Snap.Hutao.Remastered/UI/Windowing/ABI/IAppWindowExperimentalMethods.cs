@@ -12,7 +12,7 @@ namespace ABI.Microsoft.UI.Windowing;
 
 [SuppressMessage("", "SA1300")]
 [SuppressMessage("", "IDE1006")]
-internal static class IAppWindowExperimentalMethods
+public static class IAppWindowExperimentalMethods
 {
     public static ref readonly Guid IID
     {
@@ -20,7 +20,7 @@ internal static class IAppWindowExperimentalMethods
         get => ref MemoryMarshal.AsRef<Guid>([0xC7, 0x96, 0xDB, 0x4, 0xB6, 0xDE, 0xE4, 0x5B, 0xBF, 0xDC, 0x1B, 0xC0, 0x36, 0x1C, 0x8A, 0x12]);
     }
 
-    internal static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails GetCurrentPlacement(IObjectReference obj)
+    public static unsafe global::Microsoft.UI.Windowing.AppWindowPlacementDetails GetCurrentPlacement(IObjectReference obj)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -37,7 +37,7 @@ internal static class IAppWindowExperimentalMethods
         }
     }
 
-    internal static unsafe void SaveCurrentPlacement(IObjectReference obj)
+    public static unsafe void SaveCurrentPlacement(IObjectReference obj)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -45,7 +45,7 @@ internal static class IAppWindowExperimentalMethods
         GC.KeepAlive(obj);
     }
 
-    internal static unsafe bool SetCurrentPlacement(IObjectReference obj, global::Microsoft.UI.Windowing.AppWindowPlacementDetails placementDetails, bool isFirstWindow)
+    public static unsafe bool SetCurrentPlacement(IObjectReference obj, global::Microsoft.UI.Windowing.AppWindowPlacementDetails placementDetails, bool isFirstWindow)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -64,7 +64,7 @@ internal static class IAppWindowExperimentalMethods
         }
     }
 
-    internal static unsafe Guid? get_PersistedStateId(IObjectReference obj)
+    public static unsafe Guid? get_PersistedStateId(IObjectReference obj)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -81,7 +81,7 @@ internal static class IAppWindowExperimentalMethods
         }
     }
 
-    internal static unsafe void set_PersistedStateId(IObjectReference obj, Guid? value)
+    public static unsafe void set_PersistedStateId(IObjectReference obj, Guid? value)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -98,7 +98,7 @@ internal static class IAppWindowExperimentalMethods
         }
     }
 
-    internal static unsafe global::Microsoft.UI.Windowing.PlacementRestorationBehavior get_PlacementRestorationBehavior(IObjectReference obj)
+    public static unsafe global::Microsoft.UI.Windowing.PlacementRestorationBehavior get_PlacementRestorationBehavior(IObjectReference obj)
     {
         nint thisPtr = obj.ThisPtr;
 
@@ -108,7 +108,7 @@ internal static class IAppWindowExperimentalMethods
         return retval;
     }
 
-    internal static unsafe void set_PlacementRestorationBehavior(IObjectReference obj, global::Microsoft.UI.Windowing.PlacementRestorationBehavior value)
+    public static unsafe void set_PlacementRestorationBehavior(IObjectReference obj, global::Microsoft.UI.Windowing.PlacementRestorationBehavior value)
     {
         nint thisPtr = obj.ThisPtr;
 

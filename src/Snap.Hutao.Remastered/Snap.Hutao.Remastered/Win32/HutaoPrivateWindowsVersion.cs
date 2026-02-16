@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Win32;
 
-internal readonly struct HutaoPrivateWindowsVersion
+public readonly struct HutaoPrivateWindowsVersion
 {
 #pragma warning disable CS0649
     public readonly uint Major;

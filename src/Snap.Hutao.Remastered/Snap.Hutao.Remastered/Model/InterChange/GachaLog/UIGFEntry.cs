@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 namespace Snap.Hutao.Remastered.Model.InterChange.GachaLog;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIGFEntry<TItem>
+public sealed class UIGFEntry<TItem>
 {
     [JsonPropertyName("uid")]
     [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString)]

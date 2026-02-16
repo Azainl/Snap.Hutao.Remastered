@@ -629,9 +629,6 @@
   <data name="ServerPassportServiceEmailHasRegistered" xml:space="preserve">
     <value>Geçerli e-posta adresi zaten kayıtlı</value>
   </data>
-  <data name="ServerPassportServiceInternalException" xml:space="preserve">
-    <value>Kayıt başarısız, sunucu hatası, lütfen sorunu çözmek için en kısa sürede geliştiriciyle iletişime geçin</value>
-  </data>
   <data name="ServerPassportServiceUnregisterPasswordIncorrect" xml:space="preserve">
     <value>Şifre hatalı, hesap silme başarısız</value>
   </data>
@@ -679,9 +676,6 @@
   </data>
   <data name="ServerRecordComputingStatistics2" xml:space="preserve">
     <value>Veri alınamadı, istatistiksel veriler hesaplanıyor</value>
-  </data>
-  <data name="ServerRecordInternalException" xml:space="preserve">
-    <value>Spiral Abyss kaydı yüklenemedi, sunucu hatası, lütfen sorunu çözmek için en kısa sürede geliştiriciyle iletişime geçin</value>
   </data>
   <data name="ServerRecordInvalidData" xml:space="preserve">
     <value>Spiral Abyss kaydı yüklenemedi, geçersiz veri tespit edildi</value>
@@ -3979,5 +3973,11 @@ Kullanılabilir Alan: {2}</value>
   </data>
   <data name="ViewPageLaunchGameDisablePlayerPerspectiveDescription" xml:space="preserve">
     <value>Özel Arayüz Düzeltmesi</value>
+  </data>
+  <data name="ServerPassportServiceInternalException" xml:space="preserve">
+    <value>Kayıt başarısız, sunucu hatası, lütfen sorunu çözmek için en kısa sürede geliştiriciyle iletişime geçin</value>
+  </data>
+  <data name="ServerRecordInternalException" xml:space="preserve">
+    <value>Spiral Abyss kaydı yüklenemedi, sunucu hatası, lütfen sorunu çözmek için en kısa sürede geliştiriciyle iletişime geçin</value>
   </data>
 </root>

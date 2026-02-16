@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Graphics;
 
-internal enum PointInt32Kind
+public enum PointInt32Kind
 {
     TopLeft,
     TopCenter,

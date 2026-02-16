@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao;
 
-internal enum GitRepositoryType
+public enum GitRepositoryType
 {
     None,
     Public,

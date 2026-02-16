@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss;
 
-internal sealed class RankInfo
+public sealed class RankInfo
 {
     public RankValue Damage { get; set; } = default!;
 

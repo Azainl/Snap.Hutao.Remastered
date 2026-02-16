@@ -6,7 +6,7 @@ using JetBrains.Annotations;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class NotifyPropertyChangedExtension
+public static class NotifyPropertyChangedExtension
 {
     extension(INotifyPropertyChanged source)
     {

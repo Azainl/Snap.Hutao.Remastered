@@ -6,7 +6,7 @@ using Microsoft.UI.Composition;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Animation;
 
-internal sealed class OpacityZoomOutAnimation : ImplicitAnimation<float, float>
+public sealed class OpacityZoomOutAnimation : ImplicitAnimation<float, float>
 {
     public OpacityZoomOutAnimation()
     {

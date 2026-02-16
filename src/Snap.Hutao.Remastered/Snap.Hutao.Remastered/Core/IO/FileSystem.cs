@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Win32.UI.Shell;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class FileSystem
+public static class FileSystem
 {
     [field: MaybeNull]
     private static HutaoNativeFileSystem Native

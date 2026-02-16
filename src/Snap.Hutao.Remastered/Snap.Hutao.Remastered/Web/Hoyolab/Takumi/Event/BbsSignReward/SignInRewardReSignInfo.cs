@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class SignInRewardReSignInfo
+public sealed class SignInRewardReSignInfo
 {
     [JsonPropertyName("resign_cnt_daily")]
     public uint ResignCountDaily { get; set; }

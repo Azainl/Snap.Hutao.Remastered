@@ -8,7 +8,7 @@ using Windows.Foundation;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.Panel.DataTable;
 
-internal sealed partial class DataRow : Microsoft.UI.Xaml.Controls.Panel
+public sealed partial class DataRow : Microsoft.UI.Xaml.Controls.Panel
 {
     // TODO: Create our own helper class here for the Header as well vs. straight-Grid.
     // TODO: WeakReference?

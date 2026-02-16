@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class UserFuncStatus
+public sealed class UserFuncStatus
 {
     [JsonPropertyName("enable_history_view")]
     public bool EnableHistoryView { get; set; }

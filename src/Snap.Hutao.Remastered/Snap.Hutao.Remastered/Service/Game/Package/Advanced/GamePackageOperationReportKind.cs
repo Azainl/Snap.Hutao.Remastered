@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal enum GamePackageOperationReportKind
+public enum GamePackageOperationReportKind
 {
     Download,
     Install,

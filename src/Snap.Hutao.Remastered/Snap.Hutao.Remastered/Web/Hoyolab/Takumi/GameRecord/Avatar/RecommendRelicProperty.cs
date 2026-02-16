@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class RecommendRelicProperty
+public sealed class RecommendRelicProperty
 {
     [JsonPropertyName("recommend_properties")]
     public RecommendProperties RecommendProperties { get; set; } = default!;

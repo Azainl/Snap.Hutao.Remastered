@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class SpiralAbyssEntryConfiguration : IEntityTypeConfiguration<SpiralAbyssEntry>
+public sealed class SpiralAbyssEntryConfiguration : IEntityTypeConfiguration<SpiralAbyssEntry>
 {
     public void Configure(EntityTypeBuilder<SpiralAbyssEntry> builder)
     {

@@ -5,7 +5,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal sealed class GameAudioInstallation
+public sealed class GameAudioInstallation
 {
     public GameAudioInstallation(string gameDirectory)
     {

@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Backdrop;
 
-internal interface IWindowNeedEraseBackground;
+public interface IWindowNeedEraseBackground;

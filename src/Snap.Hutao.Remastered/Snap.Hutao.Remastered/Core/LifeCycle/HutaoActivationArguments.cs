@@ -5,7 +5,7 @@ using Microsoft.Windows.AppLifecycle;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal sealed class HutaoActivationArguments
+public sealed class HutaoActivationArguments
 {
     public bool IsRedirectTo { get; set; }
 

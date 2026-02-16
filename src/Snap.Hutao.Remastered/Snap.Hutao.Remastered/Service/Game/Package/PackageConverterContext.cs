@@ -12,7 +12,7 @@ using static Snap.Hutao.Remastered.Service.Game.GameConstants;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package;
 
-internal sealed class PackageConverterContext
+public sealed class PackageConverterContext
 {
     private readonly AsyncKeyedLock<string> chunkLocks = new();
 

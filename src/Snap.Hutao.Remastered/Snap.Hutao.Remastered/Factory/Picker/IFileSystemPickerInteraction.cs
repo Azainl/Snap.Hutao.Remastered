@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Core.IO;
 
 namespace Snap.Hutao.Remastered.Factory.Picker;
 
-internal interface IFileSystemPickerInteraction
+public interface IFileSystemPickerInteraction
 {
     ValueResult<bool, ValueFile> PickFile([LocalizationRequired] string? title, string? defaultFileName, string? filterName, string? filterType);
 

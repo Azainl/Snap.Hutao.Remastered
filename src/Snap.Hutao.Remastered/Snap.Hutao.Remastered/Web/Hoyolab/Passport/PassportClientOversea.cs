@@ -13,7 +13,7 @@ using System.Net.Http.Headers;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 [HttpClient(HttpClientConfiguration.XRpc3)]
-internal sealed partial class PassportClientOversea : IPassportClient
+public sealed partial class PassportClientOversea : IPassportClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Oversea)]

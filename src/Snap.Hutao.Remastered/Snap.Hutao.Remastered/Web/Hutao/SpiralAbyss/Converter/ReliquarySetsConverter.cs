@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hutao.SpiralAbyss.Converter;
 
-internal sealed class ReliquarySetsConverter : JsonConverter<ReliquarySets>
+public sealed class ReliquarySetsConverter : JsonConverter<ReliquarySets>
 {
     public override ReliquarySets? Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
     {

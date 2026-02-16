@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Service.DailyNote;
 
 namespace Snap.Hutao.Remastered.Service.Job;
 
-internal sealed partial class DailyNoteRefreshJob : IJob
+public sealed partial class DailyNoteRefreshJob : IJob
 {
     private readonly IDailyNoteService dailyNoteService;
 

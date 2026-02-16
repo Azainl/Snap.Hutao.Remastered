@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.UI.Input;
 
 namespace Snap.Hutao.Remastered.UI.Windowing.Abstraction;
 
-internal interface IXamlWindowMouseWheelHandler
+public interface IXamlWindowMouseWheelHandler
 {
     void OnMouseWheel(ref readonly PointerPointProperties data);
 }

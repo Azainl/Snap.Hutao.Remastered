@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class Carousels
+public sealed class Carousels
 {
     [JsonPropertyName("position")]
     public required int Position { get; init; }

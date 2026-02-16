@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class AvatarPropertyPage : ScopedPage
+public sealed partial class AvatarPropertyPage : ScopedPage
 {
     public AvatarPropertyPage()
     {

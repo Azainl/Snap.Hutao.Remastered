@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle;
 
-internal interface IAppActivationActionHandlersAccess
+public interface IAppActivationActionHandlersAccess
 {
     ValueTask HandleLaunchGameActionAsync(string? uid = null);
 }

@@ -8,7 +8,7 @@ namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<string>("UserName")]
 [DependencyProperty<string>("Password")]
-internal sealed partial class HutaoPassportLoginDialog : ContentDialog
+public sealed partial class HutaoPassportLoginDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

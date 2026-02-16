@@ -6,7 +6,7 @@ using CommunityToolkit.Mvvm.ComponentModel;
 namespace Snap.Hutao.Remastered.Service.BackgroundActivity;
 
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class BackgroundActivityOptions : ObservableObject
+public sealed partial class BackgroundActivityOptions : ObservableObject
 {
     [GeneratedConstructor]
     public partial BackgroundActivityOptions(IServiceProvider serviceProvider);

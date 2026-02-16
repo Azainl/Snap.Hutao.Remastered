@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.Calculate;
 
-internal abstract class GroupCalculable : Calculable
+public abstract class GroupCalculable : Calculable
 {
     [JsonPropertyName("group_id")]
     public uint GroupId { get; set; }

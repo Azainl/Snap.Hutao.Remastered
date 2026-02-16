@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class LogicalDrive
+public static class LogicalDrive
 {
     public static long GetAvailableFreeSpace(ValueDirectory directory)
     {

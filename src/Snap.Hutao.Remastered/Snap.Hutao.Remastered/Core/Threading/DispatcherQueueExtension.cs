@@ -7,7 +7,7 @@ using System.Runtime.ExceptionServices;
 
 namespace Snap.Hutao.Remastered.Core.Threading;
 
-internal static class DispatcherQueueExtension
+public static class DispatcherQueueExtension
 {
     // TODO: DisposableObjectPool: Consider disposing the pool when application exits.
     // Once disposed, Invoke methods will not work anymore.

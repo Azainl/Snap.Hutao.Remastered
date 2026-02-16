@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.HardChallenge;
 
-internal sealed class ChallengeView
+public sealed class ChallengeView
 {
     private ChallengeView(HardChallengeChallenge challenge, HardChallengeMetadataContext context)
     {

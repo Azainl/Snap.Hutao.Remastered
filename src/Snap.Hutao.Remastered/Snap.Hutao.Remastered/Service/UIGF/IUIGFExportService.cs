@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-internal interface IUIGFExportService
+public interface IUIGFExportService
 {
     ValueTask ExportAsync(UIGFExportOptions exportOptions, CancellationToken token);
 }

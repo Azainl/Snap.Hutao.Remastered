@@ -8,7 +8,7 @@ using System.Threading.RateLimiting;
 
 namespace Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
-internal readonly struct GamePackageServiceContext
+public readonly struct GamePackageServiceContext
 {
     public readonly GamePackageOperationContext Operation;
     public readonly GamePackageOperationInfo Information;

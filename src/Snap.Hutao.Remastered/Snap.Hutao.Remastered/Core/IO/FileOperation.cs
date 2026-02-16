@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Core.IO;
 
-internal static class FileOperation
+public static class FileOperation
 {
     public static void Copy(ValueFile source, ValueFile target, bool overwrite)
     {

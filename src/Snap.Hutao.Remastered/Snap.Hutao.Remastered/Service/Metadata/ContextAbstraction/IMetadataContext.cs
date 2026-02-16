@@ -3,4 +3,4 @@
 
 namespace Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
 
-internal interface IMetadataContext;
+public interface IMetadataContext;

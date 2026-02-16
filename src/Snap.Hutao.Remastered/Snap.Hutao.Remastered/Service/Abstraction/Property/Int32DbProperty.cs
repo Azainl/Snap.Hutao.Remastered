@@ -8,7 +8,7 @@ using System.Globalization;
 
 namespace Snap.Hutao.Remastered.Service.Abstraction.Property;
 
-internal sealed partial class Int32DbProperty : DbProperty<int>
+public sealed partial class Int32DbProperty : DbProperty<int>
 {
     private readonly IServiceProvider serviceProvider;
     private readonly string key;

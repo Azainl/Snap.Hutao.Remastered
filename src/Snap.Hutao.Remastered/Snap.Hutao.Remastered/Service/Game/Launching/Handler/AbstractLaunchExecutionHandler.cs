@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Game.Launching.Context;
 
 namespace Snap.Hutao.Remastered.Service.Game.Launching.Handler;
 
-internal abstract class AbstractLaunchExecutionHandler : ILaunchExecutionHandler
+public abstract class AbstractLaunchExecutionHandler : ILaunchExecutionHandler
 {
     public virtual ValueTask BeforeAsync(BeforeLaunchExecutionContext context)
     {

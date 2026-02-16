@@ -10,7 +10,7 @@ using System.Collections.Concurrent;
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Backdrop;
 
 // https://github.com/microsoft/microsoft-ui-xaml/blob/winui3/release/1.5-stable/controls/dev/Materials/DesktopAcrylicBackdrop/DesktopAcrylicBackdrop.cpp
-internal sealed partial class InputActiveDesktopAcrylicBackdrop : SystemBackdrop
+public sealed partial class InputActiveDesktopAcrylicBackdrop : SystemBackdrop
 {
     private readonly ConcurrentDictionary<ICompositionSupportsSystemBackdrop, DesktopAcrylicController> controllers = [];
 

@@ -5,7 +5,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Redeem;
 
-internal sealed class RedeemGenerateResult
+public sealed class RedeemGenerateResult
 {
     public ImmutableArray<string> Codes { get; set; }
 }

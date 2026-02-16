@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
-internal sealed class LTokenWrapper
+public sealed class LTokenWrapper
 {
     [JsonPropertyName("ltoken")]
     public string LToken { get; set; } = default!;

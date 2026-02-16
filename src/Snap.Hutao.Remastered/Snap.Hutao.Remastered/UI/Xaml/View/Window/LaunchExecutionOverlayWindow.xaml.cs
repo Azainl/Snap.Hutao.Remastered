@@ -17,7 +17,7 @@ using Windows.Graphics;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Window;
 
 [Service(ServiceLifetime.Transient)]
-internal sealed partial class LaunchExecutionOverlayWindow : Microsoft.UI.Xaml.Window,
+public sealed partial class LaunchExecutionOverlayWindow : Microsoft.UI.Xaml.Window,
     IXamlWindowExtendContentIntoTitleBar,
     IXamlWindowMouseWheelHandler,
     IXamlWindowClosedHandler,

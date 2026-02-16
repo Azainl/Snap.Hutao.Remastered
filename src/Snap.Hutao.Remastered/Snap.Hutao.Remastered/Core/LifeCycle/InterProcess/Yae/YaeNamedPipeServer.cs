@@ -13,7 +13,7 @@ using System.Text;
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.Yae;
 
-internal sealed class YaeNamedPipeServer : IAsyncDisposable
+public sealed class YaeNamedPipeServer : IAsyncDisposable
 {
     private const string PipeName = "YaeAchievementPipe";
 

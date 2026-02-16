@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Intrinsic;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 
-internal interface INameQualityAccess : INameAccess
+public interface INameQualityAccess : INameAccess
 {
     QualityType Quality { get; }
 }

@@ -11,7 +11,7 @@ using Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal sealed partial class CalculableWeapon : ObservableObject, ICalculableWeapon
+public sealed partial class CalculableWeapon : ObservableObject, ICalculableWeapon
 {
     // Only persists current level for non-view weapons
     private readonly bool persistsCurrentLevel;

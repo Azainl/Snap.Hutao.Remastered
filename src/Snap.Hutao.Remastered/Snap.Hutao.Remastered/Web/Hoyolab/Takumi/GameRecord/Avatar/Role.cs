@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.Avatar;
 
-internal sealed class Role
+public sealed class Role
 {
     [JsonPropertyName("AvatarUrl")]
     public string AvatarUrl { get; set; } = default!;

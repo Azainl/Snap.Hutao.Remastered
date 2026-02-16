@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Win32.Foundation;
 
 namespace Snap.Hutao.Remastered.Win32.System.WinRT;
 
-internal static class IMemoryBufferByteAccessExtension
+public static class IMemoryBufferByteAccessExtension
 {
     extension(IMemoryBufferByteAccess memoryBufferByteAccess)
     {

@@ -6,7 +6,7 @@ using Microsoft.UI.Xaml;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Data.Converter.Specialized;
 
-internal sealed partial class BoolToGridLengthConverter : BoolToObjectConverter
+public sealed partial class BoolToGridLengthConverter : BoolToObjectConverter
 {
     public BoolToGridLengthConverter()
     {

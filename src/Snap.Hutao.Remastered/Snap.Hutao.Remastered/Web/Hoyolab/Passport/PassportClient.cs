@@ -17,7 +17,7 @@ using System.Text;
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Passport;
 
 [HttpClient(HttpClientConfiguration.XRpc2)]
-internal sealed partial class PassportClient : IPassportClient
+public sealed partial class PassportClient : IPassportClient
 {
     private readonly IHttpRequestMessageBuilderFactory httpRequestMessageBuilderFactory;
     [FromKeyed(ApiEndpointsKind.Chinese)]

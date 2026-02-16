@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Game;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Page;
 
-internal sealed partial class LaunchGamePage : ScopedPage
+public sealed partial class LaunchGamePage : ScopedPage
 {
     public LaunchGamePage()
     {

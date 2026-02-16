@@ -1,0 +1,261 @@
+<shuxc:ScopedPage
+    x:Class="Snap.Hutao.Remastered.UI.Xaml.View.Page.PluginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:clw="using:CommunityToolkit.Labs.WinUI"
+    xmlns:cw="using:CommunityToolkit.WinUI"
+    xmlns:cwcont="using:CommunityToolkit.WinUI.Controls"
+    xmlns:cwconv="using:CommunityToolkit.WinUI.Converters"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:mxi="using:Microsoft.Xaml.Interactivity"
+    xmlns:shuxb="using:Snap.Hutao.Remastered.UI.Xaml.Behavior"
+    xmlns:shuxc="using:Snap.Hutao.Remastered.UI.Xaml.Control"
+    xmlns:shuxci="using:Snap.Hutao.Remastered.UI.Xaml.Control.Image"
+    xmlns:shuxm="using:Snap.Hutao.Remastered.UI.Xaml.Markup"
+    xmlns:shvp="using:Snap.Hutao.Remastered.ViewModel.Plugin"
+    xmlns:local="using:Snap.Hutao.Remastered.UI.Xaml.View.Page"
+    d:DataContext="{d:DesignInstance shvp:PluginViewModel}"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <mxi:Interaction.Behaviors>
+        <shuxb:InvokeCommandOnLoadedBehavior Command="{Binding LoadCommand}"/>
+    </mxi:Interaction.Behaviors>
+
+    <Page.Resources>
+        <!--  ReSharper disable Xaml.RedundantResource  -->
+        <SolidColorBrush x:Key="ToggleButtonBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="ExpanderContentBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="SettingsCardBackground" Color="Transparent"/>
+        <SolidColorBrush x:Key="SettingsCardBackgroundDisabled" Color="Transparent"/>
+        <SolidColorBrush x:Key="SettingsCardBackgroundPointerOver" Color="Transparent"/>
+        <SolidColorBrush x:Key="SettingsCardBackgroundPressed" Color="Transparent"/>
+        <!--  ReSharper restore Xaml.RedundantResource  -->
+
+        <cwconv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <cwconv:BoolNegationConverter x:Key="BoolNegationConverter"/>
+        <local:ListToStringConverter x:Key="ListToStringConverter"/>
+        
+        <DataTemplate x:Key="PluginItemTemplate">
+            <Border Style="{ThemeResource BorderCardStyle}" Padding="12">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- 插件图标 -->
+                    <Border
+                        Grid.Column="0"
+                        Width="48"
+                        Height="48"
+                        Margin="0,0,12,0"
+                        Background="{ThemeResource ControlFillColorSecondaryBrush}"
+                        CornerRadius="8">
+                        <Grid>
+                            <Image
+                                Source="{Binding IconPath}"
+                                Stretch="Uniform"
+                                Visibility="{Binding IconPath, Converter={StaticResource StringToVisibilityConverter}}"/>
+                            <TextBlock
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="20"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                Text="📦"
+                                Visibility="{Binding IconPath, Converter={StaticResource StringToVisibilityConverter}, ConverterParameter=Inverted}"/>
+                        </Grid>
+                    </Border>
+                    
+                    <!-- 插件信息 -->
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock
+                            Style="{StaticResource BodyStrongTextBlockStyle}"
+                            Text="{Binding Manifest.Name}"/>
+                        <TextBlock
+                            Style="{StaticResource CaptionTextBlockStyle}"
+                            Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                            Text="{Binding Manifest.Description}"/>
+                        <StackPanel Orientation="Horizontal" Spacing="8" Margin="0,4,0,0">
+                            <TextBlock
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                Text="{Binding Manifest.Version}"/>
+                            <TextBlock
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                Text="•"/>
+                            <TextBlock
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Foreground="{ThemeResource TextFillColorTertiaryBrush}"
+                                Text="{Binding Manifest.Author, Converter={StaticResource ListToStringConverter}}"/>
+                            <TextBlock
+                                Style="{StaticResource CaptionTextBlockStyle}"
+                                Foreground="{Binding IsEnabled, Converter={StaticResource BoolToColorConverter}}"
+                                Text="{Binding IsEnabled, Converter={StaticResource BoolToStatusConverter}}"/>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                    <!-- 操作按钮 -->
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="8">
+                        <Button
+                            Command="{Binding ElementName=Root, Path=DataContext.EnablePluginCommand}"
+                            CommandParameter="{Binding}"
+                            Content="启用"
+                            Style="{StaticResource AccentButtonStyle}"
+                            Visibility="{Binding IsEnabled, Converter={StaticResource BoolNegationConverter}}"/>
+                        <Button
+                            Command="{Binding ElementName=Root, Path=DataContext.DisablePluginCommand}"
+                            CommandParameter="{Binding}"
+                            Content="禁用"
+                            Style="{StaticResource DefaultButtonStyle}"
+                            Visibility="{Binding IsEnabled, Converter={StaticResource BoolToVisibilityConverter}}"/>
+                        <Button
+                            Command="{Binding ElementName=Root, Path=DataContext.OpenPluginSettingsCommand}"
+                            CommandParameter="{Binding}"
+                            Content="设置"
+                            Style="{StaticResource DefaultButtonStyle}"/>
+                        <Button
+                            Command="{Binding ElementName=Root, Path=DataContext.UninstallPluginCommand}"
+                            CommandParameter="{Binding}"
+                            Content="卸载"
+                            Style="{StaticResource DefaultButtonStyle}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </DataTemplate>
+        
+        <cwconv:BoolToObjectConverter x:Key="BoolToStatusConverter">
+            <cwconv:BoolToObjectConverter.TrueValue>
+                <x:String>已启用</x:String>
+            </cwconv:BoolToObjectConverter.TrueValue>
+            <cwconv:BoolToObjectConverter.FalseValue>
+                <x:String>已禁用</x:String>
+            </cwconv:BoolToObjectConverter.FalseValue>
+        </cwconv:BoolToObjectConverter>
+        
+        <cwconv:BoolToObjectConverter x:Key="BoolToColorConverter">
+            <cwconv:BoolToObjectConverter.TrueValue>
+                <SolidColorBrush Color="{ThemeResource SystemFillColorSuccess}"/>
+            </cwconv:BoolToObjectConverter.TrueValue>
+            <cwconv:BoolToObjectConverter.FalseValue>
+                <SolidColorBrush Color="{ThemeResource SystemFillColorCritical}"/>
+            </cwconv:BoolToObjectConverter.FalseValue>
+        </cwconv:BoolToObjectConverter>
+        
+        <local:StringToVisibilityConverter x:Key="StringToVisibilityConverter"/>
+    </Page.Resources>
+
+    <Grid x:Name="Root">
+        <shuxc:StandardView ShowCondition="{Binding IsInitialized, Mode=OneWay}">
+            <shuxc:StandardView.EmptyContent>
+                <clw:Shimmer IsActive="{Binding IsInitialized, Converter={StaticResource BoolNegationConverter}, Mode=OneWay}"/>
+            </shuxc:StandardView.EmptyContent>
+
+            <Grid Margin="16">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <!-- 操作工具栏 -->
+                <Border
+                    Grid.Row="0"
+                    Margin="0,0,0,16"
+                    cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Border Style="{ThemeResource AcrylicBorderCardStyle}">
+                        <StackPanel Orientation="Horizontal" Padding="16" Spacing="12">
+                            <Button
+                                Command="{Binding InstallPluginCommand}"
+                                Content="安装插件"
+                                Style="{StaticResource AccentButtonStyle}">
+                                <Button.ContentTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <FontIcon Glyph="&#xE710;"/>
+                                            <TextBlock Text="安装插件"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </Button.ContentTemplate>
+                            </Button>
+                            
+                            <Button
+                                Command="{Binding RefreshPluginsCommand}"
+                                Content="刷新"
+                                Style="{StaticResource DefaultButtonStyle}">
+                                <Button.ContentTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <FontIcon Glyph="&#xE72C;"/>
+                                            <TextBlock Text="刷新"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </Button.ContentTemplate>
+                            </Button>
+                            
+                            <Button
+                                Command="{Binding OpenPluginDirectoryCommand}"
+                                Content="打开插件目录"
+                                Style="{StaticResource DefaultButtonStyle}">
+                                <Button.ContentTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Spacing="8">
+                                            <FontIcon Glyph="&#xE8DA;"/>
+                                            <TextBlock Text="打开插件目录"/>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </Button.ContentTemplate>
+                            </Button>
+                            
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                Foreground="{ThemeResource TextFillColorSecondaryBrush}">
+                                <Run Text="共"/>
+                                <Run Text="{Binding Plugins.Count}"/>
+                                <Run Text="个插件"/>
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                </Border>
+                
+                <!-- 插件列表 -->
+                <Border
+                    Grid.Row="1"
+                    cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
+                    <Grid Style="{ThemeResource AcrylicGridCardStyle}">
+                        <shuxc:StandardView ShowCondition="{Binding Plugins.Count, Converter={StaticResource Int32ToBoolConverter}}">
+                            <shuxc:StandardView.EmptyContent>
+                                <StackPanel
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Spacing="16">
+                                    <shuxci:CachedImage
+                                        Height="120"
+                                        Source="{StaticResource UI_EmotionIcon52}"/>
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        Style="{StaticResource SubtitleTextBlockStyle}"
+                                        Text="暂无插件"/>
+                                    <TextBlock
+                                        HorizontalAlignment="Center"
+                                        Foreground="{ThemeResource TextFillColorSecondaryBrush}"
+                                        Text="点击“安装插件”按钮来添加你的第一个插件"/>
+                                </StackPanel>
+                            </shuxc:StandardView.EmptyContent>
+                            
+                            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                                <ItemsControl
+                                    ItemContainerTransitions="{ThemeResource ListViewLikeThemeTransitions}"
+                                    ItemsPanel="{ThemeResource StackPanelSpacing8Template}"
+                                    ItemsSource="{Binding Plugins}"
+                                    ItemTemplate="{StaticResource PluginItemTemplate}"/>
+                            </ScrollViewer>
+                        </shuxc:StandardView>
+                    </Grid>
+                </Border>
+            </Grid>
+        </shuxc:StandardView>
+    </Grid>
+</shuxc:ScopedPage>

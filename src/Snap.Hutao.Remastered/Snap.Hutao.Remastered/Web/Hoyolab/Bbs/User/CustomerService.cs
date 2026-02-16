@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.User;
 
-internal sealed class CustomerService
+public sealed class CustomerService
 {
     [JsonPropertyName("is_customer_service_staff")]
     public bool IsCustomerServiceStaff { get; set; }

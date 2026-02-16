@@ -14,7 +14,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Setting;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class SettingAppearanceViewModel : Abstraction.ViewModel
+public sealed partial class SettingAppearanceViewModel : Abstraction.ViewModel
 {
     [GeneratedConstructor]
     public partial SettingAppearanceViewModel(IServiceProvider serviceProvider);

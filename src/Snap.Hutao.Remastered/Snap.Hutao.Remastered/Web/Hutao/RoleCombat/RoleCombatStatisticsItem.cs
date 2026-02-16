@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.RoleCombat;
 
-internal sealed class RoleCombatStatisticsItem
+public sealed class RoleCombatStatisticsItem
 {
     public int RecordTotal { get; init; }
 

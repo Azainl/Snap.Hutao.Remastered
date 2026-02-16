@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Calculable;
 
-internal interface ICalculableMinMaxLevel : ICalculable
+public interface ICalculableMinMaxLevel : ICalculable
 {
     uint LevelMin { get; }
 

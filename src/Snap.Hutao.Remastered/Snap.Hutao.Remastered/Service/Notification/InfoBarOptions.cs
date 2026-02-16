@@ -5,7 +5,7 @@ using Microsoft.UI.Xaml.Controls;
 
 namespace Snap.Hutao.Remastered.Service.Notification;
 
-internal sealed class InfoBarOptions
+public sealed class InfoBarOptions
 {
     public InfoBarSeverity Severity { get; set; }
 

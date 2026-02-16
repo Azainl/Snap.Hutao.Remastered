@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab;
 
 namespace Snap.Hutao.Remastered.Web.Endpoint.Hutao;
 
-internal interface IInfrastructureEnkaEndpoints : IInfrastructureRootAccess
+public interface IInfrastructureEnkaEndpoints : IInfrastructureRootAccess
 {
     string Enka(PlayerUid uid)
     {

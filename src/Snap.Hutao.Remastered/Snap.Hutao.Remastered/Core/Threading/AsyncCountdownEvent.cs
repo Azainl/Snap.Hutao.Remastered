@@ -5,7 +5,7 @@ namespace Snap.Hutao.Remastered.Core.Threading;
 
 // https://devblogs.microsoft.com/pfxteam/building-async-coordination-primitives-part-3-asynccountdownevent/
 [SuppressMessage("", "SH003")]
-internal sealed class AsyncCountdownEvent
+public sealed class AsyncCountdownEvent
 {
     private readonly AsyncManualResetEvent asyncManualResetEvent = new();
     private int count;

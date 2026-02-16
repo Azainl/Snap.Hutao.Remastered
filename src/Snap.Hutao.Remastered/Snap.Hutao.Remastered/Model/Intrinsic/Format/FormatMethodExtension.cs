@@ -3,11 +3,11 @@
 
 namespace Snap.Hutao.Remastered.Model.Intrinsic.Format;
 
-internal static class FormatMethodExtension
+public static class FormatMethodExtension
 {
     extension(FightProperty value)
     {
-        internal FormatMethod GetFormatMethod()
+        public FormatMethod GetFormatMethod()
         {
             return value switch
             {

@@ -8,7 +8,7 @@ using InGameWeapon = Snap.Hutao.Remastered.Service.Yae.PlayerStore.Weapon;
 namespace Snap.Hutao.Remastered.Model.InterChange.Inventory;
 
 // ReSharper disable once InconsistentNaming
-internal sealed class UIIFWeapon
+public sealed class UIIFWeapon
 {
     [JsonPropertyName("level")]
     public Level Level { get; init; }

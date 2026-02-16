@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Service.Game.Package.Advanced;
 
 namespace Snap.Hutao.Remastered.Service.Game.FileSystem;
 
-internal sealed partial class GameFileSystem : IGameFileSystem
+public sealed partial class GameFileSystem : IGameFileSystem
 {
     private readonly AsyncReaderWriterLock.Releaser releaser;
 

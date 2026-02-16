@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Model.Metadata;
 
-internal static class TypeValueCollectionExtension
+public static class TypeValueCollectionExtension
 {
     extension(TypeValueCollection<FightProperty, GrowCurveType> collection)
     {

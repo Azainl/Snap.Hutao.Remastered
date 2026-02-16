@@ -7,7 +7,7 @@ using WinRT;
 
 namespace Snap.Hutao.Remastered.ViewModel.Abstraction;
 
-internal static class ViewModelSlimExtension
+public static class ViewModelSlimExtension
 {
     extension(FrameworkElement frameworkElement)
     {

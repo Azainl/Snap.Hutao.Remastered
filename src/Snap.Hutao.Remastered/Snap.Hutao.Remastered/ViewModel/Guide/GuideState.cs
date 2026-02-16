@@ -6,7 +6,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Guide;
 /// <summary>
 /// 指引状态
 /// </summary>
-internal enum GuideState : uint
+public enum GuideState : uint
 {
     /// <summary>
     /// 选择语言

@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 
 namespace Snap.Hutao.Remastered.ViewModel.Achievement;
 
-internal static partial class AchievementFilter
+public static partial class AchievementFilter
 {
     [GeneratedRegex(@"\p{P}")]
     private static partial Regex PunctuationRegex { get; }

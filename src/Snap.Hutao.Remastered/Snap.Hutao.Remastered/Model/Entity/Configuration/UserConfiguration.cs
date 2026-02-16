@@ -7,7 +7,7 @@ using Snap.Hutao.Remastered.Web.Hoyolab;
 
 namespace Snap.Hutao.Remastered.Model.Entity.Configuration;
 
-internal sealed class UserConfiguration : IEntityTypeConfiguration<User>
+public sealed class UserConfiguration : IEntityTypeConfiguration<User>
 {
     [SuppressMessage("", "SH007")]
     public void Configure(EntityTypeBuilder<User> builder)

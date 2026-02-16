@@ -6,4 +6,4 @@ namespace Snap.Hutao.Remastered.Web.Endpoint.Hoyolab;
 /// <summary>
 /// Make it partial to allow the injection implementation generation pass.
 /// </summary>
-internal partial interface IApiEndpoints;
+public partial interface IApiEndpoints;

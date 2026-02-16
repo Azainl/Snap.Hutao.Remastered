@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Model.Metadata.Avatar;
 
-internal sealed class ProudSkill : Skill, ITypedCalculableSource<ICalculableSkill, SkillType>
+public sealed class ProudSkill : Skill, ITypedCalculableSource<ICalculableSkill, SkillType>
 {
     public required SkillGroupId GroupId { get; init; }
 

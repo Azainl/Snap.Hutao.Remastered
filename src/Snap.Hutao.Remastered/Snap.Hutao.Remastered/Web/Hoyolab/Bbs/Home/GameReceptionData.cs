@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Bbs.Home;
 
-internal sealed class GameReceptionData
+public sealed class GameReceptionData
 {
     [JsonPropertyName("config")]
     public required GameReceptionDataConfiguration Config { get; init; }

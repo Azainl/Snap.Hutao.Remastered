@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
 
-internal sealed class Countdown
+public sealed class Countdown
 {
     public Countdown(Item item)
     {
@@ -34,5 +34,5 @@ internal sealed class Countdown
 
     public List<CountdownHistory> Histories { get; } = [];
 
-    internal DateTimeOffset LastTime { get => Histories.FirstOrDefault()?.LastTime ?? default; }
+    public DateTimeOffset LastTime { get => Histories.FirstOrDefault()?.LastTime ?? default; }
 }

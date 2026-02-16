@@ -18,7 +18,7 @@ namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess;
 // └────────────────────────────────────────┘ 16 Bytes
 // Any content will be placed after the header.
 [StructLayout(LayoutKind.Sequential, Pack = 1)]
-internal struct PipePacketHeader
+public struct PipePacketHeader
 {
     public byte Version;
     public PipePacketType Type;

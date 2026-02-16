@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.Property;
 
-internal sealed partial class ObservablePropertyValueChangedCallbackWrapper<T> : IObservableProperty<T>
+public sealed partial class ObservablePropertyValueChangedCallbackWrapper<T> : IObservableProperty<T>
 {
     private readonly IObservableProperty<T> source;
     private readonly Action<T> callback;
@@ -39,7 +39,7 @@ internal sealed partial class ObservablePropertyValueChangedCallbackWrapper<T> :
     }
 }
 
-internal sealed partial class ObservablePropertyValueChangedCallbackWrapper<T, TState> : IObservableProperty<T>
+public sealed partial class ObservablePropertyValueChangedCallbackWrapper<T, TState> : IObservableProperty<T>
 {
     private readonly IObservableProperty<T> source;
     private readonly Action<T, TState> callback;

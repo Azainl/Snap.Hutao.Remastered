@@ -6,7 +6,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control.TextBlock.Syntax.MiHoYo;
 
-internal ref struct MiHoYoSyntaxParser
+public ref struct MiHoYoSyntaxParser
 {
     private MiHoYoSyntaxLexer lexer;
     private MiHoYoSyntaxToken current;

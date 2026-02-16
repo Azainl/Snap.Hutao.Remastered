@@ -9,7 +9,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.Service.GachaLog;
 
-internal sealed class GachaLogFetchContext
+public sealed class GachaLogFetchContext
 {
     private readonly GachaLogServiceMetadataContext serviceContext;
     private readonly IGachaLogRepository repository;

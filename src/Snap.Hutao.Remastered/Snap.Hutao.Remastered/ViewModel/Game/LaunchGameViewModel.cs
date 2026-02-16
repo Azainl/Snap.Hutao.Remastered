@@ -29,7 +29,7 @@ namespace Snap.Hutao.Remastered.ViewModel.Game;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Singleton)]
-internal sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IViewModelSupportLaunchExecution, INavigationRecipient
+public sealed partial class LaunchGameViewModel : Abstraction.ViewModel, IViewModelSupportLaunchExecution, INavigationRecipient
 {
     private readonly IGameLocatorFactory gameLocatorFactory;
     private readonly IServiceProvider serviceProvider;

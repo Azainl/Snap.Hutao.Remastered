@@ -9,7 +9,7 @@ using WinRT.Interop;
 
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
-internal static class WindowExtension
+public static class WindowExtension
 {
     private static readonly ConditionalWeakTable<Window, XamlWindowController> WindowControllers = [];
 

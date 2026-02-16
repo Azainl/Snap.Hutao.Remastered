@@ -4,7 +4,7 @@ using Snap.Hutao.Remastered.Model.Primitive;
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.GameRecord.HardChallenge;
 
-internal sealed class HardChallengeBestAvatar
+public sealed class HardChallengeBestAvatar
 {
     [JsonPropertyName("avatar_id")]
     public required AvatarId AvatarId { get; init; }

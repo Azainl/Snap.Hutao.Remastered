@@ -10,7 +10,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.RoleCombat;
 
-internal sealed class RoleCombatMetadataContext : IMetadataContext,
+public sealed class RoleCombatMetadataContext : IMetadataContext,
     IMetadataDictionaryIdRoleCombatScheduleSource,
     IMetadataDictionaryIdAvatarWithPlayersSource
 {

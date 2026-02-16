@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Model.Entity.Extension;
 
-internal static class UserExtension
+public static class UserExtension
 {
     extension(User user)
     {

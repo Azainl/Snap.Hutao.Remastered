@@ -9,7 +9,7 @@ using WinRT;
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 
 [DependencyProperty<string>("Text", PropertyChangedCallbackName = nameof(OnTextChanged))]
-internal sealed partial class ReconfirmDialog : ContentDialog
+public sealed partial class ReconfirmDialog : ContentDialog
 {
     private readonly IContentDialogFactory contentDialogFactory;
 

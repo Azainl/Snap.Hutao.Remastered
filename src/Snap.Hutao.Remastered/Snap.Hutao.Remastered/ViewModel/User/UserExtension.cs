@@ -5,7 +5,7 @@ using Snap.Hutao.Remastered.Model.Entity.Extension;
 
 namespace Snap.Hutao.Remastered.ViewModel.User;
 
-internal static class UserExtension
+public static class UserExtension
 {
     extension(User user)
     {

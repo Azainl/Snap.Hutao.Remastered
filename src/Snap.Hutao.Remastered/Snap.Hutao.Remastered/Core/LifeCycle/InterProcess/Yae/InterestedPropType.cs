@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Core.LifeCycle.InterProcess.Yae;
 
-internal enum InterestedPropType
+public enum InterestedPropType
 {
     None = 0,
     PlayerHCoin = 10015,

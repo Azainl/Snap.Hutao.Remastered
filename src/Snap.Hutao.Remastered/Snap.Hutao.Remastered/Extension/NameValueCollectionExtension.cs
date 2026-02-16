@@ -5,7 +5,7 @@ using System.Collections.Specialized;
 
 namespace Snap.Hutao.Remastered.Extension;
 
-internal static class NameValueCollectionExtension
+public static class NameValueCollectionExtension
 {
     extension(NameValueCollection collection)
     {

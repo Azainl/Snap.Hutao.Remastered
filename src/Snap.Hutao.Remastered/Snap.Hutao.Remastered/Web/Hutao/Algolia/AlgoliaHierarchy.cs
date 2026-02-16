@@ -5,7 +5,7 @@ using System.Web;
 
 namespace Snap.Hutao.Remastered.Web.Hutao.Algolia;
 
-internal sealed class AlgoliaHierarchy
+public sealed class AlgoliaHierarchy
 {
     [JsonPropertyName("lvl1")]
     public string? Lvl1 { get; set; }

@@ -35,7 +35,7 @@ namespace Snap.Hutao.Remastered.ViewModel.AvatarProperty;
 
 [BindableCustomPropertyProvider]
 [Service(ServiceLifetime.Scoped)]
-internal sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>, IDisposable
+public sealed partial class AvatarPropertyViewModel : Abstraction.ViewModel, IRecipient<UserAndUidChangedMessage>, IDisposable
 {
     private readonly ExclusiveTokenProvider refreshTokenProvider = new();
     private readonly AvatarPropertyViewModelScopeContext scopeContext;

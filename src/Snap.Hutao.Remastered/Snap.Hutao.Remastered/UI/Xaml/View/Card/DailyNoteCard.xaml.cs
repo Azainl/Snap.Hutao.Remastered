@@ -6,7 +6,7 @@ using Snap.Hutao.Remastered.ViewModel.Abstraction;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.View.Card;
 
-internal sealed partial class DailyNoteCard : Button
+public sealed partial class DailyNoteCard : Button
 {
     public DailyNoteCard(IServiceProvider serviceProvider)
     {

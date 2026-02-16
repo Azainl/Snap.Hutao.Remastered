@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Media.Backdrop;
 
-internal enum BackdropType
+public enum BackdropType
 {
     Transparent = -1,
     None = 0,

@@ -7,7 +7,7 @@ using Windows.Graphics;
 
 namespace Snap.Hutao.Remastered.UI.Windowing;
 
-internal static class AppWindowExtension
+public static class AppWindowExtension
 {
     extension(AppWindow appWindow)
     {

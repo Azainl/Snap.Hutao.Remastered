@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Bridge.Model;
 
-internal sealed class SharePayload
+public sealed class SharePayload
 {
     [JsonPropertyName("type")]
     public string Type { get; set; } = default!;

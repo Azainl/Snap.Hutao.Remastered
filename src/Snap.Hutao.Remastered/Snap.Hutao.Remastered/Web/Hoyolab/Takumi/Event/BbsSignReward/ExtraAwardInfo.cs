@@ -3,7 +3,7 @@
 
 namespace Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 
-internal sealed class ExtraAwardInfo
+public sealed class ExtraAwardInfo
 {
     [JsonPropertyName("awards")]
     public List<ExtraAward> Awards { get; set; } = default!;

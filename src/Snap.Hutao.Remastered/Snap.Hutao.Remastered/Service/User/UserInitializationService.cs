@@ -13,7 +13,7 @@ using Snap.Hutao.Remastered.Web.Response;
 namespace Snap.Hutao.Remastered.Service.User;
 
 [Service(ServiceLifetime.Singleton, typeof(IUserInitializationService))]
-internal sealed partial class UserInitializationService : IUserInitializationService
+public sealed partial class UserInitializationService : IUserInitializationService
 {
     private readonly IUserFingerprintService userFingerprintService;
     private readonly IProfilePictureService profilePictureService;

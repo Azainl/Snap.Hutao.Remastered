@@ -7,7 +7,7 @@ using System.Collections.Immutable;
 
 namespace Snap.Hutao.Remastered.ViewModel.Wiki;
 
-internal sealed class BaseValueInfoMetadataContext
+public sealed class BaseValueInfoMetadataContext
 {
     public required ImmutableDictionary<Level, TypeValueCollection<GrowCurveType, float>> GrowCurveMap { get; set; }
 
