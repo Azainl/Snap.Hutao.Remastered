@@ -260,11 +260,14 @@ public partial class PluginSettingService : IPluginSettingService
             {
                 settingsCache[pluginId] = new Dictionary<string, object>();
             }
+        }
 
-            if (defaultValue != null && !settingsCache[pluginId].ContainsKey(settingName))
-            {
-                settingsCache[pluginId][settingName] = defaultValue;
-            }
+
+        Task.Run(() => GetSettingAsync<T>(pluginId, settingName, defaultValue)).Wait();
+
+        if (defaultValue != null && !settingsCache[pluginId].ContainsKey(settingName))
+        {
+            settingsCache[pluginId][settingName] = defaultValue;
         }
     }
 
