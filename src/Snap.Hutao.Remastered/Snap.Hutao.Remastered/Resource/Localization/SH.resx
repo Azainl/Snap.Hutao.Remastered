@@ -4197,4 +4197,10 @@
   <data name="ServicePluginUninstallDescription" xml:space="preserve">
     <value>确定要卸载插件 {0} 吗？此操作不可恢复。</value>
   </data>
+  <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledHeader" xml:space="preserve">
+    <value>手柄热切换</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledDescription" xml:space="preserve">
+    <value>在游戏中随时自动切换键鼠和手柄输入</value>
+  </data>
 </root>

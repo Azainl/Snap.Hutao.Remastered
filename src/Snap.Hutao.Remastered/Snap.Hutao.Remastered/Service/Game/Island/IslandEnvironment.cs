@@ -1,6 +1,7 @@
 // Copyright (c) DGP Studio. All rights reserved.
 // Licensed under the MIT license.
 
+using Snap.Hutao.Remastered.Web.Hoyolab.Takumi.Event.BbsSignReward;
 using Snap.Hutao.Remastered.Win32.Foundation;
 using System.Globalization;
 
@@ -36,6 +37,8 @@ public struct IslandEnvironment
     public BOOL DebugMode;
     public BOOL HidePlayerInfo;
     public BOOL HideGrass;
+    public BOOL GamepadHotSwitchEnabled;
+
 #pragma warning disable CS0649
     public HookFunctionOffsets Offsets;
 #pragma warning restore CS0649
@@ -75,6 +78,10 @@ public struct HookFunctionOffsets
     public uint DamageText;
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint TouchInput;
+    [JsonConverter(typeof(HexStringToNintConverter))]
+    public uint KeyboardMouseInput;
+    [JsonConverter(typeof(HexStringToNintConverter))]
+    public uint JoypadInput;
 
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint CombineEntry;
@@ -117,6 +124,10 @@ public struct HookFunctionOffsets
     public uint GetGlobalActor;
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint AvatarPaimonAppear;
+    [JsonConverter(typeof(HexStringToNintConverter))]
+    public uint GetComponent;
+    [JsonConverter(typeof(HexStringToNintConverter))]
+    public uint GetText;
     [JsonConverter(typeof(HexStringToNintConverter))]
     public uint GetName;
 #pragma warning restore CS0649

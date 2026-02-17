@@ -4169,4 +4169,10 @@ Space Available: {2}</value>
   <data name="ServicePluginUninstallDescription" xml:space="preserve">
     <value>Are you sure you want to uninstall plugin {0}? This action cannot be undone.</value>
   </data>
+  <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledHeader" xml:space="preserve">
+    <value>Auto Input Swap</value>
+  </data>
+  <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledDescription" xml:space="preserve">
+    <value>Instant auto-swap between keyboard/mouse and gamepad</value>
+  </data>
 </root>

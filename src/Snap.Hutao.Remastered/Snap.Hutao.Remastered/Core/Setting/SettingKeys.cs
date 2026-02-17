@@ -112,11 +112,12 @@ public static class SettingKeys
     public const string LaunchDisableEventCameraMove                     = "Snap::Hutao::Game::Island::Event::CameraMove::Disabled";
     public const string LaunchTargetFov                                  = "Snap::Hutao::Game::Island::FieldOfView";
     public const string LaunchIsSetFieldOfViewEnabled                    = "Snap::Hutao::Game::Island::FieldOfView::Enabled";
-    public const string LaunchDisablePlayerPerspective                             = "Snap::Hutao::Game::Island::FieldOfView::DisablePlayerPerspective";
+    public const string LaunchDisablePlayerPerspective                   = "Snap::Hutao::Game::Island::FieldOfView::DisablePlayerPerspective";
     public const string LaunchDisableFogRendering                        = "Snap::Hutao::Game::Island::FieldOfView::DisableFogRendering";
     public const string LaunchIsSetTargetFrameRateEnabled                = "Snap::Hutao::Game::Island::FrameRate::Enabled";
     public const string LaunchTargetFps                                  = "Snap::Hutao::Game::Island::FrameRate";
     public const string LaunchUsingTouchScreen                           = "Snap::Hutao::Game::Island::InputDevice::TouchScreen";
+    public const string LaunchGamepadHotSwitchEnabled                    = "Snap::Hutao::Game::Island::InputDevice::GamepadHotSwitchEnabled";
     public const string LaunchForceUsingTouchScreen                      = "Snap::Hutao::Game::Island::InputDevice::TouchScreen::ForceWhenIntegratedTouchPresent";
     public const string LaunchRemoveOpenTeamProgress                     = "Snap::Hutao::Game::Island::OpenTeamProgress::Remove";
     public const string LaunchHideQuestBanner                            = "Snap::Hutao::Game::Island::QuestBanner::Hide";

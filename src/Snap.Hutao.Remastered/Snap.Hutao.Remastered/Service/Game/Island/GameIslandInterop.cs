@@ -162,6 +162,7 @@ public sealed class GameIslandInterop : IGameIslandInterop
         pIslandEnvironment->HideGrass = options.HideGrass.Value;
         pIslandEnvironment->DebugMode = options.DebugMode.Value;
         pIslandEnvironment->HidePlayerInfo = options.HidePlayerInfo.Value;
+        pIslandEnvironment->GamepadHotSwitchEnabled = options.GamepadHotSwitchEnabled.Value;
 
         return pIslandEnvironment->View;
     }

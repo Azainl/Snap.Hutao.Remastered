@@ -122,6 +122,8 @@ public sealed partial class LaunchOptions : DbStoreOptions, IRestrictedGamePathA
 
     [field: MaybeNull]
     public IObservableProperty<bool> UsingTouchScreen { get => field ??= CreateProperty(SettingKeys.LaunchUsingTouchScreen, false); }
+    [field: MaybeNull]
+    public IObservableProperty<bool> GamepadHotSwitchEnabled { get => field ??= CreateProperty(SettingKeys.LaunchGamepadHotSwitchEnabled, false); }
 
     [field: MaybeNull]
     public IObservableProperty<bool> RedirectCombineEntry { get => field ??= CreateProperty(SettingKeys.LaunchRedirectCombineEntry, false); }
