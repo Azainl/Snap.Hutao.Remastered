@@ -375,10 +375,6 @@ namespace Snap.Hutao.Remastered.Migrations
                     b.Property<int>("RankType")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("Region")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
-
                     b.Property<string>("ScheduleId")
                         .IsRequired()
                         .HasColumnType("TEXT");

@@ -24,7 +24,6 @@ namespace Snap.Hutao.Remastered.Migrations
                     ItemName = table.Column<string>(type: "TEXT", nullable: false),
                     ScheduleId = table.Column<string>(type: "TEXT", nullable: false),
                     RankType = table.Column<int>(type: "INTEGER", nullable: false),
-                    Region = table.Column<string>(type: "TEXT", nullable: false),
                     Uid = table.Column<string>(type: "TEXT", nullable: false),
                     IsUp = table.Column<int>(type: "INTEGER", nullable: false)
                 },
