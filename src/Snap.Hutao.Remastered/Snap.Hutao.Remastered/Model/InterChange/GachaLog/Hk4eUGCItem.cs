@@ -10,7 +10,7 @@ public class Hk4eUGCItem : IJsonOnDeserialized
 
     [JsonPropertyName("op_gacha_type")]
     [JsonEnumHandling(JsonEnumHandling.NumberString)]
-    public required OpGachaType GachaType { get; init; }
+    public required GachaType GachaType { get; init; }
 
     [JsonPropertyName("item_id")]
     [JsonNumberHandling(JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString)]
@@ -42,7 +42,7 @@ public class Hk4eUGCItem : IJsonOnDeserialized
     {
         if (!Enum.IsDefined(GachaType))
         {
-            throw new JsonException($"Unsupported OpGachaType: {GachaType}");
+            throw new JsonException($"Unsupported GachaType: {GachaType}");
         }
     }
 }

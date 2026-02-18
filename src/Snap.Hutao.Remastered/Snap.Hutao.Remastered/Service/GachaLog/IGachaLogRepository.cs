@@ -40,11 +40,11 @@ public interface IGachaLogRepository : IRepository<GachaArchive>, IRepository<Ga
     // Beyond Gacha (UGC) methods
     void AddBeyondGachaItemRange(IEnumerable<BeyondGachaItem> items);
 
-    void RemoveBeyondGachaItemRangeByArchiveIdAndOpGachaTypeNewerThanEndId(Guid archiveId, OpGachaType opGachaType, long endId);
+    void RemoveBeyondGachaItemRangeByArchiveIdAndGachaTypeNewerThanEndId(Guid archiveId, GachaType GachaType, long endId);
 
     ImmutableArray<BeyondGachaItem> GetBeyondGachaItemImmutableArrayByArchiveId(Guid archiveId);
 
-    long GetNewestBeyondGachaItemIdByArchiveIdAndOpGachaType(Guid archiveId, OpGachaType opGachaType);
+    long GetNewestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType);
 
-    long GetOldestBeyondGachaItemIdByArchiveIdAndOpGachaType(Guid archiveId, OpGachaType opGachaType);
+    long GetOldestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType);
 }

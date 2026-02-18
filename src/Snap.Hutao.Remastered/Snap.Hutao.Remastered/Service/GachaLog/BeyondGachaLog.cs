@@ -5,9 +5,9 @@ namespace Snap.Hutao.Remastered.Service.GachaLog;
 
 public static class BeyondGachaLog
 {
-    public static readonly FrozenSet<OpGachaType> QueryTypes =
+    public static readonly FrozenSet<GachaType> QueryTypes =
     [
-        OpGachaType.UGCStandard,
-        OpGachaType.UGCAvatarEventWish,
+        GachaType.UGCStandard,
+        GachaType.UGCAvatarEventWish,
     ];
 }

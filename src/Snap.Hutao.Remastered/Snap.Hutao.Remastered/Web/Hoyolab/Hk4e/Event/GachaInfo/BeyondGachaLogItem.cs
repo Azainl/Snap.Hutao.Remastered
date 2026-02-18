@@ -43,5 +43,5 @@ public class BeyondGachaLogItem
 
     [JsonPropertyName("op_gacha_type")]
     [JsonEnumHandling(JsonEnumHandling.NumberString)]
-    public OpGachaType OpGachaType { get; set; } = default!;
+    public GachaType GachaType { get; set; } = default!;
 }

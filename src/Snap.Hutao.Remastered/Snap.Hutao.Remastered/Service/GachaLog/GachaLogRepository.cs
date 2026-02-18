@@ -122,9 +122,9 @@ public sealed partial class GachaLogRepository : IGachaLogRepository
         this.AddRange(items);
     }
 
-    public void RemoveBeyondGachaItemRangeByArchiveIdAndOpGachaTypeNewerThanEndId(Guid archiveId, OpGachaType opGachaType, long endId)
+    public void RemoveBeyondGachaItemRangeByArchiveIdAndGachaTypeNewerThanEndId(Guid archiveId, GachaType GachaType, long endId)
     {
-        this.Delete<BeyondGachaItem>(i => i.ArchiveId == archiveId && i.OpGachaType == opGachaType && i.Id >= endId);
+        this.Delete<BeyondGachaItem>(i => i.ArchiveId == archiveId && i.GachaType == GachaType && i.Id >= endId);
     }
 
     public ImmutableArray<BeyondGachaItem> GetBeyondGachaItemImmutableArrayByArchiveId(Guid archiveId)
@@ -132,20 +132,20 @@ public sealed partial class GachaLogRepository : IGachaLogRepository
         return this.ImmutableArray<BeyondGachaItem, BeyondGachaItem>(query => query.Where(i => i.ArchiveId == archiveId).OrderBy(i => i.Id));
     }
 
-    public long GetNewestBeyondGachaItemIdByArchiveIdAndOpGachaType(Guid archiveId, OpGachaType opGachaType)
+    public long GetNewestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType)
     {
         BeyondGachaItem? item = this.Query<BeyondGachaItem, BeyondGachaItem?>(query => query
-            .Where(i => i.ArchiveId == archiveId && i.OpGachaType == opGachaType)
+            .Where(i => i.ArchiveId == archiveId && i.GachaType == GachaType)
             .OrderByDescending(i => i.Id)
             .FirstOrDefault());
 
         return item?.Id ?? 0L;
     }
 
-    public long GetOldestBeyondGachaItemIdByArchiveIdAndOpGachaType(Guid archiveId, OpGachaType opGachaType)
+    public long GetOldestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType)
     {
         BeyondGachaItem? item = this.Query<BeyondGachaItem, BeyondGachaItem?>(query => query
-            .Where(i => i.ArchiveId == archiveId && i.OpGachaType == opGachaType)
+            .Where(i => i.ArchiveId == archiveId && i.GachaType == GachaType)
             .OrderBy(i => i.Id)
             .FirstOrDefault());
 

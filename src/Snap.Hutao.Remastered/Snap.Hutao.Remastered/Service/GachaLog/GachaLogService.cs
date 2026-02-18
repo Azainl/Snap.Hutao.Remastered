@@ -81,6 +81,27 @@ public sealed partial class GachaLogService : IGachaLogService
         return authkeyValid;
     }
 
+    public async ValueTask<bool> RefreshBeyondGachaLogAsync(GachaLogServiceMetadataContext context, GachaLogQuery query, RefreshStrategyKind kind, IProgress<GachaLogFetchStatus> progress, CancellationToken token)
+    {
+        bool isLazy = kind switch
+        {
+            RefreshStrategyKind.AggressiveMerge => false,
+            RefreshStrategyKind.LazyMerge => true,
+            _ => throw HutaoException.NotSupported(),
+        };
+
+        (bool authkeyValid, GachaArchive? target) = await FetchBeyondGachaLogsAsync(context, query, isLazy, progress, token).ConfigureAwait(false);
+
+        if (target is not null)
+        {
+            IAdvancedDbCollectionView<GachaArchive> localArchives = await GetArchiveCollectionAsync().ConfigureAwait(false);
+            await taskContext.SwitchToMainThreadAsync();
+            localArchives.MoveCurrentTo(target);
+        }
+
+        return authkeyValid;
+    }
+
     public async ValueTask RemoveArchiveAsync(GachaArchive archive)
     {
         // Sync database
@@ -140,6 +161,79 @@ public sealed partial class GachaLogService : IGachaLogService
                     ImmutableArray<GachaLogItem> items = page.List;
 
                     foreach (GachaLogItem item in items)
+                    {
+                        fetchContext.EnsureArchiveAndEndId(item, localArchives, gachaLogRepository);
+
+                        if (fetchContext.ShouldAddItem(item))
+                        {
+                            fetchContext.AddItem(item);
+                        }
+                        else
+                        {
+                            fetchContext.CompleteCurrentTypeAdding();
+                            break;
+                        }
+                    }
+
+                    fetchContext.Report(progress);
+                    await Task.Delay(Random.Shared.Next(1000, 2000), token).ConfigureAwait(false);
+
+                    if (fetchContext.HasReachCurrentTypeEnd(items))
+                    {
+                        // Exit current type fetch loop
+                        break;
+                    }
+                }
+                while (true);
+
+                // Fast break query type loop if authkey timeout, skip saving items
+                if (fetchContext.Status.AuthKeyTimeout)
+                {
+                    break;
+                }
+
+                // Save items for each queryType
+                token.ThrowIfCancellationRequested();
+                fetchContext.SaveItems();
+
+                // Delay between query types
+                await Task.Delay(Random.Shared.Next(1000, 2000), token).ConfigureAwait(false);
+            }
+        }
+
+        return new(!fetchContext.Status.AuthKeyTimeout, fetchContext.TargetArchive);
+    }
+
+    private async ValueTask<ValueResult<bool, GachaArchive?>> FetchBeyondGachaLogsAsync(GachaLogServiceMetadataContext context, GachaLogQuery query, bool isLazy, IProgress<GachaLogFetchStatus> progress, CancellationToken token)
+    {
+        IAdvancedDbCollectionView<GachaArchive> localArchives = await GetArchiveCollectionAsync().ConfigureAwait(false);
+        BeyondGachaLogFetchContext fetchContext = new(gachaLogRepository, context, isLazy);
+
+        using (IServiceScope scope = serviceProvider.CreateScope())
+        {
+            GachaInfoClient gachaInfoClient = scope.ServiceProvider.GetRequiredService<GachaInfoClient>();
+
+            foreach (GachaType configType in GachaLog.QueryTypes)
+            {
+                fetchContext.ResetType(configType, query);
+
+                do
+                {
+                    Response<BeyondGachaLogPage> response = await gachaInfoClient
+                        .GetBeyondGachaLogPageAsync(fetchContext.TypedQueryOptions, token)
+                        .ConfigureAwait(false);
+
+                    // Fast break fetching if authkey timeout
+                    if (!ResponseValidator.TryValidateWithoutUINotification(response, out BeyondGachaLogPage? page))
+                    {
+                        fetchContext.Report(progress, isAuthKeyTimeout: true);
+                        break;
+                    }
+
+                    fetchContext.ResetCurrentPage();
+                    ImmutableArray<BeyondGachaLogItem> items = page.List;
+
+                    foreach (BeyondGachaLogItem item in items)
                     {
                         fetchContext.EnsureArchiveAndEndId(item, localArchives, gachaLogRepository);
 

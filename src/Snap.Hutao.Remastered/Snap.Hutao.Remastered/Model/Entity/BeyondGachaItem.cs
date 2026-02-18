@@ -20,7 +20,7 @@ public sealed class BeyondGachaItem
 
     public Guid ArchiveId { get; set; }
 
-    public OpGachaType OpGachaType { get; set; }
+    public GachaType GachaType { get; set; }
 
     public uint ItemId { get; set; }
 
@@ -41,7 +41,7 @@ public sealed class BeyondGachaItem
         return new()
         {
             ArchiveId = archiveId,
-            OpGachaType = item.OpGachaType,
+            GachaType = item.GachaType,
             ItemId = uint.Parse(item.ItemId),
             Time = item.Time,
             Id = item.Id,
@@ -57,7 +57,7 @@ public sealed class BeyondGachaItem
         return new()
         {
             ArchiveId = archiveId,
-            OpGachaType = item.GachaType,
+            GachaType = item.GachaType,
             ItemId = item.ItemId,
             Time = new(item.Time, TimeSpan.FromHours(timezoneOffset)),
             Id = item.Id,
@@ -72,7 +72,7 @@ public sealed class BeyondGachaItem
     {
         return new()
         {
-            GachaType = OpGachaType,
+            GachaType = GachaType,
             ItemId = ItemId,
             Time = Time.UtcDateTime,
             Id = Id,

@@ -19,6 +19,8 @@ public interface IGachaLogService
 
     ValueTask<bool> RefreshGachaLogAsync(GachaLogServiceMetadataContext context, GachaLogQuery query, RefreshStrategyKind strategy, IProgress<GachaLogFetchStatus> progress, CancellationToken token);
 
+    ValueTask<bool> RefreshBeyondGachaLogAsync(GachaLogServiceMetadataContext context, GachaLogQuery query, RefreshStrategyKind strategy, IProgress<GachaLogFetchStatus> progress, CancellationToken token);
+
     ValueTask RemoveArchiveAsync(GachaArchive archive);
 
     ValueTask<IAdvancedDbCollectionView<GachaArchive>> GetArchiveCollectionAsync();

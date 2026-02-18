@@ -342,6 +342,61 @@ namespace Snap.Hutao.Remastered.Migrations
                     b.ToTable("gacha_items");
                 });
 
+            modelBuilder.Entity("Snap.Hutao.Remastered.Model.Entity.BeyondGachaItem", b =>
+                {
+                    b.Property<Guid>("InnerId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("ArchiveId")
+                        .HasColumnType("TEXT");
+
+                    b.Property<long>("Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("IsUp")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ItemId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ItemType")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("GachaType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("RankType")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Region")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ScheduleId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTimeOffset>("Time")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Uid")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("InnerId");
+
+                    b.HasIndex("ArchiveId");
+
+                    b.ToTable("beyond_gacha_items");
+                });
+
             modelBuilder.Entity("Snap.Hutao.Remastered.Model.Entity.GameAccount", b =>
                 {
                     b.Property<Guid>("InnerId")
@@ -622,6 +677,17 @@ namespace Snap.Hutao.Remastered.Migrations
                 });
 
             modelBuilder.Entity("Snap.Hutao.Remastered.Model.Entity.GachaItem", b =>
+                {
+                    b.HasOne("Snap.Hutao.Remastered.Model.Entity.GachaArchive", "Archive")
+                        .WithMany()
+                        .HasForeignKey("ArchiveId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Archive");
+                });
+
+            modelBuilder.Entity("Snap.Hutao.Remastered.Model.Entity.BeyondGachaItem", b =>
                 {
                     b.HasOne("Snap.Hutao.Remastered.Model.Entity.GachaArchive", "Archive")
                         .WithMany()

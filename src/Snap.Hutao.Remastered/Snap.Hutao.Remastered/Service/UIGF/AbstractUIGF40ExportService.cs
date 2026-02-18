@@ -29,7 +29,7 @@ public abstract partial class AbstractUIGF40ExportService : IUIGFExportService
         {
             Info = new()
             {
-                ExportApp = "Snap Hutao",
+                ExportApp = "Snap Hutao Remastered",
                 ExportAppVersion = $"{HutaoRuntime.Version}",
                 ExportTimestamp = DateTimeOffset.Now.ToUnixTimeSeconds(),
                 Version = Version,
@@ -86,6 +86,6 @@ public abstract partial class AbstractUIGF40ExportService : IUIGFExportService
         }
 
         uigf.Hk4e = hk4eResults.ToImmutable();
-        uigf.Hkrpg = hk4eUgcResults.ToImmutable();
+        uigf.Hk4eUgc = hk4eUgcResults.ToImmutable();
     }
 }
