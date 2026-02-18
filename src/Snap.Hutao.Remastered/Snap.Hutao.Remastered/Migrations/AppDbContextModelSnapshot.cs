@@ -351,15 +351,17 @@ namespace Snap.Hutao.Remastered.Migrations
                     b.Property<Guid>("ArchiveId")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("GachaType")
+                        .HasColumnType("INTEGER");
+
                     b.Property<long>("Id")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("IsUp")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ItemId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
+                    b.Property<uint>("ItemId")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("ItemName")
                         .IsRequired()
@@ -369,15 +371,11 @@ namespace Snap.Hutao.Remastered.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("GachaType")
+                    b.Property<long>("RankType")
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("RankType")
+                    b.Property<long>("ScheduleId")
                         .HasColumnType("INTEGER");
-
-                    b.Property<string>("ScheduleId")
-                        .IsRequired()
-                        .HasColumnType("TEXT");
 
                     b.Property<DateTimeOffset>("Time")
                         .HasColumnType("TEXT");

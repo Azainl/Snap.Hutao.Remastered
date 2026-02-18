@@ -36,6 +36,10 @@ public sealed class BeyondGachaItem
 
     public long RankType { get; set; }
 
+    public string Uid { get; set; } = default!;
+
+    public int IsUp { get; set; }
+
     public static BeyondGachaItem From(Guid archiveId, BeyondGachaLogItem item)
     {
         return new()
@@ -49,6 +53,8 @@ public sealed class BeyondGachaItem
             ItemName = item.ItemName,
             ScheduleId = long.Parse(item.ScheduleId),
             RankType = (long)item.RankType,
+            Uid = item.Uid,
+            IsUp = item.IsUp,
         };
     }
 
@@ -65,6 +71,8 @@ public sealed class BeyondGachaItem
             ItemName = item.ItemName,
             ScheduleId = item.ScheduleId,
             RankType = item.RankType,
+            Uid = string.Empty, // Hk4eUGCItem doesn't have Uid
+            IsUp = 0, // Hk4eUGCItem doesn't have IsUp
         };
     }
 
