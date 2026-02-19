@@ -11,6 +11,7 @@ namespace Snap.Hutao.Remastered.Service.GachaLog;
 public sealed class GachaLogTypedQueryOptions
 {
     public const int Size = 20;
+    public const int BeyondSize = 5;
 
     private readonly NameValueCollection innerQuery;
 
@@ -20,7 +21,14 @@ public sealed class GachaLogTypedQueryOptions
         Type = queryType;
         innerQuery = HttpUtility.ParseQueryString(query.Query);
         innerQuery.Set("gacha_type", $"{queryType:D}");
-        innerQuery.Set("size", $"{Size}");
+        if (queryType.ToString().StartsWith("UGC"))
+        {
+            innerQuery.Set("size", $"{BeyondSize}");
+        }
+        else
+        {
+            innerQuery.Set("size", $"{Size}");
+        }
     }
 
     public bool IsOversea { get; }

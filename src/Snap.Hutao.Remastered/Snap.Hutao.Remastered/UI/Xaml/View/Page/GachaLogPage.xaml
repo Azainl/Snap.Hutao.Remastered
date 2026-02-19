@@ -1,5 +1,6 @@
 <shuxc:ScopedPage
     x:Class="Snap.Hutao.Remastered.UI.Xaml.View.Page.GachaLogPage"
+    x:Name="RootPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:cw="using:CommunityToolkit.WinUI"
@@ -26,6 +27,12 @@
     </mxi:Interaction.Behaviors>
 
     <Page.Resources>
+        <cwconv:BoolNegationConverter x:Key="BoolNegationConverter"/>
+        <cwconv:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+        <cwconv:BoolToObjectConverter
+            x:Key="BoolNegationToVisibilityConverter"
+            TrueValue="Collapsed"
+            FalseValue="Visible"/>
         <cwconv:DoubleToObjectConverter
             x:Key="DoubleToOpacityConverter"
             FalseValue="0.4"
@@ -381,6 +388,17 @@
                         </AppBarButton.Flyout>
                     </AppBarButton>
                     <AppBarSeparator/>
+                    <AppBarToggleButton
+                        Icon="{shuxm:FontIcon Glyph=&#xE7BC;}"
+                        IsChecked="{Binding IsBeyondMode, Mode=TwoWay}"
+                        Label="颂愿">
+                        <AppBarToggleButton.Resources>
+                            <Style BasedOn="{StaticResource DefaultAppBarToggleButtonStyle}" TargetType="AppBarToggleButton">
+                                <Setter Property="ToolTipService.ToolTip" Value="切换到颂愿（UGC祈愿）模式"/>
+                            </Style>
+                        </AppBarToggleButton.Resources>
+                    </AppBarToggleButton>
+                    <AppBarSeparator/>
                     <AppBarButton
                         Flyout="{StaticResource HutaoCloudFlyout}"
                         Icon="{shuxm:FontIcon Glyph=&#xE753;}"
@@ -409,14 +427,35 @@
                         Margin="0,16"
                         MinItemWidth="302"
                         Spacing="16">
-                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.AvatarWish}"/>
-                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.WeaponWish}"/>
-                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.StandardWish}" ShowUpPull="False"/>
-                        <shuxvs:StatisticsCard DataContext="{Binding Statistics.ChronicledWish}" ShowUpPull="False"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.AvatarWish}"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolNegationToVisibilityConverter}}"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.WeaponWish}"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolNegationToVisibilityConverter}}"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.StandardWish}" 
+                            ShowUpPull="False"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolNegationToVisibilityConverter}}"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.ChronicledWish}" 
+                            ShowUpPull="False"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolNegationToVisibilityConverter}}"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.BeyondStandardWish}"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolToVisibilityConverter}}"
+                            ShowOrange="False"
+                            ShowUpPull="False"/>
+                        <shuxvs:StatisticsCard 
+                            DataContext="{Binding Statistics.BeyondEventWish}"
+                            Visibility="{Binding DataContext.IsBeyondMode, ElementName=RootPage, Converter={StaticResource BoolToVisibilityConverter}}"
+                            ShowUpPull="True"/>
                     </shuxcp:HorizontalEqualPanel>
                 </ScrollViewer>
             </PivotItem>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotCountdown}">
+            <PivotItem 
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotCountdown}"
+                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
                 <Grid>
                     <shuxc:Loading
                         Margin="16"
@@ -446,7 +485,9 @@
                 </Grid>
 
             </PivotItem>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotHistory}">
+            <PivotItem 
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotHistory}"
+                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
                 <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                     <Border Style="{ThemeResource AcrylicBorderCardStyle}">
                         <SplitView
@@ -489,10 +530,10 @@
                                                 Margin="0,8,0,0"
                                                 Style="{StaticResource BaseTextBlockStyle}"
                                                 Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"
-                                                Visibility="{Binding Statistics.HistoryWishes.CurrentItem.OrangeList.Length, Converter={StaticResource Int32ToVisibilityConverter}}"/>
+                                                Visibility="{Binding Statistics.HistoryWishes.CurrentItem.SummaryList.Length, Converter={StaticResource Int32ToVisibilityConverter}}"/>
                                             <GridView
                                                 ItemTemplate="{StaticResource HistoryWishGridTemplate}"
-                                                ItemsSource="{Binding Statistics.HistoryWishes.CurrentItem.OrangeList}"
+                                                ItemsSource="{Binding Statistics.HistoryWishes.CurrentItem.SummaryList}"
                                                 SelectionMode="None"/>
 
                                             <TextBlock
@@ -523,7 +564,9 @@
                     </Border>
                 </Border>
             </PivotItem>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotAvatar}">
+            <PivotItem 
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotAvatar}"
+                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
                 <ScrollViewer>
                     <StackPanel Margin="16,0,16,16">
                         <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
@@ -558,7 +601,9 @@
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotWeapon}">
+            <PivotItem 
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotWeapon}"
+                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
                 <ScrollViewer>
                     <StackPanel Margin="16,0,16,16">
                         <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
@@ -606,7 +651,9 @@
                     </StackPanel>
                 </ScrollViewer>
             </PivotItem>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotStatistics}">
+            <PivotItem 
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotStatistics}"
+                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
                 <Grid>
                     <shuxc:Loading
                         Margin="16"

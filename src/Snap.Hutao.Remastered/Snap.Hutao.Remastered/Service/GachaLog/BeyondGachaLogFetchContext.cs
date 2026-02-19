@@ -65,7 +65,7 @@ public sealed class BeyondGachaLogFetchContext
 
     public bool HasReachCurrentTypeEnd(ImmutableArray<BeyondGachaLogItem> items)
     {
-        return CurrentTypeAddingCompleted || items.Length < GachaLogTypedQueryOptions.Size;
+        return CurrentTypeAddingCompleted || items.Length < GachaLogTypedQueryOptions.BeyondSize;
     }
 
     public void AddItem(BeyondGachaLogItem item)

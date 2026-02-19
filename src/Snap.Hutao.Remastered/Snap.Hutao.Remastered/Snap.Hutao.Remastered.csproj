@@ -83,7 +83,9 @@
     <AdditionalFiles Include="Resource\Localization\SHRegex.tr.resx" />
     <AdditionalFiles Include="Resource\Localization\SHRegex.vi.resx" />
     <AdditionalFiles Include="Resource\Localization\SHRegex.zh-Hant.resx" />
-    <AdditionalFiles Include="Resource\Localization\SH.resx" />
+    <AdditionalFiles Include="Resource\Localization\SH.resx">
+      <Generator></Generator>
+    </AdditionalFiles>
     <AdditionalFiles Include="Resource\Localization\SH.de.resx" />
     <AdditionalFiles Include="Resource\Localization\SH.en.resx" />
     <AdditionalFiles Include="Resource\Localization\SH.es.resx" />

@@ -17,11 +17,15 @@ public readonly struct TypedWishSummaryBuilderContext
     public readonly int GuaranteePurpleThreshold;
     public readonly Func<GachaType, bool> TypeEvaluator;
     public readonly GachaDistributionType DistributionType;
+    public readonly bool SummarizePurple;
+    public readonly bool SummarizeBlue;
 
     private static readonly Func<GachaType, bool> IsStandardWish = type => type is GachaType.Standard;
     private static readonly Func<GachaType, bool> IsAvatarEventWish = type => type is GachaType.ActivityAvatar or GachaType.SpecialActivityAvatar;
     private static readonly Func<GachaType, bool> IsWeaponEventWish = type => type is GachaType.ActivityWeapon;
     private static readonly Func<GachaType, bool> IsChronicledWish = type => type is GachaType.ActivityCity;
+    private static readonly Func<GachaType, bool> IsBeyondStandardWish = type => type is GachaType.UGCStandard;
+    private static readonly Func<GachaType, bool> IsBeyondEventWish = type => type is GachaType.UGCAvatarEventWish or GachaType.UGCActivityAvatarMaleOne or GachaType.UGCActivityAvatarMaleTwo or GachaType.UGCActivityAvatarFemaleOne or GachaType.UGCActivityAvatarFemaleTwo;
 
     public TypedWishSummaryBuilderContext(
         IServiceProvider serviceProvider,
@@ -29,7 +33,9 @@ public readonly struct TypedWishSummaryBuilderContext
         int guaranteeOrangeThreshold,
         int guaranteePurpleThreshold,
         Func<GachaType, bool> typeEvaluator,
-        GachaDistributionType distributionType)
+        GachaDistributionType distributionType,
+        bool summarizePurple = false,
+        bool summarizeBlue = false)
     {
         ServiceProvider = serviceProvider;
         TaskContext = serviceProvider.GetRequiredService<ITaskContext>();
@@ -38,6 +44,8 @@ public readonly struct TypedWishSummaryBuilderContext
         GuaranteePurpleThreshold = guaranteePurpleThreshold;
         TypeEvaluator = typeEvaluator;
         DistributionType = distributionType;
+        SummarizePurple = summarizePurple;
+        SummarizeBlue = summarizeBlue;
     }
 
     public static TypedWishSummaryBuilderContext StandardWish(GachaStatisticsFactoryContext context)
@@ -58,6 +66,16 @@ public readonly struct TypedWishSummaryBuilderContext
     public static TypedWishSummaryBuilderContext ChronicledWish(GachaStatisticsFactoryContext context)
     {
         return new(context.ServiceProvider, SH.ServiceGachaLogFactoryChronicledWishName, 90, 10, IsChronicledWish, GachaDistributionType.Chronicled);
+    }
+
+    public static TypedWishSummaryBuilderContext BeyondStandardWish(GachaStatisticsFactoryContext context)
+    {
+        return new(context.ServiceProvider, "颂愿常驻", int.MaxValue, 70, IsBeyondStandardWish, GachaDistributionType.BeyondStandard, true, true);
+    }
+
+    public static TypedWishSummaryBuilderContext BeyondEventWish(GachaStatisticsFactoryContext context)
+    {
+        return new(context.ServiceProvider, "颂愿活动", 90, 10, IsBeyondEventWish, GachaDistributionType.BeyondEvent, true);
     }
 
     public TypedWishSummaryBuilder CreateBuilder()

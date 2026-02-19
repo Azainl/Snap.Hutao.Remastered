@@ -4221,4 +4221,10 @@
   <data name="WebUGCGachaConfigTypeActivityAvatarFemaleTwo" xml:space="preserve">
     <value>活动颂愿-女</value>
   </data>
+  <data name="AppNameAndVersion" xml:space="preserve">
+    <value>胡桃 {0}</value>
+  </data>
+  <data name="ViewControlStatisticsCardPurpleAveragePullText" xml:space="preserve">
+    <value>四星平均抽数</value>
+  </data>
 </root>

@@ -129,9 +129,6 @@
   <data name="AppName" xml:space="preserve">
     <value>Snap Hutao</value>
   </data>
-  <data name="AppNameAndVersion" xml:space="preserve">
-    <value>Snap Hutao {0}</value>
-  </data>
   <data name="ContentDialogCancelCloseButtonText" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -4174,5 +4171,11 @@ Space Available: {2}</value>
   </data>
   <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledDescription" xml:space="preserve">
     <value>Instant auto-swap between keyboard/mouse and gamepad</value>
+  </data>
+  <data name="AppNameAndVersion" xml:space="preserve">
+    <value>Snap Hutao {0}</value>
+  </data>
+  <data name="ViewControlStatisticsCardPurpleAveragePullText" xml:space="preserve">
+    <value>Avg 4 Stars wish #</value>
   </data>
 </root>

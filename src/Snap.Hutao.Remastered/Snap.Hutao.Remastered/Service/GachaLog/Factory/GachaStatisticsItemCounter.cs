@@ -3,6 +3,7 @@
 using Snap.Hutao.Remastered.Model.Intrinsic;
 using Snap.Hutao.Remastered.Model.Metadata;
 using Snap.Hutao.Remastered.Model.Metadata.Avatar;
+using Snap.Hutao.Remastered.Model.Metadata.Item;
 using Snap.Hutao.Remastered.Model.Metadata.Weapon;
 using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
 using Snap.Hutao.Remastered.Web.Hoyolab.Hk4e.Event.GachaInfo;
@@ -20,6 +21,9 @@ public sealed class GachaStatisticsItemCounter
             OrangeWeapon = [];
             PurpleWeapon = [];
             BlueWeapon = [];
+            OrangeBeyondItem = [];
+            PurpleBeyondItem = [];
+            BlueBeyondItem = [];
             return;
         }
 
@@ -58,6 +62,16 @@ public sealed class GachaStatisticsItemCounter
 
         PurpleWeapon = purpleWeapons.ToDictionary(weapon => weapon, _ => 0);
         BlueWeapon = blueWeapons.ToDictionary(weapon => weapon, _ => 0);
+
+        OrangeBeyondItem = context.Metadata.IdBeyondItemMap.Values
+            .Where(beyondItem => beyondItem.Quality == QualityType.QUALITY_ORANGE)
+            .ToDictionary(beyondItem => beyondItem, _ => 0);
+        PurpleBeyondItem = context.Metadata.IdBeyondItemMap.Values
+            .Where(beyondItem => beyondItem.Quality == QualityType.QUALITY_PURPLE)
+            .ToDictionary(beyondItem => beyondItem, _ => 0);
+        BlueBeyondItem = context.Metadata.IdBeyondItemMap.Values
+            .Where(beyondItem => beyondItem.Quality == QualityType.QUALITY_BLUE)
+            .ToDictionary(beyondItem => beyondItem, _ => 0);
     }
 
     public Dictionary<Avatar, int> OrangeAvatar { get; }
@@ -69,4 +83,10 @@ public sealed class GachaStatisticsItemCounter
     public Dictionary<Weapon, int> PurpleWeapon { get; }
 
     public Dictionary<Weapon, int> BlueWeapon { get; }
+
+    public Dictionary<BeyondItem, int> OrangeBeyondItem { get; }
+
+    public Dictionary<BeyondItem, int> PurpleBeyondItem { get; }
+
+    public Dictionary<BeyondItem, int> BlueBeyondItem { get; }
 }

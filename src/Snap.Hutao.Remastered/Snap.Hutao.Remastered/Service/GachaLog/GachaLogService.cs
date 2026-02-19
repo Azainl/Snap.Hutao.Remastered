@@ -43,7 +43,33 @@ public sealed partial class GachaLogService : IGachaLogService
         using (ValueStopwatch.MeasureExecution(logger))
         {
             ImmutableArray<GachaItem> items = gachaLogRepository.GetGachaItemImmutableArrayByArchiveId(archive.InnerId);
-            return await gachaStatisticsFactory.CreateAsync(context, items).ConfigureAwait(false);
+            return await gachaStatisticsFactory.CreateAsync(context, items, default!).ConfigureAwait(false);
+        }
+    }
+
+    public async ValueTask<GachaStatistics> GetBeyondStatisticsAsync(GachaLogServiceMetadataContext context, GachaArchive archive)
+    {
+        using (ValueStopwatch.MeasureExecution(logger))
+        {
+            ImmutableArray<BeyondGachaItem> beyondItems = gachaLogRepository.GetBeyondGachaItemImmutableArrayByArchiveId(archive.InnerId);
+            
+            GachaStatistics statistics = await gachaStatisticsFactory.CreateAsync(context, default!, beyondItems).ConfigureAwait(false);
+            
+            return new GachaStatistics
+            {
+                AvatarWish = statistics.AvatarWish,
+                WeaponWish = statistics.WeaponWish,
+                ChronicledWish = statistics.ChronicledWish,
+                StandardWish = statistics.StandardWish,
+                BeyondStandardWish = statistics.BeyondStandardWish,
+                BeyondEventWish = statistics.BeyondEventWish,
+                HistoryWishes = statistics.HistoryWishes,
+                OrangeAvatars = statistics.OrangeAvatars,
+                PurpleAvatars = statistics.PurpleAvatars,
+                OrangeWeapons = statistics.OrangeWeapons,
+                PurpleWeapons = statistics.PurpleWeapons,
+                BlueWeapons = statistics.BlueWeapons
+            };
         }
     }
 
@@ -213,7 +239,7 @@ public sealed partial class GachaLogService : IGachaLogService
         {
             GachaInfoClient gachaInfoClient = scope.ServiceProvider.GetRequiredService<GachaInfoClient>();
 
-            foreach (GachaType configType in GachaLog.QueryTypes)
+            foreach (GachaType configType in BeyondGachaLog.QueryTypes)
             {
                 fetchContext.ResetType(configType, query);
 

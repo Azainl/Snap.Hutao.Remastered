@@ -6,6 +6,7 @@ using Snap.Hutao.Remastered.Model;
 using Snap.Hutao.Remastered.Model.Metadata;
 using Snap.Hutao.Remastered.Model.Metadata.Abstraction;
 using Snap.Hutao.Remastered.Model.Metadata.Avatar;
+using Snap.Hutao.Remastered.Model.Metadata.Item;
 using Snap.Hutao.Remastered.Model.Metadata.Weapon;
 using Snap.Hutao.Remastered.Model.Primitive;
 using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
@@ -21,7 +22,8 @@ public sealed class GachaLogServiceMetadataContext : IMetadataContext,
     IMetadataDictionaryIdAvatarSource,
     IMetadataDictionaryIdWeaponSource,
     IMetadataDictionaryNameAvatarSource,
-    IMetadataDictionaryNameWeaponSource
+    IMetadataDictionaryNameWeaponSource,
+    IMetadataDictionaryIdBeyondItemSource
 {
     public ImmutableArray<GachaEvent> GachaEvents { get; set; } = default!;
 
@@ -32,6 +34,7 @@ public sealed class GachaLogServiceMetadataContext : IMetadataContext,
     public ImmutableDictionary<string, Avatar> NameAvatarMap { get; set; } = default!;
 
     public ImmutableDictionary<string, Weapon> NameWeaponMap { get; set; } = default!;
+    public ImmutableDictionary<BeyondItemId, BeyondItem> IdBeyondItemMap { get; set; } = default!;
 
     public Item GetItemByNameAndType(string name, string type)
     {

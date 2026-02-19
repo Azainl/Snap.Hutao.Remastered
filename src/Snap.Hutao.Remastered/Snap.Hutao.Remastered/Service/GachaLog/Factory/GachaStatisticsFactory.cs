@@ -2,8 +2,10 @@
 // Licensed under the MIT license.
 
 using Snap.Hutao.Remastered.Core.ExceptionService;
+using Snap.Hutao.Remastered.Model.Entity;
 using Snap.Hutao.Remastered.Model.Intrinsic;
 using Snap.Hutao.Remastered.Model.Metadata.Avatar;
+using Snap.Hutao.Remastered.Model.Metadata.Item;
 using Snap.Hutao.Remastered.Model.Metadata.Weapon;
 using Snap.Hutao.Remastered.Service.Metadata.ContextAbstraction;
 using Snap.Hutao.Remastered.UI.Xaml.Data;
@@ -25,13 +27,13 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
     public partial GachaStatisticsFactory(IServiceProvider serviceProvider);
 
     /// <inheritdoc/>
-    public async ValueTask<GachaStatistics> CreateAsync(GachaLogServiceMetadataContext metadata, ImmutableArray<GachaItem> items)
+    public async ValueTask<GachaStatistics> CreateAsync(GachaLogServiceMetadataContext metadata, ImmutableArray<GachaItem> items, ImmutableArray<BeyondGachaItem> beyondItems)
     {
         await taskContext.SwitchToBackgroundAsync();
 
         ImmutableArray<HistoryWishBuilder> historyWishBuilders = metadata.GachaEvents
             .SelectAsArray(static (gachaEvent, metadata) => HistoryWishBuilder.Create(gachaEvent, metadata), metadata);
-        return SynchronizedCreate(new(serviceProvider, items, historyWishBuilders, metadata));
+        return SynchronizedCreate(new(serviceProvider, items, beyondItems, historyWishBuilders, metadata));
     }
 
     private static GachaStatistics SynchronizedCreate(GachaStatisticsFactoryContext context)
@@ -40,6 +42,8 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
         TypedWishSummaryBuilder avatarWishBuilder = TypedWishSummaryBuilderContext.AvatarEventWish(context).CreateBuilder();
         TypedWishSummaryBuilder weaponWishBuilder = TypedWishSummaryBuilderContext.WeaponEventWish(context).CreateBuilder();
         TypedWishSummaryBuilder chronicledWishBuilder = TypedWishSummaryBuilderContext.ChronicledWish(context).CreateBuilder();
+        TypedWishSummaryBuilder beyondStandardWishBuilder = TypedWishSummaryBuilderContext.BeyondStandardWish(context).CreateBuilder();
+        TypedWishSummaryBuilder beyondEventWishBuilder = TypedWishSummaryBuilderContext.BeyondEventWish(context).CreateBuilder();
         GachaStatisticsItemCounter itemCounter = new(context);
 
         // Pre group builders
@@ -51,9 +55,11 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
         foreach (ref readonly GachaItem item in context.Items.AsSpan())
         {
             // Find target history wish to operate. // banner.From <= item.Time <= banner.To
-            HistoryWishBuilder? targetHistoryWishBuilder = item.GachaType is not (GachaType.Standard or GachaType.NewBie)
-                ? historyWishBuilderMap[item.GachaType].BinarySearch(item, static (pinned, banner) => pinned.Time < banner.From ? -1 : pinned.Time > banner.To ? 1 : 0)
-                : default;
+            HistoryWishBuilder? targetHistoryWishBuilder = default;
+            if (item.GachaType is not (GachaType.Standard or GachaType.NewBie) && historyWishBuilderMap.TryGetValue(item.GachaType, out List<HistoryWishBuilder>? builders))
+            {
+                targetHistoryWishBuilder = builders.BinarySearch(item, static (pinned, banner) => pinned.Time < banner.From ? -1 : pinned.Time > banner.To ? 1 : 0);
+            }
 
             switch (item.ItemId.StringLength)
             {
@@ -80,7 +86,7 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
                         chronicledWishBuilder.Track(item, avatar, isUp);
                         break;
                     }
-
+                
                 case 5U:
                     {
                         Weapon weapon = context.Metadata.GetWeapon(item.ItemId);
@@ -106,6 +112,8 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
                         avatarWishBuilder.Track(item, weapon, isUp);
                         weaponWishBuilder.Track(item, weapon, isUp);
                         chronicledWishBuilder.Track(item, weapon, isUp);
+                        beyondStandardWishBuilder.Track(item, weapon, isUp);
+                        beyondEventWishBuilder.Track(item, weapon, isUp);
                         break;
                     }
 
@@ -116,7 +124,49 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
             }
         }
 
-        AsyncBarrier barrier = new(4);
+        foreach (ref readonly BeyondGachaItem item in context.BeyondItems.AsSpan())
+        {
+            // Find target history wish to operate. // banner.From <= item.Time <= banner.To
+            HistoryWishBuilder? targetHistoryWishBuilder = default;
+            if (item.GachaType is not (GachaType.Standard or GachaType.NewBie) && historyWishBuilderMap.TryGetValue(item.GachaType, out List<HistoryWishBuilder>? builders))
+            {
+                targetHistoryWishBuilder = builders.BinarySearch(item, static (pinned, banner) => pinned.Time < banner.From ? -1 : pinned.Time > banner.To ? 1 : 0);
+            }
+
+            switch (item.ItemId.StringLength)
+            {
+                case 6u:
+                    {
+                        BeyondItem beyondItem = context.Metadata.GetBeyondItem(item.ItemId);
+
+                        beyondItem.Name = item.ItemName;
+
+                        bool isUp = false;
+                        switch (beyondItem.Quality)
+                        {
+                            case QualityType.QUALITY_ORANGE:
+                                itemCounter.OrangeBeyondItem.IncreaseByOne(beyondItem);
+                                isUp = targetHistoryWishBuilder?.IncreaseOrange(beyondItem) ?? false;
+                                break;
+                            case QualityType.QUALITY_PURPLE:
+                                itemCounter.PurpleBeyondItem.IncreaseByOne(beyondItem);
+                                targetHistoryWishBuilder?.IncreasePurple(beyondItem);
+                                break;
+                        }
+
+                        beyondStandardWishBuilder.Track(item, beyondItem, isUp);
+                        beyondEventWishBuilder.Track(item, beyondItem, isUp);
+                        break;
+                    }
+
+                default:
+                    // ItemId string length not correct.
+                    HutaoException.GachaStatisticsInvalidItemId(item.ItemId);
+                    break;
+            }
+        }
+
+        AsyncBarrier barrier = new(6);
 
         ImmutableArray<HistoryWish> historyWishes =
         [
@@ -127,6 +177,10 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
                 .Select(builder => builder.ToHistoryWish())
         ];
 
+        TypedWishSummary standardWish = standardWishBuilder.ToTypedWishSummary(barrier);
+        TypedWishSummary beyondStandardWish = beyondStandardWishBuilder.ToTypedWishSummary(barrier);
+        TypedWishSummary beyondEventWish = beyondEventWishBuilder.ToTypedWishSummary(barrier);
+        
         return new()
         {
             // History
@@ -142,10 +196,12 @@ public sealed partial class GachaStatisticsFactory : IGachaStatisticsFactory
             BlueWeapons = itemCounter.BlueWeapon.ToStatisticsImmutableArray(),
 
             // Typed wish summary
-            StandardWish = standardWishBuilder.ToTypedWishSummary(barrier),
+            StandardWish = standardWish,
             AvatarWish = avatarWishBuilder.ToTypedWishSummary(barrier),
             WeaponWish = weaponWishBuilder.ToTypedWishSummary(barrier),
             ChronicledWish = chronicledWishBuilder.ToTypedWishSummary(barrier),
+            BeyondStandardWish = beyondStandardWish,
+            BeyondEventWish = beyondEventWish,
         };
     }
 }

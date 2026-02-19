@@ -93,7 +93,7 @@ public sealed class HistoryWishBuilder
             BannerImage = gachaEvent.Banner,
             OrangeUpList = orangeUpCounter.ToStatisticsImmutableArray(),
             PurpleUpList = purpleUpCounter.ToStatisticsImmutableArray(),
-            OrangeList = orangeCounter.ToStatisticsImmutableArray(),
+            SummaryList = orangeCounter.ToStatisticsImmutableArray(),
             PurpleList = purpleCounter.ToStatisticsImmutableArray(),
             BlueList = blueCounter.ToStatisticsImmutableArray(),
         };

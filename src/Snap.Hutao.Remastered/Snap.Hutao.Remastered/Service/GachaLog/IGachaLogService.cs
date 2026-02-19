@@ -15,6 +15,8 @@ public interface IGachaLogService
 
     ValueTask<GachaStatistics> GetStatisticsAsync(GachaLogServiceMetadataContext context, GachaArchive archive);
 
+    ValueTask<GachaStatistics> GetBeyondStatisticsAsync(GachaLogServiceMetadataContext context, GachaArchive archive);
+
     ValueTask<ImmutableArray<GachaStatisticsSlim>> GetStatisticsSlimImmutableArrayAsync(GachaLogServiceMetadataContext context, CancellationToken token = default);
 
     ValueTask<bool> RefreshGachaLogAsync(GachaLogServiceMetadataContext context, GachaLogQuery query, RefreshStrategyKind strategy, IProgress<GachaLogFetchStatus> progress, CancellationToken token);

@@ -14,6 +14,7 @@ public sealed class TypedWishSummaryBuilder
 
     private readonly List<int> averageOrangePullTracker = [];
     private readonly List<int> averageUpOrangePullTracker = [];
+    private readonly List<int> averagePurplePullTracker = [];
     private readonly List<SummaryItem> summaryItems = [];
 
     private int maxOrangePullTracker;
@@ -21,6 +22,7 @@ public sealed class TypedWishSummaryBuilder
     private int lastOrangePullTracker;
     private int lastUpOrangePullTracker;
     private int lastPurplePullTracker;
+    private int lastBluePullTracker;
     private int totalCountTracker;
     private int totalOrangePullTracker;
     private int totalPurplePullTracker;
@@ -43,6 +45,7 @@ public sealed class TypedWishSummaryBuilder
 
         ++lastOrangePullTracker;
         ++lastPurplePullTracker;
+        ++lastBluePullTracker;
         ++lastUpOrangePullTracker;
 
         // track total pulls
@@ -71,6 +74,13 @@ public sealed class TypedWishSummaryBuilder
 
             case QualityType.QUALITY_PURPLE:
                 {
+                    if (context.SummarizePurple)
+                    {
+                        summaryItems.Add(source.ToSummaryItem(lastPurplePullTracker, item.Time, isUp));
+                    }
+
+                    averagePurplePullTracker.Add(lastPurplePullTracker);
+
                     lastPurplePullTracker = 0;
                     ++totalPurplePullTracker;
                     break;
@@ -78,6 +88,76 @@ public sealed class TypedWishSummaryBuilder
 
             case QualityType.QUALITY_BLUE:
                 {
+                    if (context.SummarizeBlue)
+                    {
+                        summaryItems.Add(source.ToSummaryItem(lastBluePullTracker, item.Time, isUp));
+                    }
+
+                    lastBluePullTracker = 0;
+                    ++totalBluePullTracker;
+                    break;
+                }
+        }
+    }
+
+    public void Track(BeyondGachaItem item, ISummaryItemConvertible source, bool isUp)
+    {
+        if (!context.TypeEvaluator(item.GachaType))
+        {
+            return;
+        }
+
+        ++lastOrangePullTracker;
+        ++lastPurplePullTracker;
+        ++lastBluePullTracker;
+        ++lastUpOrangePullTracker;
+
+        // track total pulls
+        ++totalCountTracker;
+        TrackFromToTime(item.Time);
+
+        switch (source.Quality)
+        {
+            case QualityType.QUALITY_ORANGE:
+                {
+                    TrackMinMaxOrangePull(lastOrangePullTracker);
+                    averageOrangePullTracker.Add(lastOrangePullTracker);
+
+                    if (isUp)
+                    {
+                        averageUpOrangePullTracker.Add(lastUpOrangePullTracker);
+                        lastUpOrangePullTracker = 0;
+                    }
+
+                    summaryItems.Add(source.ToSummaryItem(lastOrangePullTracker, item.Time, isUp));
+
+                    lastOrangePullTracker = 0;
+                    ++totalOrangePullTracker;
+                    break;
+                }
+
+            case QualityType.QUALITY_PURPLE:
+                {
+                    if (context.SummarizePurple)
+                    {
+                        summaryItems.Add(source.ToSummaryItem(lastPurplePullTracker, item.Time, isUp));
+                    }
+
+                    averagePurplePullTracker.Add(lastPurplePullTracker);
+
+                    lastPurplePullTracker = 0;
+                    ++totalPurplePullTracker;
+                    break;
+                }
+
+            case QualityType.QUALITY_BLUE:
+                {
+                    if (context.SummarizeBlue)
+                    {
+                        summaryItems.Add(source.ToSummaryItem(lastBluePullTracker, item.Time, isUp));
+                    }
+
+                    lastBluePullTracker = 0;
                     ++totalBluePullTracker;
                     break;
                 }
@@ -113,7 +193,8 @@ public sealed class TypedWishSummaryBuilder
             TotalBluePercent = totalBluePullTracker / totalCount,
             AverageOrangePull = averageOrangePullTracker.Average(),
             AverageUpOrangePull = averageUpOrangePullTracker.Average(),
-            OrangeList = summaryItems,
+            AveragePurplePull = averagePurplePullTracker.Average(),
+            SummaryList = summaryItems,
         };
 
         new PullPrediction(summary, context).PredictAsync(barrier).SafeForget();

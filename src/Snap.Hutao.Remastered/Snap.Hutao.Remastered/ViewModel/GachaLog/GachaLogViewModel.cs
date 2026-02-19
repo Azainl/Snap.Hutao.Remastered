@@ -74,6 +74,9 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
     [ObservableProperty]
     public partial bool IsAggressiveRefresh { get; set; }
 
+    [ObservableProperty]
+    public partial bool IsBeyondMode { get; set; }
+
     protected override async ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
         try
@@ -151,6 +154,25 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
         await PrivateRefreshAsync(RefreshOptionKind.ManualInput).ConfigureAwait(false);
     }
 
+    [Command("SwitchToBeyondModeCommand")]
+    private void SwitchToBeyondMode()
+    {
+        IsBeyondMode = true;
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
+    [Command("SwitchToNormalModeCommand")]
+    private void SwitchToNormalMode()
+    {
+        IsBeyondMode = false;
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
+    partial void OnIsBeyondModeChanged(bool value)
+    {
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
     private async ValueTask PrivateRefreshAsync(RefreshOptionKind optionKind)
     {
         GachaLogQuery query;
@@ -213,7 +235,15 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
                     {
                         suppressCurrentItemChangedHandling = true;
                         ArgumentNullException.ThrowIfNull(metadataContext);
-                        authkeyValid = await gachaLogService.RefreshGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        
+                        if (IsBeyondMode)
+                        {
+                            authkeyValid = await gachaLogService.RefreshBeyondGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        }
+                        else
+                        {
+                            authkeyValid = await gachaLogService.RefreshGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        }
                     }
                     finally
                     {
@@ -326,8 +356,18 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
         try
         {
             ArgumentNullException.ThrowIfNull(metadataContext);
-            GachaStatistics statistics = await gachaLogService.GetStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
-
+            
+            GachaStatistics statistics;
+            if (IsBeyondMode)
+            {
+                // 使用BeyondGacha统计方法
+                statistics = await gachaLogService.GetBeyondStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
+            }
+            else
+            {
+                statistics = await gachaLogService.GetStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
+            }
+            
             await taskContext.SwitchToMainThreadAsync();
             Statistics = statistics;
             IsInitialized = true;
