@@ -70,12 +70,12 @@ public readonly struct TypedWishSummaryBuilderContext
 
     public static TypedWishSummaryBuilderContext BeyondStandardWish(GachaStatisticsFactoryContext context)
     {
-        return new(context.ServiceProvider, "颂愿常驻", int.MaxValue, 70, IsBeyondStandardWish, GachaDistributionType.BeyondStandard, true, true);
+        return new(context.ServiceProvider, SH.ServiceGachaLogFactoryBeyondPermanentWishName, int.MaxValue, 70, IsBeyondStandardWish, GachaDistributionType.BeyondStandard, true, true);
     }
 
     public static TypedWishSummaryBuilderContext BeyondEventWish(GachaStatisticsFactoryContext context)
     {
-        return new(context.ServiceProvider, "颂愿活动", 90, 10, IsBeyondEventWish, GachaDistributionType.BeyondEvent, true);
+        return new(context.ServiceProvider, SH.ServiceGachaLogFactoryBeyondEventWishName, 90, 10, IsBeyondEventWish, GachaDistributionType.BeyondEvent, true);
     }
 
     public TypedWishSummaryBuilder CreateBuilder()

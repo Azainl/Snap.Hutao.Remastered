@@ -46,6 +46,8 @@
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Resource\Icon\UI_BtnIcon_Beyond_GH.png" />
+    <None Remove="Resource\Icon\UI_Icon_UGC_Beyond.png" />
     <None Remove="Resource\Navigation\Plugin.png" />
   </ItemGroup>
 
@@ -149,6 +151,7 @@
     <Content Include="Resource\GuideStaticResourceQualityComparison.png" />
     <Content Include="Resource\HutaoIconSourceTransparentBackgroundGradient1.png" />
     <Content Include="Resource\Icon\UI_BagTabIcon_Weapon.png" />
+    <Content Include="Resource\Icon\UI_BtnIcon_Beyond_GH.png" />
     <Content Include="Resource\Icon\UI_BtnIcon_Homeworld.png" />
     <Content Include="Resource\Icon\UI_BtnIcon_PlayerGirl.png" />
     <Content Include="Resource\Icon\UI_GachaShowPanel_Bg_Weapon.png" />
@@ -171,6 +174,7 @@
     <Content Include="Resource\Icon\UI_Icon_Tower_Star.png" />
     <Content Include="Resource\Icon\UI_Icon_Tower_Star1.png" />
     <Content Include="Resource\Icon\UI_Icon_Tower_Star2.png" />
+    <Content Include="Resource\Icon\UI_Icon_UGC_Beyond.png" />
     <Content Include="Resource\Icon\UI_Img_RoleCombat_EventDetail_Pic_Chance.png" />
     <Content Include="Resource\Icon\UI_ItemIcon_106.png" />
     <Content Include="Resource\Icon\UI_ItemIcon_201.png" />

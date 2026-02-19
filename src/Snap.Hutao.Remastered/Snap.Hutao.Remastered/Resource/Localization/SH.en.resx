@@ -129,6 +129,9 @@
   <data name="AppName" xml:space="preserve">
     <value>Snap Hutao</value>
   </data>
+  <data name="AppNameAndVersion" xml:space="preserve">
+    <value>Snap Hutao {0}</value>
+  </data>
   <data name="ContentDialogCancelCloseButtonText" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -4172,10 +4175,19 @@ Space Available: {2}</value>
   <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledDescription" xml:space="preserve">
     <value>Instant auto-swap between keyboard/mouse and gamepad</value>
   </data>
-  <data name="AppNameAndVersion" xml:space="preserve">
-    <value>Snap Hutao {0}</value>
-  </data>
   <data name="ViewControlStatisticsCardPurpleAveragePullText" xml:space="preserve">
     <value>Avg 4 Stars wish #</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeHeader" xml:space="preserve">
+    <value>Odes</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeDescription" xml:space="preserve">
+    <value>Switch to Odes(Beyond) Mode</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondEventWishName" xml:space="preserve">
+    <value>Event Ode</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondPermanentWishName" xml:space="preserve">
+    <value>Encounter Echoes</value>
   </data>
 </root>

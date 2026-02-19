@@ -4221,10 +4221,19 @@
   <data name="WebUGCGachaConfigTypeActivityAvatarFemaleTwo" xml:space="preserve">
     <value>活动颂愿-女</value>
   </data>
-  <data name="AppNameAndVersion" xml:space="preserve">
-    <value>胡桃 {0}</value>
-  </data>
   <data name="ViewControlStatisticsCardPurpleAveragePullText" xml:space="preserve">
     <value>四星平均抽数</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeHeader" xml:space="preserve">
+    <value>颂愿</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeDescription" xml:space="preserve">
+    <value>切换到颂愿(千星奇域)模式</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondEventWishName" xml:space="preserve">
+    <value>活动颂愿</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondPermanentWishName" xml:space="preserve">
+    <value>奇遇回声</value>
   </data>
 </root>

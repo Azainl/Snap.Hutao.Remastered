@@ -348,7 +348,8 @@
                 </Border>
             </Border>
         </shuxc:StandardView.EmptyContent>
-        <Pivot Style="{ThemeResource CardPivotStyle}">
+        <Pivot Style="{ThemeResource CardPivotStyle}"
+               x:Name="Pivot">
             <Pivot.LeftHeader>
                 <shuxc:SizeRestrictedContentControl Margin="6,6,0,6">
                     <ComboBox
@@ -389,12 +390,12 @@
                     </AppBarButton>
                     <AppBarSeparator/>
                     <AppBarToggleButton
-                        Icon="{shuxm:FontIcon Glyph=&#xE7BC;}"
+                        Icon="{shuxm:BitmapIcon Source=ms-appx:///Resource/Icon/UI_BtnIcon_Beyond_GH.png}"
                         IsChecked="{Binding IsBeyondMode, Mode=TwoWay}"
-                        Label="颂愿">
+                        Label="{shuxm:ResourceString Name=ViewPageGachaLogSwitchToBeyondGachaModeHeader}">
                         <AppBarToggleButton.Resources>
                             <Style BasedOn="{StaticResource DefaultAppBarToggleButtonStyle}" TargetType="AppBarToggleButton">
-                                <Setter Property="ToolTipService.ToolTip" Value="切换到颂愿（UGC祈愿）模式"/>
+                                <Setter Property="ToolTipService.ToolTip" Value="{shuxm:ResourceString Name=ViewPageGachaLogSwitchToBeyondGachaModeDescription}"/>
                             </Style>
                         </AppBarToggleButton.Resources>
                     </AppBarToggleButton>
@@ -416,7 +417,9 @@
                     </CommandBar.SecondaryCommands>
                 </CommandBar>
             </Pivot.RightHeader>
-            <PivotItem Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotOverview}">
+            <PivotItem
+                Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotOverview}"
+                x:Name="PivotOverview">
                 <ScrollViewer
                     Margin="16,0"
                     cw:ScrollViewerExtensions.HorizontalScrollBarMargin="0,0,-16,0"
@@ -455,7 +458,7 @@
             </PivotItem>
             <PivotItem 
                 Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotCountdown}"
-                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
+                x:Name="PivotCountdown">
                 <Grid>
                     <shuxc:Loading
                         Margin="16"
@@ -487,7 +490,7 @@
             </PivotItem>
             <PivotItem 
                 Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotHistory}"
-                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
+                x:Name="PivotHistory">
                 <Border Margin="16" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
                     <Border Style="{ThemeResource AcrylicBorderCardStyle}">
                         <SplitView
@@ -566,7 +569,7 @@
             </PivotItem>
             <PivotItem 
                 Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotAvatar}"
-                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
+                x:Name="PivotAvatar">
                 <ScrollViewer>
                     <StackPanel Margin="16,0,16,16">
                         <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
@@ -603,7 +606,7 @@
             </PivotItem>
             <PivotItem 
                 Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotWeapon}"
-                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
+                x:Name="PivotWeapon">
                 <ScrollViewer>
                     <StackPanel Margin="16,0,16,16">
                         <Border Margin="0,16,0,0" cw:Effects.Shadow="{ThemeResource CompatCardShadow}">
@@ -653,7 +656,7 @@
             </PivotItem>
             <PivotItem 
                 Header="{shuxm:ResourceString Name=ViewPageGachaLogPivotStatistics}"
-                Visibility="{Binding IsBeyondMode, Converter={StaticResource BoolNegationToVisibilityConverter}}">
+                x:Name="PivotStatistics">
                 <Grid>
                     <shuxc:Loading
                         Margin="16"

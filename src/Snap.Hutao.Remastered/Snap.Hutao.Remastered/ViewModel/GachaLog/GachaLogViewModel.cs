@@ -20,6 +20,7 @@ using Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 using Snap.Hutao.Remastered.UI.Xaml.View.Page;
 using Snap.Hutao.Remastered.ViewModel.Setting;
 using Snap.Hutao.Remastered.Win32.Foundation;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
@@ -35,6 +36,14 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
+    public GachaLogPage gachaLogPage;
+    public Pivot pivot;
+    public PivotItem pivotOverview;
+    public PivotItem pivotCountdown;
+    public PivotItem pivotHistory;
+    public PivotItem pivotAvatar;
+    public PivotItem pivotWeapon;
+    public PivotItem pivotStatistics;
 
     private bool suppressCurrentItemChangedHandling;
     private GachaLogServiceMetadataContext? metadataContext;
@@ -170,6 +179,18 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
 
     partial void OnIsBeyondModeChanged(bool value)
     {
+        pivot.Items.Clear();
+        pivot.Items.Add(pivotOverview);
+
+        if (!value)
+        {
+            pivot.Items.Add(pivotCountdown);
+            pivot.Items.Add(pivotHistory);
+            pivot.Items.Add(pivotAvatar);
+            pivot.Items.Add(pivotWeapon);
+            pivot.Items.Add(pivotStatistics);
+        }
+
         UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
     }
 
