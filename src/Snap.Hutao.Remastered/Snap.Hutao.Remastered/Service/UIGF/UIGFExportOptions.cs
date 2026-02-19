@@ -11,5 +11,5 @@ public sealed class UIGFExportOptions
 
     public required ImmutableArray<uint> GachaArchiveUids { get; set; }
 
-    public UIGFVersion Version { get; set; } = UIGFVersion.UIGF41;
+    public UIGFVersion Version { get; set; } = UIGFVersion.UIGF42;
 }

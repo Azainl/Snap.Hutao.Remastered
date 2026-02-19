@@ -34,19 +34,9 @@ public sealed partial class SettingGachaLogViewModel : Abstraction.ViewModel
     public partial AppOptions AppOptions { get; }
 
     [ObservableProperty]
-    private UIGFVersion selectedUIGFVersion = UIGFVersion.UIGF41;
+    private UIGFVersion selectedUIGFVersion = UIGFVersion.UIGF42;
 
-    public ImmutableArray<UIGFVersion> UIGFVersions { get; } = [UIGFVersion.UIGF40, UIGFVersion.UIGF41];
-
-    public string GetUIGFVersionDisplayName(UIGFVersion version)
-    {
-        return version switch
-        {
-            UIGFVersion.UIGF40 => "v4.0",
-            UIGFVersion.UIGF41 => "v4.1",
-            _ => version.ToString(),
-        };
-    }
+    public ImmutableArray<UIGFVersion> UIGFVersions { get; } = [UIGFVersion.UIGF40, UIGFVersion.UIGF41, UIGFVersion.UIGF42];
 
     [Command("ImportUIGFJsonCommand")]
     private async Task ImportUIGFJsonAsync()
