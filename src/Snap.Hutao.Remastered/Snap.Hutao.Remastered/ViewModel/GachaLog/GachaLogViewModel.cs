@@ -37,13 +37,13 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
     public GachaLogPage gachaLogPage;
-    public Pivot pivot;
-    public PivotItem pivotOverview;
-    public PivotItem pivotCountdown;
-    public PivotItem pivotHistory;
-    public PivotItem pivotAvatar;
-    public PivotItem pivotWeapon;
-    public PivotItem pivotStatistics;
+    public Pivot pivot = null!;
+    public PivotItem pivotOverview = null!;
+    public PivotItem pivotCountdown = null!;
+    public PivotItem pivotHistory = null!;
+    public PivotItem pivotAvatar = null!;
+    public PivotItem pivotWeapon = null!;
+    public PivotItem pivotStatistics = null!;
 
     private bool suppressCurrentItemChangedHandling;
     private GachaLogServiceMetadataContext? metadataContext;

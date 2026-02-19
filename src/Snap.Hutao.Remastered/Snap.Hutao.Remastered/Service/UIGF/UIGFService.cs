@@ -13,7 +13,7 @@ public sealed partial class UIGFService : IUIGFService
 
     public ValueTask ExportAsync(UIGFExportOptions exportOptions, CancellationToken token = default)
     {
-        IUIGFExportService exportService = serviceProvider.GetRequiredKeyedService<IUIGFExportService>(UIGFVersion.UIGF41);
+        IUIGFExportService exportService = serviceProvider.GetRequiredKeyedService<IUIGFExportService>(UIGFVersion.UIGF42);
         return exportService.ExportAsync(exportOptions, token);
     }
 
