@@ -41,6 +41,8 @@ public sealed partial class AppDbContext : DbContext
 
     public DbSet<GachaItem> GachaItems { get; set; } = default!;
 
+    public DbSet<BeyondGachaItem> BeyondGachaItems { get; set; } = default!;
+
     public DbSet<GachaArchive> GachaArchives { get; set; } = default!;
 
     public DbSet<AvatarInfo> AvatarInfos { get; set; } = default!;

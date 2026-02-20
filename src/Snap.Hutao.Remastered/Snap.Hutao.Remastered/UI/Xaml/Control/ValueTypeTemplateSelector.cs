@@ -4,7 +4,6 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Snap.Hutao.Remastered.API.Model.Plugin;
-using System;
 
 namespace Snap.Hutao.Remastered.UI.Xaml.Control;
 

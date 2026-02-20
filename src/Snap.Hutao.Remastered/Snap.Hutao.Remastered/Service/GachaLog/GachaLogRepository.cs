@@ -116,4 +116,39 @@ public sealed partial class GachaLogRepository : IGachaLogRepository
     {
         return this.ImmutableArray<GachaArchive, string>(query => query.Select(archive => archive.Uid));
     }
+
+    public void AddBeyondGachaItemRange(IEnumerable<BeyondGachaItem> items)
+    {
+        this.AddRange(items);
+    }
+
+    public void RemoveBeyondGachaItemRangeByArchiveIdAndGachaTypeNewerThanEndId(Guid archiveId, GachaType GachaType, long endId)
+    {
+        this.Delete<BeyondGachaItem>(i => i.ArchiveId == archiveId && i.GachaType == GachaType && i.Id >= endId);
+    }
+
+    public ImmutableArray<BeyondGachaItem> GetBeyondGachaItemImmutableArrayByArchiveId(Guid archiveId)
+    {
+        return this.ImmutableArray<BeyondGachaItem, BeyondGachaItem>(query => query.Where(i => i.ArchiveId == archiveId).OrderBy(i => i.Id));
+    }
+
+    public long GetNewestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType)
+    {
+        BeyondGachaItem? item = this.Query<BeyondGachaItem, BeyondGachaItem?>(query => query
+            .Where(i => i.ArchiveId == archiveId && i.GachaType == GachaType)
+            .OrderByDescending(i => i.Id)
+            .FirstOrDefault());
+
+        return item?.Id ?? 0L;
+    }
+
+    public long GetOldestBeyondGachaItemIdByArchiveIdAndGachaType(Guid archiveId, GachaType GachaType)
+    {
+        BeyondGachaItem? item = this.Query<BeyondGachaItem, BeyondGachaItem?>(query => query
+            .Where(i => i.ArchiveId == archiveId && i.GachaType == GachaType)
+            .OrderBy(i => i.Id)
+            .FirstOrDefault());
+
+        return item?.Id ?? long.MaxValue;
+    }
 }

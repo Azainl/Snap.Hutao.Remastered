@@ -10,6 +10,7 @@ public static class MetadataFileStrategies
     public static readonly MetadataFileStrategy Avatar = new("Avatar", true);
     public static readonly MetadataFileStrategy AvatarCurve = new("AvatarCurve");
     public static readonly MetadataFileStrategy AvatarPromote = new("AvatarPromote");
+    public static readonly MetadataFileStrategy BeyondItem = new("BeyondItem");
     public static readonly MetadataFileStrategy Chapter = new("Chapter");
     public static readonly MetadataFileStrategy Combine = new("Combine");
     public static readonly MetadataFileStrategy DisplayItem = new("DisplayItem");

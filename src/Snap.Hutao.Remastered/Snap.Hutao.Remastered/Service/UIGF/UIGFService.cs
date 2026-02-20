@@ -23,6 +23,7 @@ public sealed partial class UIGFService : IUIGFService
         {
             "v4.0" => UIGFVersion.UIGF40,
             "v4.1" => UIGFVersion.UIGF41,
+            "v4.2" => UIGFVersion.UIGF42,
             _ => UIGFVersion.None,
         };
 

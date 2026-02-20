@@ -35,4 +35,19 @@ public sealed partial class GachaInfoClient
 
         return Response.Response.DefaultIfNull(resp);
     }
+
+    public async ValueTask<Response<BeyondGachaLogPage>> GetBeyondGachaLogPageAsync(GachaLogTypedQueryOptions options, CancellationToken token = default)
+    {
+        string query = options.ToQueryString();
+
+        HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
+            .SetRequestUri(apiEndpointsFactory.Create(options.IsOversea).GachaInfoGetBeyondGachaLog(query))
+            .Get();
+
+        Response<BeyondGachaLogPage>? resp = await builder
+            .SendAsync<Response<BeyondGachaLogPage>>(httpClient, token)
+            .ConfigureAwait(false);
+
+        return Response.Response.DefaultIfNull(resp);
+    }
 }

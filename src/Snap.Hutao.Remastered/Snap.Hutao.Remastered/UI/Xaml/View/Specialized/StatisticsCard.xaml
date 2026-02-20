@@ -44,7 +44,7 @@
 
             <shuxdcs:Int32ToGradientColorConverter x:Key="Int32ToGradientColorConverter" MaximumValue="{Binding GuaranteeOrangeThreshold}"/>
 
-            <DataTemplate x:Key="OrangeListTemplate" x:DataType="shvg:SummaryItem">
+            <DataTemplate x:Key="SummaryListTemplate" x:DataType="shvg:SummaryItem">
                 <Grid Margin="0" Style="{ThemeResource GridShimmerStyle}">
                     <ToolTipService.ToolTip>
                         <TextBlock Text="{Binding FormattedTime}"/>
@@ -180,7 +180,7 @@
                             Margin="6,0,0,0"
                             Current="Grid"
                             LocalSettingKeyExtraForCurrent="{Binding TypeName}"
-                            LocalSettingKeySuffixForCurrent="StatisticsCard.OrangeList"
+                            LocalSettingKeySuffixForCurrent="StatisticsCard.SummaryList"
                             Visibility="{x:Bind DetailExpander.IsExpanded, Converter={StaticResource BoolToVisibilityConverter}, Mode=OneWay}"/>
                     </StackPanel>
                 </Grid>
@@ -203,19 +203,11 @@
                     <Grid ColumnSpacing="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition/>
-                            <ColumnDefinition/>
+                            <ColumnDefinition Width="4"/>
+                            <ColumnDefinition Width="{x:Bind ShowOrange, Converter={StaticResource BoolToGridLengthConverter}}"/>
                         </Grid.ColumnDefinitions>
                         <shuxcc:CardProgressBar
                             Grid.Column="0"
-                            MinHeight="32"
-                            Description="{Binding LastOrangePull}"
-                            Header="{shuxm:ResourceString Name=ViewControlStatisticsCardToLastOrangeText}"
-                            Maximum="{Binding GuaranteeOrangeThreshold}"
-                            ProgressForeground="{StaticResource OrangeColorBrush}"
-                            TextForeground="{StaticResource OrangeColorBrush}"
-                            Value="{Binding LastOrangePull}"/>
-                        <shuxcc:CardProgressBar
-                            Grid.Column="1"
                             MinHeight="32"
                             Description="{Binding LastPurplePull}"
                             Header="{shuxm:ResourceString Name=ViewControlStatisticsCardToLastPurpleText}"
@@ -223,6 +215,16 @@
                             ProgressForeground="{StaticResource PurpleColorBrush}"
                             TextForeground="{StaticResource PurpleColorBrush}"
                             Value="{Binding LastPurplePull}"/>
+                        <shuxcc:CardProgressBar
+                            Grid.Column="2"
+                            MinHeight="32"
+                            Description="{Binding LastOrangePull}"
+                            Header="{shuxm:ResourceString Name=ViewControlStatisticsCardToLastOrangeText}"
+                            Maximum="{Binding GuaranteeOrangeThreshold}"
+                            ProgressForeground="{StaticResource OrangeColorBrush}"
+                            TextForeground="{StaticResource OrangeColorBrush}"
+                            Value="{Binding LastOrangePull}"
+                            Visibility="{x:Bind ShowOrange, Converter={StaticResource BoolToVisibilityConverter}}"/>
                     </Grid>
                 </StackPanel>
                 <Grid Margin="-12,-2" ColumnSpacing="8">
@@ -256,10 +258,10 @@
                         <Grid>
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
-                                <ColumnDefinition Width="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthSpacingConverter}}"/>
+                                <ColumnDefinition Width="{x:Bind ShowOrange, Converter={StaticResource BoolToGridLengthSpacingConverter}}"/>
                                 <ColumnDefinition Width="{x:Bind ShowUpPull, Converter={StaticResource BoolToGridLengthConverter}}"/>
                                 <ColumnDefinition Width="4"/>
-                                <ColumnDefinition/>
+                                <ColumnDefinition Width="{x:Bind ShowOrange, Converter={StaticResource BoolToGridLengthConverter}}"/>
                             </Grid.ColumnDefinitions>
                             <Border Grid.Column="0" Style="{ThemeResource BorderShimmerStyle}">
                                 <Viewbox Margin="8,0" StretchDirection="DownOnly">
@@ -267,8 +269,8 @@
                                         <TextBlock
                                             Opacity="0.8"
                                             Style="{StaticResource CaptionTextBlockStyle}"
-                                            Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeAveragePullText}"/>
-                                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding FormattedAverageOrangePull}"/>
+                                            Text="{shuxm:ResourceString Name=ViewControlStatisticsCardPurpleAveragePullText}"/>
+                                        <TextBlock Style="{StaticResource BodyTextBlockStyle}" Text="{Binding FormattedAveragePurplePull}"/>
                                     </StackPanel>
                                 </Viewbox>
                             </Border>
@@ -306,7 +308,8 @@
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Center"
                                             Style="{StaticResource BodyTextBlockStyle}"
-                                            Text="{Binding FormattedMaxOrangePull}"/>
+                                            Text="{Binding FormattedMaxOrangePull}"
+                                            Visibility="{x:Bind ShowOrange, Converter={StaticResource BoolToVisibilityConverter}}"/>
                                     </Viewbox>
                                 </Border>
                                 <Border Grid.Row="1" Style="{ThemeResource BorderShimmerStyle}">
@@ -315,7 +318,8 @@
                                             HorizontalAlignment="Center"
                                             VerticalAlignment="Center"
                                             Style="{StaticResource BodyTextBlockStyle}"
-                                            Text="{Binding FormattedMinOrangePull}"/>
+                                            Text="{Binding FormattedMinOrangePull}"
+                                            Visibility="{x:Bind ShowOrange, Converter={StaticResource BoolToVisibilityConverter}}"/>
                                     </Viewbox>
                                 </Border>
                             </Grid>
@@ -325,24 +329,12 @@
                         <Grid ColumnSpacing="4">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition/>
+                                <ColumnDefinition Width="{x:Bind ShowOrange, Converter={StaticResource BoolToGridLengthSpacingConverter}}"/>
                                 <ColumnDefinition/>
-                                <ColumnDefinition/>
+                                <ColumnDefinition Width="4"/>
+                                <ColumnDefinition Width="{x:Bind ShowOrange, Converter={StaticResource BoolToGridLengthConverter}}"/>
                             </Grid.ColumnDefinitions>
                             <Grid Grid.Column="0" Style="{ThemeResource GridShimmerStyle}">
-                                <StackPanel
-                                    Margin="8,0"
-                                    HorizontalAlignment="Center"
-                                    VerticalAlignment="Center">
-                                    <TextBlock
-                                        Foreground="{StaticResource OrangeColorBrush}"
-                                        Style="{StaticResource CaptionTextBlockStyle}"
-                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"/>
-                                    <Viewbox StretchDirection="DownOnly">
-                                        <TextBlock Foreground="{StaticResource OrangeColorBrush}" Text="{Binding FormattedTotalOrange}"/>
-                                    </Viewbox>
-                                </StackPanel>
-                            </Grid>
-                            <Grid Grid.Column="1" Style="{ThemeResource GridShimmerStyle}">
                                 <StackPanel
                                     Margin="8,0"
                                     HorizontalAlignment="Center"
@@ -367,6 +359,21 @@
                                         Text="{shuxm:ResourceString Name=ViewControlStatisticsCardBlueText}"/>
                                     <Viewbox StretchDirection="DownOnly">
                                         <TextBlock Foreground="{StaticResource BlueColorBrush}" Text="{Binding FormattedTotalBlue}"/>
+                                    </Viewbox>
+                                </StackPanel>
+                            </Grid>
+                            <Grid Grid.Column="4" Style="{ThemeResource GridShimmerStyle}">
+                                <StackPanel
+                                    Margin="8,0"
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Visibility="{x:Bind ShowOrange, Converter={StaticResource BoolToVisibilityConverter}}">
+                                    <TextBlock
+                                        Foreground="{StaticResource OrangeColorBrush}"
+                                        Style="{StaticResource CaptionTextBlockStyle}"
+                                        Text="{shuxm:ResourceString Name=ViewControlStatisticsCardOrangeText}"/>
+                                    <Viewbox StretchDirection="DownOnly">
+                                        <TextBlock Foreground="{StaticResource OrangeColorBrush}" Text="{Binding FormattedTotalOrange}"/>
                                     </Viewbox>
                                 </StackPanel>
                             </Grid>
@@ -412,8 +419,8 @@
                 <ListView
                     Padding="0,6,0,12"
                     ItemContainerStyle="{StaticResource NoneSelectionListViewItemStyle}"
-                    ItemTemplate="{StaticResource OrangeListTemplate}"
-                    ItemsSource="{Binding OrangeList}"
+                    ItemTemplate="{StaticResource SummaryListTemplate}"
+                    ItemsSource="{Binding SummaryList}"
                     ScrollViewer.VerticalScrollBarVisibility="Hidden"
                     SelectionMode="None"/>
             </cwcont:Case>
@@ -423,7 +430,7 @@
                     Padding="0,12"
                     ItemContainerStyle="{StaticResource NoneSelectionGridViewItemStyle}"
                     ItemTemplate="{ThemeResource OrangeGridTemplate}"
-                    ItemsSource="{Binding OrangeList}"
+                    ItemsSource="{Binding SummaryList}"
                     ScrollViewer.VerticalScrollBarVisibility="Hidden"
                     SelectionMode="None"/>
             </cwcont:Case>

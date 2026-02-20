@@ -8,4 +8,5 @@ public enum UIGFVersion
     None,
     UIGF40,
     UIGF41,
+    UIGF42,
 }

@@ -16,6 +16,10 @@ public sealed class GachaStatistics
 
     public required TypedWishSummary StandardWish { get; init; }
 
+    public required TypedWishSummary BeyondStandardWish { get; init; }
+
+    public required TypedWishSummary BeyondEventWish { get; init; }
+
     public required IAdvancedCollectionView<HistoryWish> HistoryWishes { get; init; }
 
     public required ImmutableArray<StatisticsItem> OrangeAvatars { get; init; }

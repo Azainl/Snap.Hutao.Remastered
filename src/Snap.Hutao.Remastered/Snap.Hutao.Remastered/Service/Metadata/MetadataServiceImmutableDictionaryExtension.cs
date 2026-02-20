@@ -47,6 +47,13 @@ public static class MetadataServiceImmutableDictionaryExtension
                 token);
         }
 
+        public ValueTask<ImmutableDictionary<BeyondItemId, BeyondItem>> GetIdToBeyondItemMapAsync(CancellationToken token = default)
+        {
+            return metadataService.FromCacheAsDictionaryAsync<BeyondItemId, BeyondItem>(
+                MetadataFileStrategies.BeyondItem,
+                token);
+        }
+
         public ValueTask<ImmutableDictionary<AchievementId, Model.Metadata.Achievement.Achievement>> GetIdToAchievementMapAsync(CancellationToken token = default)
         {
             return metadataService.FromCacheAsDictionaryAsync<AchievementId, Model.Metadata.Achievement.Achievement>(MetadataFileStrategies.Achievement, token);

@@ -4203,4 +4203,37 @@
   <data name="ViewPageLaunchGameIslandGamepadHotSwitchEnabledDescription" xml:space="preserve">
     <value>在游戏中随时自动切换键鼠和手柄输入</value>
   </data>
+  <data name="WebUGCGachaConfigTypePermanentWish" xml:space="preserve">
+    <value>常驻颂愿</value>
+  </data>
+  <data name="WebUGCGachaConfigTypeAvatarEventWish" xml:space="preserve">
+    <value>活动颂愿</value>
+  </data>
+  <data name="WebUGCGachaConfigTypeActivityAvatarMaleOne" xml:space="preserve">
+    <value>活动颂愿-男</value>
+  </data>
+  <data name="WebUGCGachaConfigTypeActivityAvatarMaleTwo" xml:space="preserve">
+    <value>活动颂愿-男</value>
+  </data>
+  <data name="WebUGCGachaConfigTypeActivityAvatarFemaleOne" xml:space="preserve">
+    <value>活动颂愿-女</value>
+  </data>
+  <data name="WebUGCGachaConfigTypeActivityAvatarFemaleTwo" xml:space="preserve">
+    <value>活动颂愿-女</value>
+  </data>
+  <data name="ViewControlStatisticsCardPurpleAveragePullText" xml:space="preserve">
+    <value>四星平均抽数</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeHeader" xml:space="preserve">
+    <value>颂愿</value>
+  </data>
+  <data name="ViewPageGachaLogSwitchToBeyondGachaModeDescription" xml:space="preserve">
+    <value>切换到颂愿(千星奇域)模式</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondEventWishName" xml:space="preserve">
+    <value>活动颂愿</value>
+  </data>
+  <data name="ServiceGachaLogFactoryBeyondPermanentWishName" xml:space="preserve">
+    <value>奇遇回声</value>
+  </data>
 </root>

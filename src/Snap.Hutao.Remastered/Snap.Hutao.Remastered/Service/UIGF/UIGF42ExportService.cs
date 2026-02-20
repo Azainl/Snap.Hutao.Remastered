@@ -10,22 +10,19 @@ using System.IO;
 
 namespace Snap.Hutao.Remastered.Service.UIGF;
 
-public abstract partial class AbstractUIGF40ExportService : IUIGFExportService
+[Service(ServiceLifetime.Transient, typeof(IUIGFExportService), Key = UIGFVersion.UIGF42)]
+public sealed partial class UIGF42ExportService : AbstractUIGF40ExportService
 {
-    protected readonly JsonSerializerOptions jsonOptions;
-    protected readonly IServiceProvider serviceProvider;
-    protected readonly ITaskContext taskContext;
+    [GeneratedConstructor(CallBaseConstructor = true)]
+    public partial UIGF42ExportService(IServiceProvider serviceProvider);
 
-    [GeneratedConstructor]
-    public partial AbstractUIGF40ExportService(IServiceProvider serviceProvider);
+    protected override string Version { get; } = "v4.2";
 
-    protected abstract string Version { get; }
-
-    public virtual async ValueTask ExportAsync(UIGFExportOptions exportOptions, CancellationToken token = default)
+    public override async ValueTask ExportAsync(UIGFExportOptions exportOptions, CancellationToken token = default)
     {
         await taskContext.SwitchToBackgroundAsync();
 
-        Model.InterChange.GachaLog.UIGF uigf = new()
+        Model.InterChange.GachaLog.UIGF42 uigf = new()
         {
             Info = new()
             {
@@ -44,8 +41,9 @@ public abstract partial class AbstractUIGF40ExportService : IUIGFExportService
         }
     }
 
-    protected virtual void ExportGachaArchives(Model.InterChange.GachaLog.UIGF uigf, ImmutableArray<uint> uids)
+    private void ExportGachaArchives(Model.InterChange.GachaLog.UIGF42 uigf, ImmutableArray<uint> uids)
     {
+        base.ExportGachaArchives(uigf, uids);
         if (uids.Length <= 0)
         {
             return;
@@ -53,24 +51,27 @@ public abstract partial class AbstractUIGF40ExportService : IUIGFExportService
 
         IGachaLogRepository gachaLogRepository = serviceProvider.GetRequiredService<IGachaLogRepository>();
 
-        ImmutableArray<UIGFEntry<Hk4eItem>>.Builder hk4eResults = ImmutableArray.CreateBuilder<UIGFEntry<Hk4eItem>>(uids.Length);
+        ImmutableArray<UIGFEntry<Hk4eUGCItem>>.Builder hk4eUgcResults = ImmutableArray.CreateBuilder<UIGFEntry<Hk4eUGCItem>>(uids.Length);
 
         foreach (ref readonly uint uid in uids.AsSpan())
         {
             GachaArchive? archive = gachaLogRepository.GetGachaArchiveByUid($"{uid}");
             ArgumentNullException.ThrowIfNull(archive);
-            
-            // Export standard gacha items
-            ImmutableArray<GachaItem> dbItems = gachaLogRepository.GetGachaItemImmutableArrayByArchiveId(archive.InnerId);
-            UIGFEntry<Hk4eItem> hk4eEntry = new()
+
+            // Export beyond gacha (UGC) items
+            ImmutableArray<BeyondGachaItem> beyondDbItems = gachaLogRepository.GetBeyondGachaItemImmutableArrayByArchiveId(archive.InnerId);
+            if (beyondDbItems.Length > 0)
             {
-                Uid = uid,
-                TimeZone = 0,
-                List = dbItems.SelectAsArray(Hk4eItem.From),
-            };
-            hk4eResults.Add(hk4eEntry);
+                UIGFEntry<Hk4eUGCItem> hk4eUgcEntry = new()
+                {
+                    Uid = uid,
+                    TimeZone = 0,
+                    List = beyondDbItems.SelectAsArray(item => item.ToHk4eUGCItem()),
+                };
+                hk4eUgcResults.Add(hk4eUgcEntry);
+            }
         }
 
-        uigf.Hk4e = hk4eResults.ToImmutable();
+        uigf.Hk4eUgc = hk4eUgcResults.ToImmutable();
     }
 }

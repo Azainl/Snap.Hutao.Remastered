@@ -117,6 +117,11 @@ public static class MetadataServiceContextExtension
                     dictionaryIdListTowerLevelSource.IdArrayTowerLevelMap = await metadataService.GetGroupIdToTowerLevelGroupMapAsync(token).ConfigureAwait(false);
                 }
 
+                if (context is IMetadataDictionaryIdBeyondItemSource dictionaryIdBeyondItemSource)
+                {
+                    dictionaryIdBeyondItemSource.IdBeyondItemMap = await metadataService.GetIdToBeyondItemMapAsync(token).ConfigureAwait(false);
+                }
+
                 if (context is IMetadataDictionaryIdDisplayItemAndMaterialSource dictionaryIdDisplayItemAndMaterialSource)
                 {
                     dictionaryIdDisplayItemAndMaterialSource.IdDisplayItemAndMaterialMap = await metadataService.GetIdToDisplayItemAndMaterialMapAsync(token).ConfigureAwait(false);
@@ -243,6 +248,14 @@ public static class MetadataServiceContextExtension
         public Avatar GetAvatar(string name)
         {
             return context.NameAvatarMap[name];
+        }
+    }
+
+    extension(IMetadataDictionaryIdBeyondItemSource context)
+    {
+        public BeyondItem GetBeyondItem(BeyondItemId id)
+        {
+            return context.IdBeyondItemMap[id];
         }
     }
 

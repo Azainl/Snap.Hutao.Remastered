@@ -27,4 +27,14 @@ public enum GachaDistributionType
     /// 常驻
     /// </summary>
     Standard,
+
+    /// <summary>
+    /// 颂愿常驻
+    /// </summary>
+    BeyondStandard,
+
+    /// <summary>
+    /// 颂愿活动
+    /// </summary>
+    BeyondEvent,
 }

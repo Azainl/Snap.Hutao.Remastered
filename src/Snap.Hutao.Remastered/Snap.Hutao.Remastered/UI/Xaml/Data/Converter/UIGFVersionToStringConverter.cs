@@ -16,6 +16,7 @@ public sealed class UIGFVersionToStringConverter : IValueConverter
             {
                 UIGFVersion.UIGF40 => "v4.0",
                 UIGFVersion.UIGF41 => "v4.1",
+                UIGFVersion.UIGF42 => "v4.2",
                 _ => version.ToString(),
             };
         }
@@ -31,6 +32,7 @@ public sealed class UIGFVersionToStringConverter : IValueConverter
             {
                 "v4.0" => UIGFVersion.UIGF40,
                 "v4.1" => UIGFVersion.UIGF41,
+                "v4.2" => UIGFVersion.UIGF42,
                 _ => UIGFVersion.None,
             };
         }

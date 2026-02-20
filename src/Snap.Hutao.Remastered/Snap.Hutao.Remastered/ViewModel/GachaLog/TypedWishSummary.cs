@@ -56,6 +56,11 @@ public sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
         get => SH.FormatModelBindingGachaTypedWishSummaryAveragePull(AverageUpOrangePull);
     }
 
+    public string FormattedAveragePurplePull
+    {
+        get => SH.FormatModelBindingGachaTypedWishSummaryAveragePull(AveragePurplePull);
+    }
+
     public string FormattedPredictedPullLeftToOrange
     {
         get => SH.FormatViewModelGachaLogPredictedPullLeftToOrange(PredictedPullLeftToOrange, ProbabilityOfPredictedPullLeftToOrange);
@@ -66,7 +71,7 @@ public sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
         get => SH.FormatViewModelGachaLogProbabilityOfNextPullIsOrange(ProbabilityOfNextPullIsOrange);
     }
 
-    public required List<SummaryItem> OrangeList { get; init; }
+    public required List<SummaryItem> SummaryList { get; init; }
 
     public required int MaxOrangePull { get; init; }
 
@@ -87,6 +92,8 @@ public sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
     public required double AverageOrangePull { get; init; }
 
     public required double AverageUpOrangePull { get; init; }
+
+    public required double AveragePurplePull { get; init; }
 
     public int PredictedPullLeftToOrange
     {
@@ -134,4 +141,5 @@ public sealed partial class TypedWishSummary : Wish, INotifyPropertyChanged
 
         return false;
     }
+
 }

@@ -20,6 +20,7 @@ using Snap.Hutao.Remastered.UI.Xaml.View.Dialog;
 using Snap.Hutao.Remastered.UI.Xaml.View.Page;
 using Snap.Hutao.Remastered.ViewModel.Setting;
 using Snap.Hutao.Remastered.Win32.Foundation;
+using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace Snap.Hutao.Remastered.ViewModel.GachaLog;
@@ -35,6 +36,14 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
     private readonly IMetadataService metadataService;
     private readonly ITaskContext taskContext;
     private readonly IMessenger messenger;
+    public GachaLogPage gachaLogPage;
+    public Pivot pivot = null!;
+    public PivotItem pivotOverview = null!;
+    public PivotItem pivotCountdown = null!;
+    public PivotItem pivotHistory = null!;
+    public PivotItem pivotAvatar = null!;
+    public PivotItem pivotWeapon = null!;
+    public PivotItem pivotStatistics = null!;
 
     private bool suppressCurrentItemChangedHandling;
     private GachaLogServiceMetadataContext? metadataContext;
@@ -73,6 +82,9 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
 
     [ObservableProperty]
     public partial bool IsAggressiveRefresh { get; set; }
+
+    [ObservableProperty]
+    public partial bool IsBeyondMode { get; set; }
 
     protected override async ValueTask<bool> LoadOverrideAsync(CancellationToken token)
     {
@@ -151,6 +163,37 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
         await PrivateRefreshAsync(RefreshOptionKind.ManualInput).ConfigureAwait(false);
     }
 
+    [Command("SwitchToBeyondModeCommand")]
+    private void SwitchToBeyondMode()
+    {
+        IsBeyondMode = true;
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
+    [Command("SwitchToNormalModeCommand")]
+    private void SwitchToNormalMode()
+    {
+        IsBeyondMode = false;
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
+    partial void OnIsBeyondModeChanged(bool value)
+    {
+        pivot.Items.Clear();
+        pivot.Items.Add(pivotOverview);
+
+        if (!value)
+        {
+            pivot.Items.Add(pivotCountdown);
+            pivot.Items.Add(pivotHistory);
+            pivot.Items.Add(pivotAvatar);
+            pivot.Items.Add(pivotWeapon);
+            pivot.Items.Add(pivotStatistics);
+        }
+
+        UpdateStatisticsAsync(Archives?.CurrentItem).SafeForget();
+    }
+
     private async ValueTask PrivateRefreshAsync(RefreshOptionKind optionKind)
     {
         GachaLogQuery query;
@@ -213,7 +256,15 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
                     {
                         suppressCurrentItemChangedHandling = true;
                         ArgumentNullException.ThrowIfNull(metadataContext);
-                        authkeyValid = await gachaLogService.RefreshGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        
+                        if (IsBeyondMode)
+                        {
+                            authkeyValid = await gachaLogService.RefreshBeyondGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        }
+                        else
+                        {
+                            authkeyValid = await gachaLogService.RefreshGachaLogAsync(metadataContext, query, strategy, progress, CancellationToken).ConfigureAwait(false);
+                        }
                     }
                     finally
                     {
@@ -326,8 +377,18 @@ public sealed partial class GachaLogViewModel : Abstraction.ViewModel
         try
         {
             ArgumentNullException.ThrowIfNull(metadataContext);
-            GachaStatistics statistics = await gachaLogService.GetStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
-
+            
+            GachaStatistics statistics;
+            if (IsBeyondMode)
+            {
+                // 使用BeyondGacha统计方法
+                statistics = await gachaLogService.GetBeyondStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
+            }
+            else
+            {
+                statistics = await gachaLogService.GetStatisticsAsync(metadataContext, archive).ConfigureAwait(false);
+            }
+            
             await taskContext.SwitchToMainThreadAsync();
             Statistics = statistics;
             IsInitialized = true;

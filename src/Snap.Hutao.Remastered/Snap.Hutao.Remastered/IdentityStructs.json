@@ -12,6 +12,10 @@
     "Documentation": "角色 Id"
   },
   {
+    "Name": "BeyondItemId",
+    "Documentation": "千星奇域装扮 Id"
+  },
+  {
     "Name": "ChapterId",
     "Documentation": "章节 Id"
   },
