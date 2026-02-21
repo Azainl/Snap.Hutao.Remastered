@@ -44,8 +44,9 @@
     <MvvmToolkitEnableINotifyPropertyChangingSupport>false</MvvmToolkitEnableINotifyPropertyChangingSupport>
     <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
-    <AppxPackageSigningEnabled>False</AppxPackageSigningEnabled>
+    <AppxPackageSigningEnabled>True</AppxPackageSigningEnabled>
     <AppxPackageSigningTimestampDigestAlgorithm>SHA256</AppxPackageSigningTimestampDigestAlgorithm>
+    <PackageCertificateThumbprint>DF238164333FF968767E226E4BA59FD6D27D7313</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Resource\Icon\UI_BtnIcon_Beyond_GH.png" />
