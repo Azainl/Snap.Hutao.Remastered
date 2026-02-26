@@ -69,10 +69,11 @@ public sealed partial class HoyoPlayPassportClientOversea : IHoyoPlayPassportCli
 
     public async ValueTask<(string? Aigis, string? Risk, Response<LoginResult> Response)> LoginByPasswordAsync(string account, string password, string? aigis, string? verify, CancellationToken token = default)
     {
-        Dictionary<string, string> data = new()
+        Dictionary<string, object> data = new()
         {
             ["account"] = Encrypt(account),
             ["password"] = Encrypt(password),
+            ["token_type"] = 2,
         };
 
         HttpRequestMessageBuilder builder = httpRequestMessageBuilderFactory.Create()
@@ -117,14 +118,15 @@ public sealed partial class HoyoPlayPassportClientOversea : IHoyoPlayPassportCli
         using (RSA rsa = RSA.Create())
         {
             rsa.ImportFromPem($"""
-                -----BEGIN RSA PUBLIC KEY-----
-                MIIBCgKCAQEAtjUS4JLsfCVbueTReY1E/kFBzoCQZtbSGW/BatU9BaZbgd1iIHKb
-                CQhs0Uf3POcavhqW2/UVTxBlhi3cfzRVBbd61FZk0Xt5EI+8SvGxVR176yobMvZt
-                7JcpommpY4RvfItiiag5GplLS9jrkOPlKsQiIAZaawgxL1HVpf6cPkHzfZCuzlDO
-                agntlYgP8wkZI+K6E63AHFRgfU7n0YO9jUPhSDPRXvGo5n/5B19L+fiPYbf++e8z
-                ywZVtoJ5ztJ/+6Vp+N7H/C5PEJGy9ZKHWSvTvCs8Curg2ahB8xD1aPd1XEOmkMBf
-                DVuD0wOHnn7I03seIOU7l0w8ojP3E+eG3QIDAQAB
-                -----END RSA PUBLIC KEY-----
+                -----BEGIN PUBLIC KEY-----
+                MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4PMS2JVMwBsOIrYWRluY
+                wEiFZL7Aphtm9z5Eu/anzJ09nB00uhW+ScrDWFECPwpQto/GlOJYCUwVM/raQpAj
+                /xvcjK5tNVzzK94mhk+j9RiQ+aWHaTXmOgurhxSp3YbwlRDvOgcq5yPiTz0+kSeK
+                ZJcGeJ95bvJ+hJ/UMP0Zx2qB5PElZmiKvfiNqVUk8A8oxLJdBB5eCpqWV6CUqDKQ
+                KSQP4sM0mZvQ1Sr4UcACVcYgYnCbTZMWhJTWkrNXqI8TMomekgny3y+d6NX/cFa6
+                6jozFIF4HCX5aW8bp8C8vq2tFvFbleQ/Q3CU56EWWKMrOcpmFtRmC18s9biZBVR/
+                8QIDAQAB
+                -----END PUBLIC KEY-----
                 """);
             return Convert.ToBase64String(rsa.Encrypt(Encoding.UTF8.GetBytes(source), RSAEncryptionPadding.Pkcs1));
         }
